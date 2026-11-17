@@ -298,12 +298,28 @@ async def _edge(text, mp3, voice, rate):
     return words
 
 
+EDGE_VOICES = {"tr": ["tr-TR-AhmetNeural", "tr-TR-EmelNeural"],
+               "en": ["en-US-GuyNeural", "en-US-ChristopherNeural", "en-US-EricNeural"],
+               "de": ["de-DE-ConradNeural", "de-DE-KillianNeural", "de-DE-KatjaNeural"],
+               "fr": ["fr-FR-HenriNeural"], "es": ["es-ES-AlvaroNeural"], "ar": ["ar-SA-HamedNeural"]}
+
+
 def tts_edge(text, mp3):
-    default = {"tr": "tr-TR-AhmetNeural", "en": "en-US-AndrewNeural", "de": "de-DE-ConradNeural",
-               "fr": "fr-FR-HenriNeural", "es": "es-ES-AlvaroNeural", "ar": "ar-SA-HamedNeural"}
-    voice = (os.environ.get("EDGE_VOICE") if LANG == "tr" else None) or default.get(LANG, "tr-TR-AhmetNeural")
     rate = os.environ.get("EDGE_RATE") or "+8%"
-    return asyncio.run(_edge(text, mp3, voice, rate))
+    voices = EDGE_VOICES.get(LANG, EDGE_VOICES["tr"])
+    if LANG == "tr" and os.environ.get("EDGE_VOICE"):
+        voices = [os.environ["EDGE_VOICE"]] + voices
+    last = None
+    for v in voices:
+        for attempt in range(2):
+            try:
+                words = asyncio.run(_edge(text, mp3, v, rate))
+                if Path(mp3).exists() and Path(mp3).stat().st_size > 1000:
+                    return words
+            except Exception as e:  # noqa
+                last = e
+                log(f"Edge ses ({v}) hatası: {e}")
+    raise RuntimeError(f"Ücretsiz ses üretilemedi: {last}")
 
 
 def tts_dummy(text, mp3):
