@@ -165,12 +165,18 @@ def next_slot(lang, st):
     return ""
 
 
+def soon(minutes=5):
+    return (dt.datetime.utcnow() + dt.timedelta(minutes=minutes)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def queue_or_publish(results, st, header):
     """Onay açıksa Telegram'a onay isteği gönderir; kapalıysa hemen yayınlar."""
     owner = st.get("owner_chat")
     if not APPROVAL or not owner or DRY:
         for r in results:
-            r["publish_at"] = next_slot(r["lang"], st)
+            slot = next_slot(r["lang"], st)
+            r["scheduled"] = bool(slot)
+            r["publish_at"] = slot or soon()
             r["published"] = publish(r)
         return False
     gid = f"{RUN_ID}{len(st.setdefault('pending', {}))}"[-12:]
@@ -206,12 +212,19 @@ def handle_callback(cb, st):
         return
     out = []
     for r in item["results"]:
-        r["publish_at"] = next_slot(r["lang"], st)
+        slot = next_slot(r["lang"], st)
+        r["publish_at"] = slot or soon()
         r["published"] = publish(r)
-        when = r["publish_at"].replace("T", " ").replace("Z", " UTC") if r["publish_at"] else "hemen"
+        when = to_tr_time(slot) if slot else "hemen"
         out.append(f"• {CHANNEL_NAMES.get(r['lang'], r['lang'])}: {when}")
     tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
     tg_send(chat, "✅ Yayına gönderildi:\n" + "\n".join(out) + "\n\n" + quota_block(item["results"][-1]))
+
+
+def to_tr_time(iso):
+    from zoneinfo import ZoneInfo
+    t = dt.datetime.strptime(iso, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=dt.timezone.utc)
+    return t.astimezone(ZoneInfo("Europe/Istanbul")).strftime("%d.%m %H:%M (TR saati)")
 
 
 def expire_pending(st, hours=48):

@@ -920,6 +920,7 @@ def produce(payload, out_dir=None, tag=""):
         "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style", "countries", "country_names", "chapter")} for s in scenes],
         "chat_id": payload.get("chat_id"),
         "source": payload.get("youtube_url") or payload.get("source") or "",
+        "publish_at": (__import__("datetime").datetime.utcnow() + __import__("datetime").timedelta(minutes=5)).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "elevenlabs": q,
         "quota_text": quota_text,
         "test": bool(payload.get("test")) or os.environ.get("PUBLISH", "true").lower() == "false",
