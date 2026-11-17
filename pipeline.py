@@ -246,7 +246,13 @@ def cmd_auto():
         try:
             for i, lang in enumerate(langs):
                 tag = f"auto-{RUN_ID}-{lang}"
-                res = make_video({**base, "target_lang": lang}, tag, instagram=(lang == ig_lang))
+                pl = {**base, "target_lang": lang}
+                if i > 0 and results:
+                    # 2. dil: aynı senaryodan uyarla (aynı konu, videoyu tekrar izletmeye gerek yok)
+                    first = results[0]
+                    pl = {"mode": "rewrite", "source": base["source"], "target_lang": lang,
+                          "text": first["title"] + ".\n" + "\n".join(sc["text"] for sc in first["scenes"])}
+                res = make_video(pl, tag, instagram=(lang == ig_lang))
                 if res.get("skip"):
                     break
                 if i == 0 and similar_topic(res.get("topic", ""), st):
