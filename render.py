@@ -565,6 +565,7 @@ def main():
         "title": (script.get("title") or scenes[0]["text"])[:95],
         "description": ((script.get("description") or "") + "\n\n" + tags).strip(),
         "hashtags": script.get("hashtags") or [],
+        "lang": LANG,
         "duration": round(total, 2),
         "video_url": f"https://github.com/{repo}/releases/download/{tag}/video.mp4" if repo and tag else "",
         "thumb_url": f"https://github.com/{repo}/releases/download/{tag}/thumb.jpg" if repo and tag else "",
