@@ -328,6 +328,31 @@ def pixabay_pick(query, need):
     return None
 
 
+USED_LOCAL = set()
+
+
+def local_pick(query, any_ok=False):
+    """assets/broll içindeki hazır tema klipleri (dosya adındaki kelimelerle eşleşir)."""
+    d = ASSETS / "broll"
+    if not d.is_dir():
+        return None
+    q = set(re.findall(r"[a-z]+", (query or "").lower()))
+    best = []
+    for f in sorted(d.glob("*.mp4")):
+        if f in USED_LOCAL:
+            continue
+        score = len(q & set(f.stem.lower().split("-")))
+        best.append((score, random.random(), f))
+    if not best:
+        return None
+    best.sort(reverse=True)
+    score, _, f = best[0]
+    if score >= 1 or any_ok:
+        USED_LOCAL.add(f)
+        return f
+    return None
+
+
 PALETTES = [("0x07122b", "0x1b4fd1"), ("0x12051f", "0x7b2ff7"), ("0x02161a", "0x0aa5a8"),
             ("0x1a0606", "0xd13b1b"), ("0x050505", "0x2a2a2a")]
 
@@ -335,8 +360,8 @@ PALETTES = [("0x07122b", "0x1b4fd1"), ("0x12051f", "0x7b2ff7"), ("0x02161a", "0x
 def scene_clip(i, sc):
     dur = sc["dur"]
     out = WORK / f"scene_{i}.mp4"
-    src = None
-    url = pixabay_pick(sc.get("search") or "abstract", dur)
+    src = local_pick(sc.get("search"))
+    url = None if src else pixabay_pick(sc.get("search") or "abstract", dur)
     if url:
         src = WORK / f"src_{i}.mp4"
         try:
@@ -344,6 +369,8 @@ def scene_clip(i, sc):
         except Exception as e:  # noqa
             log("İndirme hatası:", e)
             src = None
+    if not src:
+        src = local_pick(sc.get("search"), any_ok=True)
     # Hafif kaydırma (Ken Burns): görüntüyü %10 büyüt, sahne boyunca yavaşça kaydır
     sw, sh = int(W * 1.1) // 2 * 2, int(H * 1.1) // 2 * 2
     dx, dy = sw - W, sh - H
@@ -443,8 +470,10 @@ def headline_events(sc, ev):
 def channel():
     """Haberin diline göre kanal: İngilizce -> World Shift, diğerleri -> Global News."""
     if LANG == "en":
-        return {"name": "WORLD SHIFT", "logo": ASSETS / "logos" / "world-shift.png", "follow": "FOLLOW FOR MORE"}
-    return {"name": "GLOBAL NEWS", "logo": ASSETS / "logos" / "global-news.png", "follow": "TAKİP ET"}
+        return {"name": "WORLD SHIFT", "logo": ASSETS / "logos" / "world-shift.png",
+                "outro": ASSETS / "outro" / "world-shift.mp4", "follow": "FOLLOW FOR MORE"}
+    return {"name": "GLOBAL NEWS", "logo": ASSETS / "logos" / "global-news.png",
+            "outro": ASSETS / "outro" / "global-news.mp4", "follow": "TAKİP ET"}
 
 
 def clean_title(t):
@@ -551,6 +580,12 @@ OUTRO = 2.0
 def outro_clip():
     """Son 2 sn: kanal logosu + takip çağrısı (yazı ASS ile eklenir)."""
     out = WORK / "outro.mp4"
+    anim = channel()["outro"]
+    if anim.exists():
+        run(["ffmpeg", "-y", "-v", "error", "-i", anim, "-t", f"{OUTRO}", "-an",
+             "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,format=yuv420p",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS), out])
+        return out
     logo = channel()["logo"]
     bg = ["-f", "lavfi", "-i", f"gradients=s={W}x{H}:c0=0x05050c:c1=0x1a0a2a:x0=0:y0=0:x1={W}:y1={H}:speed=0.02:r={FPS}"]
     if logo.exists():
