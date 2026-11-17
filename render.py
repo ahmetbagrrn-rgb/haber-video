@@ -78,8 +78,13 @@ def download(url, dest, timeout=180):
         shutil.copyfileobj(r, f)
 
 
+LANG = "tr"
+
+
 def tr_upper(s):
-    return s.replace("i", "İ").replace("ı", "I").upper()
+    if LANG in ("tr", "az"):
+        return s.replace("i", "İ").replace("ı", "I").upper()
+    return s.upper()
 
 
 # ---------------------------------------------------------------- 1) Senaryo
@@ -87,6 +92,7 @@ def tr_upper(s):
 PROMPT = """Sen kısa dikey video (YouTube Shorts / Reels) editörüsün.
 Aşağıdaki haberi 5-7 sahneye böl.
 Kurallar:
+- DİL: Haber hangi dilde yazıldıysa "text", "headline", "accent", "title", "description" ve "hashtags" alanlarının TAMAMINI o dilde yaz (İngilizce haber -> her şey İngilizce). "lang" alanına dilin 2 harfli kodunu yaz (tr, en, de...).
 - Metni yeniden yazma; kullanıcının cümlelerine sadık kal, sadece hafif düzelt ve sadeleştir.
 - 1. sahne güçlü bir kanca olsun: merak boşluğu açsın, cevabı sona sakla.
 - Sondan bir önceki sahne "Ama asıl mesele şu..." tarzı bir dönüş cümlesi olsun.
@@ -96,11 +102,12 @@ Kurallar:
 - "accent": başlığa eşlik eden tek kelime (italik gösterilecek), headline'daki kelimeleri tekrar etme.
 - "search": Pixabay'de stok VİDEO aramak için 1-3 kelimelik İNGİLİZCE terim. Somut, görsel, aranabilir olsun (ör. "city night", "police car", "stock market screen"). Kişi adı veya marka yazma.
 - "style": tek sıradaki sahneler (1,3,5,7) "headline", çift sıradakiler "subtitle".
+- "Ama asıl mesele şu..." kalıbını haberin dilinde kullan (ör. İngilizce: "But here's the real issue...").
 - "title": YouTube başlığı, en fazla 70 karakter, merak uyandıran.
 - "description": 1-2 cümlelik açıklama.
 - "hashtags": 3-5 adet, # ile.
 Sadece JSON döndür:
-{"title":"...","description":"...","hashtags":["#..."],"scenes":[{"text":"...","headline":"...","accent":"...","search":"...","style":"headline"}]}
+{"lang":"tr","title":"...","description":"...","hashtags":["#..."],"scenes":[{"text":"...","headline":"...","accent":"...","search":"...","style":"headline"}]}
 
 Haber:
 """
@@ -131,8 +138,8 @@ def make_script(payload):
             scenes.append({"text": s, "headline": " ".join(longest[:2]), "accent": "",
                            "search": "news", "style": "headline" if i % 2 == 0 else "subtitle"})
         return {"title": sents[0][:70], "description": text[:200], "hashtags": [], "scenes": scenes}
-    models = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.5-flash", "gemini-flash-latest",
-                          "gemini-3.5-flash-lite", "gemini-flash-lite-latest"] if m]
+    models = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest",
+                          "gemini-flash-lite-latest"] if m]
     body = {"contents": [{"parts": [{"text": PROMPT + text}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.7}}
     last = None
@@ -210,7 +217,9 @@ async def _edge(text, mp3, voice, rate):
 
 
 def tts_edge(text, mp3):
-    voice = os.environ.get("EDGE_VOICE") or "tr-TR-AhmetNeural"
+    default = {"tr": "tr-TR-AhmetNeural", "en": "en-US-GuyNeural", "de": "de-DE-ConradNeural",
+               "fr": "fr-FR-HenriNeural", "es": "es-ES-AlvaroNeural", "ar": "ar-SA-HamedNeural"}
+    voice = (os.environ.get("EDGE_VOICE") if LANG == "tr" else None) or default.get(LANG, "tr-TR-AhmetNeural")
     rate = os.environ.get("EDGE_RATE") or "+8%"
     return asyncio.run(_edge(text, mp3, voice, rate))
 
@@ -539,6 +548,9 @@ def main():
     WORK.mkdir(parents=True, exist_ok=True)
     payload = load_payload()
     script = make_script(payload)
+    global LANG
+    LANG = (script.get("lang") or payload.get("lang") or "tr").lower()[:2]
+    log("Dil:", LANG)
     scenes = [s for s in script["scenes"] if (s.get("text") or "").strip()][:9]
     log(f"{len(scenes)} sahne")
     voice, total = make_audio(scenes)
