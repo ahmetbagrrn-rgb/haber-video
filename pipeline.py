@@ -468,7 +468,13 @@ def cmd_long(st):
     results = []
     for lang in CONFIG.get("long_langs", CONFIG.get("auto_langs", ["tr", "en", "de"])):
         tag = f"long-{RUN_ID}-{lang}"
-        res = make_video({**base, "target_lang": lang}, tag, instagram=False)
+        pl = {**base, "target_lang": lang}
+        if results:  # 2. dil: ilk senaryodan uyarla (video tekrar izletilmez)
+            first = results[0]
+            pl = {"long": True, "mode": "rewrite", "target_lang": lang, "source": base.get("source", ""),
+                  "text": first["title"] + "\n" + "\n".join(
+                      (f"[{sc.get('chapter')}] " if sc.get("chapter") else "") + sc["text"] for sc in first["scenes"])}
+        res = make_video(pl, tag, instagram=False)
         if res.get("skip"):
             break
         results.append(res)
