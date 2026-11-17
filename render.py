@@ -31,6 +31,11 @@ import urllib.request
 from pathlib import Path
 
 W, H, FPS = 1080, 1920, 30
+LANDSCAPE = False
+try:
+    CONFIG = json.loads((Path(__file__).parent / "config.json").read_text(encoding="utf-8"))
+except Exception:  # noqa
+    CONFIG = {}
 OUT = Path(os.environ.get("OUT_DIR", "out"))
 WORK = OUT / "work"
 FONTS = Path(os.environ.get("FONTS_DIR", "fonts"))
@@ -111,16 +116,37 @@ Kurallar:
 - "accent": başlığa eşlik eden tek kelime (italik gösterilecek), headline'daki kelimeleri tekrar etme.
 - "search": Pixabay'de stok VİDEO aramak için 1-3 kelimelik İNGİLİZCE terim. Somut, görsel, aranabilir olsun (ör. "city night", "police car", "stock market screen"). Kişi adı veya marka yazma.
 - "style": tek sıradaki sahneler (1,3,5,7) "headline", çift sıradakiler "subtitle".
+- "countries": sahnede adı geçen ülkelerin ISO-3166 alpha-3 kodları (ör. ["TUR","IRN"]); yoksa [].
+- "country_names": aynı ülkelerin çıktı dilindeki kısa adları (ör. ["Türkiye","İran"]).
+- "tags": video için 8-12 SEO anahtar kelimesi (çıktı dilinde, aranma ihtimali yüksek).
 - "Ama asıl mesele şu..." kalıbını haberin dilinde kullan (ör. İngilizce: "But here's the real issue...").
 - "title": YouTube başlığı, en fazla 70 karakter, merak uyandıran.
 - "description": 1-2 cümlelik açıklama.
 - "hashtags": 3-5 adet, # ile.
 Sadece JSON döndür:
-{"lang":"tr","title":"...","description":"...","hashtags":["#..."],"scenes":[{"text":"...","headline":"...","accent":"...","search":"...","style":"headline"}]}
+{"lang":"tr","title":"...","description":"...","hashtags":["#..."],"scenes":[{"text":"...","headline":"...","accent":"...","search":"...","style":"headline","countries":[],"country_names":[]}],"tags":["..."]}
 
 Haber:
 """
 
+
+PROMPT_LONG = """Sen YouTube için uzun (yatay, 5-8 dakikalık) haber-analiz videosu editörüsün.
+Kaynaklardan bu haftanın en önemli gelişmelerini derleyip TEK bir akıcı analiz videosu senaryosu yaz.
+Kurallar:
+- 16-24 sahne. Her sahnenin "text" alanı 2-3 cümle, en fazla 45 kelime.
+- Video 4-5 bölümden oluşsun. Her bölümün İLK sahnesine "chapter" alanında kısa bölüm başlığı yaz (diğer sahnelerde "chapter" boş).
+- 1. sahne güçlü bir kanca: izleyiciye bu videoda neyi öğreneceğini merak ettirecek şekilde söyle.
+- Son bölüm: "Bundan sonra ne olabilir?" — olası senaryolar ve kendi analizin. Son cümle izleyiciye yorumlarda fikrini soran bir soru olsun.
+- "headline", "accent", "search", "style", "countries", "country_names" alanları kısa videodaki gibi.
+- "search": yatay stok video için 1-3 kelimelik İNGİLİZCE terim.
+- "title": YouTube başlığı (en fazla 70 karakter), merak uyandıran ama yanıltıcı olmayan.
+- "thumb_texts": küçük resim için 3 FARKLI kısa yazı seçeneği (her biri en fazla 4 kelime, BÜYÜK etki).
+- "description": 2-3 cümlelik açıklama. "tags": 10-15 SEO anahtar kelimesi. "hashtags": 3-5 adet.
+Sadece JSON döndür:
+{"lang":"tr","topic":"...","title":"...","thumb_texts":["...","...","..."],"description":"...","hashtags":["#..."],"tags":["..."],"scenes":[{"chapter":"...","text":"...","headline":"...","accent":"...","search":"...","style":"headline","countries":[],"country_names":[]}]}
+
+Kaynaklar:
+"""
 
 LANG_NAMES = {"tr": "Türkçe", "en": "İngilizce (ABD)", "de": "Almanca", "fr": "Fransızca", "es": "İspanyolca"}
 
@@ -140,7 +166,7 @@ EDİTÖR KURALLARI (kaynak bir YouTube videosu ya da başka bir haber):
 
 def build_prompt(payload):
     target = (payload.get("target_lang") or "").lower()[:2]
-    p = PROMPT
+    p = PROMPT_LONG if payload.get("long") else PROMPT
     if payload.get("mode") == "rewrite" or payload.get("youtube_url"):
         p = p.replace("- Metni yeniden yazma; kullanıcının cümlelerine sadık kal, sadece hafif düzelt ve sadeleştir.\n", "")
         p = EDITOR_RULES + "\n" + p
@@ -151,6 +177,7 @@ def build_prompt(payload):
     p = p.replace('{"lang":"tr",', '{"lang":"tr","topic":"(konunun 5-8 kelimelik İngilizce özeti)",')
     if payload.get("youtube_url"):
         p = p.replace("\nHaber:\n", "\nKaynak: ekteki YouTube videosu (ilk 15 dakikası).\n")
+        p = p.replace("\nKaynaklar:\n", "\nKaynaklar: ekteki YouTube videosu (ilk 15 dakikası) ve aşağıdaki notlar.\n")
     return p
 
 
@@ -188,7 +215,7 @@ def make_script(payload):
     prompt = build_prompt(payload)
     if yt:
         parts = [{"fileData": {"fileUri": yt}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
-                 {"text": prompt}]
+                 {"text": prompt + (text or "")}]
         gen = {"responseMimeType": "application/json", "temperature": 0.7, "mediaResolution": "MEDIA_RESOLUTION_LOW"}
     else:
         parts = [{"text": prompt + text}]
@@ -272,7 +299,7 @@ async def _edge(text, mp3, voice, rate):
 
 
 def tts_edge(text, mp3):
-    default = {"tr": "tr-TR-AhmetNeural", "en": "en-US-GuyNeural", "de": "de-DE-ConradNeural",
+    default = {"tr": "tr-TR-AhmetNeural", "en": "en-US-AndrewNeural", "de": "de-DE-ConradNeural",
                "fr": "fr-FR-HenriNeural", "es": "es-ES-AlvaroNeural", "ar": "ar-SA-HamedNeural"}
     voice = (os.environ.get("EDGE_VOICE") if LANG == "tr" else None) or default.get(LANG, "tr-TR-AhmetNeural")
     rate = os.environ.get("EDGE_RATE") or "+8%"
@@ -306,6 +333,8 @@ def choose_provider(scenes):
     if forced:
         return forced
     edge_langs = [x.strip() for x in (os.environ.get("EDGE_LANGS") or "tr").split(",") if x.strip()]
+    if not CONFIG.get("elevenlabs_enabled", True):
+        return "edge"
     if LANG in edge_langs or not os.environ.get("ELEVENLABS_API_KEY"):
         return "edge"
     q = elevenlabs_quota()
@@ -387,7 +416,7 @@ def pixabay_pick(query, need):
             for size in ("large", "medium", "small"):
                 v = h.get("videos", {}).get(size) or {}
                 if v.get("url") and v.get("width"):
-                    portrait = v["height"] > v["width"]
+                    portrait = (v["height"] > v["width"]) != LANDSCAPE
                     tags = set(re.findall(r"[a-z]+", (h.get("tags") or "").lower()))
                     ai = bool(tags & {"ai", "generated", "artificial", "fantasy", "lion", "animal", "anime", "cartoon", "animation", "3d", "render", "illustration", "game", "cyberpunk"} - qwords)
                     score = (3 * len(qwords & tags) / max(1, len(qwords)) + (1.5 if portrait else 0)
@@ -410,7 +439,7 @@ USED_LOCAL = set()
 def local_pick(query, any_ok=False):
     """assets/broll içindeki hazır tema klipleri (dosya adındaki kelimelerle eşleşir)."""
     d = ASSETS / "broll"
-    if not d.is_dir():
+    if not d.is_dir() or (LANDSCAPE and not any_ok):
         return None
     q = set(re.findall(r"[a-z]+", (query or "").lower()))
     best = []
@@ -461,9 +490,37 @@ def scene_clip(i, sc):
     else:
         c0, c1 = PALETTES[i % len(PALETTES)]
         inp = ["-f", "lavfi", "-i", f"gradients=s={W}x{H}:c0={c0}:c1={c1}:x0=0:y0=0:x1={W}:y1={H}:speed=0.015:r={FPS}"]
+    mp = map_card(i, sc)
+    if mp:
+        # Harita kartı: sahnenin 0.3. saniyesinde yumuşakça belirir
+        my = int(H * (0.10 if LANDSCAPE else 0.16))
+        fc = (f"[0:v]{vf}[b];[1:v]format=rgba,fade=in:st=0.3:d=0.4:alpha=1[m];"
+              f"[b][m]overlay=x=(W-w)/2:y={my}:shortest=1,format=yuv420p[v]")
+        run(["ffmpeg", "-y", "-v", "error", *inp, "-loop", "1", "-i", mp, "-t", f"{dur:.3f}", "-an",
+             "-filter_complex", fc, "-map", "[v]",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS), out])
+        return out
     run(["ffmpeg", "-y", "-v", "error", *inp, "-t", f"{dur:.3f}", "-an", "-vf", vf,
          "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS), out])
     return out
+
+
+def map_card(i, sc):
+    """Altyazı sahnelerinde, ülke adı geçiyorsa harita kartı üret."""
+    isos = [c for c in (sc.get("countries") or []) if isinstance(c, str) and len(c) in (2, 3)][:4]
+    style = sc.get("style") or ("headline" if i % 2 == 0 else "subtitle")
+    if not isos or i == 0 or (style != "subtitle" and not LANDSCAPE):
+        return None
+    try:
+        import mapcard
+        labels = [tr_upper(x) for x in (sc.get("country_names") or isos)][:len(isos)]
+        w = int(W * (0.42 if LANDSCAPE else 0.86))
+        h = int(w * 0.58)
+        return mapcard.render_map(isos, labels, WORK / f"map_{i}.png", width=w, height=h,
+                                  font=FONTS / "Montserrat-Bold.ttf")
+    except Exception as e:  # noqa
+        log("Harita üretilemedi:", e)
+        return None
 
 
 # ---------------------------------------------------------------- 4) Yazılar (ASS)
@@ -483,7 +540,9 @@ def esc(s):
     return s.replace("\\", "").replace("{", "(").replace("}", ")").replace("\n", " ")
 
 
-ASS_HEAD = f"""[Script Info]
+def ass_head():
+    k = 0.72 if LANDSCAPE else 1.0
+    return f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
 PlayResY: {H}
@@ -492,14 +551,14 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Head,Anton,150,{CYAN},{CYAN},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,0,6,5,40,40,0,1
-Style: Accent,Playfair Display,140,{CYAN_SOFT},{CYAN_SOFT},&H00000000,&H96000000,0,1,0,0,100,100,0,0,1,0,5,5,40,40,0,1
-Style: Word,Anton,96,{YELLOW},{YELLOW},&H00000000,&HA0000000,0,1,0,0,100,100,2,0,1,3,4,5,40,40,0,1
-Style: Box,Montserrat,58,{WHITE},{WHITE},&H40000000,&H40000000,1,0,0,0,100,100,0,0,3,18,0,5,40,40,0,1
-Style: Hook,Anton,140,{WHITE},{WHITE},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,4,7,5,40,40,0,1
-Style: Strip,Anton,74,{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,4,0,3,16,0,5,40,40,0,1
-Style: Follow,Anton,92,{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,3,0,3,22,0,5,40,40,0,1
-Style: Brand,Montserrat,38,{WHITE},{WHITE},&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,0,3,9,48,48,60,1
+Style: Head,Anton,{int(150*k)},{CYAN},{CYAN},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,0,6,5,40,40,0,1
+Style: Accent,Playfair Display,{int(140*k)},{CYAN_SOFT},{CYAN_SOFT},&H00000000,&H96000000,0,1,0,0,100,100,0,0,1,0,5,5,40,40,0,1
+Style: Word,Anton,{int(96*k)},{YELLOW},{YELLOW},&H00000000,&HA0000000,0,1,0,0,100,100,2,0,1,3,4,5,40,40,0,1
+Style: Box,Montserrat,{int(58*k)},{WHITE},{WHITE},&H40000000,&H40000000,1,0,0,0,100,100,0,0,3,18,0,5,40,40,0,1
+Style: Hook,Anton,{int(140*k)},{WHITE},{WHITE},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,4,7,5,40,40,0,1
+Style: Strip,Anton,{int(74*k)},{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,4,0,3,16,0,5,40,40,0,1
+Style: Follow,Anton,{int(92*k)},{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,3,0,3,22,0,5,40,40,0,1
+Style: Brand,Montserrat,{int(38*k)},{WHITE},{WHITE},&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,0,3,9,48,48,60,1
 """
 
 
@@ -521,9 +580,9 @@ def headline_events(sc, ev):
     words = tr_upper(sc.get("headline") or "").split()
     if not words:
         return
-    lines = wrap_lines(words, 10)[:3]
+    lines = wrap_lines(words, 20 if LANDSCAPE else 10)[:3]
     longest = max(len(l) for l in lines)
-    size = int(min(210, 960 / max(1, 0.44 * longest)))
+    size = int(min(210 * (0.75 if LANDSCAPE else 1), W * 0.88 / max(1, 0.44 * longest)))
     line_h = size * 0.98
     accent = (sc.get("accent") or "").strip().split(" ")[0]
     block_h = line_h * len(lines) + (size * 0.9 if accent else 0)
@@ -543,13 +602,21 @@ def headline_events(sc, ev):
         ev.append(("Accent", t + 0.1, s1, tag + esc(a)))
 
 
+DEFAULT_CHANNELS = {
+    "en": {"name": "WORLD SHIFT", "slug": "world-shift", "follow": "FOLLOW FOR MORE"},
+    "de": {"name": "WORLD SHIFT DEUTSCH", "slug": "world-shift-de", "follow": "JETZT FOLGEN"},
+    "tr": {"name": "GLOBAL NEWS", "slug": "global-news", "follow": "TAKİP ET"},
+}
+
+
 def channel():
-    """Haberin diline göre kanal: İngilizce -> World Shift, diğerleri -> Global News."""
-    if LANG == "en":
-        return {"name": "WORLD SHIFT", "logo": ASSETS / "logos" / "world-shift.png",
-                "outro": ASSETS / "outro" / "world-shift.mp4", "follow": "FOLLOW FOR MORE"}
-    return {"name": "GLOBAL NEWS", "logo": ASSETS / "logos" / "global-news.png",
-            "outro": ASSETS / "outro" / "global-news.mp4", "follow": "TAKİP ET"}
+    """Haberin diline göre kanal (config.json -> channels)."""
+    chs = {**DEFAULT_CHANNELS, **(CONFIG.get("channels") or {})}
+    c = dict(chs.get(LANG) or chs["tr"])
+    slug = c.get("slug", "global-news")
+    c["logo"] = ASSETS / "logos" / f"{slug}.png"
+    c["outro"] = ASSETS / "outro" / f"{slug}.mp4"
+    return c
 
 
 def clean_title(t):
@@ -563,9 +630,9 @@ def hook_events(title, sc, ev):
     words = tr_upper(clean_title(title)).split()
     if not words:
         return headline_events(sc, ev)
-    lines = wrap_lines(words, 13)[:5]
+    lines = wrap_lines(words, 26 if LANDSCAPE else 13)[:5]
     longest = max(len(l) for l in lines)
-    size = int(min(150, 980 / max(1, 0.47 * longest)))
+    size = int(min(150 * (0.8 if LANDSCAPE else 1), W * 0.9 / max(1, 0.47 * longest)))
     line_h = size * 1.0
     y = H * 0.36 - (line_h * len(lines)) / 2 + line_h / 2
     t = s0 + 0.05
@@ -639,7 +706,7 @@ def make_ass(scenes, total, title="", outro=0.0):
     brand = os.environ.get("CHANNEL_NAME", "").strip()
     if brand:
         ev.append(("Brand", 0, total, esc(brand)))
-    lines = [ASS_HEAD, "[Events]",
+    lines = [ass_head(), "[Events]",
              "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"]
     for style, a, b, txt in ev:
         lines.append(f"Dialogue: 0,{ass_time(a)},{ass_time(b)},{style},,0,0,0,,{txt}")
@@ -657,7 +724,7 @@ def outro_clip():
     """Son 2 sn: kanal logosu + takip çağrısı (yazı ASS ile eklenir)."""
     out = WORK / "outro.mp4"
     anim = channel()["outro"]
-    if anim.exists():
+    if anim.exists() and not LANDSCAPE:
         run(["ffmpeg", "-y", "-v", "error", "-i", anim, "-t", f"{OUTRO}", "-an",
              "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},setsar=1,format=yuv420p",
              "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS), out])
@@ -665,7 +732,7 @@ def outro_clip():
     logo = channel()["logo"]
     bg = ["-f", "lavfi", "-i", f"gradients=s={W}x{H}:c0=0x05050c:c1=0x1a0a2a:x0=0:y0=0:x1={W}:y1={H}:speed=0.02:r={FPS}"]
     if logo.exists():
-        fc = (f"[1:v]scale=900:-1,format=rgba,fade=in:st=0:d=0.35:alpha=1[l];"
+        fc = (f"[1:v]scale={int(min(W, H) * 0.8)}:-1,format=rgba,fade=in:st=0:d=0.35:alpha=1[l];"
               f"[0:v][l]overlay=x=(W-w)/2:y=H*0.40-h/2,setsar=1,format=yuv420p[v]")
         run(["ffmpeg", "-y", "-v", "error", *bg, "-loop", "1", "-i", logo, "-t", f"{OUTRO}",
              "-filter_complex", fc, "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
@@ -723,6 +790,43 @@ def compose(clips, voice, ass, total, tv=None):
     return out
 
 
+# ---------------------------------------------------------------- Küçük resimler (A/B)
+
+def make_thumbs(video, texts, out_dir):
+    """Uzun video için 3 farklı küçük resim (1280x720): YouTube 'Test & Compare' için."""
+    from PIL import Image, ImageDraw, ImageFilter, ImageFont
+    texts = (list(texts) + list(texts) * 3)[:3]
+    dur = probe_duration(video)
+    styles = [((255, 212, 0), (0, 0, 0)), ((255, 255, 255), (227, 26, 45)), ((92, 225, 255), (0, 0, 0))]
+    for k, (txt, (fg, box)) in zip("abc", zip(texts, styles)):
+        frame = WORK / f"thumb_src_{k}.jpg"
+        clips = sorted(WORK.glob("scene_*.mp4"))  # yazısız ham sahneler
+        src = clips[{"a": 1, "b": len(clips) // 2, "c": -2}[k] % len(clips)] if clips else video
+        run(["ffmpeg", "-y", "-v", "error", "-ss", "1.0", "-i", src, "-frames:v", "1",
+             "-vf", "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720", frame])
+        im = Image.open(frame).convert("RGB").filter(ImageFilter.GaussianBlur(1))
+        im = Image.blend(im, Image.new("RGB", im.size, (0, 0, 0)), 0.35)
+        d = ImageDraw.Draw(im)
+        words = tr_upper(clean_title(txt)).split()
+        lines = wrap_lines(words, 12)[:3]
+        size = 150 if len(lines) <= 2 else 120
+        fnt = ImageFont.truetype(str(FONTS / "Anton-Regular.ttf"), size)
+        y = 360 - len(lines) * size * 0.55
+        for i, ln in enumerate(lines):
+            tw = d.textlength(ln, font=fnt)
+            x = 60
+            if i == len(lines) - 1:
+                d.rectangle([x - 20, y + 8, x + tw + 20, y + size + 18], fill=box)
+            d.text((x, y), ln, font=fnt, fill=fg, stroke_width=6, stroke_fill=(0, 0, 0))
+            y += size * 1.08
+        logo = channel()["logo"]
+        if logo.exists():
+            lg = Image.open(logo).convert("RGBA")
+            lg.thumbnail((230, 230))
+            im.paste(lg, (1280 - lg.width - 20, 20), lg)
+        im.save(out_dir / f"thumb_{k}.jpg", quality=90)
+
+
 # ---------------------------------------------------------------- Kota
 
 def elevenlabs_quota():
@@ -758,7 +862,10 @@ def load_payload():
 
 def produce(payload, out_dir=None, tag=""):
     """Tek bir video üretir; sonuç sözlüğünü döndürür (skip ise {"skip": True})."""
-    global OUT, WORK, LANG, USED_IDS, USED_LOCAL
+    global OUT, WORK, LANG, USED_IDS, USED_LOCAL, LANDSCAPE, W, H
+    long = bool(payload.get("long"))
+    LANDSCAPE = long
+    W, H = (1920, 1080) if long else (1080, 1920)
     OUT = Path(out_dir or os.environ.get("OUT_DIR", "out"))
     WORK = OUT / "work"
     USED_IDS, USED_LOCAL = set(), set()
@@ -768,7 +875,7 @@ def produce(payload, out_dir=None, tag=""):
         return {"skip": True}
     LANG = (script.get("lang") or payload.get("target_lang") or payload.get("lang") or "tr").lower()[:2]
     log("Dil:", LANG)
-    scenes = [s for s in script["scenes"] if (s.get("text") or "").strip()][:9]
+    scenes = [s for s in script["scenes"] if (s.get("text") or "").strip()][:26 if long else 9]
     log(f"{len(scenes)} sahne")
     voice, total = make_audio(scenes)
     clips = [scene_clip(i, sc) for i, sc in enumerate(scenes)]
@@ -780,6 +887,15 @@ def produce(payload, out_dir=None, tag=""):
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     tag = tag or os.environ.get("RELEASE_TAG", "")
     tags = " ".join(script.get("hashtags") or [])
+    chapters = ""
+    if long:
+        rows = [(sc["start"], sc.get("chapter")) for sc in scenes if sc.get("chapter")]
+        if rows and rows[0][0] > 0.5:
+            rows.insert(0, (0, script.get("title", "")[:40]))
+        if rows:
+            rows[0] = (0, rows[0][1])
+            chapters = "\n".join(f"{int(t // 60)}:{int(t % 60):02d} {c}" for t, c in rows)
+        make_thumbs(video, script.get("thumb_texts") or [script.get("title", "")], OUT)
     q = elevenlabs_quota()
     chars = sum(len(sc["text"]) for sc in scenes)
     if q:
@@ -789,7 +905,11 @@ def produce(payload, out_dir=None, tag=""):
         quota_text = "ElevenLabs: kota okunamadı"
     result = {
         "title": (script.get("title") or scenes[0]["text"])[:95],
-        "description": ((script.get("description") or "") + "\n\n" + tags).strip(),
+        "description": ((script.get("description") or "") + ("\n\n" + chapters if chapters else "")
+                        + "\n\n" + tags).strip(),
+        "tags": script.get("tags") or [],
+        "long": long,
+        "thumbs": [f"https://github.com/{repo}/releases/download/{tag}/thumb_{k}.jpg" for k in "abc"] if long else [],
         "hashtags": script.get("hashtags") or [],
         "lang": LANG,
         "topic": script.get("topic") or script.get("title") or "",
@@ -797,7 +917,7 @@ def produce(payload, out_dir=None, tag=""):
         "duration": round(total, 2),
         "video_url": f"https://github.com/{repo}/releases/download/{tag}/video.mp4" if repo and tag else "",
         "thumb_url": f"https://github.com/{repo}/releases/download/{tag}/thumb.jpg" if repo and tag else "",
-        "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style")} for s in scenes],
+        "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style", "countries", "country_names", "chapter")} for s in scenes],
         "chat_id": payload.get("chat_id"),
         "source": payload.get("youtube_url") or payload.get("source") or "",
         "elevenlabs": q,
