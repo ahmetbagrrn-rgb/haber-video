@@ -434,7 +434,8 @@ def pixabay_pick(query, need):
                 if v.get("url") and v.get("width"):
                     portrait = (v["height"] > v["width"]) != LANDSCAPE
                     tags = set(re.findall(r"[a-z]+", (h.get("tags") or "").lower()))
-                    ai = bool(tags & {"ai", "generated", "artificial", "fantasy", "lion", "animal", "anime", "cartoon", "animation", "3d", "render", "illustration", "game", "cyberpunk"} - qwords)
+                    ai = bool(tags & {"ai", "generated", "artificial", "fantasy", "lion", "animal", "anime", "cartoon", "animation", "3d", "render", "illustration", "game", "cyberpunk",
+                                     "green", "screen", "chroma", "greenscreen", "character", "avatar"} - qwords)
                     score = (3 * len(qwords & tags) / max(1, len(qwords)) + (1.5 if portrait else 0)
                              + (0.5 if h.get("duration", 0) >= need else 0) - (3 if ai else 0)
                              + min(v["height"], 1920) / 1920 - rank * 0.05)
@@ -450,6 +451,7 @@ def pixabay_pick(query, need):
 
 
 USED_LOCAL = set()
+MAPS_USED = {"n": 0, "last": -9, "keys": set()}
 
 
 def local_pick(query, any_ok=False):
@@ -523,10 +525,19 @@ def scene_clip(i, sc):
 
 def map_card(i, sc):
     """Altyazı sahnelerinde, ülke adı geçiyorsa harita kartı üret."""
+    global MAPS_USED
     isos = [c for c in (sc.get("countries") or []) if isinstance(c, str) and len(c) in (2, 3)][:4]
     style = sc.get("style") or ("headline" if i % 2 == 0 else "subtitle")
     if not isos or i == 0 or (style != "subtitle" and not LANDSCAPE):
         return None
+    # Az ama etkili: en fazla 2 (kısa) / 5 (uzun) harita, art arda değil, aynı ülkeler tekrar değil
+    key = ",".join(sorted(isos))
+    if (MAPS_USED["n"] >= (5 if LANDSCAPE else 2) or MAPS_USED["last"] == i - 1 or key in MAPS_USED["keys"]):
+        return None
+    MAPS_USED["n"] += 1
+    MAPS_USED["last"] = i
+    MAPS_USED["keys"].add(key)
+    sc["_map"] = True
     try:
         import mapcard
         labels = [tr_upper(x) for x in (sc.get("country_names") or isos)][:len(isos)]
@@ -711,6 +722,8 @@ def make_ass(scenes, total, title="", outro=0.0):
         if i == 0 and title:
             hook_events(title, sc, ev)
             word_events(sc, ev)
+        elif sc.get("_map"):
+            word_events(sc, ev) if LANDSCAPE else box_events(sc, ev)
         elif (sc.get("style") or ("headline" if i % 2 == 0 else "subtitle")) == "headline":
             headline_events(sc, ev)
             word_events(sc, ev)
@@ -816,7 +829,7 @@ def make_thumbs(video, texts, out_dir):
     styles = [((255, 212, 0), (0, 0, 0)), ((255, 255, 255), (227, 26, 45)), ((92, 225, 255), (0, 0, 0))]
     for k, (txt, (fg, box)) in zip("abc", zip(texts, styles)):
         frame = WORK / f"thumb_src_{k}.jpg"
-        clips = sorted(WORK.glob("scene_*.mp4"))  # yazısız ham sahneler
+        clips = sorted(WORK.glob("src_*.mp4")) or sorted(WORK.glob("scene_*.mp4"))  # yazısız ham görüntüler
         src = clips[{"a": 1, "b": len(clips) // 2, "c": -2}[k] % len(clips)] if clips else video
         run(["ffmpeg", "-y", "-v", "error", "-ss", "1.0", "-i", src, "-frames:v", "1",
              "-vf", "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720", frame])
@@ -885,6 +898,7 @@ def produce(payload, out_dir=None, tag=""):
     OUT = Path(out_dir or os.environ.get("OUT_DIR", "out"))
     WORK = OUT / "work"
     USED_IDS, USED_LOCAL = set(), set()
+    MAPS_USED.update({"n": 0, "last": -9, "keys": set()})
     WORK.mkdir(parents=True, exist_ok=True)
     script = make_script(payload)
     if script.get("skip"):
