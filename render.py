@@ -647,6 +647,22 @@ def compose(clips, voice, ass, total, tv=None):
     return out
 
 
+# ---------------------------------------------------------------- Kota
+
+def elevenlabs_quota():
+    key = os.environ.get("ELEVENLABS_API_KEY")
+    if not key:
+        return None
+    try:
+        d = http_json("https://api.elevenlabs.io/v1/user/subscription", headers={"xi-api-key": key}, timeout=30)
+        used, limit = int(d.get("character_count", 0)), int(d.get("character_limit", 0))
+        return {"used": used, "limit": limit, "left": max(0, limit - used),
+                "reset_unix": d.get("next_character_count_reset_unix")}
+    except Exception as e:  # noqa
+        log("ElevenLabs kota okunamadı:", e)
+        return None
+
+
 # ---------------------------------------------------------------- main
 
 def load_payload():
@@ -683,6 +699,13 @@ def main():
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     tag = os.environ.get("RELEASE_TAG", "")
     tags = " ".join(script.get("hashtags") or [])
+    q = elevenlabs_quota()
+    chars = sum(len(sc["text"]) for sc in scenes)
+    if q:
+        quota_text = (f"ElevenLabs: {q['left']:,} / {q['limit']:,} karakter kaldı "
+                      f"(bu video {chars:,}; ~{q['left'] // max(chars, 1)} video daha)").replace(",", ".")
+    else:
+        quota_text = "ElevenLabs: kota okunamadı"
     result = {
         "title": (script.get("title") or scenes[0]["text"])[:95],
         "description": ((script.get("description") or "") + "\n\n" + tags).strip(),
@@ -693,6 +716,8 @@ def main():
         "thumb_url": f"https://github.com/{repo}/releases/download/{tag}/thumb.jpg" if repo and tag else "",
         "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style")} for s in scenes],
         "chat_id": payload.get("chat_id"),
+        "elevenlabs": q,
+        "quota_text": quota_text,
         "test": bool(payload.get("test")) or os.environ.get("PUBLISH", "true").lower() == "false",
     }
     (OUT / "result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
