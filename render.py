@@ -25,6 +25,7 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -73,9 +74,17 @@ def http_json(url, data=None, headers=None, timeout=120):
 
 
 def download(url, dest, timeout=180):
-    req = urllib.request.Request(url, headers={"User-Agent": "haber-video/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r, open(dest, "wb") as f:
-        shutil.copyfileobj(r, f)
+    import time
+    for attempt in range(4):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "haber-video/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r, open(dest, "wb") as f:
+                shutil.copyfileobj(r, f)
+            return
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 3:
+                raise
+            time.sleep(3 * (attempt + 1))
 
 
 LANG = "tr"
@@ -383,7 +392,10 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Head,Anton,150,{CYAN},{CYAN},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,0,6,5,40,40,0,1
 Style: Accent,Playfair Display,140,{CYAN_SOFT},{CYAN_SOFT},&H00000000,&H96000000,0,1,0,0,100,100,0,0,1,0,5,5,40,40,0,1
 Style: Word,Anton,96,{YELLOW},{YELLOW},&H00000000,&HA0000000,0,1,0,0,100,100,2,0,1,3,4,5,40,40,0,1
-Style: Box,Montserrat,60,{NAVY},{NAVY},{CYAN},{CYAN},1,0,0,0,100,100,0,0,3,16,0,5,40,40,0,1
+Style: Box,Montserrat,58,{WHITE},{WHITE},&H40000000,&H40000000,1,0,0,0,100,100,0,0,3,18,0,5,40,40,0,1
+Style: Hook,Anton,140,{WHITE},{WHITE},&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,4,7,5,40,40,0,1
+Style: Strip,Anton,74,{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,4,0,3,16,0,5,40,40,0,1
+Style: Follow,Anton,92,{WHITE},{WHITE},&H002D1AE3,&H002D1AE3,0,0,0,0,100,100,3,0,3,22,0,5,40,40,0,1
 Style: Brand,Montserrat,38,{WHITE},{WHITE},&H00000000,&H80000000,1,0,0,0,100,100,1,0,1,0,3,9,48,48,60,1
 """
 
@@ -428,6 +440,42 @@ def headline_events(sc, ev):
         ev.append(("Accent", t + 0.1, s1, tag + esc(a)))
 
 
+def channel():
+    """Haberin diline göre kanal: İngilizce -> World Shift, diğerleri -> Global News."""
+    if LANG == "en":
+        return {"name": "WORLD SHIFT", "logo": ASSETS / "logos" / "world-shift.png", "follow": "FOLLOW FOR MORE"}
+    return {"name": "GLOBAL NEWS", "logo": ASSETS / "logos" / "global-news.png", "follow": "TAKİP ET"}
+
+
+def clean_title(t):
+    t = re.sub(r"[^\w\s'’?!.,:%&-]", "", t or "")
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def hook_events(title, sc, ev):
+    """1. sahne: çarpıcı başlık kartı + kırmızı kanal şeridi."""
+    s0, s1 = sc["start"], sc["start"] + sc["dur"]
+    words = tr_upper(clean_title(title)).split()
+    if not words:
+        return headline_events(sc, ev)
+    lines = wrap_lines(words, 13)[:5]
+    longest = max(len(l) for l in lines)
+    size = int(min(150, 980 / max(1, 0.47 * longest)))
+    line_h = size * 1.0
+    y = H * 0.36 - (line_h * len(lines)) / 2 + line_h / 2
+    t = s0 + 0.05
+    for i, ln in enumerate(lines):
+        color = "" if i < len(lines) - 1 or len(lines) == 1 else f"\\c{YELLOW}&"
+        tag = (f"{{\\pos({W // 2},{int(y)})\\fs{size}{color}\\fad(80,150)"
+               f"\\fscx125\\fscy125\\t(0,180,\\fscx100\\fscy100)}}")
+        ev.append(("Hook", t, s1, tag + esc(ln)))
+        y += line_h
+        t += 0.12
+    ch = channel()
+    tag = f"{{\\pos({W // 2},{int(y + 40)})\\fad(150,150)\\fscx60\\t(0,220,\\fscx100)}}"
+    ev.append(("Strip", t + 0.1, s1, tag + esc(ch["name"])))
+
+
 def word_events(sc, ev):
     """Headline sahnelerinde: konuşulan kelime, sarı italik, tek tek."""
     ws = sc["words"]
@@ -469,14 +517,20 @@ def box_events(sc, ev):
             ev.append(("Box", s, max(nxt, s + 0.05), tag + body))
 
 
-def make_ass(scenes, total):
+def make_ass(scenes, total, title="", outro=0.0):
     ev = []
     for i, sc in enumerate(scenes):
-        if (sc.get("style") or ("headline" if i % 2 == 0 else "subtitle")) == "headline":
+        if i == 0 and title:
+            hook_events(title, sc, ev)
+            word_events(sc, ev)
+        elif (sc.get("style") or ("headline" if i % 2 == 0 else "subtitle")) == "headline":
             headline_events(sc, ev)
             word_events(sc, ev)
         else:
             box_events(sc, ev)
+    if outro:
+        tag = f"{{\\pos({W // 2},{int(H * 0.78)})\\fad(120,0)\\fscx70\\fscy70\\t(0,220,\\fscx100\\fscy100)}}"
+        ev.append(("Follow", total + 0.25, total + outro, tag + esc(channel()["follow"])))
     brand = os.environ.get("CHANNEL_NAME", "").strip()
     if brand:
         ev.append(("Brand", 0, total, esc(brand)))
@@ -491,6 +545,26 @@ def make_ass(scenes, total):
 
 # ---------------------------------------------------------------- 5) Birleştir
 
+OUTRO = 2.0
+
+
+def outro_clip():
+    """Son 2 sn: kanal logosu + takip çağrısı (yazı ASS ile eklenir)."""
+    out = WORK / "outro.mp4"
+    logo = channel()["logo"]
+    bg = ["-f", "lavfi", "-i", f"gradients=s={W}x{H}:c0=0x05050c:c1=0x1a0a2a:x0=0:y0=0:x1={W}:y1={H}:speed=0.02:r={FPS}"]
+    if logo.exists():
+        fc = (f"[1:v]scale=900:-1,format=rgba,fade=in:st=0:d=0.35:alpha=1[l];"
+              f"[0:v][l]overlay=x=(W-w)/2:y=H*0.40-h/2,setsar=1,format=yuv420p[v]")
+        run(["ffmpeg", "-y", "-v", "error", *bg, "-loop", "1", "-i", logo, "-t", f"{OUTRO}",
+             "-filter_complex", fc, "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+             "-r", str(FPS), out])
+    else:
+        run(["ffmpeg", "-y", "-v", "error", *bg, "-t", f"{OUTRO}", "-vf", "format=yuv420p",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-r", str(FPS), out])
+    return out
+
+
 def find_music():
     if ASSETS.is_dir():
         ms = sorted(ASSETS.glob("*.mp3"))
@@ -499,27 +573,38 @@ def find_music():
     return None
 
 
-def compose(clips, voice, ass, total):
+def compose(clips, voice, ass, total, tv=None):
+    tv = tv or total
     lst = WORK / "clips.txt"
     lst.write_text("".join(f"file '{c.resolve()}'\n" for c in clips))
     joined = WORK / "joined.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", joined])
     music = find_music()
     out = OUT / "video.mp4"
+    logo = channel()["logo"]
     inputs = ["-i", joined, "-i", voice,
-              "-f", "lavfi", "-i", f"color=c=0x5CE1FF:s={W}x12:r={FPS}:d={total:.3f}"]
+              "-f", "lavfi", "-i", f"color=c=0xE31A2D:s={W}x12:r={FPS}:d={tv:.3f}"]
     fc = (f"[0:v]subtitles=filename='{ass}':fontsdir='{FONTS}'[v1];"
-          f"[v1][2:v]overlay=x='-w+w*t/{total:.3f}':y=0:shortest=1[v]")
+          f"[v1][2:v]overlay=x='-w+w*t/{tv:.3f}':y=0:shortest=1[v2]")
+    nxt = 3
+    if logo.exists():
+        inputs += ["-loop", "1", "-i", logo]
+        fc += (f";[{nxt}:v]scale=190:-1,format=rgba,colorchannelmixer=aa=0.92[lg];"
+               f"[v2][lg]overlay=x=W-w-28:y=40:enable='lt(t,{total:.3f})':shortest=1[v]")
+        nxt += 1
+    else:
+        fc += ";[v2]null[v]"
+    fc += f";[1:a]apad=whole_dur={tv:.3f}[va]"
     if music:
         log("Müzik:", music.name)
         inputs += ["-stream_loop", "-1", "-i", music]
-        fc += (f";[3:a]volume=0.10,afade=t=out:st={max(0, total - 1.5):.3f}:d=1.5[m];"
-               f"[1:a][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]")
-        amap = "[a]"
+        fc += (f";[{nxt}:a]volume=0.10,afade=t=out:st={max(0, tv - 1.5):.3f}:d=1.5[m];"
+               f"[va][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]")
     else:
-        amap = "1:a"
+        fc += ";[va]anull[a]"
+    amap = "[a]"
     run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", fc, "-map", "[v]", "-map", amap,
-         "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+         "-t", f"{tv:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
          "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k",
          "-movflags", "+faststart", out])
     thumb = OUT / "thumb.jpg"
@@ -555,8 +640,10 @@ def main():
     log(f"{len(scenes)} sahne")
     voice, total = make_audio(scenes)
     clips = [scene_clip(i, sc) for i, sc in enumerate(scenes)]
-    ass = make_ass(scenes, total)
-    video = compose(clips, voice, ass, total)
+    clips.append(outro_clip())
+    ass = make_ass(scenes, total, title=script.get("title") or "", outro=OUTRO)
+    video = compose(clips, voice, ass, total, total + OUTRO)
+    total += OUTRO
 
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     tag = os.environ.get("RELEASE_TAG", "")
@@ -571,6 +658,7 @@ def main():
         "thumb_url": f"https://github.com/{repo}/releases/download/{tag}/thumb.jpg" if repo and tag else "",
         "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style")} for s in scenes],
         "chat_id": payload.get("chat_id"),
+        "test": bool(payload.get("test")) or os.environ.get("PUBLISH", "true").lower() == "false",
     }
     (OUT / "result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     (OUT / "notes.md").write_text(result["description"] or result["title"], encoding="utf-8")

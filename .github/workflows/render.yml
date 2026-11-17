@@ -10,6 +10,10 @@ on:
       text:
         description: "Haber metni"
         required: true
+      publish:
+        description: "YouTube/Instagram'da yayınlansın mı?"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -46,6 +50,7 @@ jobs:
           EDGE_VOICE: ${{ vars.EDGE_VOICE }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
+          PUBLISH: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish || 'true' }}
         run: python render.py
 
       - name: Videoyu yayınla (Release)
@@ -61,6 +66,7 @@ jobs:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
         run: |
           if [ -z "$MAKE_WEBHOOK_URL" ]; then echo "MAKE_WEBHOOK_URL yok, atlandı"; exit 0; fi
+          if [ "$(python -c "import json;print(json.load(open('out/result.json')).get('test'))")" = "True" ]; then echo "Test videosu: yayınlanmadı"; exit 0; fi
           curl -fsS -X POST "$MAKE_WEBHOOK_URL" -H "Content-Type: application/json" --data-binary @out/result.json
 
       - name: Hata olursa yine de dosyaları sakla
