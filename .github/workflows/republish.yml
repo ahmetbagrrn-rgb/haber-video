@@ -1,0 +1,30 @@
+name: Hazır videoyu tekrar yayına gönder
+
+# Video üretilmiş ama Make'e haber verilememişse (ör. webhook adresi yanlıştı),
+# videoyu yeniden üretmeden sadece yayın adımını tekrarlar.
+on:
+  repository_dispatch:
+    types: [republish]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release etiketi (ör. video-44176891780)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  republish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: result.json indir ve Make'e gönder
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.client_payload.tag || github.event.inputs.tag }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: |
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p result.json
+          curl -fsS -X POST "$MAKE_WEBHOOK_URL" -H "Content-Type: application/json" --data-binary @result.json
+          echo "Gönderildi: $TAG"
