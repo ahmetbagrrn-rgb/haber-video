@@ -122,6 +122,38 @@ Haber:
 """
 
 
+LANG_NAMES = {"tr": "Türkçe", "en": "İngilizce (ABD)", "de": "Almanca", "fr": "Fransızca", "es": "İspanyolca"}
+
+EDITOR_RULES = """
+EDİTÖR KURALLARI (kaynak bir YouTube videosu ya da başka bir haber):
+- Profesyonel bir haber editörüsün. Konuşma dilini, selamlaşmaları, "abone olun" gibi çağrıları, reklam/sponsor kısımlarını, kanal tanıtımlarını ve kişisel anekdotları tamamen at.
+- Kaynaktaki cümleleri KOPYALAMA, alıntı yapma. Sadece olguları ve konuyu al; tamamen kendi cümlelerinle, kendi yapınla yeniden yaz.
+- Görüş ve iddiaları sahibine atfet ("... göre", "... iddia ediyor"). Siyasi taraf tutma, tarafsız ve olgusal kal.
+- Sondan bir önceki sahnede kendi kısa analizini ekle: bu gelişme neden önemli, neleri etkileyebilir.
+- Kaynakta olmayan bilgi, sayı ya da isim uydurma.
+- Kişilerin unvanlarını kaynakta geçtiği gibi kullan; kendi bilgine dayanarak "eski", "mevcut" gibi unvan ekleme (bilgin güncel olmayabilir).
+- SOMUT ol: kaynaktaki en önemli TEK olayı seç ve onu anlat; ülke, kişi, kurum ve olay adlarını açıkça kullan. "Küresel gerilim artıyor" gibi genel, boş cümleler kurma.
+- Başlık merak uyandırsın ama yanıltıcı olmasın (clickbait değil, gerçek bir soru ya da çarpıcı bir olgu).
+- Kaynak haber niteliği taşımıyorsa (sadece soru-cevap, reklam, kişisel vlog vb.) sadece {"skip": true} döndür.
+"""
+
+
+def build_prompt(payload):
+    target = (payload.get("target_lang") or "").lower()[:2]
+    p = PROMPT
+    if payload.get("mode") == "rewrite" or payload.get("youtube_url"):
+        p = p.replace("- Metni yeniden yazma; kullanıcının cümlelerine sadık kal, sadece hafif düzelt ve sadeleştir.\n", "")
+        p = EDITOR_RULES + "\n" + p
+    if target:
+        name = LANG_NAMES.get(target, target)
+        p = (f"ÇIKTI DİLİ: Kaynak hangi dilde olursa olsun TÜM alanları {name} yaz ve \"lang\" alanına \"{target}\" koy. "
+             f"Bu dili konuşan izleyici için doğal, yerel bir anlatım kullan.\n") + p
+    p = p.replace('{"lang":"tr",', '{"lang":"tr","topic":"(konunun 5-8 kelimelik İngilizce özeti)",')
+    if payload.get("youtube_url"):
+        p = p.replace("\nHaber:\n", "\nKaynak: ekteki YouTube videosu (ilk 15 dakikası).\n")
+    return p
+
+
 def strip_fences(s):
     s = s.strip()
     s = re.sub(r"^```(?:json)?\s*", "", s)
@@ -134,9 +166,12 @@ def make_script(payload):
         log("Sahneler payload'dan geldi")
         return payload
     text = (payload.get("text") or "").strip()
-    if not text:
+    yt = payload.get("youtube_url")
+    if not text and not yt:
         sys.exit("Haber metni boş: PAYLOAD_JSON içinde 'text' ya da 'scenes' yok.")
     key = os.environ.get("GEMINI_API_KEY")
+    if not key and yt:
+        sys.exit("YouTube kaynağı için GEMINI_API_KEY gerekli")
     if not key:
         log("GEMINI_API_KEY yok: metin cümlelere bölünüyor")
         sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()][:8]
@@ -147,19 +182,30 @@ def make_script(payload):
             scenes.append({"text": s, "headline": " ".join(longest[:2]), "accent": "",
                            "search": "news", "style": "headline" if i % 2 == 0 else "subtitle"})
         return {"title": sents[0][:70], "description": text[:200], "hashtags": [], "scenes": scenes}
-    models = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest",
-                          "gemini-flash-lite-latest"] if m]
-    body = {"contents": [{"parts": [{"text": PROMPT + text}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.7}}
+    order = (["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"] if (yt or payload.get("mode") == "rewrite")
+             else ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-latest"])
+    models = [m for m in [os.environ.get("GEMINI_MODEL")] + order + ["gemini-flash-lite-latest"] if m]
+    prompt = build_prompt(payload)
+    if yt:
+        parts = [{"fileData": {"fileUri": yt}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
+                 {"text": prompt}]
+        gen = {"responseMimeType": "application/json", "temperature": 0.7, "mediaResolution": "MEDIA_RESOLUTION_LOW"}
+    else:
+        parts = [{"text": prompt + text}]
+        gen = {"responseMimeType": "application/json", "temperature": 0.7}
+    body = {"contents": [{"parts": parts}], "generationConfig": gen}
     last = None
     for model in models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        for attempt in range(1 if "lite" not in model else 2):
+        for attempt in range(2 if ("lite" in model or yt) else 1):
             try:
-                r = http_json(url, body, {"x-goog-api-key": key}, timeout=45)
+                r = http_json(url, body, {"x-goog-api-key": key}, timeout=240 if yt else 45)
                 parts = r["candidates"][0]["content"]["parts"]
                 raw = "".join(p.get("text", "") for p in parts if not p.get("thought"))
                 data = json.loads(strip_fences(raw))
+                if data.get("skip"):
+                    log("Gemini: kaynak haber niteliği taşımıyor, atlandı")
+                    return {"skip": True}
                 if data.get("scenes"):
                     log("Gemini modeli:", model)
                     return data
@@ -252,8 +298,38 @@ def align_to_text(spoken, text):
     return spoken
 
 
+TTS_USED = ""
+
+
+def choose_provider(scenes):
+    forced = os.environ.get("TTS_PROVIDER")
+    if forced:
+        return forced
+    edge_langs = [x.strip() for x in (os.environ.get("EDGE_LANGS") or "tr").split(",") if x.strip()]
+    if LANG in edge_langs or not os.environ.get("ELEVENLABS_API_KEY"):
+        return "edge"
+    q = elevenlabs_quota()
+    need = sum(len(sc["text"]) for sc in scenes) + 200
+    if q and q["left"] < need:
+        log(f"ElevenLabs kotası yetersiz ({q['left']} karakter): ücretsiz sese geçiliyor")
+        return "edge"
+    return "elevenlabs"
+
+
 def make_audio(scenes):
-    provider = os.environ.get("TTS_PROVIDER") or ("elevenlabs" if os.environ.get("ELEVENLABS_API_KEY") else "edge")
+    provider = choose_provider(scenes)
+    try:
+        return _make_audio(scenes, provider)
+    except Exception as e:  # noqa
+        if provider == "edge":
+            raise
+        log(f"{provider} hata verdi ({e}); ücretsiz Microsoft sesine geçiliyor")
+        return _make_audio(scenes, "edge")
+
+
+def _make_audio(scenes, provider):
+    global TTS_USED
+    TTS_USED = provider
     log("Ses sağlayıcı:", provider)
     t = 0.0
     wavs = []
@@ -680,12 +756,17 @@ def load_payload():
     sys.exit("Girdi yok: PAYLOAD_JSON veya MANUAL_TEXT gerekli.")
 
 
-def main():
+def produce(payload, out_dir=None, tag=""):
+    """Tek bir video üretir; sonuç sözlüğünü döndürür (skip ise {"skip": True})."""
+    global OUT, WORK, LANG, USED_IDS, USED_LOCAL
+    OUT = Path(out_dir or os.environ.get("OUT_DIR", "out"))
+    WORK = OUT / "work"
+    USED_IDS, USED_LOCAL = set(), set()
     WORK.mkdir(parents=True, exist_ok=True)
-    payload = load_payload()
     script = make_script(payload)
-    global LANG
-    LANG = (script.get("lang") or payload.get("lang") or "tr").lower()[:2]
+    if script.get("skip"):
+        return {"skip": True}
+    LANG = (script.get("lang") or payload.get("target_lang") or payload.get("lang") or "tr").lower()[:2]
     log("Dil:", LANG)
     scenes = [s for s in script["scenes"] if (s.get("text") or "").strip()][:9]
     log(f"{len(scenes)} sahne")
@@ -697,13 +778,13 @@ def main():
     total += OUTRO
 
     repo = os.environ.get("GITHUB_REPOSITORY", "")
-    tag = os.environ.get("RELEASE_TAG", "")
+    tag = tag or os.environ.get("RELEASE_TAG", "")
     tags = " ".join(script.get("hashtags") or [])
     q = elevenlabs_quota()
     chars = sum(len(sc["text"]) for sc in scenes)
     if q:
         quota_text = (f"ElevenLabs: {q['left']:,} / {q['limit']:,} karakter kaldı "
-                      f"(bu video {chars:,}; ~{q['left'] // max(chars, 1)} video daha)").replace(",", ".")
+                      f"(bu video {'ücretsiz ses' if TTS_USED != 'elevenlabs' else f'{chars:,} karakter'})").replace(",", ".")
     else:
         quota_text = "ElevenLabs: kota okunamadı"
     result = {
@@ -711,11 +792,14 @@ def main():
         "description": ((script.get("description") or "") + "\n\n" + tags).strip(),
         "hashtags": script.get("hashtags") or [],
         "lang": LANG,
+        "topic": script.get("topic") or script.get("title") or "",
+        "tts": TTS_USED,
         "duration": round(total, 2),
         "video_url": f"https://github.com/{repo}/releases/download/{tag}/video.mp4" if repo and tag else "",
         "thumb_url": f"https://github.com/{repo}/releases/download/{tag}/thumb.jpg" if repo and tag else "",
         "scenes": [{k: s.get(k) for k in ("text", "headline", "accent", "search", "style")} for s in scenes],
         "chat_id": payload.get("chat_id"),
+        "source": payload.get("youtube_url") or payload.get("source") or "",
         "elevenlabs": q,
         "quota_text": quota_text,
         "test": bool(payload.get("test")) or os.environ.get("PUBLISH", "true").lower() == "false",
@@ -723,6 +807,13 @@ def main():
     (OUT / "result.json").write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     (OUT / "notes.md").write_text(result["description"] or result["title"], encoding="utf-8")
     log("Bitti:", video, f"{total:.1f} sn")
+    return result
+
+
+def main():
+    res = produce(load_payload())
+    if res.get("skip"):
+        sys.exit("Kaynak atlandı (haber niteliği taşımıyor)")
 
 
 if __name__ == "__main__":

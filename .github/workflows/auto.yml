@@ -1,0 +1,64 @@
+name: Otomatik video (YouTube kanalı / haber akışı)
+
+on:
+  schedule:
+    # İstanbul saatiyle 10:00, 15:00, 20:00 (UTC 07, 12, 17)
+    - cron: "0 7 * * *"
+    - cron: "0 12 * * *"
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Günlük sınırı yok say"
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [auto]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Araçları kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts
+          mkdir -p fonts
+          curl -fsSL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf || true
+          curl -fsSL -o fonts/PlayfairDisplay-Italic.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf" || true
+          curl -fsSL -o fonts/Montserrat-Bold.ttf https://raw.githubusercontent.com/JulietaUla/Montserrat/master/fonts/ttf/Montserrat-Bold.ttf || true
+
+      - name: Konu seç, video üret, yayına gönder
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE: ${{ (github.event.inputs.force == 'true' || github.event.client_payload.force == true) && '1' || '0' }}
+          PUBLISH: ${{ github.event.client_payload.test == true && 'false' || 'true' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          EDGE_LANGS: ${{ vars.EDGE_LANGS }}
+          TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python pipeline.py auto
+
+      - name: Durumu kaydet
+        if: always()
+        run: |
+          git config user.name "haber-bot"
+          git config user.email "haber-bot@users.noreply.github.com"
+          git add state/ && git commit -qm "Durum güncellendi [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

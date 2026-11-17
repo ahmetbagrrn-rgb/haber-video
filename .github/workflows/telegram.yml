@@ -1,0 +1,59 @@
+name: Telegram dinleyici
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Yeni mesaj var mı?
+        id: check
+        run: python pipeline.py tg-check
+
+      - name: Araçları kur
+        if: steps.check.outputs.has == '1'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts
+          mkdir -p fonts
+          curl -fsSL -o fonts/Anton-Regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/anton/Anton-Regular.ttf || true
+          curl -fsSL -o fonts/PlayfairDisplay-Italic.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf" || true
+          curl -fsSL -o fonts/Montserrat-Bold.ttf https://raw.githubusercontent.com/JulietaUla/Montserrat/master/fonts/ttf/Montserrat-Bold.ttf || true
+
+      - name: Mesajları işle
+        if: steps.check.outputs.has == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          EDGE_LANGS: ${{ vars.EDGE_LANGS }}
+          TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+        run: python pipeline.py telegram
+
+      - name: Durumu kaydet
+        if: always()
+        run: |
+          git config user.name "haber-bot"
+          git config user.email "haber-bot@users.noreply.github.com"
+          git add state/ && git commit -qm "Durum güncellendi [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

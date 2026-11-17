@@ -1,0 +1,13 @@
+{
+  "youtube_channels": [
+    {"name": "Abdullah Çiftçi", "channel_id": "UCUCktphEW1RAT-2nynMpREg"}
+  ],
+  "auto_langs": ["tr", "en"],
+  "instagram_lang": "tr",
+  "max_auto_per_day": 3,
+  "max_video_age_days": 4,
+  "news_feeds": [
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://www.aa.com.tr/tr/rss/default?cat=dunya"
+  ]
+}
