@@ -203,6 +203,7 @@ def handle_callback(cb, st):
         return
     action, gid = data.split(":", 1)
     item = st.get("pending", {}).pop(gid, None)
+    st.setdefault("_removed", []).append(gid)
     if not item:
         tg_send(chat, "Bu video zaten işlenmiş ya da süresi dolmuş.")
         return
@@ -233,6 +234,7 @@ def expire_pending(st, hours=48):
         try:
             if dt.datetime.fromisoformat(st["pending"][gid]["ts"]) < lim:
                 st["pending"].pop(gid)
+                st.setdefault("_removed", []).append(gid)
         except Exception:  # noqa
             st["pending"].pop(gid, None)
 
@@ -563,7 +565,65 @@ def cmd_telegram():
             tg_send(chat, f"⚠️ Video üretilemedi: {str(e)[:300]}")
 
 
+def merge_states(local, remote):
+    """İki iş akışı aynı anda çalışırsa durum dosyalarını kayıpsız birleştirir."""
+    m = dict(remote)
+    m["tg_offset"] = max(local.get("tg_offset", 0), remote.get("tg_offset", 0))
+    m["owner_chat"] = local.get("owner_chat") or remote.get("owner_chat")
+    seen = set()
+    m["processed"] = [x for x in remote.get("processed", []) + local.get("processed", [])
+                      if not (x in seen or seen.add(x))][-500:]
+    tk = set()
+    m["topics"] = sorted([t for t in remote.get("topics", []) + local.get("topics", [])
+                          if not ((t["topic"], t["ts"]) in tk or tk.add((t["topic"], t["ts"])))],
+                         key=lambda t: t["ts"])[-200:]
+    m["daily"] = {d: max(local.get("daily", {}).get(d, 0), remote.get("daily", {}).get(d, 0))
+                  for d in set(local.get("daily", {})) | set(remote.get("daily", {}))}
+    m["daily"] = {d: m["daily"][d] for d in sorted(m["daily"])[-3:]}
+    sch = {}
+    for src in (remote.get("scheduled", {}), local.get("scheduled", {})):
+        for lang, xs in src.items():
+            sch[lang] = sorted(set(sch.get(lang, [])) | set(xs))[-60:]
+    m["scheduled"] = sch
+    removed = set(local.get("_removed", [])) | set(remote.get("_removed", []))
+    pend = {**remote.get("pending", {}), **local.get("pending", {})}
+    m["pending"] = {k: v for k, v in pend.items() if k not in removed}
+    m["_removed"] = list(removed)[-100:]
+    m["reminded"] = max(local.get("reminded") or "", remote.get("reminded") or "")
+    return m
+
+
+def cmd_commit_state():
+    """Durumu git'e yazar; uzak sürümle birleştirip çakışmasız gönderir."""
+    if not STATE_FILE.exists():
+        return
+    local = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    for attempt in range(5):
+        subprocess.run(["git", "fetch", "-q", "origin", "main"], check=True)
+        try:
+            remote = json.loads(subprocess.run(["git", "show", "origin/main:state/state.json"],
+                                               capture_output=True, text=True, check=True).stdout)
+        except Exception:  # noqa
+            remote = {}
+        merged = merge_states(local, remote)
+        subprocess.run(["git", "checkout", "-q", "-f", "-B", "main", "origin/main"], check=True)
+        STATE_FILE.parent.mkdir(exist_ok=True)
+        STATE_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=1), encoding="utf-8")
+        subprocess.run(["git", "add", str(STATE_FILE)], check=True)
+        if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+            log("Durum değişmedi")
+            return
+        subprocess.run(["git", "commit", "-qm", "Durum güncellendi [skip ci]"], check=True)
+        if subprocess.run(["git", "push", "-q", "origin", "main"]).returncode == 0:
+            log("Durum kaydedildi")
+            return
+        import time
+        time.sleep(3 + attempt * 3)
+    raise SystemExit("Durum kaydedilemedi")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram}.get(cmd, lambda: sys.exit(
+    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram,
+     "commit-state": cmd_commit_state}.get(cmd, lambda: sys.exit(
         "Kullanım: pipeline.py auto | tg-check | telegram"))()
