@@ -94,6 +94,7 @@ def remember_topic(st, topic):
 def tg(method, **params):
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if not token:
+        log("TELEGRAM_BOT_TOKEN tanımlı değil (GitHub secret adı doğru mu?)")
         return None
     url = f"https://api.telegram.org/bot{token}/{method}"
     data = json.dumps(params).encode()
@@ -499,6 +500,9 @@ def weekly_reminder(st):
 
 def cmd_tg_check():
     st = load_state()
+    me = (tg("getMe") or {}).get("result") or {}
+    info = (tg("getWebhookInfo") or {}).get("result") or {}
+    log("Bot:", me.get("username"), "| webhook:", (info.get("url") or "yok")[:40], "| bekleyen:", info.get("pending_update_count"))
     ups = tg_updates(st.get("tg_offset", 0))
     has = any((u.get("message") or {}).get("text") or u.get("callback_query") for u in ups)
     if not has and ups:
