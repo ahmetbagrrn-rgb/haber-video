@@ -3,7 +3,8 @@
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
-  "trend:US:prince william"
+  "trend:US:prince william",
+  "yt:NWXet15_1gk"
  ],
  "topics": [
   {
@@ -15,10 +16,15 @@
    "topic": "Prince William brings Earthshot Prize to India with electric rickshaw",
    "ts": "2026-11-18T13:04:24",
    "summary": "Prens William Hindistan'da Elektrikli Rickshaw ile Ne Taşıdı?. İngiltere Kraliyet ailesinden Prens William, çevre ödülünü Hindistan'a taşıdı. Prens, etkinliğe geleneksel araçlar yerine elektrikli bir rickshaw kullanarak katıldı. Ziyaret sırasında çiftin el ele tutuşması uzmanların ve basının yakın markajına girdi. Prenses Kate ise yeşil halıda sergilediği Bollywood tarzı şıklığıyla büyük ilgi topladı. Ama asıl mesele şu: Bu gösterişli adımlar, küresel iklim krizine ne kadar somut çözüm sunacak? Kraliyet figürlerinin çevre diplomasisi, gelecekteki yeşil dönüşüm projelerinin kaderini belirleyebilir."
+  },
+  {
+   "topic": "global political tensions and military conflicts in 2026",
+   "ts": "2026-11-18T17:57:40",
+   "summary": "2026'da Küresel Krizler: Hangi Ülke Neye Hazırlanıyor?. 16 Kasım 2026 itibarıyla dünya gündemi, İran-ABD savaşından Çin'deki lider zirvelerine kadar birçok kritik çatışmayla sarsılıyor. İran'ın Bahreyn hava üssüne saldırması ve Karadeniz ile Yermük Boğazı'ndaki gemi patlamaları bölgedeki askeri hareketliliği tırmandırdı. İsrail'de Netanyahu hükümetine yönelik yolsuzluk soruşturmaları sürerken, muhalefet lideri Lapid erken seçim çağrısı yaptı. Estonya, Rus askeri istihbaratının fabrikalarında sabotaj girişiminde bulunacağını açıklayarak sınırlarını kapatma kararı aldı. Bu gelişmeler, ülkelerin güvenlik politikalarını sertleştirmesine ve yerel çatışmaların küresel bir ekonomik krize dönüşmesine yol açıyor. Ancak asıl mesele şu: ABD'nin Orta Doğu'daki askeri varlığı ve Rusya'nın Avrupa ile yürüttüğü müzakereler tüm dengeleri değiştirebilir. Liderlerin alacağı kararlar, önümüzdeki dönemde uluslararası ilişkilerin ve bölgesel güvenliğin seyrini be"
   }
  ],
  "daily": {
-  "2026-11-18": 2
+  "2026-11-18": 3
  },
  "scheduled": {},
  "pending": {
@@ -495,6 +501,283 @@
     }
    ],
    "ts": "2026-11-18T13:04:24"
+  },
+  "443631404172": {
+   "results": [
+    {
+     "title": "2026'da Küresel Krizler: Hangi Ülke Neye Hazırlanıyor?",
+     "description": "2026 yılında dünya genelinde yaşanan askeri çatışmalar, bölgesel gerilimler ve süper güçlerin stratejik hamleleri.\n\n#dünya #gündem #siyaset #haber",
+     "tags": [
+      "küresel kriz",
+      "askeri çatışma",
+      "orta doğu",
+      "iran abd",
+      "rusya ukrayna",
+      "israil siyaset",
+      "estonya sınır",
+      "dünya gündemi",
+      "2026 olayları",
+      "jeopolitik"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#dünya",
+      "#gündem",
+      "#siyaset",
+      "#haber"
+     ],
+     "lang": "tr",
+     "topic": "global political tensions and military conflicts in 2026",
+     "tts": "edge",
+     "duration": 63.89,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44363140417-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44363140417-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "16 Kasım 2026 itibarıyla dünya gündemi, İran-ABD savaşından Çin'deki lider zirvelerine kadar birçok kritik çatışmayla sarsılıyor.",
+       "headline": "KÜRESEL KRİZ",
+       "accent": "2026",
+       "search": "world map globe",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "İran'ın Bahreyn hava üssüne saldırması ve Karadeniz ile Yermük Boğazı'ndaki gemi patlamaları bölgedeki askeri hareketliliği tırmandırdı.",
+       "headline": "ASKERİ HAMLE",
+       "accent": "Saldırı",
+       "search": "military base explosion",
+       "style": "subtitle",
+       "countries": [
+        "BHR",
+        "IRN",
+        "UKR"
+       ],
+       "country_names": [
+        "Bahreyn",
+        "İran",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "İsrail'de Netanyahu hükümetine yönelik yolsuzluk soruşturmaları sürerken, muhalefet lideri Lapid erken seçim çağrısı yaptı.",
+       "headline": "SİYASİ BASKI",
+       "accent": "Protesto",
+       "search": "protest government",
+       "style": "headline",
+       "countries": [
+        "ISR"
+       ],
+       "country_names": [
+        "İsrail"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Estonya, Rus askeri istihbaratının fabrikalarında sabotaj girişiminde bulunacağını açıklayarak sınırlarını kapatma kararı aldı.",
+       "headline": "SINIR KAPANDI",
+       "accent": "Sabotaj",
+       "search": "border control military",
+       "style": "subtitle",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu gelişmeler, ülkelerin güvenlik politikalarını sertleştirmesine ve yerel çatışmaların küresel bir ekonomik krize dönüşmesine yol açıyor.",
+       "headline": "KRİTİK EŞİK",
+       "accent": "Analiz",
+       "search": "stock market crisis",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Ancak asıl mesele şu: ABD'nin Orta Doğu'daki askeri varlığı ve Rusya'nın Avrupa ile yürüttüğü müzakereler tüm dengeleri değiştirebilir.",
+       "headline": "STRATEJİK HAMLE",
+       "accent": "Müzakere",
+       "search": "diplomatic meeting politicians",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "RUS",
+        "UKR"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Rusya",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Liderlerin alacağı kararlar, önümüzdeki dönemde uluslararası ilişkilerin ve bölgesel güvenliğin seyrini belirleyecek.",
+       "headline": "YENİ DÖNEM",
+       "accent": "Gelecek",
+       "search": "future city skyline",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=NWXet15_1gk",
+     "publish_at": "2026-11-18T17:59:57Z",
+     "elevenlabs": null,
+     "quota_text": "ElevenLabs: kota okunamadı",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44363140417-tr"
+    },
+    {
+     "title": "Why Are Borders Closing and War Tensions Rising in 2026?",
+     "description": "Global tensions surge as military strikes hit bases, political crises unfold, and nations scramble to secure their borders against rising threats.\n\n#GlobalCrisis #Geopolitics #WorldNews #MilitaryConflict",
+     "tags": [
+      "global crisis 2026",
+      "iran bahrain attack",
+      "estonia russia border",
+      "israel politics",
+      "middle east conflict",
+      "international relations",
+      "military news",
+      "world economy"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#GlobalCrisis",
+      "#Geopolitics",
+      "#WorldNews",
+      "#MilitaryConflict"
+     ],
+     "lang": "en",
+     "topic": "Global security crises, military conflicts and political instability in 2026",
+     "tts": "edge",
+     "duration": 45.97,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44363140417-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44363140417-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "What is driving nations worldwide to shut down their borders and ramp up military readiness?",
+       "headline": "Global Crisis",
+       "accent": "Tensions",
+       "search": "military base aerial view",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Iran recently launched an attack on a military base in Bahrain, escalating regional conflict.",
+       "headline": "Iran Strike",
+       "accent": "Bahrain",
+       "search": "missile launch explosion",
+       "style": "subtitle",
+       "countries": [
+        "IRN",
+        "BHR"
+       ],
+       "country_names": [
+        "Iran",
+        "Bahrain"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "At the same time, Estonia decided to close its borders after uncovering planned sabotage by Russian intelligence.",
+       "headline": "Estonia Border",
+       "accent": "Sabotage",
+       "search": "border checkpoint soldiers",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonia",
+        "Russia"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "In Israel, Prime Minister Netanyahu faces corruption probes while opposition leader Lapid demands early elections.",
+       "headline": "Political Turmoil",
+       "accent": "Protests",
+       "search": "parliament building riot",
+       "style": "subtitle",
+       "countries": [
+        "ISR"
+       ],
+       "country_names": [
+        "Israel"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "These localized disruptions risk triggering a severe worldwide economic crisis and stricter defense policies.",
+       "headline": "Economic Risk",
+       "accent": "Dangers",
+       "search": "stock market crash graph",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "But here's the real issue: shifting U.S. military presence in the Middle East could rewrite every alliance.",
+       "headline": "Critical Shift",
+       "accent": "Alliances",
+       "search": "fighter jets flying formation",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "United States"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Leaders choices today will determine whether international security stabilizes or collapses entirely.",
+       "headline": "Final Verdict",
+       "accent": "Future",
+       "search": "globe spinning dark background",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=NWXet15_1gk",
+     "publish_at": "2026-11-18T18:02:37Z",
+     "elevenlabs": null,
+     "quota_text": "ElevenLabs: kota okunamadı",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44363140417-en"
+    }
+   ],
+   "ts": "2026-11-18T17:57:40"
   }
  },
  "_removed": [],
