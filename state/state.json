@@ -1,11 +1,261 @@
 {
  "tg_offset": 691897410,
  "owner_chat": 1547879966,
- "processed": [],
- "topics": [],
- "daily": {},
+ "processed": [
+  "yt:si67TZv2Xxg"
+ ],
+ "topics": [
+  {
+   "topic": "Global geopolitical tensions and cyber risks",
+   "ts": "2026-11-18T08:32:46",
+   "summary": "Microsoft Arızası Dünyayı Nasıl Sarstı?. Microsoft'un yaşadığı büyük arıza 74 ülkeyi ve küresel bankacılık sistemini neden sarstı? Rus stratejist Alexander Dugin'in yayınladığı tartışmalı harita dünya basınında yankı uyandırdı. Almanya'da Deutsche Bank'ın milyonlarca verisinin sızdırılması istihbarat operasyonlarını işaret ediyor. Fransa'da Le Pen'in erken seçim çıkışı ve Ukrayna yardımlarını kesme vaadi siyasi dengeleri değiştiriyor. Ama asıl mesele şu ki, siber saldırılar sadece askeri değil tüm ülkelerin ekonomisini hedef alıyor. Elon Musk'ın uzaya fırlattığı roketlerin ilk kapsülünü mekanik kollarla yakalaması yeni bir dönemi başlattı."
+  }
+ ],
+ "daily": {
+  "2026-11-18": 1
+ },
  "scheduled": {},
- "pending": {},
+ "pending": {
+  "442639882090": {
+   "results": [
+    {
+     "title": "Microsoft Arızası Dünyayı Nasıl Sarstı?",
+     "description": "Microsoft'taki küresel aksaklıklar ve uluslararası siyasi gelişmelerin analizi.\n\n#Microsoft #Jeopolitik #SiberGüvenlik #DünyaGündemi",
+     "tags": [
+      "Microsoft arızası",
+      "Alexander Dugin",
+      "Deutsche Bank",
+      "Marine Le Pen",
+      "Elon Musk",
+      "siber güvenlik",
+      "küresel kriz",
+      "dünya gündemi",
+      "jeopolitik",
+      "ekonomi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Microsoft",
+      "#Jeopolitik",
+      "#SiberGüvenlik",
+      "#DünyaGündemi"
+     ],
+     "lang": "tr",
+     "topic": "Global geopolitical tensions and cyber risks",
+     "tts": "edge",
+     "duration": 43.65,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44263988209-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44263988209-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Microsoft'un yaşadığı büyük arıza 74 ülkeyi ve küresel bankacılık sistemini neden sarstı?",
+       "headline": "Dev Arıza",
+       "accent": "Şok",
+       "search": "computer server room",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Rus stratejist Alexander Dugin'in yayınladığı tartışmalı harita dünya basınında yankı uyandırdı.",
+       "headline": "Yeni Harita",
+       "accent": "Kriz",
+       "search": "world map on desk",
+       "style": "subtitle",
+       "countries": [
+        "RUS",
+        "CHN",
+        "USA"
+       ],
+       "country_names": [
+        "Rusya",
+        "Çin",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Almanya'da Deutsche Bank'ın milyonlarca verisinin sızdırılması istihbarat operasyonlarını işaret ediyor.",
+       "headline": "Veri Sızıntısı",
+       "accent": "Tehlike",
+       "search": "cyber security hacker",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Fransa'da Le Pen'in erken seçim çıkışı ve Ukrayna yardımlarını kesme vaadi siyasi dengeleri değiştiriyor.",
+       "headline": "Fransa Seçimleri",
+       "accent": "Değişim",
+       "search": "paris street protest",
+       "style": "subtitle",
+       "countries": [
+        "FRA",
+        "UKR"
+       ],
+       "country_names": [
+        "Fransa",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ama asıl mesele şu ki, siber saldırılar sadece askeri değil tüm ülkelerin ekonomisini hedef alıyor.",
+       "headline": "Kritik Eşik",
+       "accent": "Tehdit",
+       "search": "digital matrix code",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Elon Musk'ın uzaya fırlattığı roketlerin ilk kapsülünü mekanik kollarla yakalaması yeni bir dönemi başlattı.",
+       "headline": "Uzay Yarışı",
+       "accent": "İnovasyon",
+       "search": "rocket launch sky",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=si67TZv2Xxg",
+     "publish_at": "2026-11-18T08:35:51Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44263988209-tr"
+    },
+    {
+     "title": "How a Global IT Failure Paralyzed 74 Countries",
+     "description": "A massive Microsoft technical failure affected banking systems across 74 nations, exposing critical global infrastructure vulnerabilities.\n\n#Microsoft #CyberSecurity #GlobalEconomy #TechNews",
+     "tags": [
+      "Microsoft outage",
+      "cyber security",
+      "global banking",
+      "IT failure",
+      "economy",
+      "technology",
+      "infrastructure",
+      "digital disruption"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Microsoft",
+      "#CyberSecurity",
+      "#GlobalEconomy",
+      "#TechNews"
+     ],
+     "lang": "en",
+     "topic": "Global cyber security and critical infrastructure vulnerabilities",
+     "tts": "edge",
+     "duration": 43.17,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44263988209-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44263988209-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "A sudden digital blackout swept across seventy-four countries, instantly freezing critical international banking networks.",
+       "headline": "Global Blackout",
+       "accent": "Banks",
+       "search": "digital server room",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Microsoft experienced a catastrophic technical failure that exposed deep vulnerabilities in global financial infrastructure.",
+       "headline": "System Crash",
+       "accent": "Microsoft",
+       "search": "computer error screen",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Experts warn that modern economies rely too heavily on centralized digital platforms for daily survival.",
+       "headline": "Digital Risk",
+       "accent": "Vulnerability",
+       "search": "matrix code security",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Government agencies are now scrambling to secure vital networks against increasingly sophisticated cyber disruptions.",
+       "headline": "Emergency Response",
+       "accent": "Defense",
+       "search": "cyber security command center",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "But here's the real issue: these technical disruptions target economic stability rather than just military targets.",
+       "headline": "Economic Target",
+       "accent": "Strategy",
+       "search": "financial stock market crash",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Without stronger international safeguards, future digital failures could permanently destabilize global commerce.",
+       "headline": "Future Threat",
+       "accent": "Commerce",
+       "search": "global economy disruption",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=si67TZv2Xxg",
+     "publish_at": "2026-11-18T08:37:43Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44263988209-en"
+    }
+   ],
+   "ts": "2026-11-18T08:32:46"
+  }
+ },
  "_removed": [],
  "reminded": ""
 }
