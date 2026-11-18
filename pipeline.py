@@ -12,6 +12,7 @@ Durum (işlenen videolar, konular, Telegram offset) state/state.json içinde tut
 import datetime as dt
 import html
 import json
+import time
 import os
 import re
 import subprocess
@@ -400,6 +401,13 @@ def produce_topic(cand, st, header):
     else:
         base["text"] = cand["text"]
     results = []
+    limits = CONFIG.get("weekly_limit", {})
+    now = time.time()
+    lw = st.setdefault("lang_week", {})
+    def week_ok(lg):
+        lw[lg] = [t for t in lw.get(lg, []) if now - t < 7 * 86400]
+        return lg not in limits or len(lw[lg]) < limits[lg]
+    langs = [lg for j, lg in enumerate(langs) if j == 0 or week_ok(lg)]
     for i, lang in enumerate(langs):
         tag = f"auto-{RUN_ID}-{lang}"
         pl = {**base, "target_lang": lang}
@@ -413,6 +421,8 @@ def produce_topic(cand, st, header):
         if i == 0 and similar_topic(res.get("topic", ""), st):
             break
         results.append(res)
+        if lang in limits:
+            lw.setdefault(lang, []).append(now)
     if results:
         r0 = results[0]
         remember_topic(st, r0.get("topic") or cand["title"])
