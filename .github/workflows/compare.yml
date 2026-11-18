@@ -1,0 +1,16 @@
+name: Prompt karşılaştırma
+on:
+  repository_dispatch:
+    types: [compare]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - run: git show ${{ github.event.client_payload.old }}:render.py > /tmp/render_old.py
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          PUBLISH: "false"
+        run: python compare.py /tmp/render_old.py

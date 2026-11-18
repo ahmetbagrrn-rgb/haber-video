@@ -103,26 +103,28 @@ def tr_upper(s):
 
 # ---------------------------------------------------------------- 1) Senaryo
 
-PROMPT = """Sen kısa dikey video (YouTube Shorts / Reels) editörüsün.
-Aşağıdaki haberi 5-7 sahneye böl.
+PROMPT = """Sen dünyanın en iyi kısa dikey haber videosu (YouTube Shorts / Reels / TikTok) editörüsün. Hedef: 30-40 saniyelik, izleyicinin sonuna kadar izleyip tekrar izlediği bir video.
+Aşağıdaki haberi 5-6 sahneye böl.
 Kurallar:
 - DİL: Haber hangi dilde yazıldıysa "text", "headline", "accent", "title", "description" ve "hashtags" alanlarının TAMAMINI o dilde yaz (İngilizce haber -> her şey İngilizce). "lang" alanına dilin 2 harfli kodunu yaz (tr, en, de...).
 - Metni yeniden yazma; kullanıcının cümlelerine sadık kal, sadece hafif düzelt ve sadeleştir.
-- 1. sahne güçlü bir kanca olsun: merak boşluğu açsın, cevabı sona sakla.
-- Sondan bir önceki sahne "Ama asıl mesele şu..." tarzı bir dönüş cümlesi olsun.
-- Son sahne kısa bir sonuç ya da düşündüren bir cümle olsun.
-- Her sahnenin "text" alanı 1-2 cümle, en fazla 22 kelime.
-- "headline": sahnenin özü, 1-3 kısa kelime.
+- TEK OLAY: Videoda yalnızca bir olay anlat. Başka gelişmelerden bahsetme.
+- 1. sahne (ilk 2 saniye) KANCA: Soru DEĞİL; haberin en çarpıcı somut olgusu (kim + ne + rakam/yer). Örnek: "74 ülkede bankalar aynı anda durdu." Selamlama, giriş, "bugün size..." YOK.
+- 2-3. sahne: ne oldu, kim yaptı, ne zaman, nerede; somut ayrıntı ve rakamlarla.
+- 4. sahne: neden önemli; arkasındaki neden ya da büyük resim (analiz). Her videoda farklı bir geçiş cümlesi kullan; kalıp ifade TEKRARLAMA.
+- 5. sahne: izleyiciye etkisi: "{AUDIENCE}" izleyicisini nasıl etkiler (fiyatlar, enerji, güvenlik, seyahat, işler vb.). Kaynakta dayanak yoksa genel ama doğru bir etki yaz, sayı uydurma.
+- Son sahne: kısa, merak bırakan bir cümle; ilk sahneye doğal olarak bağlansın ki video döngüye girince akış kopmasın.
+- Her sahnenin "text" alanı tek cümle, 8-16 kelime. Kısa, aktif, günlük dil; uzun yan cümle yok.
+- "headline": sahnenin özü, 1-3 kısa kelime (rakam varsa rakamı kullan).
 - "accent": başlığa eşlik eden tek kelime (italik gösterilecek), headline'daki kelimeleri tekrar etme.
 - "search": Pixabay'de stok VİDEO aramak için 1-3 kelimelik İNGİLİZCE terim. Somut, görsel, aranabilir olsun (ör. "city night", "police car", "stock market screen"). Kişi adı veya marka yazma.
-- "style": tek sıradaki sahneler (1,3,5,7) "headline", çift sıradakiler "subtitle".
+- "style": tek sıradaki sahneler (1,3,5) "headline", çift sıradakiler "subtitle".
 - "countries": sahnede adı geçen ülkelerin ISO-3166 alpha-3 kodları (ör. ["TUR","IRN"]); yoksa [].
 - "country_names": aynı ülkelerin çıktı dilindeki kısa adları (ör. ["Türkiye","İran"]).
-- "tags": video için 8-12 SEO anahtar kelimesi (çıktı dilinde, aranma ihtimali yüksek).
-- "Ama asıl mesele şu..." kalıbını haberin dilinde kullan (ör. İngilizce: "But here's the real issue...").
-- "title": YouTube başlığı, en fazla 70 karakter, merak uyandıran.
-- "description": 1-2 cümlelik açıklama.
-- "hashtags": 3-5 adet, # ile.
+- "title": YouTube başlığı, en fazla 65 karakter. İlk 40 karakterde aranan anahtar kelime (ülke/kişi/kurum adı) olsun. Kalıp: İsim + olgu/rakam + sonuç ya da gerçek bir soru. "Küresel kriz", "dünya değişiyor" gibi genel başlık YASAK. Yanıltıcı olmasın.
+- "description": 2 satır: 1. satır başlıktaki anahtar kelimeyle başlayan tek cümlelik özet; 2. satır izleyiciye yorum yaptıracak tek bir soru.
+- "tags": 8-12 SEO anahtar kelimesi (çıktı dilinde, insanların gerçekten arayacağı ifadeler; özel isimleri içersin).
+- "hashtags": 3-5 adet, # ile; biri konuya özel olsun.
 Sadece JSON döndür:
 {"lang":"tr","title":"...","description":"...","hashtags":["#..."],"scenes":[{"text":"...","headline":"...","accent":"...","search":"...","style":"headline","countries":[],"country_names":[]}],"tags":["..."]}
 
@@ -148,6 +150,8 @@ Sadece JSON döndür:
 Kaynaklar:
 """
 
+AUDIENCE = {"tr": "Türkiye'deki", "en": "ABD'deki", "de": "Almanya, Avusturya ve İsviçre'deki", "fr": "Fransa'daki", "es": "İspanyolca konuşan"}
+
 LANG_NAMES = {"tr": "Türkçe", "en": "İngilizce (ABD)", "de": "Almanca", "fr": "Fransızca", "es": "İspanyolca"}
 
 EDITOR_RULES = """
@@ -155,11 +159,10 @@ EDİTÖR KURALLARI (kaynak bir YouTube videosu ya da başka bir haber):
 - Profesyonel bir haber editörüsün. Konuşma dilini, selamlaşmaları, "abone olun" gibi çağrıları, reklam/sponsor kısımlarını, kanal tanıtımlarını ve kişisel anekdotları tamamen at.
 - Kaynaktaki cümleleri KOPYALAMA, alıntı yapma. Sadece olguları ve konuyu al; tamamen kendi cümlelerinle, kendi yapınla yeniden yaz.
 - Görüş ve iddiaları sahibine atfet ("... göre", "... iddia ediyor"). Siyasi taraf tutma, tarafsız ve olgusal kal.
-- Sondan bir önceki sahnede kendi kısa analizini ekle: bu gelişme neden önemli, neleri etkileyebilir.
-- Kaynakta olmayan bilgi, sayı ya da isim uydurma.
+- Kaynakta olmayan bilgi, sayı ya da isim uydurma. Yer adlarının türünü (şehir, boğaz, nehir, ülke) doğru yaz; emin değilsen türünü belirtme.
 - Kişilerin unvanlarını kaynakta geçtiği gibi kullan; kendi bilgine dayanarak "eski", "mevcut" gibi unvan ekleme (bilgin güncel olmayabilir).
-- SOMUT ol: kaynaktaki en önemli TEK olayı seç ve onu anlat; ülke, kişi, kurum ve olay adlarını açıkça kullan. "Küresel gerilim artıyor" gibi genel, boş cümleler kurma.
-- Başlık merak uyandırsın ama yanıltıcı olmasın (clickbait değil, gerçek bir soru ya da çarpıcı bir olgu).
+- TEK OLAY ZORUNLU: Kaynak birden çok konu içeriyorsa, en somut ayrıntısı (isim, rakam, yer) ve en geniş etkisi olan TEK olayı seç; diğerlerini tamamen at. "topic" alanı bu tek olayı anlatsın.
+- KANAL NİŞİ: jeopolitik, savaş ve güvenlik, uluslararası ilişkiler, küresel ekonomi, enerji, teknoloji ve siber güvenlik. Kaynaktaki tüm konular bunların DIŞINDAYSA (magazin, kraliyet ailesi, ünlüler, spor, moda, yaşam tarzı) sadece {"skip": true} döndür.
 - Kaynak haber niteliği taşımıyorsa (sadece soru-cevap, reklam, kişisel vlog vb.) sadece {"skip": true} döndür.
 """
 
@@ -174,6 +177,11 @@ def build_prompt(payload):
         name = LANG_NAMES.get(target, target)
         p = (f"ÇIKTI DİLİ: Kaynak hangi dilde olursa olsun TÜM alanları {name} yaz ve \"lang\" alanına \"{target}\" koy. "
              f"Bu dili konuşan izleyici için doğal, yerel bir anlatım kullan.\n") + p
+    aud = AUDIENCE.get(target or "tr", "hedef")
+    p = p.replace("{AUDIENCE}", aud)
+    if target and target != "tr":
+        p += ("\nNOT: Bu bir çeviri değil; aynı olayı " + aud + " izleyici için baştan yaz. Onların bildiği örnekleri, "
+              "para birimini ve bakış açısını kullan.\n")
     p = p.replace('{"lang":"tr",', '{"lang":"tr","topic":"(konunun 5-8 kelimelik İngilizce özeti)",')
     if payload.get("youtube_url"):
         p = p.replace("\nHaber:\n", "\nKaynak: ekteki YouTube videosu (ilk 15 dakikası).\n")
@@ -186,6 +194,44 @@ def strip_fences(s):
     s = re.sub(r"^```(?:json)?\s*", "", s)
     s = re.sub(r"\s*```$", "", s)
     return s
+
+
+VERIFY_PROMPT = """Sen bir haber doğrulama editörüsün. Aşağıda bir kısa video senaryosu (JSON) ve varsa kaynak metin var.
+Görevin SADECE hataları düzeltmek:
+- Yer adlarının türü yanlışsa düzelt (ör. nehri boğaz diye yazmak), ülke/şehir eşleşmesi yanlışsa düzelt.
+- Kaynakta dayanağı olmayan kesin rakam, tarih veya alıntı varsa kaldır ya da genel ifadeye çevir.
+- Bir kişiye kaynakta olmayan unvan eklenmişse kaldır.
+- Bir iddia kesin olgu gibi yazılmışsa "... göre" ile sahibine atfet.
+Üslubu, sahne sayısını, alanları ve dili DEĞİŞTİRME. Hata yoksa senaryoyu aynen döndür.
+Sadece düzeltilmiş JSON'u döndür, ayrıca "_fixes" alanına yaptığın düzeltmeleri kısa liste olarak yaz (yoksa []).
+"""
+
+
+def verify_script(data, payload, key):
+    if os.environ.get("NO_VERIFY") or not data.get("scenes"):
+        return data
+    src = (payload.get("text") or "")[:6000]
+    body = {"contents": [{"parts": [{"text": VERIFY_PROMPT + "\nSENARYO:\n" + json.dumps(data, ensure_ascii=False)
+                                     + ("\n\nKAYNAK METİN:\n" + src if src else "\n\n(Kaynak bir video; metni yok. Sadece açık hataları düzelt.)")}]}],
+            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}}
+    for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
+        try:
+            r = http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                          body, {"x-goog-api-key": key}, timeout=60)
+            raw = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
+            fixed = json.loads(strip_fences(raw))
+            if (isinstance(fixed.get("scenes"), list) and len(fixed["scenes"]) == len(data["scenes"])):
+                fx = fixed.pop("_fixes", []) or []
+                log("Doğrulama:", "; ".join(map(str, fx)) if fx else "düzeltme yok")
+                for k in ("topic", "lang"):
+                    if data.get(k) and not fixed.get(k):
+                        fixed[k] = data[k]
+                return fixed
+        except Exception as e:  # noqa
+            log(f"Doğrulama ({model}) hatası:", e)
+            if "404" not in str(e):
+                continue
+    return data
 
 
 def make_script(payload):
@@ -235,7 +281,7 @@ def make_script(payload):
                     return {"skip": True}
                 if data.get("scenes"):
                     log("Gemini modeli:", model)
-                    return data
+                    return verify_script(data, payload, key)
             except Exception as e:  # noqa
                 last = e
                 log(f"Gemini ({model}) hatası:", e)
@@ -889,6 +935,17 @@ def load_payload():
     sys.exit("Girdi yok: PAYLOAD_JSON veya MANUAL_TEXT gerekli.")
 
 
+def source_line(payload, lang):
+    src = (payload.get("source") or payload.get("youtube_url") or "").strip()
+    if not src.startswith("http"):
+        return ""
+    host = re.sub(r"^www\.", "", urllib.parse.urlparse(src).netloc)
+    if "youtu" in host:
+        return ""  # YouTuber kaynağını linkleyerek trafiği dışarı vermiyoruz
+    word = {"tr": "Kaynak", "de": "Quelle"}.get(lang, "Source")
+    return f"\n\n{word}: {host}"
+
+
 def produce(payload, out_dir=None, tag=""):
     """Tek bir video üretir; sonuç sözlüğünü döndürür (skip ise {"skip": True})."""
     global OUT, WORK, LANG, USED_IDS, USED_LOCAL, LANDSCAPE, W, H
@@ -936,7 +993,7 @@ def produce(payload, out_dir=None, tag=""):
     result = {
         "title": (script.get("title") or scenes[0]["text"])[:95],
         "description": ((script.get("description") or "") + ("\n\n" + chapters if chapters else "")
-                        + "\n\n" + tags).strip(),
+                        + source_line(payload, LANG) + "\n\n" + tags).strip(),
         "tags": script.get("tags") or [],
         "long": long,
         "thumbs": [f"https://github.com/{repo}/releases/download/{tag}/thumb_{k}.jpg" for k in "abc"] if long else [],
