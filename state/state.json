@@ -1,1 +1,11 @@
-{"tg_offset": 0, "owner_chat": null, "processed": [], "topics": [], "daily": {}}
+{
+ "tg_offset": 0,
+ "owner_chat": null,
+ "processed": [],
+ "topics": [],
+ "daily": {},
+ "scheduled": {},
+ "pending": {},
+ "_removed": [],
+ "reminded": ""
+}
