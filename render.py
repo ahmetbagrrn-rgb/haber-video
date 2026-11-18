@@ -113,7 +113,7 @@ Kurallar:
 - 2-3. sahne: ne oldu, kim yaptı, ne zaman, nerede; somut ayrıntı ve rakamlarla.
 - 4. sahne: neden önemli; arkasındaki neden ya da büyük resim (analiz). Her videoda farklı bir geçiş cümlesi kullan; kalıp ifade TEKRARLAMA.
 - 5. sahne: izleyiciye etkisi: "{AUDIENCE}" izleyicisini nasıl etkiler (fiyatlar, enerji, güvenlik, seyahat, işler vb.). Kaynakta dayanak yoksa genel ama doğru bir etki yaz, sayı uydurma.
-- Son sahne: kısa, merak bırakan bir cümle; ilk sahneye doğal olarak bağlansın ki video döngüye girince akış kopmasın.
+- Son sahne: kısa, merak bırakan YENİ bir cümle (ilk sahneyi tekrar ETME); anlamca ilk sahneye bağlansın ki video döngüye girince akış kopmasın.
 - Her sahnenin "text" alanı tek cümle, 8-16 kelime. Kısa, aktif, günlük dil; uzun yan cümle yok.
 - "headline": sahnenin özü, 1-3 kısa kelime (rakam varsa rakamı kullan).
 - "accent": başlığa eşlik eden tek kelime (italik gösterilecek), headline'daki kelimeleri tekrar etme.
@@ -161,7 +161,7 @@ EDİTÖR KURALLARI (kaynak bir YouTube videosu ya da başka bir haber):
 - Görüş ve iddiaları sahibine atfet ("... göre", "... iddia ediyor"). Siyasi taraf tutma, tarafsız ve olgusal kal.
 - Kaynakta olmayan bilgi, sayı ya da isim uydurma. Yer adlarının türünü (şehir, boğaz, nehir, ülke) doğru yaz; emin değilsen türünü belirtme.
 - Kişilerin unvanlarını kaynakta geçtiği gibi kullan; kendi bilgine dayanarak "eski", "mevcut" gibi unvan ekleme (bilgin güncel olmayabilir).
-- TEK OLAY ZORUNLU: Kaynak birden çok konu içeriyorsa, en somut ayrıntısı (isim, rakam, yer) ve en geniş etkisi olan TEK olayı seç; diğerlerini tamamen at. "topic" alanı bu tek olayı anlatsın.
+- TEK OLAY ZORUNLU (en önemli kural): Kaynak birden çok konu içeriyorsa, ÖNCE tek bir olay seç, sonra yalnızca onu yaz; en somut ayrıntısı (isim, rakam, yer) ve en geniş etkisi olan TEK olayı seç; diğerlerini tamamen at. "topic" alanı bu tek olayı anlatsın.
 - KANAL NİŞİ: jeopolitik, savaş ve güvenlik, uluslararası ilişkiler, küresel ekonomi, enerji, teknoloji ve siber güvenlik. Kaynaktaki tüm konular bunların DIŞINDAYSA (magazin, kraliyet ailesi, ünlüler, spor, moda, yaşam tarzı) sadece {"skip": true} döndür.
 - Kaynak haber niteliği taşımıyorsa (sadece soru-cevap, reklam, kişisel vlog vb.) sadece {"skip": true} döndür.
 """
@@ -212,7 +212,7 @@ def verify_script(data, payload, key):
         return data
     src = (payload.get("text") or "")[:6000]
     body = {"contents": [{"parts": [{"text": VERIFY_PROMPT + "\nSENARYO:\n" + json.dumps(data, ensure_ascii=False)
-                                     + ("\n\nKAYNAK METİN:\n" + src if src else "\n\n(Kaynak bir video; metni yok. Sadece açık hataları düzelt.)")}]}],
+                                     + ("\n\nKAYNAK METİN:\n" + src if src else "\n\n(Kaynak bir video; metni sende yok. Rakam ve ayrıntıları SİLME, genelleştirme; yalnızca coğrafya, unvan ve atıf gibi bariz hataları düzelt.)")}]}],
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}}
     for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
         try:
