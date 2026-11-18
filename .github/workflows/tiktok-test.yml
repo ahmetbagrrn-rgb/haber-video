@@ -1,0 +1,36 @@
+name: TikTok test gönderisi
+
+on:
+  repository_dispatch:
+    types: [tiktok_test]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telegram
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Videoyu indir ve TikTok'a gönder
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TAG: ${{ github.event.client_payload.tag }}
+        run: |
+          gh release download "$TAG" -p video.mp4 -D /tmp/v
+          TITLE=$(gh release view "$TAG" --json name -q .name)
+          python - <<PY
+          import tiktok
+          print(tiktok.post_video("/tmp/v/video.mp4", """$TITLE #haber #gündem"""))
+          PY
+      - name: Kaydet
+        run: |
+          git config user.name "haber-bot"
+          git config user.email "haber-bot@users.noreply.github.com"
+          python pipeline.py commit-state
