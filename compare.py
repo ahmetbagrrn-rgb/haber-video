@@ -39,5 +39,5 @@ for lang in ("tr", "en"):
     msg = f"🧪 Prompt karşılaştırma ({lang.upper()})\nKaynak: {H.escape(title)}\n\n🔸 ESKİ\n{fmt(out[('ESKİ',lang)])}\n\n🔹 YENİ\n{fmt(out[('YENİ',lang)])}"
     st = pipeline.load_state()
     if st.get("owner_chat") and os.environ.get("TELEGRAM_BOT_TOKEN"):
-        pipeline.tg("sendMessage", {"chat_id": st["owner_chat"], "text": msg[:4000], "parse_mode": "HTML",
-                                    "disable_web_page_preview": True})
+        pipeline.tg("sendMessage", chat_id=st["owner_chat"], text=msg[:4000], parse_mode="HTML",
+                    disable_web_page_preview=True)
