@@ -132,6 +132,25 @@ def release(tag, out_dir, title):
                     "--notes-file", str(Path(out_dir) / "notes.md")], check=True)
 
 
+def tiktok_publish(result):
+    conf = CONFIG.get("tiktok") or {}
+    if not conf.get("enabled") or result.get("long") or result.get("lang") not in conf.get("langs", ["tr"]):
+        return None
+    try:
+        import tiktok
+        d = ROOT / "out" / "tt"
+        d.mkdir(parents=True, exist_ok=True)
+        subprocess.run(["gh", "release", "download", result["tag"], "-p", "video.mp4", "-D", str(d), "--clobber"],
+                       check=True)
+        caption = (result["title"] + " " + " ".join(result.get("hashtags") or []))[:2000]
+        r = tiktok.post_video(d / "video.mp4", caption, conf.get("privacy"))
+        log("TikTok'a gönderildi:", r)
+        return r
+    except Exception as e:  # noqa
+        log("TikTok hatası:", e)
+        return {"error": str(e)[:200]}
+
+
 def publish(result):
     url = os.environ.get("MAKE_WEBHOOK_URL")
     if result.get("test") or not url:
@@ -141,6 +160,7 @@ def publish(result):
                                  headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=60) as r:
         log("Make cevabı:", r.status)
+    result["tiktok"] = tiktok_publish(result)
     return True
 
 
@@ -246,6 +266,7 @@ def make_video(payload, tag, instagram=True):
     if res.get("skip"):
         return res
     res["instagram"] = bool(instagram)
+    res["tag"] = tag
     (out_dir / "result.json").write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
     release(tag, out_dir, res["title"])
     return res
@@ -545,6 +566,20 @@ def cmd_telegram():
                           f"{CONFIG.get('max_auto_per_day', 3)}\nOnay bekleyen: {len(st.get('pending', {}))}\n"
                           "Haber metni gönder → video. Başına /ucdil yazarsan TR + EN + DE üretilir.")
             continue
+        if text.startswith("/tiktok"):
+            code = text.split(maxsplit=1)[1].strip() if len(text.split()) > 1 else ""
+            if not code:
+                key = os.environ.get("TIKTOK_CLIENT_KEY", "")
+                tg_send(chat, "TikTok hesabını bağlamak için:\nhttps://ahmetbagrrn-rgb.github.io/haber-video/tiktok-login.html"
+                              + (f"?key={key}" if key else ""))
+                continue
+            try:
+                import tiktok
+                tiktok.exchange(code)
+                tg_send(chat, "✅ TikTok hesabı bağlandı.")
+            except Exception as e:  # noqa
+                tg_send(chat, f"⚠️ TikTok bağlanamadı: {str(e)[:300]}\nKodun süresi dolmuş olabilir; /tiktok yazıp tekrar dene.")
+            continue
         multi = text.startswith("/ucdil") or text.startswith("/ikidil")
         text = re.sub(r"^/(ucdil|ikidil)\s*", "", text)
         tg_send(chat, "🎬 Video hazırlanıyor, 3-5 dk sürer.")
@@ -602,6 +637,8 @@ def cmd_commit_state():
     if not STATE_FILE.exists():
         return
     local = json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    tt = ROOT / "state" / "tiktok.enc"
+    tt_bytes = tt.read_bytes() if tt.exists() else None
     for attempt in range(5):
         subprocess.run(["git", "fetch", "-q", "origin", "main"], check=True)
         try:
@@ -614,6 +651,9 @@ def cmd_commit_state():
         STATE_FILE.parent.mkdir(exist_ok=True)
         STATE_FILE.write_text(json.dumps(merged, ensure_ascii=False, indent=1), encoding="utf-8")
         subprocess.run(["git", "add", str(STATE_FILE)], check=True)
+        if tt_bytes is not None:
+            tt.write_bytes(tt_bytes)
+            subprocess.run(["git", "add", str(tt)], check=True)
         if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
             log("Durum değişmedi")
             return

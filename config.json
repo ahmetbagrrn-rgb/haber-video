@@ -47,5 +47,12 @@
       ]
     }
   },
-  "_not": "Almanca kanal Make'e bağlanınca auto_langs ve long_langs listesine \"de\" eklenecek."
+  "_not": "Almanca kanal Make'e bağlanınca auto_langs ve long_langs listesine \"de\" eklenecek.",
+  "tiktok": {
+    "enabled": false,
+    "langs": [
+      "tr"
+    ],
+    "privacy": "SELF_ONLY"
+  }
 }

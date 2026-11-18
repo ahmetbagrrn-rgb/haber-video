@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>World Shift Publisher – TikTok ile giriş</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 20px;line-height:1.6;text-align:center}
+a.btn{display:inline-block;background:#000;color:#fff;padding:16px 28px;border-radius:12px;text-decoration:none;font-size:20px;font-weight:600}</style></head><body>
+<h1>World Shift Publisher</h1>
+<p>Connect your TikTok account so that videos you approve in Telegram can be posted to it.</p>
+<p><a class="btn" id="go" href="#">Continue with TikTok</a></p>
+<p style="color:#888;font-size:14px"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+<script>
+const p=new URLSearchParams(location.search);
+const key=p.get('key')||localStorage.getItem('tt_key')||'';
+if(p.get('key'))localStorage.setItem('tt_key',p.get('key'));
+const redirect=location.origin+location.pathname.replace('tiktok-login.html','tiktok-callback.html');
+const u='https://www.tiktok.com/v2/auth/authorize/?'+new URLSearchParams({client_key:key,scope:'user.info.basic,video.publish',response_type:'code',redirect_uri:redirect,state:'ws'+Date.now()});
+document.getElementById('go').href=u;
+if(!key)document.getElementById('go').outerHTML='<b>Client key eksik.</b>';
+</script></body></html>

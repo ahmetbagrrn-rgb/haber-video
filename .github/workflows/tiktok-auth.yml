@@ -1,0 +1,34 @@
+name: TikTok hesabını bağla
+
+on:
+  repository_dispatch:
+    types: [tiktok_code]
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "TikTok giriş kodu"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telegram
+  cancel-in-progress: false
+
+jobs:
+  auth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kodu token'a çevir
+        env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          CODE: ${{ github.event.client_payload.code || github.event.inputs.code }}
+        run: python tiktok.py exchange "$CODE"
+      - name: Kaydet
+        run: |
+          git config user.name "haber-bot"
+          git config user.email "haber-bot@users.noreply.github.com"
+          python pipeline.py commit-state

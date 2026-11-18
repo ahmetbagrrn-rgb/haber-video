@@ -4,6 +4,6 @@
 <p id="msg">Kod okunuyor…</p><code id="code"></code>
 <script>
 const p=new URLSearchParams(location.search);const c=p.get('code');const e=p.get('error_description')||p.get('error');
-if(c){document.getElementById('msg').textContent='Bağlantı başarılı. Aşağıdaki kodu kopyalayıp Claude\'a gönder (10 dakika geçerli):';document.getElementById('code').textContent=c;}
+if(c){document.getElementById('msg').textContent='Bağlantı başarılı. Aşağıdaki satırı kopyalayıp Telegram botuna gönder (ya da Claude\'a yapıştır). Kod kısa süre geçerli:';document.getElementById('code').textContent='/tiktok '+c;}
 else{document.getElementById('msg').textContent='Hata: '+(e||'kod bulunamadı');}
 </script></body></html>
