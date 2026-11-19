@@ -4,7 +4,8 @@
  "processed": [
   "yt:si67TZv2Xxg",
   "trend:US:prince william",
-  "yt:NWXet15_1gk"
+  "yt:NWXet15_1gk",
+  "yt:icuQEZvg7M0"
  ],
  "topics": [
   {
@@ -21,10 +22,16 @@
    "topic": "global political tensions and military conflicts in 2026",
    "ts": "2026-11-18T17:57:40",
    "summary": "2026'da Küresel Krizler: Hangi Ülke Neye Hazırlanıyor?. 16 Kasım 2026 itibarıyla dünya gündemi, İran-ABD savaşından Çin'deki lider zirvelerine kadar birçok kritik çatışmayla sarsılıyor. İran'ın Bahreyn hava üssüne saldırması ve Karadeniz ile Yermük Boğazı'ndaki gemi patlamaları bölgedeki askeri hareketliliği tırmandırdı. İsrail'de Netanyahu hükümetine yönelik yolsuzluk soruşturmaları sürerken, muhalefet lideri Lapid erken seçim çağrısı yaptı. Estonya, Rus askeri istihbaratının fabrikalarında sabotaj girişiminde bulunacağını açıklayarak sınırlarını kapatma kararı aldı. Bu gelişmeler, ülkelerin güvenlik politikalarını sertleştirmesine ve yerel çatışmaların küresel bir ekonomik krize dönüşmesine yol açıyor. Ancak asıl mesele şu: ABD'nin Orta Doğu'daki askeri varlığı ve Rusya'nın Avrupa ile yürüttüğü müzakereler tüm dengeleri değiştirebilir. Liderlerin alacağı kararlar, önümüzdeki dönemde uluslararası ilişkilerin ve bölgesel güvenliğin seyrini be"
+  },
+  {
+   "topic": "Deutsche Bank 15 million document data leak scandal",
+   "ts": "2026-11-19T08:19:32",
+   "summary": "Deutsche Bank'ta 15 Milyon Belge Sızdı: Epstein Skandalı. Deutsche Bank’tan sızan 15 milyon gizli belge, küresel finans sisteminde dev bir skandalı ortaya çıkardı. Sızdırılan verilerde Jeffrey Epstein’in para trafiği, Donald Trump’ın vergi kayıtları ve Rus oligarkların hesapları bulunuyor. Finans devine yönelik bu devasa veri sızıntısı, uluslararası güçlerin birbirini açıkça ifşalama savaşına dönüştü. Banka gizliliğinin çökmesi, küresel elitlerin sermaye hareketlerini ve kara para ağlarını doğrudan tehdit ediyor. Uluslararası bankacılık krizleri, gelişmekte olan piyasalara sermaye akışını kısıtlayarak döviz dengelerini doğrudan etkileyabilir. Dünyanın gözü şimdi yeni sızıntıların hangi finans devini sarsacağına çevrilmiş durumda."
   }
  ],
  "daily": {
-  "2026-11-18": 3
+  "2026-11-18": 3,
+  "2026-11-19": 1
  },
  "scheduled": {},
  "pending": {
@@ -778,6 +785,367 @@
     }
    ],
    "ts": "2026-11-18T17:57:40"
+  },
+  "444854651743": {
+   "results": [
+    {
+     "title": "Deutsche Bank'ta 15 Milyon Belge Sızdı: Epstein Skandalı",
+     "description": "Deutsche Bank'tan sızdırılan 15 milyon belge Jeffrey Epstein ve Donald Trump dahil birçok ismin finansal ilişkilerini ortaya çıkardı.\nSizce bankacılık sistemindeki bu sızıntılar küresel ekonomiyi sarsar mı?\n\n#DeutscheBank #FinansSkandalı #SiberSaldırı #Ekonomi",
+     "tags": [
+      "deutsche bank",
+      "epstein belgesi",
+      "trump vergi skandalı",
+      "rus oligarklar",
+      "siber saldırı",
+      "finansal sızıntı",
+      "bankacılık krizi",
+      "küresel ekonomi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#DeutscheBank",
+      "#FinansSkandalı",
+      "#SiberSaldırı",
+      "#Ekonomi"
+     ],
+     "lang": "tr",
+     "topic": "Deutsche Bank 15 million document data leak scandal",
+     "tts": "edge",
+     "duration": 47.71,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Deutsche Bank’tan sızan 15 milyon gizli belge, küresel finans sisteminde dev bir skandalı ortaya çıkardı.",
+       "headline": "15 MİLYON BELGE",
+       "accent": "SIZDIRILDI",
+       "search": "bank data breach",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Sızdırılan verilerde Jeffrey Epstein’in para trafiği, Donald Trump’ın vergi kayıtları ve Rus oligarkların hesapları bulunuyor.",
+       "headline": "GİZLİ HESAPLAR",
+       "accent": "ORTADA",
+       "search": "financial scandal money",
+       "style": "subtitle",
+       "countries": [
+        "DEU",
+        "USA",
+        "RUS"
+       ],
+       "country_names": [
+        "Almanya",
+        "Amerika Birleşik Devletleri",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Finans devine yönelik bu devasa veri sızıntısı, uluslararası güçlerin birbirini açıkça ifşalama savaşına dönüştü.",
+       "headline": "KÜRESEL İFŞA",
+       "accent": "SAVAŞI",
+       "search": "cyber attack hacker",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Banka gizliliğinin çökmesi, küresel elitlerin sermaye hareketlerini ve kara para ağlarını doğrudan tehdit ediyor.",
+       "headline": "SİSTEMİK RİSK",
+       "accent": "BÜYÜYOR",
+       "search": "banking system crisis",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Uluslararası bankacılık krizleri, gelişmekte olan piyasalara sermaye akışını kısıtlayarak döviz dengelerini doğrudan etkileyabilir.",
+       "headline": "PİYASA ETKİSİ",
+       "accent": "KAPIDA",
+       "search": "stock market chart",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Dünyanın gözü şimdi yeni sızıntıların hangi finans devini sarsacağına çevrilmiş durumda.",
+       "headline": "YENİ HEDEF",
+       "accent": "KİM",
+       "search": "global finance world",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=icuQEZvg7M0",
+     "publish_at": "2026-11-19T08:19:08Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44485465174-tr"
+    },
+    {
+     "title": "Deutsche Bank 15M Leak: Epstein & Trump Files Exposed",
+     "description": "Deutsche Bank's 15 million leaked documents reveal massive illicit money networks involving global elites.\nShould international banks face stricter penalties for hiding elite financial transactions?\n\n#DeutscheBank #FinancialScandal #EpsteinFiles #GlobalEconomy",
+     "tags": [
+      "Deutsche Bank leak",
+      "Epstein money trail",
+      "Trump tax records",
+      "financial scandal",
+      "banking leak",
+      "offshore accounts",
+      "Russian oligarchs",
+      "Wall Street news",
+      "global economy"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#DeutscheBank",
+      "#FinancialScandal",
+      "#EpsteinFiles",
+      "#GlobalEconomy"
+     ],
+     "lang": "en",
+     "topic": "Deutsche Bank leak exposes global elite financial networks",
+     "tts": "edge",
+     "duration": 40.24,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Fifteen million leaked banking documents just exposed the secret financial networks of global elites.",
+       "headline": "15 Million Leaked",
+       "accent": "Exposed",
+       "search": "bank financial data",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Germany"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The files reveal Jeffrey Epstein's money trail, Donald Trump's tax records, and accounts of Russian oligarchs.",
+       "headline": "Secret Accounts Found",
+       "accent": "Uncovered",
+       "search": "shredded documents money",
+       "style": "subtitle",
+       "countries": [
+        "DEU",
+        "USA",
+        "RUS"
+       ],
+       "country_names": [
+        "Germany",
+        "United States",
+        "Russia"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This catastrophic data breach dismantled decades of client confidentiality at Germany's premier financial institution.",
+       "headline": "Bank Secrecy Shattered",
+       "accent": "Collapse",
+       "search": "server room dark",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Germany"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The collapse of bank secrecy directly threatens the capital movements and illicit money networks of global elites.",
+       "headline": "Global Systemic Fallout",
+       "accent": "Crackdown",
+       "search": "financial graph crisis",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "International banking crises may restrict capital flows to emerging markets and directly affect currency balances.",
+       "headline": "Market Impact",
+       "accent": "Risk",
+       "search": "wall street sign",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "The world's eyes are now turned to which financial giant will be shaken by upcoming leaks.",
+       "headline": "Next Target Awaits",
+       "accent": "Hunt",
+       "search": "hacker computer screen",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=icuQEZvg7M0",
+     "publish_at": "2026-11-19T08:20:37Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44485465174-en"
+    },
+    {
+     "title": "Deutsche Bank: 15 Millionen Dokumente enthüllen globale Netzwerke",
+     "description": "Die Deutsche Bank erschüttert mit einer gigantischen Datenpanne das internationale Finanzsystem.\nWelche Bank gerät als Nächstes ins Visier der Ermittler?\n\n#DeutscheBank #Finanzskandal #Geldwäsche #Wirtschaft",
+     "tags": [
+      "Deutsche Bank",
+      "Jeffrey Epstein",
+      "Finanzskandal",
+      "Geldwäsche",
+      "Bankgeheimnis",
+      "Oligarchen",
+      "Wirtschaftskrise",
+      "Datenleck",
+      "Finanzmarkt",
+      "Investoren"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#DeutscheBank",
+      "#Finanzskandal",
+      "#Geldwäsche",
+      "#Wirtschaft"
+     ],
+     "lang": "de",
+     "topic": "Deutsche Bank 15 million documents leak Epstein scandal",
+     "tts": "edge",
+     "duration": 37.36,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44485465174-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Fünfzehn Millionen geheime Dokumente der Deutschen Bank wurden unrechtmäßig öffentlich.",
+       "headline": "15 Millionen",
+       "accent": "Dokumente",
+       "search": "bank building exterior",
+       "style": "headline",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Deutschland"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die geleakten Akten offenbaren die dubiosen Finanztransaktionen von Jeffrey Epstein.",
+       "headline": "Epstein Skandal",
+       "accent": "Geldströme",
+       "search": "financial documents desk",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Zudem zeigen die Unterlagen verdeckte Konten von russischen Oligarchen.",
+       "headline": "Oligarchen Konten",
+       "accent": "Netzwerk",
+       "search": "stock market screens",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Russland"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Dieser massive Sicherheitsbruch gefährdet das Vertrauen in den globalen Bankensektor nachhaltig.",
+       "headline": "Systemkrise",
+       "accent": "Vertrauen",
+       "search": "digital data breach",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Uluslararası bankacılık krizleri, gelişmekte olan piyasalara sermaye akışını kısıtlayarak döviz dengelerini etkileyebilir.",
+       "headline": "Strengere Regeln",
+       "accent": "Auswirkungen",
+       "search": "bank counter customer",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Welcher internationale Finanzkonzern wird durch die nächsten Enthüllungen erschüttert?",
+       "headline": "Nächster Beben",
+       "accent": "Zukunft",
+       "search": "financial district skyline",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=icuQEZvg7M0",
+     "publish_at": "2026-11-19T08:24:29Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44485465174-de"
+    }
+   ],
+   "ts": "2026-11-19T08:19:32"
   }
  },
  "_removed": [],
