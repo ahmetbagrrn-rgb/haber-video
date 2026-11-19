@@ -476,6 +476,9 @@ def choose_provider(scenes):
     edge_langs = [x.strip() for x in (os.environ.get("EDGE_LANGS") or "tr").split(",") if x.strip()]
     if not CONFIG.get("elevenlabs_enabled", True):
         return "edge"
+    el_langs = CONFIG.get("elevenlabs_langs")
+    if el_langs is not None:  # config'te belirtilen dillerde ElevenLabs, diğerlerinde ücretsiz ses
+        edge_langs = [x for x in ("tr", "en", "de", "fr", "es", "ar") if x not in el_langs]
     if LANG in edge_langs or not os.environ.get("ELEVENLABS_API_KEY"):
         return "edge"
     q = elevenlabs_quota()

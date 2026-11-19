@@ -24,7 +24,7 @@
     "de"
   ],
   "approval": true,
-  "elevenlabs_enabled": false,
+  "elevenlabs_enabled": true,
   "trend_geos": [
     "US",
     "DE",
@@ -72,5 +72,8 @@
   },
   "weekly_limit": {},
   "stories_per_video": 3,
-  "min_story_score": 5
+  "min_story_score": 5,
+  "elevenlabs_langs": [
+    "en"
+  ]
 }
