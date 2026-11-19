@@ -426,7 +426,9 @@ def extract_stories(url, n):
             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.3,
                                  "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
     for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
-        for _ in range(2):
+        for attempt in range(3):
+            if attempt:
+                time.sleep(20 * attempt)
             try:
                 r = render.http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
                                      body, {"x-goog-api-key": key}, timeout=240)
@@ -488,6 +490,14 @@ def mark_story(st, cand):
 
 # ---------------------------------------------------------------- komutlar
 
+SEQ = {"n": 0}  # aynı çalışmada birden çok konu üretilirse release etiketleri çakışmasın
+
+
+def is_transient(e):
+    m = str(e)
+    return any(k in m for k in ("503", "429", "timed out", "Service Unavailable", "Too Many Requests"))
+
+
 def produce_topic(cand, st, header):
     """Bir konudan tüm dillerde video üretir, onaya/yayına gönderir."""
     langs = CONFIG.get("auto_langs", ["tr", "en", "de"])
@@ -506,7 +516,7 @@ def produce_topic(cand, st, header):
         return lg not in limits or len(lw[lg]) < limits[lg]
     langs = [lg for j, lg in enumerate(langs) if j == 0 or week_ok(lg)]
     for i, lang in enumerate(langs):
-        tag = f"auto-{RUN_ID}-{lang}"
+        tag = f"auto-{RUN_ID}-{lang}" if not SEQ["n"] else f"auto-{RUN_ID}-{SEQ['n']}-{lang}"
         pl = {**base, "target_lang": lang}
         if i > 0 and results:
             first = results[0]
@@ -568,12 +578,15 @@ def cmd_auto():
         log("Kaynak:", cand["id"], cand["title"])
         try:
             results = produce_topic(cand, st, f"{label}\nKaynak: {cand['title']}")
-        except Exception as e:  # noqa
+        except (Exception, SystemExit) as e:  # noqa
             log("Üretim hatası:", e)
+            if is_transient(e):  # Gemini meşgul: konu kaybolmasın, sonraki saatte tekrar denensin
+                save_state(st)
+                return
             tg_send(owner, f"⚠️ Otomatik video üretilemedi: {cand['title']}\nHata: {str(e)[:300]}")
             mark_story(st, cand)
             save_state(st)
-            raise
+            return
         mark_story(st, cand)
         if not results:
             continue
@@ -609,11 +622,15 @@ def cmd_backfill(st):
             mark_story(st, cand)
             continue
         log("Arşiv kaynağı:", cand["id"], cand["title"])
+        SEQ["n"] += 1
         try:
             results = produce_topic(cand, st, f"🗂 YouTuber arşivinden ({cand['published']:%d.%m})\nKonu: {cand['title']}")
-        except Exception as e:  # noqa
+        except (Exception, SystemExit) as e:  # noqa
             log("Üretim hatası:", e)
             results = None
+            if is_transient(e):
+                time.sleep(90)  # Gemini kotası: bekle, konuyu işaretleme (sonra tekrar denenir)
+                continue
         mark_story(st, cand)
         save_state(st)
         try:

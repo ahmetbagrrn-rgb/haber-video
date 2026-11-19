@@ -25,6 +25,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -270,7 +271,9 @@ def make_script(payload):
     last = None
     for model in models:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        for attempt in range(2 if ("lite" in model or yt) else 1):
+        for attempt in range(3):
+            if attempt:
+                time.sleep(15 * attempt)
             try:
                 r = http_json(url, body, {"x-goog-api-key": key}, timeout=240 if yt else 45)
                 parts = r["candidates"][0]["content"]["parts"]
