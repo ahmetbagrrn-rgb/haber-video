@@ -58,6 +58,11 @@
    "topic": "Ukraine attacks Kerch Bridge and Russian oil refineries",
    "ts": "2026-11-19T20:03:21",
    "summary": "Ukrayna Kerç Köprüsü'nü Vurdu, 10 Petrol Rafinerisi Devre Dışı. Ukrayna ordusu stratejik Kerç Köprüsü'nü vurarak büyük bir hasar bıraktı. Son iki haftada on Rus petrol rafinerisi düzenlenen İHA saldırılarıyla durduruldu. Rus askeri kaynaklarına göre saldırılar sırasında iki binden fazla insansız hava aracı düşürüldü. Artan güvenlik riskleri üzerine Avrupa'nın önde gelen ülkeleri ortak bir heyet kurdu. Enerji tesislerindeki bu büyük hasar küresel akaryakıt fiyatlarını doğrudan yukarı taşıyabilir. Ulaşım hatları ve enerji merkezleri hedef alınırken cephedeki gerilim her geçen gün tırmanıyor."
+  },
+  {
+   "topic": "Turkey designates 50 highways for UAV and drone runways",
+   "ts": "2026-11-19T20:12:30",
+   "summary": "Türkiye 50 karayolunu İHA pisti yaptı. Türkiye olası bir savaş riskine karşı 50 karayolunu İHA pisti ilan etti. Askeri havalimanlarının çatışmalarda ilk hedef alınması bu stratejik kararı zorunlu kıldı. Türk insansız hava araçları artık doğrudan otoyollardan kalkış ve iniş yapabilecek. Bu hamle ülkenin savunma altyapısını olası bölgesel krizlere karşı korumayı amaçlıyor. Alınan bu tedbirler Türkiye'nin sınır güvenliğini ve askeri esnekliğini doğrudan artırıyor. Stratejik karayolları olası bir krizde hava üssüne dönüşmek için hazır bekliyor."
   }
  ],
  "daily": {
@@ -184,7 +189,9 @@
      "score": 7
     }
    ],
-   "used": []
+   "used": [
+    0
+   ]
   },
   "yt:7TS4Cam2zrk": {
    "stories": [
