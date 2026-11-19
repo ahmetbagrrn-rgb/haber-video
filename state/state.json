@@ -84,6 +84,11 @@
    "topic": "Trump Putin and Xi Jinping summit planned in China",
    "ts": "2026-11-19T20:45:51",
    "summary": "Trump, Putin ve Şi Cinping Çin zirvesinde buluşuyor. Üç küresel liderin Çin'in Şenzen şehrinde bir zirve gerçekleştirmesi bekleniyor. Donald Trump, Vladimir Putin ve Şi Cinping'in aynı masada buluşması planlanıyor. Görüşmede küresel ticaret ve güvenlik politikalarının ele alınması bekleniyor. Bu buluşmanın uluslararası ilişkilerde dengeleri değiştirebileceği ifade ediliyor. Gelişmelerin bölgesel ve küresel stratejileri etkilemesi bekleniyor. Dünyanın gözü Çin'in Şenzen şehrindeki olası zirvede."
+  },
+  {
+   "topic": "Mossad chief pushes US for military action against Iran",
+   "ts": "2026-11-19T20:54:28",
+   "summary": "İran Operasyonu: Mossad Başkanı Washington'da Askeri Planları Görüştü. Mossad başkanı Washington'da CIA ve Trump ekibiyle gizli bir zirve gerçekleştirdi. İsrail tarafının Tahran yönetimine karşı askeri operasyonların sürmesini talep ettiği öne sürüldü. Amerikan donanması komutanı da donanmalar arası uyumu görüşmek üzere Tel Aviv'e gitti. Bu kritik temaslar iki ülkenin silahlı kuvvetleri arasındaki entegrasyonu derinleştirmeyi hedefliyor. Ortadoğu'da olası bir çatışma Türkiye'nin sınır güvenliğini ve enerji hatlarını doğrudan tehdit edebilir. Washington ve Tel Aviv arasındaki bu askeri diplomasi yeni bir bölgesel krizin fitilini ateşliyor."
   }
  ],
  "daily": {
@@ -107,14 +112,14 @@
  },
  "pending": {},
  "_removed": [
+  "445296633124",
   "443091847971",
   "444854651743",
-  "445944378440",
-  "442639882090",
+  "445761614490",
   "443631404172",
+  "445944378440",
   "445944378441",
-  "445296633124",
-  "445761614490"
+  "442639882090"
  ],
  "reminded": "",
  "yt_stories": {
@@ -257,7 +262,9 @@
      "score": 7
     }
    ],
-   "used": []
+   "used": [
+    1
+   ]
   },
   "yt:wAbFxCX3ky8": {
    "stories": [
