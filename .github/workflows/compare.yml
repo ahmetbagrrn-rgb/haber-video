@@ -11,6 +11,9 @@ jobs:
       - run: git show ${{ github.event.client_payload.old }}:render.py > /tmp/render_old.py
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           PUBLISH: "false"
         run: python compare.py /tmp/render_old.py

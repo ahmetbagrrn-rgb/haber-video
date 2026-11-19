@@ -387,12 +387,8 @@ def trend_candidates(st):
     prompt = (f"Aşağıdaki Google Trends konularından şu nişe EN UYGUN ve en çok ilgi çekecek 3 tanesini seç: {niche}. "
               "Spor, magazin, ünlü hayatı, suç/kaza haberleri SEÇME. Sadece JSON döndür: {\"picks\":[numara,...]}\n\n" + listing)
     try:
-        key = os.environ["GEMINI_API_KEY"]
-        url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
-        r = render.http_json(url, {"contents": [{"parts": [{"text": prompt}]}],
-                                   "generationConfig": {"responseMimeType": "application/json"}},
-                             {"x-goog-api-key": key}, timeout=60)
-        picks = json.loads(render.strip_fences(r["candidates"][0]["content"]["parts"][0]["text"]))["picks"]
+        picks = render.llm_json(prompt, 0.3, models=["gemini-3.5-flash-lite", "gemini-flash-lite-latest"],
+                                ok=lambda d: isinstance(d.get("picks"), list))["picks"]
     except Exception as e:  # noqa
         log("Trend seçimi yapılamadı:", e)
         return []
@@ -418,31 +414,21 @@ Haber niteliğinde olay yoksa {"stories":[]} döndür."""
 
 
 def extract_stories(url, n):
-    key = os.environ.get("GEMINI_API_KEY")
-    if not key:
+    if not render.gemini_keys():
         return None
-    body = {"contents": [{"parts": [{"fileData": {"fileUri": url}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
-                                    {"text": STORY_PROMPT.replace("{n}", str(n))}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.3,
-                                 "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
-    for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
-        for attempt in range(3):
-            if attempt:
-                time.sleep(20 * attempt)
-            try:
-                r = render.http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                                     body, {"x-goog-api-key": key}, timeout=240)
-                raw = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
-                st = json.loads(render.strip_fences(raw)).get("stories") or []
-                st = [x for x in st if x.get("title") and x.get("facts")]
-                st.sort(key=lambda x: -(x.get("score") or 0))
-                log(f"Videodan {len(st)} haber çıkarıldı ({model}):", " | ".join(x["title"] for x in st))
-                return st[:n]
-            except Exception as e:  # noqa
-                log(f"Haber çıkarma ({model}) hatası:", e)
-                if "404" in str(e):
-                    break
-    return None
+    parts = [{"fileData": {"fileUri": url}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
+             {"text": STORY_PROMPT.replace("{n}", str(n))}]
+    gen = {"responseMimeType": "application/json", "temperature": 0.3, "mediaResolution": "MEDIA_RESOLUTION_LOW"}
+    try:
+        data = render.gemini_json(parts, gen, ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"],
+                                  timeout=240, ok=lambda d: isinstance(d.get("stories"), list))
+    except Exception as e:  # noqa
+        log("Haber çıkarma başarısız:", str(e)[:150])
+        return None
+    st = [x for x in data["stories"] if x.get("title") and x.get("facts")]
+    st.sort(key=lambda x: -(x.get("score") or 0))
+    log(f"Videodan {len(st)} haber çıkarıldı:", " | ".join(x["title"] for x in st))
+    return st[:n]
 
 
 def youtube_story_candidates(st, ignore_processed=False):

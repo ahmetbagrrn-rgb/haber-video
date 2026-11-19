@@ -208,31 +208,112 @@ Sadece düzeltilmiş JSON'u döndür, ayrıca "_fixes" alanına yaptığın düz
 """
 
 
-def verify_script(data, payload, key):
+
+# ---------------------------------------------------------------- Yapay zekâ sağlayıcıları
+# Gemini (birden çok anahtar) → Groq → OpenRouter. Video (YouTube) anlama sadece Gemini'de var.
+
+def gemini_keys():
+    return [k for k in (os.environ.get("GEMINI_API_KEY"), os.environ.get("GEMINI_API_KEY_2"),
+                        os.environ.get("GEMINI_API_KEY_3")) if k]
+
+
+GEMINI_DOWN = {"until": 0.0}  # Gemini tamamen çökmüşse bir süre doğrudan alternatife git
+
+
+def gemini_json(parts, gen, models, timeout=60, ok=None, tries=3):
+    """Gemini'yi tüm anahtar × model × deneme kombinasyonlarıyla dener; JSON döndürür."""
+    last = None
+    for ki, key in enumerate(gemini_keys()):
+        for model in models:
+            for attempt in range(tries):
+                if attempt:
+                    time.sleep(12 * attempt)
+                try:
+                    r = http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                                  {"contents": [{"parts": parts}], "generationConfig": gen},
+                                  {"x-goog-api-key": key}, timeout=timeout)
+                    raw = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
+                    data = json.loads(strip_fences(raw))
+                    if ok is None or ok(data):
+                        log(f"Gemini: {model} (anahtar {ki + 1})")
+                        return data
+                except Exception as e:  # noqa
+                    last = e
+                    log(f"Gemini ({model}, anahtar {ki + 1}) hatası:", e)
+                    if "404" in str(e) or ("429" in str(e) and attempt >= 1):
+                        break  # bu model/anahtar kotada: sıradakine geç
+    GEMINI_DOWN["until"] = time.time() + 600
+    raise RuntimeError(f"Gemini başarısız: {last}")
+
+
+ALT_PROVIDERS = [
+    ("GROQ_API_KEY", "https://api.groq.com/openai/v1/chat/completions",
+     ["openai/gpt-oss-120b", "llama-3.3-70b-versatile"]),
+    ("OPENROUTER_API_KEY", "https://openrouter.ai/api/v1/chat/completions",
+     ["deepseek/deepseek-chat-v3-0324:free", "meta-llama/llama-3.3-70b-instruct:free"]),
+]
+
+
+def alt_json(prompt, temperature=0.7, ok=None):
+    """Gemini yoksa/meşgulse OpenAI uyumlu ücretsiz sağlayıcılar (Groq, OpenRouter)."""
+    conf = CONFIG.get("alt_models") or {}
+    last = None
+    for env, url, models in ALT_PROVIDERS:
+        key = os.environ.get(env)
+        if not key:
+            continue
+        for m in conf.get(env, models):
+            for attempt in range(2):
+                if attempt:
+                    time.sleep(20)
+                try:
+                    body = {"model": m, "temperature": temperature,
+                            "messages": [{"role": "system", "content": "Yalnızca geçerli JSON döndür."},
+                                         {"role": "user", "content": prompt}],
+                            "response_format": {"type": "json_object"}}
+                    r = http_json(url, body, {"Authorization": f"Bearer {key}"}, timeout=120)
+                    data = json.loads(strip_fences(r["choices"][0]["message"]["content"]))
+                    if ok is None or ok(data):
+                        log(f"Alternatif yapay zekâ: {env.split('_')[0].title()} / {m}")
+                        return data
+                except Exception as e:  # noqa
+                    last = e
+                    log(f"Alternatif ({m}) hatası:", e)
+                    if "429" not in str(e) and "503" not in str(e):
+                        break
+    raise RuntimeError(f"Alternatif sağlayıcı yok ya da başarısız: {last}")
+
+
+def llm_json(prompt, temperature=0.7, models=None, ok=None, timeout=60):
+    """Metin görevleri: önce Gemini, olmazsa Groq/OpenRouter."""
+    models = models or ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]
+    try:
+        if gemini_keys() and time.time() >= GEMINI_DOWN["until"]:
+            return gemini_json([{"text": prompt}], {"responseMimeType": "application/json", "temperature": temperature},
+                               models, timeout=timeout, ok=ok)
+    except Exception as e:  # noqa
+        log("Gemini kullanılamadı, alternatife geçiliyor:", str(e)[:120])
+    return alt_json(prompt, temperature, ok=ok)
+
+
+def verify_script(data, payload, key=None):
     if os.environ.get("NO_VERIFY") or not data.get("scenes"):
         return data
     src = (payload.get("text") or "")[:6000]
-    body = {"contents": [{"parts": [{"text": VERIFY_PROMPT + "\nSENARYO:\n" + json.dumps(data, ensure_ascii=False)
-                                     + ("\n\nKAYNAK METİN:\n" + src if src else "\n\n(Kaynak bir video; metni sende yok. Rakam ve ayrıntıları SİLME, genelleştirme; yalnızca coğrafya, unvan ve atıf gibi bariz hataları düzelt.)")}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.1}}
-    for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
-        try:
-            r = http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                          body, {"x-goog-api-key": key}, timeout=60)
-            raw = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
-            fixed = json.loads(strip_fences(raw))
-            if (isinstance(fixed.get("scenes"), list) and len(fixed["scenes"]) == len(data["scenes"])):
-                fx = fixed.pop("_fixes", []) or []
-                log("Doğrulama:", "; ".join(map(str, fx)) if fx else "düzeltme yok")
-                for k in ("topic", "lang"):
-                    if data.get(k) and not fixed.get(k):
-                        fixed[k] = data[k]
-                return fixed
-        except Exception as e:  # noqa
-            log(f"Doğrulama ({model}) hatası:", e)
-            if "404" not in str(e):
-                continue
-    return data
+    prompt = (VERIFY_PROMPT + "\nSENARYO:\n" + json.dumps(data, ensure_ascii=False)
+              + ("\n\nKAYNAK METİN:\n" + src if src else "\n\n(Kaynak bir video; metni sende yok. Rakam ve ayrıntıları SİLME, genelleştirme; yalnızca coğrafya, unvan ve atıf gibi bariz hataları düzelt.)"))
+    n = len(data["scenes"])
+    try:
+        fixed = llm_json(prompt, 0.1, ok=lambda d: isinstance(d.get("scenes"), list) and len(d["scenes"]) == n)
+    except Exception as e:  # noqa
+        log("Doğrulama atlandı:", str(e)[:120])
+        return data
+    fx = fixed.pop("_fixes", []) or []
+    log("Doğrulama:", "; ".join(map(str, fx)) if fx else "düzeltme yok")
+    for k in ("topic", "lang"):
+        if data.get(k) and not fixed.get(k):
+            fixed[k] = data[k]
+    return fixed
 
 
 def make_script(payload):
@@ -246,7 +327,7 @@ def make_script(payload):
     key = os.environ.get("GEMINI_API_KEY")
     if not key and yt:
         sys.exit("YouTube kaynağı için GEMINI_API_KEY gerekli")
-    if not key:
+    if not key and not any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS):
         log("GEMINI_API_KEY yok: metin cümlelere bölünüyor")
         sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()][:8]
         scenes = []
@@ -267,30 +348,25 @@ def make_script(payload):
     else:
         parts = [{"text": prompt + text}]
         gen = {"responseMimeType": "application/json", "temperature": 0.7}
-    body = {"contents": [{"parts": parts}], "generationConfig": gen}
-    last = None
-    for model in models:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        for attempt in range(3):
-            if attempt:
-                time.sleep(15 * attempt)
-            try:
-                r = http_json(url, body, {"x-goog-api-key": key}, timeout=240 if yt else 45)
-                parts = r["candidates"][0]["content"]["parts"]
-                raw = "".join(p.get("text", "") for p in parts if not p.get("thought"))
-                data = json.loads(strip_fences(raw))
-                if data.get("skip"):
-                    log("Gemini: kaynak haber niteliği taşımıyor, atlandı")
-                    return {"skip": True}
-                if data.get("scenes"):
-                    log("Gemini modeli:", model)
-                    return verify_script(data, payload, key)
-            except Exception as e:  # noqa
-                last = e
-                log(f"Gemini ({model}) hatası:", e)
-                if "404" in str(e):
-                    break
-    sys.exit(f"Gemini senaryo üretemedi: {last}")
+    good = lambda d: bool(d.get("skip") or d.get("scenes"))  # noqa: E731
+    try:
+        if not gemini_keys():
+            raise RuntimeError("Gemini anahtarı yok")
+        if not yt and time.time() < GEMINI_DOWN["until"] and any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS):
+            raise RuntimeError("Gemini az önce yanıt vermedi")
+        data = gemini_json(parts, gen, models, timeout=240 if yt else 60, ok=good)
+    except Exception as e:  # noqa
+        if yt:
+            sys.exit(f"Gemini senaryo üretemedi (video yalnızca Gemini ile işlenebilir): {e}")
+        log("Gemini senaryo üretemedi, alternatif deneniyor:", str(e)[:120])
+        try:
+            data = alt_json(prompt + text, 0.7, ok=good)
+        except Exception as e2:  # noqa
+            sys.exit(f"Senaryo üretilemedi (Gemini + alternatifler): {e2}")
+    if data.get("skip"):
+        log("Kaynak haber niteliği taşımıyor, atlandı")
+        return {"skip": True}
+    return verify_script(data, payload)
 
 
 # ---------------------------------------------------------------- 2) Ses
