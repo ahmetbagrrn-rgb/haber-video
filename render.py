@@ -250,7 +250,7 @@ ALT_PROVIDERS = [
     ("GROQ_API_KEY", "https://api.groq.com/openai/v1/chat/completions",
      ["openai/gpt-oss-120b", "llama-3.3-70b-versatile"]),
     ("OPENROUTER_API_KEY", "https://openrouter.ai/api/v1/chat/completions",
-     ["google/gemma-4-31b-it:free", "nvidia/nemotron-3-ultra-550b-a55b:free", "openrouter/free"]),
+     ["nvidia/nemotron-3-ultra-550b-a55b:free", "openrouter/free", "google/gemma-4-31b-it:free"]),
 ]
 
 
