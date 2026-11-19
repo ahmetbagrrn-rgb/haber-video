@@ -6,7 +6,8 @@
   "trend:US:prince william",
   "yt:NWXet15_1gk",
   "yt:icuQEZvg7M0",
-  "trend:US:dolar hoje"
+  "trend:US:dolar hoje",
+  "yt:7TS4Cam2zrk"
  ],
  "topics": [
   {
@@ -78,6 +79,11 @@
    "topic": "Five Eyes intelligence alliance removes Chinese components from undersea cables",
    "ts": "2026-11-19T20:37:40",
    "summary": "Beş Göz İttifakı deniz altı kablolarından Çin'i çıkarıyor. Küresel internet trafiğinin büyük bir kısmı deniz altındaki fiber optik kablolardan geçmektedir. ABD, Kanada, Avustralya ve Yeni Zelanda kablo hatlarındaki Çin bileşenlerini ayıklamayı gündeme getirdi. İngiltere dışındaki istihbarat üyelerinin Çin menşeili parçaların çıkarılması fikrini kabul ettiği belirtiliyor. Kritik hatlarda yaşanan kesintiler sonrası ülkeler altyapı güvenliğini artırmayı tartışıyor. Türkiye'deki internet kullanıcıları olası küresel altyapı değişikliklerinden etkilenebilir. Deniz altındaki fiber optik hatlar dünya veri akışının omurgasını oluşturmaya devam ediyor."
+  },
+  {
+   "topic": "Trump Putin and Xi Jinping summit planned in China",
+   "ts": "2026-11-19T20:45:51",
+   "summary": "Trump, Putin ve Şi Cinping Çin zirvesinde buluşuyor. Üç küresel liderin Çin'in Şenzen şehrinde bir zirve gerçekleştirmesi bekleniyor. Donald Trump, Vladimir Putin ve Şi Cinping'in aynı masada buluşması planlanıyor. Görüşmede küresel ticaret ve güvenlik politikalarının ele alınması bekleniyor. Bu buluşmanın uluslararası ilişkilerde dengeleri değiştirebileceği ifade ediliyor. Gelişmelerin bölgesel ve küresel stratejileri etkilemesi bekleniyor. Dünyanın gözü Çin'in Şenzen şehrindeki olası zirvede."
   }
  ],
  "daily": {
@@ -229,7 +235,8 @@
    ],
    "used": [
     0,
-    1
+    1,
+    2
    ]
   },
   "yt:B5bIuFRc91E": {
