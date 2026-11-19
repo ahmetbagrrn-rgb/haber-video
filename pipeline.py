@@ -220,7 +220,6 @@ def handle_callback(cb, st):
     data = cb.get("data") or ""
     chat = ((cb.get("message") or {}).get("chat") or {}).get("id")
     msg_id = (cb.get("message") or {}).get("message_id")
-    tg("answerCallbackQuery", callback_query_id=cb["id"])
     if chat != st.get("owner_chat") or ":" not in data:
         return
     action, gid = data.split(":", 1)
@@ -703,6 +702,15 @@ def cmd_listen():
 
 
 def process_updates(st, ups):
+    # Önce tüm düğme basışlarına anında cevap ver (Telegram 15 sn içinde yanıt bekler)
+    for u in ups:
+        cb = u.get("callback_query")
+        if cb:
+            tg("answerCallbackQuery", callback_query_id=cb["id"], text="Alındı ⏳")
+            m = cb.get("message") or {}
+            if (m.get("chat") or {}).get("id") == st.get("owner_chat"):
+                tg("editMessageReplyMarkup", chat_id=m["chat"]["id"], message_id=m.get("message_id"),
+                   reply_markup={"inline_keyboard": [[{"text": "⏳ İşleniyor…", "callback_data": "noop"}]]})
     for n, u in enumerate(ups):
         st["tg_offset"] = u["update_id"] + 1
         save_state(st)  # önce offset: hata olursa aynı mesaj tekrar işlenmesin
@@ -747,6 +755,10 @@ def process_updates(st, ups):
         multi = text.startswith("/ucdil") or text.startswith("/ikidil")
         text = re.sub(r"^/(ucdil|ikidil)\s*", "", text)
         tg_send(chat, "🎬 Video hazırlanıyor, 3-5 dk sürer.")
+        for _ in range(60):  # dinleyici araçları arka planda kuruyorsa bekle
+            if not os.environ.get("LISTEN_MINUTES") or Path("/tmp/tools_ready").exists():
+                break
+            time.sleep(5)
         try:
             results = []
             langs = CONFIG.get("auto_langs", ["tr", "en", "de"]) if multi else [None]
