@@ -73,6 +73,11 @@
    "topic": "AI voice cloning bank fraud hits France and US",
    "ts": "2026-11-19T20:29:27",
    "summary": "Fransa ve ABD'de Yapay Zeka Banka Dolandırıcılığı Milyonlarca Avroya Ulaştı. Yapay zeka ses taklitleri ile başka hesaplara para aktarıldığı bildiriliyor. Fransa'da bir bankanın yapay zeka yöntemiyle yüz yirmi altı milyon avro dolandırıldığı bildirildi. Amerika Birleşik Devletleri'ndeki finans kurumlarının da benzer yöntemlerle yüz otuz milyon dolar dolandırıldığı ifade ediliyor. Siber saldırganların gelişmiş yapay zeka modelleriyle güvenlik sistemlerini hedef alabildiği belirtiliyor. Finansal sistemler yeni nesil dolandırıcılıklara karşı önlem almazsa kriz derinleşebilir. Finansal sistemler yeni nesil dolandırıcılıklara karşı önlem almazsa kriz derinleşecek."
+  },
+  {
+   "topic": "Five Eyes intelligence alliance removes Chinese components from undersea cables",
+   "ts": "2026-11-19T20:37:40",
+   "summary": "Beş Göz İttifakı deniz altı kablolarından Çin'i çıkarıyor. Küresel internet trafiğinin büyük bir kısmı deniz altındaki fiber optik kablolardan geçmektedir. ABD, Kanada, Avustralya ve Yeni Zelanda kablo hatlarındaki Çin bileşenlerini ayıklamayı gündeme getirdi. İngiltere dışındaki istihbarat üyelerinin Çin menşeili parçaların çıkarılması fikrini kabul ettiği belirtiliyor. Kritik hatlarda yaşanan kesintiler sonrası ülkeler altyapı güvenliğini artırmayı tartışıyor. Türkiye'deki internet kullanıcıları olası küresel altyapı değişikliklerinden etkilenebilir. Deniz altındaki fiber optik hatlar dünya veri akışının omurgasını oluşturmaya devam ediyor."
   }
  ],
  "daily": {
@@ -223,7 +228,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   },
   "yt:B5bIuFRc91E": {
