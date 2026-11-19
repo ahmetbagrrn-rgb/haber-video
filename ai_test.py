@@ -26,3 +26,7 @@ for env, url, models in render.ALT_PROVIDERS:
         except Exception as e:
             body = getattr(e, "read", lambda: b"")().decode()[:200] if hasattr(e, "read") else ""
             print(f"{env} / {m}: HATA {str(e)[:80]} {body}")
+if os.environ.get("OPENROUTER_API_KEY"):
+    ms = render.http_json("https://openrouter.ai/api/v1/models", timeout=60)["data"]
+    free = [m["id"] for m in ms if str(m.get("pricing", {}).get("prompt")) in ("0", "0.0") and str(m.get("pricing", {}).get("completion")) in ("0", "0.0")]
+    print("ÜCRETSİZ MODELLER:", ", ".join(free))
