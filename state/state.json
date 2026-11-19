@@ -68,6 +68,11 @@
    "topic": "Yemeni forces withdraw from Bab el Mandeb strait",
    "ts": "2026-11-19T20:21:04",
    "summary": "Babülmendep Boğazı'nda çekilme: Kontrol Husilere geçti. Suudi Arabistan destekli Yemen ordusu stratejik Babülmendep Boğazı'ndan çekildiğini duyurdu. Bölgenin kontrolü tamamen Husilere geçti. Birleşik Arap Emirlikleri destekli Güney Geçiş Konseyi Aden'i koruyacaklarını belirterek kendilerini feshetti. Bu hamle Kızıldeniz'deki kritik deniz hatlarında güvenlik risklerini artırıyor. Stratejik su yolundaki bu otorite boşluğu yeni bir kriz mi doğuruyor? Husilere göre bölgedeki askeri hakimiyet artıyor."
+  },
+  {
+   "topic": "AI voice cloning bank fraud hits France and US",
+   "ts": "2026-11-19T20:29:27",
+   "summary": "Fransa ve ABD'de Yapay Zeka Banka Dolandırıcılığı Milyonlarca Avroya Ulaştı. Yapay zeka ses taklitleri ile başka hesaplara para aktarıldığı bildiriliyor. Fransa'da bir bankanın yapay zeka yöntemiyle yüz yirmi altı milyon avro dolandırıldığı bildirildi. Amerika Birleşik Devletleri'ndeki finans kurumlarının da benzer yöntemlerle yüz otuz milyon dolar dolandırıldığı ifade ediliyor. Siber saldırganların gelişmiş yapay zeka modelleriyle güvenlik sistemlerini hedef alabildiği belirtiliyor. Finansal sistemler yeni nesil dolandırıcılıklara karşı önlem almazsa kriz derinleşebilir. Finansal sistemler yeni nesil dolandırıcılıklara karşı önlem almazsa kriz derinleşecek."
   }
  ],
  "daily": {
@@ -91,14 +96,14 @@
  },
  "pending": {},
  "_removed": [
-  "443091847971",
-  "442639882090",
   "445296633124",
-  "445944378440",
-  "443631404172",
-  "445761614490",
+  "443091847971",
   "444854651743",
-  "445944378441"
+  "445761614490",
+  "443631404172",
+  "445944378440",
+  "445944378441",
+  "442639882090"
  ],
  "reminded": "",
  "yt_stories": {
@@ -217,7 +222,9 @@
      "score": 8
     }
    ],
-   "used": []
+   "used": [
+    0
+   ]
   },
   "yt:B5bIuFRc91E": {
    "stories": [
