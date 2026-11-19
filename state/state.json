@@ -38,6 +38,11 @@
    "topic": "US and European cyber attacks and critical infrastructure disruptions",
    "ts": "2026-11-19T17:50:26",
    "summary": "ABD ve Avrupa'da siber kriz: Kritik sistemler durdu. ABD'de NSA ve dev teknoloji şirketlerinin sistemlerinde aynı anda kriz patlak verdi. Acil durum testi bahanesiyle televizyonlar ve radyo yayınları bir dakikalığına tamamen karartıldı. Avrupa'da Slovenya, Çekya ve Polonya sokaklarında büyük protesto dalgaları yayıldı. Yaşanan bu olağanüstü kesintiler uluslararası tedarik zincirlerinde ciddi lojistik aksamalara yol açtı. Türkiye'deki dijital altyapı ve finans sistemleri de küresel siber risklere karşı önlemlerini artırdı. Dijital ağlardaki bu kırılganlıklar yeni bir küresel güvenlik tehdidinin kapısını aralıyor."
+  },
+  {
+   "topic": "Aselsan Ejderha electromagnetic weapon neutralizes 51 drones",
+   "ts": "2026-11-19T19:17:05",
+   "summary": "ASELSAN Ejderha 51 İHA'yı aynı anda etkisiz hale getirdi. Türk savunma şirketi ASELSAN elli bir İHA'yı tek hamlede etkisiz hale getirdi. Ejderha adı verilen elektromanyetik silah sistemi dünya savaş tarihinde bir ilk başardı. Sistem çoklu dron sürülerini aynı anda durdurma kabiliyetiyle sahada öne çıkıyor. Küresel güçler bu tarz İHA karşıtı savunma sistemleri için devasa bütçeler harcıyor. Geliştirilen bu yeni teknoloji Türkiye'nin sınır güvenliği stratejisinde kritik rol oynayacak. Elektronik harp sahasında yaşanan bu devrim askeri dengeleri baştan aşağı değiştiriyor."
   }
  ],
  "daily": {
@@ -59,14 +64,370 @@
    "2026-11-20T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "445944378440": {
+   "results": [
+    {
+     "title": "ASELSAN Ejderha 51 İHA'yı aynı anda etkisiz hale getirdi",
+     "description": "ASELSAN'ın geliştirdiği elektromanyetik silah sistemi aynı anda 51 insansız hava aracını durdurdu.\nSizce bu teknoloji gelecekteki savaşların seyrini tamamen değiştirecek mi?\n\n#ASELSAN #Ejderha #ElektronikHarp #SavunmaSanayii",
+     "tags": [
+      "ASELSAN",
+      "Ejderha silahı",
+      "elektromanyetik sistem",
+      "İHA savunması",
+      "Türk savunma sanayii",
+      "elektronik harp",
+      "dron sürüleri",
+      "askeri teknoloji",
+      "savunma teknolojileri",
+      "Türkiye"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#ASELSAN",
+      "#Ejderha",
+      "#ElektronikHarp",
+      "#SavunmaSanayii"
+     ],
+     "lang": "tr",
+     "topic": "Aselsan Ejderha electromagnetic weapon neutralizes 51 drones",
+     "tts": "edge",
+     "duration": 38.71,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Türk savunma şirketi ASELSAN elli bir İHA'yı tek hamlede etkisiz hale getirdi.",
+       "headline": "51 İHA",
+       "accent": "Durduruldu",
+       "search": "military drone swarms electronic",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ejderha adı verilen elektromanyetik silah sistemi dünya savaş tarihinde bir ilk başardı.",
+       "headline": "Ejderha",
+       "accent": "Silahı",
+       "search": "electromagnetic pulse technology",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Sistem çoklu dron sürülerini aynı anda durdurma kabiliyetiyle sahada öne çıkıyor.",
+       "headline": "Sürü Savaşları",
+       "accent": "Çözüm",
+       "search": "military radar screen control",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Küresel güçler bu tarz İHA karşıtı savunma sistemleri için devasa bütçeler harcıyor.",
+       "headline": "Küresel Yarış",
+       "accent": "Bütçe",
+       "search": "modern military technology lab",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "ISR",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "İsrail",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Geliştirilen bu yeni teknoloji Türkiye'nin sınır güvenliği stratejisinde kritik rol oynayacak.",
+       "headline": "Sınır Güvenliği",
+       "accent": "Kritik",
+       "search": "defense industry radar station",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Elektronik harp sahasında yaşanan bu devrim askeri dengeleri baştan aşağı değiştiriyor.",
+       "headline": "Askeri Devrim",
+       "accent": "Denge",
+       "search": "future warfare digital map",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=NWXet15_1gk",
+     "publish_at": "2026-11-19T19:14:38Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44594437844-1-tr"
+    },
+    {
+     "title": "ASELSAN neutralizes 51 drones with electromagnetic weapon",
+     "description": "ASELSAN successfully disabled fifty one drones at once using a new electromagnetic weapon system.\nHow will this electronic warfare breakthrough impact future military conflicts?\n\n#ASELSAN #DroneDefense #MilitaryTech #ElectronicWarfare",
+     "tags": [
+      "ASELSAN",
+      "Ejderha drone system",
+      "counter drone technology",
+      "electronic warfare",
+      "Turkish defense industry",
+      "electromagnetic weapon",
+      "military technology",
+      "drone swarm defense",
+      "future warfare"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#ASELSAN",
+      "#DroneDefense",
+      "#MilitaryTech",
+      "#ElectronicWarfare"
+     ],
+     "lang": "en",
+     "topic": "ASELSAN neutralizes fifty one drones simultaneously",
+     "tts": "edge",
+     "duration": 36.04,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Fifty one drones were neutralized simultaneously by a single Turkish defense system.",
+       "headline": "51 Drones",
+       "accent": "Neutralized",
+       "search": "military drone swarm",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Turkey"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The electromagnetic weapon named Ejderha achieved a historic milestone in modern warfare.",
+       "headline": "Ejderha System",
+       "accent": "Electromagnetic",
+       "search": "military radar technology",
+       "style": "subtitle",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Turkey"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This advanced technology stops multiple drone swarms at once on the active battlefield.",
+       "headline": "Swarm Defense",
+       "accent": " Breakthrough",
+       "search": "defense technology testing",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Global powers invest massive budgets to develop similar counter drone defense networks.",
+       "headline": "Global Race",
+       "accent": "Investment",
+       "search": "military command center",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "U.S. defense contractors now face increased pressure to counter these rapid electronic warfare advancements.",
+       "headline": "US Impact",
+       "accent": "Pressure",
+       "search": "military manufacturing plant",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "United States"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Electronic warfare innovations continue to rewrite the rules of international border security.",
+       "headline": "Border Security",
+       "accent": "Evolution",
+       "search": "modern military radar",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=NWXet15_1gk",
+     "publish_at": "2026-11-19T19:18:59Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44594437844-1-en"
+    },
+    {
+     "title": "ASELSAN Ejderha: 51 Drohne gleichzeitig neutralisiert",
+     "description": "Das türkische Rüstungsunternehmen ASELSAN hat mit dem System Ejderha weltweit erstmals 51 Drohnen gleichzeitig gestoppt.\nWelche Folgen hat diese neue elektromagnetische Waffe für künftige Konflikte?\n\n#ASELSAN #Drohnenabwehr #Militär #Technologie",
+     "tags": [
+      "ASELSAN",
+      "Ejderha",
+      "Drohnenabwehr",
+      "Elektronische Kriegsführung",
+      "Militär",
+      "Türkei",
+      "Sicherheit",
+      "Rüstungsindustrie",
+      "Waffentechnologie",
+      "Drohnenschwarm"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#ASELSAN",
+      "#Drohnenabwehr",
+      "#Militär",
+      "#Technologie"
+     ],
+     "lang": "de",
+     "topic": "Turkish defense company neutralizes fifty one drones simultaneously",
+     "tts": "edge",
+     "duration": 33.76,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-1-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Das türkische System Ejderha stoppte 51 Drohnen gleichzeitig im Test.",
+       "headline": "51 Drohnen",
+       "accent": "gestoppt",
+       "search": "drone swarm defense technology",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkei"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die elektromagnetische Waffe von ASELSAN schaltet ganze Schwärme auf einmal aus.",
+       "headline": "Elektromagnetisch",
+       "accent": "Waffe",
+       "search": "military electronic warfare",
+       "style": "subtitle",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkei"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ein solcher Erfolg gegen Drohnenschwärme ist in der Kriegshistorie einmalig.",
+       "headline": "Weltpremiere",
+       "accent": "Erfolg",
+       "search": "high tech military radar",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Militärische Großmächte investieren massiv in diesen neuen Bereich der Drohnenabwehr.",
+       "headline": "Hohe Budgets",
+       "accent": "Investition",
+       "search": "modern military command center",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Diese Technologie verändert die europäische Grenzsicherheit und das taktische Vorgehen.",
+       "headline": "Neue Taktik",
+       "accent": "Sicherheit",
+       "search": "border surveillance technology",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Der erfolgreiche Einsatz der elektromagnetischen Waffe markiert eine Zeitenwende.",
+       "headline": "Zeitenwende",
+       "accent": "Änderung",
+       "search": "futuristic military tech",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=NWXet15_1gk",
+     "publish_at": "2026-11-19T19:22:02Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44594437844-1-de"
+    }
+   ],
+   "ts": "2026-11-19T19:17:05"
+  }
+ },
  "_removed": [
-  "443631404172",
-  "445761614490",
-  "444854651743",
-  "442639882090",
+  "445296633124",
   "443091847971",
-  "445296633124"
+  "444854651743",
+  "445761614490",
+  "443631404172",
+  "442639882090"
  ],
  "reminded": "",
  "yt_stories": {
@@ -138,7 +499,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    3
    ]
   },
   "yt:Qclk_g2GU8M": {
