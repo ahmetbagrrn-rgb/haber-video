@@ -389,6 +389,86 @@ def trend_candidates(st):
     return out
 
 
+STORY_PROMPT = """Sen bir haber masası şefisin. Ekteki YouTube videosunu (ilk 15 dakika) izle.
+Videoda anlatılan, birbirinden BAĞIMSIZ ve haber değeri taşıyan olayları çıkar (en fazla {n} tane, en önemliden başlayarak).
+Sadece şu nişe uyanları al: jeopolitik, savaş ve güvenlik, uluslararası ilişkiler, küresel ekonomi, enerji, teknoloji, siber güvenlik.
+Magazin, kişisel yorum, reklam, abone çağrısı ALMA.
+Her olay için:
+- "title": olayın kısa, somut Türkçe adı (kim + ne)
+- "facts": videoda söylenen olgular, Türkçe, 4-7 cümle. İsimler, yerler, rakamlar ve tarihler videoda geçtiği gibi; iddiaları kime ait olduğuyla yaz. Videoda olmayan bilgi EKLEME. Konuşmacının cümlelerini kopyalama, olguları aktar.
+- "score": 1-10 arası haber değeri (somutluk + geniş etki + izleyici ilgisi)
+Sadece JSON döndür: {"stories":[{"title":"...","facts":"...","score":8}]}
+Haber niteliğinde olay yoksa {"stories":[]} döndür."""
+
+
+def extract_stories(url, n):
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key:
+        return None
+    body = {"contents": [{"parts": [{"fileData": {"fileUri": url}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
+                                    {"text": STORY_PROMPT.replace("{n}", str(n))}]}],
+            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.3,
+                                 "mediaResolution": "MEDIA_RESOLUTION_LOW"}}
+    for model in ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]:
+        for _ in range(2):
+            try:
+                r = render.http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                                     body, {"x-goog-api-key": key}, timeout=240)
+                raw = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
+                st = json.loads(render.strip_fences(raw)).get("stories") or []
+                st = [x for x in st if x.get("title") and x.get("facts")]
+                st.sort(key=lambda x: -(x.get("score") or 0))
+                log(f"Videodan {len(st)} haber çıkarıldı ({model}):", " | ".join(x["title"] for x in st))
+                return st[:n]
+            except Exception as e:  # noqa
+                log(f"Haber çıkarma ({model}) hatası:", e)
+                if "404" in str(e):
+                    break
+    return None
+
+
+def youtube_story_candidates(st):
+    """YouTuber videolarını konu konu böler: her video birden çok kısa video kaynağı olur."""
+    vids, latest = youtube_candidates(st)
+    store = st.setdefault("yt_stories", {})
+    n = CONFIG.get("stories_per_video", 3)
+    min_score = CONFIG.get("min_story_score", 5)
+    out = []
+    for v in vids:
+        if v["id"] not in store:
+            stories = extract_stories(v["url"], n)
+            if stories is None:  # çıkarma başarısız: eski yöntem (videonun tamamı)
+                out.append(v)
+                continue
+            store[v["id"]] = {"stories": stories, "used": []}
+            save_state(st)
+        rec = store[v["id"]]
+        left = [k for k, x in enumerate(rec["stories"])
+                if k not in rec["used"] and (x.get("score") or 10) >= min_score]
+        if not left:
+            st["processed"].append(v["id"])
+            continue
+        for k in left:
+            x = rec["stories"][k]
+            out.append({"id": f"{v['id']}#{k}", "video": v["id"], "story": k, "url": v["url"],
+                        "title": x["title"], "text": f"{x['title']}.\n{x['facts']}"})
+    # eski kayıtları temizle
+    for vid in list(store)[:-20]:
+        store.pop(vid, None)
+    return out, latest
+
+
+def mark_story(st, cand):
+    if cand.get("video"):
+        rec = st.get("yt_stories", {}).get(cand["video"])
+        if rec is not None and cand["story"] not in rec["used"]:
+            rec["used"].append(cand["story"])
+            if len(rec["used"]) >= len(rec["stories"]):
+                st["processed"].append(cand["video"])
+    else:
+        st["processed"].append(cand["id"])
+
+
 # ---------------------------------------------------------------- komutlar
 
 def produce_topic(cand, st, header):
@@ -396,7 +476,7 @@ def produce_topic(cand, st, header):
     langs = CONFIG.get("auto_langs", ["tr", "en", "de"])
     ig_lang = CONFIG.get("instagram_lang", "tr")
     base = {"mode": "rewrite", "source": cand.get("url") or cand.get("link") or ""}
-    if cand["id"].startswith("yt:"):
+    if cand["id"].startswith("yt:") and not cand.get("text"):
         base["youtube_url"] = cand["url"]
     else:
         base["text"] = cand["text"]
@@ -451,8 +531,12 @@ def cmd_auto():
         if not cands:
             cands, label = news_candidates(st), "📰 Ajans haberi (trend bulunamadı)"
     else:
-        yts, latest = youtube_candidates(st)
+        yts, latest = youtube_story_candidates(st)
         cands, label = yts, "🎥 YouTuber videosundan"
+        if not yts and slot == "yt":
+            log("YouTuber'da işlenecek konu yok; ek YouTuber saati atlandı")
+            save_state(st)
+            return
         if not yts:
             # YouTuber'da işlenmemiş yeni video yoksa (son 24 saatte paylaşım yok ya da zaten işlendi) ajanslara geç
             log("YouTuber son yükleme:", latest)
@@ -460,7 +544,7 @@ def cmd_auto():
 
     for cand in cands:
         if similar_topic(cand["title"], st):
-            st["processed"].append(cand["id"])
+            mark_story(st, cand)
             continue
         log("Kaynak:", cand["id"], cand["title"])
         try:
@@ -468,10 +552,10 @@ def cmd_auto():
         except Exception as e:  # noqa
             log("Üretim hatası:", e)
             tg_send(owner, f"⚠️ Otomatik video üretilemedi: {cand['title']}\nHata: {str(e)[:300]}")
-            st["processed"].append(cand["id"])
+            mark_story(st, cand)
             save_state(st)
             raise
-        st["processed"].append(cand["id"])
+        mark_story(st, cand)
         if not results:
             continue
         st["daily"] = {day: done + 1}
@@ -548,7 +632,32 @@ def cmd_tg_check():
 def cmd_telegram():
     st = load_state()
     expire_pending(st)
-    ups = tg_updates(st.get("tg_offset", 0))
+    process_updates(st, tg_updates(st.get("tg_offset", 0)))
+
+
+def cmd_listen():
+    """Telegram'ı uzun süreli dinler: onay düğmesine basınca saniyeler içinde işlenir."""
+    minutes = float(os.environ.get("LISTEN_MINUTES", "55"))
+    end = time.time() + minutes * 60
+    tg_updates(0)  # webhook varsa kaldır
+    while time.time() < end - 60:
+        st = load_state()
+        r = tg("getUpdates", offset=st.get("tg_offset", 0), timeout=45,
+               allowed_updates=["message", "callback_query"]) or {}
+        ups = r.get("result") or []
+        if not ups:
+            continue
+        log(f"{len(ups)} Telegram güncellemesi")
+        expire_pending(st)
+        process_updates(st, ups)
+        save_state(st)
+        try:
+            cmd_commit_state()
+        except SystemExit as e:
+            log("Durum kaydı ertelendi:", e)
+
+
+def process_updates(st, ups):
     for n, u in enumerate(ups):
         st["tg_offset"] = u["update_id"] + 1
         save_state(st)  # önce offset: hata olursa aynı mesaj tekrar işlenmesin
@@ -639,6 +748,17 @@ def merge_states(local, remote):
     m["pending"] = {k: v for k, v in pend.items() if k not in removed}
     m["_removed"] = list(removed)[-100:]
     m["reminded"] = max(local.get("reminded") or "", remote.get("reminded") or "")
+    ys = {}
+    for src in (remote.get("yt_stories", {}), local.get("yt_stories", {})):
+        for vid, rec in src.items():
+            cur = ys.setdefault(vid, {"stories": rec.get("stories", []), "used": []})
+            cur["used"] = sorted(set(cur["used"]) | set(rec.get("used", [])))
+    m["yt_stories"] = dict(list(ys.items())[-20:])
+    lw = {}
+    for src in (remote.get("lang_week", {}), local.get("lang_week", {})):
+        for lg, xs in src.items():
+            lw[lg] = sorted(set(lw.get(lg, [])) | set(xs))[-20:]
+    m["lang_week"] = lw
     return m
 
 
@@ -678,6 +798,6 @@ def cmd_commit_state():
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram,
+    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen,
      "commit-state": cmd_commit_state}.get(cmd, lambda: sys.exit(
         "Kullanım: pipeline.py auto | tg-check | telegram"))()

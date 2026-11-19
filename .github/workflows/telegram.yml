@@ -2,7 +2,8 @@ name: Telegram dinleyici
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Her saat başı ~55 dk boyunca canlı dinler (onay düğmesi saniyeler içinde işlenir)
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,18 +16,13 @@ concurrency:
 jobs:
   telegram:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Yeni mesaj var mı?
-        id: check
-        run: python pipeline.py tg-check
-
       - name: Araçları kur
-        if: steps.check.outputs.has == '1'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg > /dev/null
@@ -36,9 +32,14 @@ jobs:
           curl -fsSL -o fonts/PlayfairDisplay-Italic.ttf "https://raw.githubusercontent.com/google/fonts/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf" || true
           curl -fsSL -o fonts/Montserrat-Bold.ttf https://raw.githubusercontent.com/JulietaUla/Montserrat/master/fonts/ttf/Montserrat-Bold.ttf || true
 
-      - name: Mesajları işle
-        if: steps.check.outputs.has == '1'
+      - name: Git kimliği
+        run: |
+          git config user.name "haber-bot"
+          git config user.email "haber-bot@users.noreply.github.com"
+
+      - name: Telegram'ı canlı dinle
         env:
+          LISTEN_MINUTES: "55"
           GH_TOKEN: ${{ github.token }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
@@ -50,7 +51,7 @@ jobs:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
-        run: python pipeline.py telegram
+        run: python pipeline.py listen
 
       - name: Durumu kaydet
         if: always()

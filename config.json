@@ -11,7 +11,7 @@
     "de"
   ],
   "instagram_lang": "tr",
-  "max_auto_per_day": 3,
+  "max_auto_per_day": 5,
   "max_video_age_days": 4,
   "news_feeds": [
     "https://feeds.bbci.co.uk/news/world/rss.xml",
@@ -20,7 +20,8 @@
   ],
   "long_langs": [
     "tr",
-    "en"
+    "en",
+    "de"
   ],
   "approval": true,
   "elevenlabs_enabled": false,
@@ -55,7 +56,7 @@
     ],
     "privacy": "SELF_ONLY"
   },
-  "weekly_limit": {
-    "de": 1
-  }
+  "weekly_limit": {},
+  "stories_per_video": 3,
+  "min_story_score": 5
 }
