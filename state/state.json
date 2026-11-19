@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897452,
+ "tg_offset": 691897453,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -140,177 +140,29 @@
    "2026-11-22T06:30:00Z"
   ]
  },
- "pending": {
-  "446184028240": {
-   "results": [
-    {
-     "title": "Mossad-Chef in Washington: Neuer Militärplan gegen Iran",
-     "description": "Der Mossad-Chef hat in Washington geheime Militärpläne gegen den Iran besprochen. Welche Folgen hat diese Eskalation für die Sicherheit in Europa?\n\n#Mossad #IranKonflikt #Nahost #Geopolitik",
-     "tags": [
-      "Mossad",
-      "Iran",
-      "USA",
-      "Israel",
-      "Washington",
-      "Militär",
-      "Geopolitik",
-      "Naher Osten",
-      "Sicherheit",
-      "Konflikt"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Mossad",
-      "#IranKonflikt",
-      "#Nahost",
-      "#Geopolitik"
-     ],
-     "lang": "de",
-     "topic": "Mossad chief discusses military plans against Iran in Washington",
-     "tts": "edge",
-     "duration": 42.52,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-12-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44594437844-12-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Der israelische Geheimdienstchef hat in Washington geheime Militärpläne gegen Teheran verhandelt.",
-       "headline": "Geheime Pläne",
-       "accent": "Washington",
-       "search": "white house washington",
-       "style": "headline",
-       "countries": [
-        "USA",
-        "ISR",
-        "IRN"
-       ],
-       "country_names": [
-        "USA",
-        "Israel",
-        "Iran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Berichten zufolge fordert Israel von den USA die Fortsetzung gemeinsamer Militäroperationen gegen das iranische Regime.",
-       "headline": "Militäroperationen",
-       "accent": "Forderung",
-       "search": "military generals meeting",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "ISR"
-       ],
-       "country_names": [
-        "USA",
-        "Israel"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Parallel reiste ein US-Flottenkommandant nach Tel Aviv, um die militärische Koordination zu vertiefen.",
-       "headline": "Marine-Koordination",
-       "accent": "Tel Aviv",
-       "search": "warship at sea",
-       "style": "headline",
-       "countries": [
-        "USA",
-        "ISR"
-       ],
-       "country_names": [
-        "USA",
-        "Israel"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Diese enge Abstimmung zwischen beiden Staaten bereitet den Boden für eine neue Eskalationsstufe.",
-       "headline": "Eskalationsstufe",
-       "accent": "Strategie",
-       "search": "military command center",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "ISR"
-       ],
-       "country_names": [
-        "USA",
-        "Israel"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Mögliche geopolitische Unsicherheiten und Konflikte im Nahen Osten können laut Berichten die Grenzicherheit und Energiepfade in der Türkei bedrohen.",
-       "headline": "Wirtschaftsfolge",
-       "accent": "Europa",
-       "search": "industrial port container",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkei"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Damit bleibt die Frage offen, ob die Gespräche im Weißen Haus den Nahen Osten ins Chaos stürzen.",
-       "headline": "Offene Fragen",
-       "accent": "Zukunft",
-       "search": "middle east map",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "ISR",
-        "IRN"
-       ],
-       "country_names": [
-        "USA",
-        "Israel",
-        "Iran"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=B5bIuFRc91E",
-     "publish_at": "2026-11-22T07:00:00Z",
-     "elevenlabs": {
-      "used": 14997,
-      "limit": 40000,
-      "left": 25003,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-44594437844-12-de"
-    }
-   ],
-   "ts": "2026-11-19T22:33:16"
-  }
- },
+ "pending": {},
  "_removed": [
-  "74775df4be80",
-  "bc7037909ba6",
-  "af6ed91f3a79",
-  "443631404172",
-  "446184028241",
-  "41416ec5f7f6",
-  "445761614490",
-  "442639882090",
+  "9849bc2ef437",
   "c947dac9becb",
   "1edbeb303dcc",
+  "af6ed91f3a79",
   "d42fcbc4ce3d",
-  "445296633124",
-  "9849bc2ef437",
-  "873320f3cd81",
-  "0d9dbcf465cd",
-  "b34b7bca5216",
-  "443091847971",
   "445944378440",
   "445944378441",
-  "444854651743"
+  "444854651743",
+  "b34b7bca5216",
+  "74775df4be80",
+  "442639882090",
+  "445761614490",
+  "446184028241",
+  "446184028240",
+  "445296633124",
+  "873320f3cd81",
+  "443091847971",
+  "0d9dbcf465cd",
+  "443631404172",
+  "41416ec5f7f6",
+  "bc7037909ba6"
  ],
  "reminded": "",
  "yt_stories": {
