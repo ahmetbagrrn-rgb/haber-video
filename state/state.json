@@ -48,6 +48,11 @@
    "topic": "Nvidia CEO Jensen Huang resignation and China claims",
    "ts": "2026-11-19T19:31:57",
    "summary": "Nvidia CEO'su Jensen Huang neden istifa etti?. Nvidia'nın kurucu CEO'su Jensen Huang ani bir kararla görevinden ayrıldı. Çin yönetimi, bu istifanın ABD'nin çip ablukasını meşrulaştırmak için uydurulduğunu savundu. Amerikalı senatörler, CEO ile eski başkan arasındaki telefon kayıtlarını talep etti. Yaşanan bu kriz, Washington ile Pekin arasındaki teknoloji savaşını derinleştiriyor. Bu çip krizi, Türkiye'deki elektronik ve bilişim sektörünün maliyetlerini doğrudan etkileyecek. Küresel çip devindeki bu deprem, yapay zeka yarışının dengelerini tamamen değiştirecek."
+  },
+  {
+   "topic": "Iran attacks Bahrain and Kuwait with oil tankers",
+   "ts": "2026-11-19T19:43:25",
+   "summary": "İran'ın Körfez'deki tanker saldırıları bölgeyi sarstı. İran güçleri Bahreyn ve Kuveyt kıyılarına doğru dört tanker sevk etti. Tahran yönetimi doğrudan hedef aldığı bu ülkelerde kritik tesislere saldırdı. ABD ordusu ise misilleme olarak İran'a ait keşif adasını vurdu. Yaşanan bu askeri tırmanış Hürmüz Boğazı'ndaki enerji sevkiyatını riske atıyor. Bu durum Türkiye'deki akaryakıt fiyatlarını ve lojistik maliyetlerini doğrudan etkileyecek. Körfez'deki sular durulmazken yeni bir çatışma dalgası kapıda."
   }
  ],
  "daily": {
@@ -71,14 +76,14 @@
  },
  "pending": {},
  "_removed": [
-  "442639882090",
-  "443631404172",
-  "445761614490",
-  "445944378440",
-  "445944378441",
   "445296633124",
   "443091847971",
-  "444854651743"
+  "444854651743",
+  "445761614490",
+  "443631404172",
+  "445944378440",
+  "445944378441",
+  "442639882090"
  ],
  "reminded": "",
  "yt_stories": {
@@ -101,7 +106,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   },
   "yt:si67TZv2Xxg": {
