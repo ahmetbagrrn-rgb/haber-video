@@ -294,7 +294,7 @@ def fetch(url):
         return r.read()
 
 
-def youtube_candidates(st):
+def youtube_candidates(st, ignore_processed=False):
     """Takip edilen kanalların işlenmemiş videoları + kanalın son yükleme zamanı."""
     ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
     out, latest = [], None
@@ -314,7 +314,7 @@ def youtube_candidates(st):
             except Exception:  # noqa
                 pdt = dt.datetime.utcnow()
             latest = max(latest or pdt, pdt)
-            if not vid or f"yt:{vid}" in st["processed"] or pdt < max_age:
+            if not vid or (f"yt:{vid}" in st["processed"] and not ignore_processed) or pdt < max_age:
                 continue
             out.append({"id": f"yt:{vid}", "url": f"https://www.youtube.com/watch?v={vid}",
                         "title": title, "published": pdt, "channel": ch.get("name")})
@@ -427,9 +427,9 @@ def extract_stories(url, n):
     return None
 
 
-def youtube_story_candidates(st):
+def youtube_story_candidates(st, ignore_processed=False):
     """YouTuber videolarını konu konu böler: her video birden çok kısa video kaynağı olur."""
-    vids, latest = youtube_candidates(st)
+    vids, latest = youtube_candidates(st, ignore_processed)
     store = st.setdefault("yt_stories", {})
     n = CONFIG.get("stories_per_video", 3)
     min_score = CONFIG.get("min_story_score", 5)
@@ -451,6 +451,7 @@ def youtube_story_candidates(st):
         for k in left:
             x = rec["stories"][k]
             out.append({"id": f"{v['id']}#{k}", "video": v["id"], "story": k, "url": v["url"],
+                        "published": v["published"], "score": x.get("score") or 5,
                         "title": x["title"], "text": f"{x['title']}.\n{x['facts']}"})
     # eski kayıtları temizle
     for vid in list(store)[:-20]:
@@ -525,6 +526,8 @@ def cmd_auto():
 
     if slot == "long":
         return cmd_long(st)
+    if slot == "backfill":
+        return cmd_backfill(st)
 
     if slot == "trend":
         cands, label = trend_candidates(st), "📈 Trend konu videosu"
@@ -563,6 +566,48 @@ def cmd_auto():
         return
     save_state(st)
     log("İşlenecek yeni kaynak bulunamadı")
+
+
+def cmd_backfill(st):
+    """Tek seferlik: YouTuber'ın son N gününü konu konu işler, sonra normal rutine dönülür."""
+    days = int(os.environ.get("BACKFILL_DAYS", "7"))
+    limit = int(os.environ.get("BACKFILL_MAX", "10"))
+    CONFIG["max_video_age_days"] = days
+    subprocess.run(["git", "config", "user.name", "haber-bot"])
+    subprocess.run(["git", "config", "user.email", "haber-bot@users.noreply.github.com"])
+    cands, _ = youtube_story_candidates(st, ignore_processed=True)
+    now = dt.datetime.utcnow()
+    def ok(c):
+        age = (now - c["published"]).days if c.get("published") else 0
+        return c.get("score", 5) >= (7 if age >= 3 else 5)  # eski videolardan sadece güçlü konular
+    cands = [c for c in cands if c.get("text") and ok(c)]
+    cands.sort(key=lambda c: (-(c.get("score") or 0), -c["published"].timestamp()))
+    log(f"Arşiv: {len(cands)} aday konu, en fazla {limit} işlenecek")
+    tg_send(st.get("owner_chat"), f"🗂 YouTuber'ın son {days} günü işleniyor: {len(cands)} uygun konu bulundu, "
+                                  f"en güçlü {min(limit, len(cands))} tanesi sırayla onayına gelecek.")
+    done = 0
+    for cand in cands:
+        if done >= limit:
+            break
+        if similar_topic(cand["title"], st):
+            mark_story(st, cand)
+            continue
+        log("Arşiv kaynağı:", cand["id"], cand["title"])
+        try:
+            results = produce_topic(cand, st, f"🗂 YouTuber arşivinden ({cand['published']:%d.%m})\nKonu: {cand['title']}")
+        except Exception as e:  # noqa
+            log("Üretim hatası:", e)
+            results = None
+        mark_story(st, cand)
+        save_state(st)
+        try:
+            cmd_commit_state()
+        except SystemExit as e:
+            log("Durum kaydı ertelendi:", e)
+        st = load_state()
+        if results:
+            done += 1
+    tg_send(st.get("owner_chat"), f"🗂 Arşiv tamamlandı: {done} konu onaya gönderildi. Normal rutine dönüldü.")
 
 
 def cmd_long(st):
