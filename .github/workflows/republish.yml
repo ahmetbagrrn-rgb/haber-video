@@ -2,7 +2,7 @@ name: Hazır videoyu tekrar yayına gönder
 
 on:
   repository_dispatch:
-    types: [republish]
+    types: [republish, requeue]
   workflow_dispatch:
     inputs:
       tag:
@@ -30,7 +30,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
-        run: python pipeline.py republish $TAGS
+        run: python pipeline.py ${{ github.event.action == 'requeue' && 'requeue' || 'republish' }} $TAGS
       - name: Durumu kaydet
         if: always()
         run: |

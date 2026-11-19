@@ -13,6 +13,7 @@ import datetime as dt
 import html
 import json
 import time
+import uuid
 import os
 import re
 import subprocess
@@ -211,7 +212,8 @@ def queue_or_publish(results, st, header):
             r["publish_at"] = slot or soon()
             r["published"] = publish(r)
         return False
-    gid = f"{RUN_ID}{len(st.setdefault('pending', {}))}"[-12:]
+    st.setdefault("pending", {})
+    gid = uuid.uuid4().hex[:12]  # benzersiz: onay/iptal kimlikleri asla çakışmasın
     st["pending"][gid] = {"results": results, "ts": dt.datetime.utcnow().isoformat(timespec="seconds")}
     lines = [header, ""]
     for r in results:
@@ -818,6 +820,31 @@ def cmd_republish():
     tg_send(st.get("owner_chat"), "🔁 Yeniden yayına gönderildi:\n" + "\n".join(out))
 
 
+def cmd_requeue():
+    """Hazır video gruplarını (etiket öneki) yeniden Telegram onayına koyar."""
+    st = load_state()
+    rel = json.loads(subprocess.run(["gh", "api", f"repos/{os.environ['GITHUB_REPOSITORY']}/releases?per_page=100"],
+                                    capture_output=True, text=True, check=True).stdout)
+    tags = [r["tag_name"] for r in rel]
+    for prefix in sys.argv[2:]:
+        results = []
+        for lang in ("tr", "en", "de"):
+            tag = f"{prefix}-{lang}"
+            if tag not in tags:
+                continue
+            d = Path("/tmp") / tag
+            d.mkdir(exist_ok=True)
+            subprocess.run(["gh", "release", "download", tag, "-p", "result.json", "-D", str(d), "--clobber"], check=True)
+            r = json.loads((d / "result.json").read_text(encoding="utf-8"))
+            r["instagram"] = lang == CONFIG.get("instagram_lang", "tr")
+            r["tag"] = tag
+            results.append(r)
+        if results:
+            queue_or_publish(results, st, "🔁 Onayı kaybolan arşiv videosu (tekrar)")
+            save_state(st)
+            log("Yeniden onaya kondu:", prefix)
+
+
 def merge_states(local, remote):
     """İki iş akışı aynı anda çalışırsa durum dosyalarını kayıpsız birleştirir."""
     m = dict(remote)
@@ -893,6 +920,6 @@ def cmd_commit_state():
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen, "republish": cmd_republish,
+    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen, "republish": cmd_republish, "requeue": cmd_requeue,
      "commit-state": cmd_commit_state}.get(cmd, lambda: sys.exit(
         "Kullanım: pipeline.py auto | tg-check | telegram"))()
