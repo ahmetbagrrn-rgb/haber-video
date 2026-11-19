@@ -53,6 +53,11 @@
    "topic": "Iran attacks Bahrain and Kuwait with oil tankers",
    "ts": "2026-11-19T19:43:25",
    "summary": "İran'ın Körfez'deki tanker saldırıları bölgeyi sarstı. İran güçleri Bahreyn ve Kuveyt kıyılarına doğru dört tanker sevk etti. Tahran yönetimi doğrudan hedef aldığı bu ülkelerde kritik tesislere saldırdı. ABD ordusu ise misilleme olarak İran'a ait keşif adasını vurdu. Yaşanan bu askeri tırmanış Hürmüz Boğazı'ndaki enerji sevkiyatını riske atıyor. Bu durum Türkiye'deki akaryakıt fiyatlarını ve lojistik maliyetlerini doğrudan etkileyecek. Körfez'deki sular durulmazken yeni bir çatışma dalgası kapıda."
+  },
+  {
+   "topic": "Ukraine attacks Kerch Bridge and Russian oil refineries",
+   "ts": "2026-11-19T20:03:21",
+   "summary": "Ukrayna Kerç Köprüsü'nü Vurdu, 10 Petrol Rafinerisi Devre Dışı. Ukrayna ordusu stratejik Kerç Köprüsü'nü vurarak büyük bir hasar bıraktı. Son iki haftada on Rus petrol rafinerisi düzenlenen İHA saldırılarıyla durduruldu. Rus askeri kaynaklarına göre saldırılar sırasında iki binden fazla insansız hava aracı düşürüldü. Artan güvenlik riskleri üzerine Avrupa'nın önde gelen ülkeleri ortak bir heyet kurdu. Enerji tesislerindeki bu büyük hasar küresel akaryakıt fiyatlarını doğrudan yukarı taşıyabilir. Ulaşım hatları ve enerji merkezleri hedef alınırken cephedeki gerilim her geçen gün tırmanıyor."
   }
  ],
  "daily": {
@@ -76,14 +81,14 @@
  },
  "pending": {},
  "_removed": [
-  "443631404172",
-  "445944378441",
-  "445761614490",
-  "442639882090",
-  "444854651743",
   "445296633124",
   "443091847971",
-  "445944378440"
+  "444854651743",
+  "445761614490",
+  "443631404172",
+  "445944378440",
+  "445944378441",
+  "442639882090"
  ],
  "reminded": "",
  "yt_stories": {
@@ -157,6 +162,7 @@
    ],
    "used": [
     0,
+    1,
     3
    ]
   },
