@@ -30,3 +30,10 @@ if os.environ.get("OPENROUTER_API_KEY"):
     ms = render.http_json("https://openrouter.ai/api/v1/models", timeout=60)["data"]
     free = [m["id"] for m in ms if str(m.get("pricing", {}).get("prompt")) in ("0", "0.0") and str(m.get("pricing", {}).get("completion")) in ("0", "0.0")]
     print("ÜCRETSİZ MODELLER:", ", ".join(free))
+
+if os.environ.get("OPENROUTER_API_KEY"):
+    os.environ.pop("GROQ_API_KEY", None)
+    d = render.alt_json(render.build_prompt({"mode": "rewrite", "target_lang": "tr"}) +
+                        "ASELSAN'ın Ejderha sistemi bir tatbikatta 51 İHA'yı aynı anda etkisiz hale getirdi.", 0.7,
+                        ok=lambda d: bool(d.get("scenes")))
+    print("SENARYO TESTİ:", d.get("title"), "|", len(d.get("scenes", [])), "sahne |", d["scenes"][0].get("text"))
