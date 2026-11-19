@@ -63,6 +63,11 @@
    "topic": "Turkey designates 50 highways for UAV and drone runways",
    "ts": "2026-11-19T20:12:30",
    "summary": "Türkiye 50 karayolunu İHA pisti yaptı. Türkiye olası bir savaş riskine karşı 50 karayolunu İHA pisti ilan etti. Askeri havalimanlarının çatışmalarda ilk hedef alınması bu stratejik kararı zorunlu kıldı. Türk insansız hava araçları artık doğrudan otoyollardan kalkış ve iniş yapabilecek. Bu hamle ülkenin savunma altyapısını olası bölgesel krizlere karşı korumayı amaçlıyor. Alınan bu tedbirler Türkiye'nin sınır güvenliğini ve askeri esnekliğini doğrudan artırıyor. Stratejik karayolları olası bir krizde hava üssüne dönüşmek için hazır bekliyor."
+  },
+  {
+   "topic": "Yemeni forces withdraw from Bab el Mandeb strait",
+   "ts": "2026-11-19T20:21:04",
+   "summary": "Babülmendep Boğazı'nda çekilme: Kontrol Husilere geçti. Suudi Arabistan destekli Yemen ordusu stratejik Babülmendep Boğazı'ndan çekildiğini duyurdu. Bölgenin kontrolü tamamen Husilere geçti. Birleşik Arap Emirlikleri destekli Güney Geçiş Konseyi Aden'i koruyacaklarını belirterek kendilerini feshetti. Bu hamle Kızıldeniz'deki kritik deniz hatlarında güvenlik risklerini artırıyor. Stratejik su yolundaki bu otorite boşluğu yeni bir kriz mi doğuruyor? Husilere göre bölgedeki askeri hakimiyet artıyor."
   }
  ],
  "daily": {
@@ -86,13 +91,13 @@
  },
  "pending": {},
  "_removed": [
-  "443091847971",
-  "445944378441",
   "445296633124",
-  "445944378440",
-  "443631404172",
-  "445761614490",
+  "443091847971",
   "444854651743",
+  "445761614490",
+  "443631404172",
+  "445944378440",
+  "445944378441",
   "442639882090"
  ],
  "reminded": "",
@@ -190,7 +195,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   },
   "yt:7TS4Cam2zrk": {
