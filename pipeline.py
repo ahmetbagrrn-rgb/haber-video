@@ -159,9 +159,19 @@ def publish(result):
         return False
     req = urllib.request.Request(url, data=json.dumps(result).encode(),
                                  headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        log("Make cevabı:", r.status)
-    result["tiktok"] = tiktok_publish(result)
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            log("Make cevabı:", r.status)
+    except urllib.error.HTTPError:
+        raise
+    except Exception as e:  # noqa  zaman aşımı: Make isteği aldı, yüklemeyi kendi sürdürüyor
+        if "timed out" not in str(e).lower():
+            raise
+        log("Make isteği aldı, yükleme arka planda sürüyor")
+    try:
+        result["tiktok"] = tiktok_publish(result)
+    except Exception as e:  # noqa
+        log("TikTok hatası:", e)
     return True
 
 
@@ -232,15 +242,22 @@ def handle_callback(cb, st):
         tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
         tg_send(chat, "❌ İptal edildi, yayınlanmadı.")
         return
-    out = []
+    out, failed = [], []
     for r in item["results"]:
-        slot = next_slot(r["lang"], st)
-        r["publish_at"] = slot or soon()
-        r["published"] = publish(r)
-        when = to_tr_time(slot) if slot else "hemen"
-        out.append(f"• {CHANNEL_NAMES.get(r['lang'], r['lang'])}: {when}")
+        ch = CHANNEL_NAMES.get(r["lang"], r["lang"])
+        try:
+            slot = next_slot(r["lang"], st)
+            r["publish_at"] = slot or soon()
+            r["published"] = publish(r)
+            out.append(f"• {ch}: {to_tr_time(slot) if slot else 'hemen'}")
+        except Exception as e:  # noqa  bir dil hata verse de diğerleri yayınlansın
+            log("Yayın hatası:", r["lang"], e)
+            failed.append(r)
+            out.append(f"• {ch}: ⚠️ hata ({str(e)[:80]})")
     tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
     tg_send(chat, "✅ Yayına gönderildi:\n" + "\n".join(out) + "\n\n" + quota_block(item["results"][-1]))
+    if failed:  # hatalı olanları yeniden onaya koy
+        queue_or_publish(failed, st, "🔁 Yayınlanamayanlar (tekrar dene)")
 
 
 def to_tr_time(iso):
@@ -780,6 +797,24 @@ def process_updates(st, ups):
             tg_send(chat, f"⚠️ Video üretilemedi: {str(e)[:300]}")
 
 
+def cmd_republish():
+    """Hazır videoları (release etiketleriyle) yeniden yayına gönderir; yayın saati yeni slottan."""
+    st = load_state()
+    out = []
+    for tag in sys.argv[2:]:
+        d = Path("/tmp") / tag
+        d.mkdir(exist_ok=True)
+        subprocess.run(["gh", "release", "download", tag, "-p", "result.json", "-D", str(d), "--clobber"], check=True)
+        r = json.loads((d / "result.json").read_text(encoding="utf-8"))
+        slot = next_slot(r["lang"], st)
+        r["publish_at"] = slot or soon()
+        publish(r)
+        out.append(f"• {CHANNEL_NAMES.get(r['lang'], r['lang'])}: {r['title']} → {to_tr_time(slot) if slot else 'hemen'}")
+        log("Yeniden gönderildi:", tag, r["publish_at"])
+    save_state(st)
+    tg_send(st.get("owner_chat"), "🔁 Yeniden yayına gönderildi:\n" + "\n".join(out))
+
+
 def merge_states(local, remote):
     """İki iş akışı aynı anda çalışırsa durum dosyalarını kayıpsız birleştirir."""
     m = dict(remote)
@@ -855,6 +890,6 @@ def cmd_commit_state():
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen,
+    {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen, "republish": cmd_republish,
      "commit-state": cmd_commit_state}.get(cmd, lambda: sys.exit(
         "Kullanım: pipeline.py auto | tg-check | telegram"))()
