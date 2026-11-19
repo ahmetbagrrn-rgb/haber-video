@@ -1,39 +1,17 @@
-"""Yapay zekâ anahtarlarını test eder (değerleri yazdırmaz)."""
-import os, json, render
+"""Gemini 2. anahtarın Pro model erişimini test eder (anahtar yazdırılmaz)."""
+import os, render
 P = 'Sadece şu JSON\'u döndür: {"ok": true}'
-for name in ("GEMINI_API_KEY", "GEMINI_API_KEY_2", "GROQ_API_KEY", "OPENROUTER_API_KEY"):
-    print(f"{name}: {'VAR' if os.environ.get(name) else 'YOK'}")
 for i, key in enumerate(render.gemini_keys()):
-    os.environ["_K"] = key
-    for model in ["gemini-3.5-flash-lite", "gemini-3.5-flash"]:
+    ms = render.http_json("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", headers={"x-goog-api-key": key})
+    names = [m["name"].split("/")[1] for m in ms.get("models", []) if "generateContent" in m.get("supportedGenerationMethods", [])]
+    pros = [n for n in names if "pro" in n]
+    print(f"ANAHTAR {i+1} PRO MODELLER:", ", ".join(pros))
+    for model in pros[:4]:
         try:
-            r = render.http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                                 {"contents": [{"parts": [{"text": P}]}], "generationConfig": {"responseMimeType": "application/json"}},
-                                 {"x-goog-api-key": key}, timeout=60)
-            print(f"Gemini anahtar {i+1} / {model}: ÇALIŞIYOR")
-            break
+            render.http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                             {"contents": [{"parts": [{"text": P}]}], "generationConfig": {"responseMimeType": "application/json"}},
+                             {"x-goog-api-key": key}, timeout=90)
+            print(f"ANAHTAR {i+1} / {model}: ÇALIŞIYOR")
         except Exception as e:
-            print(f"Gemini anahtar {i+1} / {model}: HATA {str(e)[:80]}")
-for env, url, models in render.ALT_PROVIDERS:
-    key = os.environ.get(env)
-    if not key:
-        continue
-    for m in models:
-        try:
-            r = render.http_json(url, {"model": m, "messages": [{"role": "user", "content": P}]},
-                                 {"Authorization": f"Bearer {key}"}, timeout=90)
-            print(f"{env} / {m}: ÇALIŞIYOR -> {r['choices'][0]['message']['content'][:40]!r}")
-        except Exception as e:
-            body = getattr(e, "read", lambda: b"")().decode()[:200] if hasattr(e, "read") else ""
-            print(f"{env} / {m}: HATA {str(e)[:80]} {body}")
-if os.environ.get("OPENROUTER_API_KEY"):
-    ms = render.http_json("https://openrouter.ai/api/v1/models", timeout=60)["data"]
-    free = [m["id"] for m in ms if str(m.get("pricing", {}).get("prompt")) in ("0", "0.0") and str(m.get("pricing", {}).get("completion")) in ("0", "0.0")]
-    print("ÜCRETSİZ MODELLER:", ", ".join(free))
-
-if os.environ.get("OPENROUTER_API_KEY"):
-    os.environ.pop("GROQ_API_KEY", None)
-    d = render.alt_json(render.build_prompt({"mode": "rewrite", "target_lang": "tr"}) +
-                        "ASELSAN'ın Ejderha sistemi bir tatbikatta 51 İHA'yı aynı anda etkisiz hale getirdi.", 0.7,
-                        ok=lambda d: bool(d.get("scenes")))
-    print("SENARYO TESTİ:", d.get("title"), "|", len(d.get("scenes", [])), "sahne |", d["scenes"][0].get("text"))
+            body = e.read().decode()[:160] if hasattr(e, "read") else ""
+            print(f"ANAHTAR {i+1} / {model}: HATA {str(e)[:60]} {body}")
