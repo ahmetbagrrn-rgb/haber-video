@@ -30,7 +30,7 @@ STATE_FILE = ROOT / "state" / "state.json"
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 RUN_ID = os.environ.get("GITHUB_RUN_ID", "local")
-CHANNEL_NAMES = {"en": "World Shift", "tr": "Global News", "de": "World Shift Deutsch"}
+CHANNEL_NAMES = {"en": "World Shift (EN)", "tr": "World Shift Dünya Haberleri (TR)", "de": "World Shift Deutsch"}
 APPROVAL = CONFIG.get("approval", True)
 
 
@@ -290,7 +290,7 @@ def make_video(payload, tag, instagram=True):
 
 
 def summary_line(res):
-    ch = CHANNEL_NAMES.get(res.get("lang"), "Global News")
+    ch = CHANNEL_NAMES.get(res.get("lang"), "World Shift Dünya Haberleri (TR)")
     ig = " + Instagram" if res.get("instagram") else ""
     state = "yayına gönderildi" if res.get("published") else "üretildi (yayınlanmadı)"
     return f"• {ch}{ig}: {res['title']} — {state}"

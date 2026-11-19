@@ -678,7 +678,7 @@ def headline_events(sc, ev):
 DEFAULT_CHANNELS = {
     "en": {"name": "WORLD SHIFT", "slug": "world-shift", "follow": "FOLLOW FOR MORE"},
     "de": {"name": "WORLD SHIFT DEUTSCH", "slug": "world-shift-de", "follow": "JETZT FOLGEN"},
-    "tr": {"name": "GLOBAL NEWS", "slug": "global-news", "follow": "TAKİP ET"},
+    "tr": {"name": "WORLD SHIFT", "slug": "global-news", "follow": "TAKİP ET"},
 }
 
 
