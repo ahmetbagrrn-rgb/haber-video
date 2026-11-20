@@ -108,6 +108,9 @@ def tg(method, **params):
         body = e.read().decode(errors="ignore")
         log(f"Telegram {method} hatası {e.code}: {body[:200]}")
         return {"ok": False, "error_code": e.code, "description": body}
+    except (urllib.error.URLError, OSError) as e:
+        log(f"Telegram {method} ağ hatası: {e}")
+        return None
 
 
 def tg_send(chat_id, text):
@@ -709,7 +712,10 @@ def cmd_listen():
     while time.time() < end - 60:
         st = load_state()
         r = tg("getUpdates", offset=st.get("tg_offset", 0), timeout=45,
-               allowed_updates=["message", "callback_query"]) or {}
+               allowed_updates=["message", "callback_query"])
+        if r is None:  # geçici ağ hatası: bekle ve yeniden dene
+            time.sleep(10)
+            continue
         ups = r.get("result") or []
         if not ups:
             continue
