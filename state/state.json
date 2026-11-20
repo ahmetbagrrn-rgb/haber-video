@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897465,
+ "tg_offset": 691897466,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -153,7 +153,8 @@
    "2026-11-23T11:00:00Z",
    "2026-11-23T14:00:00Z",
    "2026-11-23T17:00:00Z",
-   "2026-11-23T19:30:00Z"
+   "2026-11-23T19:30:00Z",
+   "2026-11-24T07:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -170,176 +171,41 @@
    "2026-11-22T09:30:00Z"
   ]
  },
- "pending": {
-  "f02172b50f8c": {
-   "results": [
-    {
-     "title": "Russland Treibstoffkrise: Ukrainische Drohnen treffen Raffinerien",
-     "description": "Ukrainische Drohneneffekte zwingen Russland zu restriktiven Massnahmen beim Benzinverkauf.\nSpüren Sie die steigenden Treibstoffpreise bereits an Ihrer Zapfsäule?\n\n#Treibstoffkrise #UkraineKrieg #Energie #Russland #Wirtschaft",
-     "tags": [
-      "Russland",
-      "Ukraine",
-      "Treibstoffkrise",
-      "Benzinpreise",
-      "Energie",
-      "Raffinerie",
-      "Drohnenangriff",
-      "Wirtschaft",
-      "Geopolitik",
-      "Moskau"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Treibstoffkrise",
-      "#UkraineKrieg",
-      "#Energie",
-      "#Russland",
-      "#Wirtschaft"
-     ],
-     "lang": "de",
-     "topic": "Ukrainian drone strikes trigger fuel crisis in Russia",
-     "tts": "edge",
-     "duration": 37.92,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukrainische Kampfdrohnen trafen wichtige russische Raffinerien und stoppten den Benzinverkauf.",
-       "headline": "Raffinerien getroffen",
-       "accent": "Drohnen",
-       "search": "oil refinery fire smoke",
-       "style": "headline",
-       "countries": [
-        "RUS",
-        "UKR"
-       ],
-       "country_names": [
-        "Russland",
-        "Ukraine"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Berichten zufolge melden Krasnodar und Tataristan schwere Schäden an der kritischen Energieinfrastruktur.",
-       "headline": "Schwere Schäden",
-       "accent": "Infrastruktur",
-       "search": "industrial explosion plant",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Russland"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Die Treibstoffverfügbarkeit in mehreren russischen Regionen wurde drastisch rationiert.",
-       "headline": "Benzin rationiert",
-       "accent": "Rationierung",
-       "search": "fuel station queue cars",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Russland"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Diese gezielten Angriffe erschüttern Moskaus nationale Versorgung und die interne Stabilität.",
-       "headline": "Versorgung bricht ein",
-       "accent": "Moskau",
-       "search": "control room screens",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Russland"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sinkende Raffineriekapazitäten treiben die globalen Energiepreise weltweit spürbar nach oben.",
-       "headline": "Globale Preise",
-       "accent": "Inflation",
-       "search": "stock market crash arrows",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Weil ukrainische Drohnen unaufhaltsam fliegen, gerät Moskaus Treibstoffmarkt tiefer in die Krise.",
-       "headline": "Nächste Angriffe",
-       "accent": "Dauerkrise",
-       "search": "military drone flight",
-       "style": "subtitle",
-       "countries": [
-        "RUS",
-        "UKR"
-       ],
-       "country_names": [
-        "Russland",
-        "Ukraine"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-23T19:30:00Z",
-     "elevenlabs": {
-      "used": 15482,
-      "limit": 40000,
-      "left": 24518,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.518 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-44740281292-de"
-    }
-   ],
-   "ts": "2026-11-20T15:20:51"
-  }
- },
+ "pending": {},
  "_removed": [
-  "9849bc2ef437",
-  "2f1a20151385",
-  "0d9dbcf465cd",
-  "57b4fdc6596f",
-  "66eba903a865",
-  "0c7c07a879a6",
-  "445296633124",
-  "445944378440",
-  "b34b7bca5216",
-  "a5e09c77f7f8",
-  "444854651743",
-  "1edbeb303dcc",
-  "be8762e28854",
-  "d42fcbc4ce3d",
-  "af6ed91f3a79",
-  "445944378441",
-  "445761614490",
-  "41416ec5f7f6",
-  "446184028241",
-  "c947dac9becb",
-  "32fa0d1d693a",
-  "74775df4be80",
-  "443631404172",
-  "446184028240",
-  "ddbd76050660",
   "e545b5536757",
-  "bc7037909ba6",
+  "445944378440",
   "443091847971",
+  "0d9dbcf465cd",
+  "74775df4be80",
+  "446184028241",
+  "a5e09c77f7f8",
+  "445296633124",
   "873320f3cd81",
-  "63bfb40d47b6",
+  "d42fcbc4ce3d",
   "442639882090",
-  "86277101f5be"
+  "0c7c07a879a6",
+  "9849bc2ef437",
+  "bc7037909ba6",
+  "57b4fdc6596f",
+  "c947dac9becb",
+  "2f1a20151385",
+  "32fa0d1d693a",
+  "af6ed91f3a79",
+  "63bfb40d47b6",
+  "86277101f5be",
+  "1edbeb303dcc",
+  "445761614490",
+  "ddbd76050660",
+  "445944378441",
+  "f02172b50f8c",
+  "b34b7bca5216",
+  "443631404172",
+  "be8762e28854",
+  "446184028240",
+  "41416ec5f7f6",
+  "444854651743",
+  "66eba903a865"
  ],
  "reminded": "",
  "yt_stories": {
