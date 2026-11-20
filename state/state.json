@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897454,
+ "tg_offset": 691897455,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -122,7 +122,8 @@
    "2026-11-21T02:00:00Z",
    "2026-11-21T13:00:00Z",
    "2026-11-21T17:00:00Z",
-   "2026-11-21T20:00:00Z"
+   "2026-11-21T20:00:00Z",
+   "2026-11-21T23:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -137,7 +138,8 @@
    "2026-11-21T14:00:00Z",
    "2026-11-21T17:00:00Z",
    "2026-11-21T19:30:00Z",
-   "2026-11-22T07:00:00Z"
+   "2026-11-22T07:00:00Z",
+   "2026-11-22T11:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -150,272 +152,13 @@
    "2026-11-21T12:30:00Z",
    "2026-11-21T15:30:00Z",
    "2026-11-21T18:00:00Z",
-   "2026-11-22T06:30:00Z"
+   "2026-11-22T06:30:00Z",
+   "2026-11-22T09:30:00Z"
   ]
  },
  "pending": {
-  "be8762e28854": {
+  "a5e09c77f7f8": {
    "results": [
-    {
-     "title": "Rusya'da Yakıt Krizi: Ukrayna Dronları Rafinerileri Vurdu",
-     "description": "Rusya'da insansız hava aracı saldırıları sonucu petrol rafinerilerinin hasar görmesiyle bölgesel yakıt satışları sınırlandırıldı.\nSizce enerji tesislerine yönelik bu hamleler küresel akaryakıt fiyatlarını nasıl etkiler?\n\n#Rusya #Ukrayna #EnerjiKrizi #Petrol #Haber",
-     "tags": [
-      "rusya ukrayna savaşı",
-      "rusya benzin kısıtlaması",
-      "ukrayna dron saldırısı",
-      "krasnodar rafineri",
-      "tataristan petrol",
-      "enerji krizi",
-      "akaryakıt fiyatları",
-      "petrol rafinerisi",
-      "jeopolitik",
-      "rusya haberleri"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Rusya",
-      "#Ukrayna",
-      "#EnerjiKrizi",
-      "#Petrol",
-      "#Haber"
-     ],
-     "lang": "tr",
-     "topic": "Ukrainian drone strikes target Russian oil refineries",
-     "tts": "edge",
-     "duration": 46.27,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukrayna dronları Rus rafinerilerini vurdu, birden fazla bölgede benzin satışı kısıtlandı.",
-       "headline": "Benzin Kısıtlandı",
-       "accent": "Kriz",
-       "search": "oil refinery fire",
-       "style": "headline",
-       "countries": [
-        "RUS",
-        "UKR"
-       ],
-       "country_names": [
-        "Rusya",
-        "Ukrayna"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Ukrayna tarafı ve yerel haberlere göre Krasnodar ve Tataristan'daki kritik enerji altyapıları hava saldırılarıyla hedef alındı.",
-       "headline": "Rafineriler Hedefte",
-       "accent": "Saldırı",
-       "search": "drone flying night",
-       "style": "subtitle",
-       "countries": [
-        "RUS",
-        "UKR"
-       ],
-       "country_names": [
-        "Rusya",
-        "Ukrayna"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Saldırıların ardından petrol işleme kapasitesi düşerken bölgelerde yakıt satışlarına kısıtlamalar getirilmeye başlandı.",
-       "headline": "Üretim Düştü",
-       "accent": "Kısıtlama",
-       "search": "gas station queue",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Enerji tesislerine yönelik bu stratejik hamle, Moskova'nın iç piyasadaki tedarik dengesini ciddi şekilde sarsıyor.",
-       "headline": "Tedarik Sarsıldı",
-       "accent": "Analiz",
-       "search": "oil pipeline silhouette",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bölgesel arzın daralması, küresel akaryakıt fiyatları üzerinde artış baskısı yaratıyor.",
-       "headline": "Fiyat Baskısı",
-       "accent": "Etki",
-       "search": "fuel pump money",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Rus yönetimi depoları korumaya çalışırken insansız hava araçları stratejik noktaları vurmaya devam ediyor.",
-       "headline": "Saldırılar Sürüyor",
-       "accent": "Devam",
-       "search": "military control room",
-       "style": "subtitle",
-       "countries": [
-        "RUS",
-        "UKR"
-       ],
-       "country_names": [
-        "Rusya",
-        "Ukrayna"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-20T13:06:53Z",
-     "elevenlabs": {
-      "used": 15215,
-      "limit": 40000,
-      "left": 24785,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.785 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-44740281292-tr"
-    },
-    {
-     "title": "Ukraine Drones Hit Russian Refineries Spurring Fuel Crisis",
-     "description": "Ukrainian drone strikes on key Russian oil facilities are causing fuel shortages and threatening global energy markets.\nWill rising geopolitical tensions push US gas prices significantly higher?\n\n#Ukraine #Russia #EnergyCrisis #GasPrices #Geopolitics",
-     "tags": [
-      "Ukraine drone strikes",
-      "Russian oil refineries",
-      "gas prices US",
-      "global energy crisis",
-      "fuel rationing Russia",
-      "Krasnodar drone attack",
-      "Tatarstan refinery",
-      "crude oil market",
-      "geopolitics news",
-      "oil supply disruption"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukraine",
-      "#Russia",
-      "#EnergyCrisis",
-      "#GasPrices",
-      "#Geopolitics"
-     ],
-     "lang": "en",
-     "topic": "Ukrainian drone strikes on Russian refineries cause fuel rationing",
-     "tts": "elevenlabs",
-     "duration": 43.48,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44740281292-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukrainian drone strikes have damaged major Russian oil refineries, triggering local fuel rationing.",
-       "headline": "REFINERIES STRUCK",
-       "accent": "Drones",
-       "search": "burning oil refinery",
-       "style": "headline",
-       "countries": [
-        "UKR",
-        "RUS"
-       ],
-       "country_names": [
-        "Ukraine",
-        "Russia"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "According to Ukrainian officials and local reports, targeted strikes hit infrastructure in Krasnodar and Tatarstan, prompting regional gasoline caps.",
-       "headline": "GASOLINE RATIONED",
-       "accent": "Shortage",
-       "search": "gas station line",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Russia"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The loss of processing capacity directly threatens Moscow's internal energy stability during ongoing military conflict.",
-       "headline": "CAPACITY DROPS",
-       "accent": "Strained",
-       "search": "smoke over facility",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Russia"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Crucially, disrupting Russian regional supply creates upward pressure on global fuel prices.",
-       "headline": "GLOBAL IMPACT",
-       "accent": "Supply",
-       "search": "oil tanker ocean",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "American drivers could soon see higher prices at the pump due to tightened international crude markets.",
-       "headline": "PUMP PRICES",
-       "accent": "Surge",
-       "search": "gas pump price",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "United States"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "These escalating long-range aerial attacks mark a direct challenge to critical infrastructure control.",
-       "headline": "INFRASTRUCTURE WAR",
-       "accent": "Escalation",
-       "search": "drone flying sky",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-20T13:08:51Z",
-     "elevenlabs": {
-      "used": 15482,
-      "limit": 40000,
-      "left": 24518,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.518 / 40.000 karakter kaldı (bu video 664 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-44740281292-en"
-    },
     {
      "title": "Russland Treibstoffkrise: Ukrainische Drohnen treffen Raffinerien",
      "description": "Ukrainische Drohneneffekte zwingen Russland zu restriktiven Massnahmen beim Benzinverkauf.\nSpüren Sie die steigenden Treibstoffpreise bereits an Ihrer Zapfsäule?\n\n#Treibstoffkrise #UkraineKrieg #Energie #Russland #Wirtschaft",
@@ -534,7 +277,7 @@
      ],
      "chat_id": null,
      "source": "",
-     "publish_at": "2026-11-20T13:20:41Z",
+     "publish_at": "2026-11-22T11:00:00Z",
      "elevenlabs": {
       "used": 15482,
       "limit": 40000,
@@ -547,32 +290,33 @@
      "tag": "auto-44740281292-de"
     }
    ],
-   "ts": "2026-11-20T13:15:44"
+   "ts": "2026-11-20T15:18:56"
   }
  },
  "_removed": [
-  "74775df4be80",
-  "442639882090",
-  "444854651743",
-  "1edbeb303dcc",
-  "443091847971",
-  "446184028240",
-  "443631404172",
   "445944378440",
-  "9849bc2ef437",
-  "445761614490",
-  "57b4fdc6596f",
   "b34b7bca5216",
-  "41416ec5f7f6",
-  "0d9dbcf465cd",
-  "445296633124",
-  "d42fcbc4ce3d",
   "873320f3cd81",
-  "bc7037909ba6",
+  "9849bc2ef437",
+  "443091847971",
+  "41416ec5f7f6",
   "c947dac9becb",
-  "af6ed91f3a79",
+  "445761614490",
+  "bc7037909ba6",
+  "d42fcbc4ce3d",
   "445944378441",
-  "446184028241"
+  "444854651743",
+  "446184028241",
+  "af6ed91f3a79",
+  "74775df4be80",
+  "446184028240",
+  "445296633124",
+  "443631404172",
+  "57b4fdc6596f",
+  "be8762e28854",
+  "442639882090",
+  "0d9dbcf465cd",
+  "1edbeb303dcc"
  ],
  "reminded": "",
  "yt_stories": {
