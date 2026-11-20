@@ -75,5 +75,8 @@
   "min_story_score": 5,
   "elevenlabs_langs": [
     "en"
-  ]
+  ],
+  "daily_lang_limit": {
+    "de": 3
+  }
 }

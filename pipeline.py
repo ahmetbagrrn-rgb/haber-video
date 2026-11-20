@@ -503,8 +503,12 @@ def produce_topic(cand, st, header):
     limits = CONFIG.get("weekly_limit", {})
     now = time.time()
     lw = st.setdefault("lang_week", {})
+    dlim = CONFIG.get("daily_lang_limit", {})
     def week_ok(lg):
         lw[lg] = [t for t in lw.get(lg, []) if now - t < 7 * 86400]
+        if lg in dlim and len([t for t in lw[lg] if now - t < 86400]) >= dlim[lg]:
+            log(f"{lg}: günlük yükleme sınırı ({dlim[lg]}) doldu, bu konu o dilde atlandı")
+            return False
         return lg not in limits or len(lw[lg]) < limits[lg]
     langs = [lg for j, lg in enumerate(langs) if j == 0 or week_ok(lg)]
     for i, lang in enumerate(langs):
@@ -520,7 +524,7 @@ def produce_topic(cand, st, header):
         if i == 0 and similar_topic(res.get("topic", ""), st):
             break
         results.append(res)
-        if lang in limits:
+        if lang in limits or lang in dlim:
             lw.setdefault(lang, []).append(now)
     if results:
         r0 = results[0]
