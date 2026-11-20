@@ -7,7 +7,8 @@
   "yt:NWXet15_1gk",
   "yt:icuQEZvg7M0",
   "trend:US:dolar hoje",
-  "yt:7TS4Cam2zrk"
+  "yt:7TS4Cam2zrk",
+  "news:https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss"
  ],
  "topics": [
   {
@@ -89,11 +90,17 @@
    "topic": "Mossad chief pushes US for military action against Iran",
    "ts": "2026-11-19T20:54:28",
    "summary": "İran Operasyonu: Mossad Başkanı Washington'da Askeri Planları Görüştü. Mossad başkanı Washington'da CIA ve Trump ekibiyle gizli bir zirve gerçekleştirdi. İsrail tarafının Tahran yönetimine karşı askeri operasyonların sürmesini talep ettiği öne sürüldü. Amerikan donanması komutanı da donanmalar arası uyumu görüşmek üzere Tel Aviv'e gitti. Bu kritik temaslar iki ülkenin silahlı kuvvetleri arasındaki entegrasyonu derinleştirmeyi hedefliyor. Ortadoğu'da olası bir çatışma Türkiye'nin sınır güvenliğini ve enerji hatlarını doğrudan tehdit edebilir. Washington ve Tel Aviv arasındaki bu askeri diplomasi yeni bir bölgesel krizin fitilini ateşliyor."
+  },
+  {
+   "topic": "UK and EU agree youth mobility scheme",
+   "ts": "2026-11-20T08:22:49",
+   "summary": "BBC'ye Göre İngiltere ve AB Gençlik Vize Anlaşmasında Anlaşıyor. BBC'nin edindiği bilgiye göre İngiltere ve Avrupa Birliği, gençlik dolaşımı anlaşmasında uzlaşmaya hazırlanıyor. Cuma günü düzenlenecek zirvede onaylanması beklenen plan, gençlerin çalışma ve yaşama izinlerini kolaylaştıracak. Zirvede ayrıca gıda ticareti ve karbon emisyonları konularında yeni anlaşmaların da masada olması bekleniyor. Brexit sonrası gerilen ilişkileri tamir etmeyi hedefleyen bu adım bölgesel diplomasiyi yeniden şekillendiriyor. Avrupa ve İngiltere odaklı çalışan genç profesyoneller için seyahat rejimi baştan sona yenileniyor. Diplomatik dengeleri değiştiren bu yeni dönem kıtada kapıları yeniden aralıyor."
   }
  ],
  "daily": {
   "2026-11-18": 3,
-  "2026-11-19": 2
+  "2026-11-19": 2,
+  "2026-11-20": 1
  },
  "scheduled": {
   "en": [
@@ -140,29 +147,403 @@
    "2026-11-22T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "57b4fdc6596f": {
+   "results": [
+    {
+     "title": "BBC'ye Göre İngiltere ve AB Gençlik Vize Anlaşmasında Anlaşıyor",
+     "description": "BBC'nin edindiği bilgiye göre İngiltere ve AB, gençlerin seyahat ve çalışma şartlarını kolaylaştıracak anlaşmada uzlaşmaya hazırlanıyor.\nSizce bu adım Brexit sonrası bozulan ilişkileri tamamen düzeltebilir mi?\n\nKaynak: bbc.co.uk\n\n#İngiltere #AvrupaBirliği #Brexit #Vize #GençlikDolaşımı",
+     "tags": [
+      "İngiltere",
+      "Avrupa Birliği",
+      "Brexit",
+      "Gençlik Vizesi",
+      "AB Zirvesi",
+      "Uluslararası İlişkiler",
+      "Vize Anlaşması",
+      "İngiltere AB Anlaşması"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#İngiltere",
+      "#AvrupaBirliği",
+      "#Brexit",
+      "#Vize",
+      "#GençlikDolaşımı"
+     ],
+     "lang": "tr",
+     "topic": "UK and EU agree youth mobility scheme",
+     "tts": "edge",
+     "duration": 44.88,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "BBC'nin edindiği bilgiye göre İngiltere ve Avrupa Birliği, gençlik dolaşımı anlaşmasında uzlaşmaya hazırlanıyor.",
+       "headline": "Tarihi Vize Anlaşması",
+       "accent": "Serbestlik",
+       "search": "passport control airport",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Cuma günü düzenlenecek zirvede onaylanması beklenen plan, gençlerin çalışma ve yaşama izinlerini kolaylaştıracak.",
+       "headline": "Zirvede İmzalar Atılıyor",
+       "accent": "Gelişme",
+       "search": "eu flag uk",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Zirvede ayrıca gıda ticareti ve karbon emisyonları konularında yeni anlaşmaların da masada olması bekleniyor.",
+       "headline": "Gıda ve Karbon",
+       "accent": "Ticaret",
+       "search": "cargo ship port",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Brexit sonrası gerilen ilişkileri tamir etmeyi hedefleyen bu adım bölgesel diplomasiyi yeniden şekillendiriyor.",
+       "headline": "Brexit Sonrası Dönüm",
+       "accent": "İlişkiler",
+       "search": "handshake business politics",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Avrupa ve İngiltere odaklı çalışan genç profesyoneller için seyahat rejimi baştan sona yenileniyor.",
+       "headline": "Gençlere Yeni Fırsat",
+       "accent": "Gelecek",
+       "search": "young people walking",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Diplomatik dengeleri değiştiren bu yeni dönem kıtada kapıları yeniden aralıyor.",
+       "headline": "Yeni Sınır Düzeni",
+       "accent": "Değişim",
+       "search": "globe map connection",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-20T08:18:45Z",
+     "elevenlabs": {
+      "used": 14997,
+      "limit": 40000,
+      "left": 25003,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 25.003 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44700012003-tr"
+    },
+    {
+     "title": "UK and EU Reach Youth Visa Deal to Ease Travel",
+     "description": "UK and EU leaders are finalizing a new youth mobility visa agreement to ease travel and work rules. How will this youth visa deal impact young professionals moving abroad?\n\nSource: bbc.co.uk\n\n#YouthVisa #UK #EuropeanUnion #Geopolitics",
+     "tags": [
+      "UK EU relations",
+      "youth mobility visa",
+      "Brexit news",
+      "UK visa update",
+      "European Union",
+      "travel policy",
+      "work permit Europe",
+      "British politics",
+      "international relations",
+      "cross border work"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#YouthVisa",
+      "#UK",
+      "#EuropeanUnion",
+      "#Geopolitics"
+     ],
+     "lang": "en",
+     "topic": "UK and EU reach youth mobility visa agreement",
+     "tts": "elevenlabs",
+     "duration": 36.98,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "According to BBC reports, London and Brussels are finalizing a major youth mobility visa agreement.",
+       "headline": "UK-EU Deal",
+       "accent": "Imminent",
+       "search": "london cityscape",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "United Kingdom"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The upcoming summit is expected to approve relaxed work and living permits for young adults.",
+       "headline": "Work Permits",
+       "accent": "Simplified",
+       "search": "young professionals working",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Leaders are expected to approve the new cross-border framework at Friday's summit.",
+       "headline": "Friday Summit",
+       "accent": "Approval",
+       "search": "diplomatic meeting",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "This diplomatic breakthrough aims to repair strained post-Brexit relations across the region.",
+       "headline": "Post-Brexit",
+       "accent": "Diplomacy",
+       "search": "eu flag and london",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "UK and European young professionals will face shifting regulations as regional travel rules evolve.",
+       "headline": "Expats",
+       "accent": "Impact",
+       "search": "passport control airport",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "New pathways are reopening doors across the continent as travel rules evolve.",
+       "headline": "New Borders",
+       "accent": "Opening",
+       "search": "european street crowd",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-20T08:25:18Z",
+     "elevenlabs": {
+      "used": 15215,
+      "limit": 40000,
+      "left": 24785,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 24.785 / 40.000 karakter kaldı (bu video 542 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44700012003-en"
+    },
+    {
+     "title": "Großbritannien und EU: Neues Visa-Abkommen für junge Menschen",
+     "description": "Großbritannien und die EU einigen sich überraschend auf ein neues Abkommen für junge Erwachsene.\nWürdet ihr das neue Visa-Angebot für Großbritannien nutzen?\n\nQuelle: bbc.co.uk\n\n#Großbritannien #EU #Brexit #Visa #Jugend",
+     "tags": [
+      "Großbritannien",
+      "EU",
+      "Visa Abkommen",
+      "Brexit",
+      "Jugendfreizügigkeit",
+      "Arbeiten im Ausland",
+      "Europa Politik",
+      "London",
+      "Auslandserfahrung"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Großbritannien",
+      "#EU",
+      "#Brexit",
+      "#Visa",
+      "#Jugend"
+     ],
+     "lang": "de",
+     "topic": "UK and EU reach youth mobility agreement",
+     "tts": "edge",
+     "duration": 35.68,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44700012003-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Laut BBC-Berichten stehen Großbritannien und die EU vor einem neuen Visa-Abkommen für Jugendliche.",
+       "headline": "NEUES VISA ABKOMMEN",
+       "accent": "Durchbruch",
+       "search": "london skyline",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "Großbritannien"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der finale Beschluss soll bereits an diesem Freitag auf einem Gipfel offiziell fallen.",
+       "headline": "GIPFEL AM FREITAG",
+       "accent": "Entscheidung",
+       "search": "brussels eu flag",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "Großbritannien"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Das Regelwerk erleichtert jungen Bürgern das Arbeiten und Leben auf der Insel.",
+       "headline": "EINFACHER LEBEN",
+       "accent": "Perspektiven",
+       "search": "young professionals working",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "Großbritannien"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Hinter diesem Schritt steht das Ziel, die nach dem Brexit angespannten Beziehungen zu reparieren.",
+       "headline": "BREXIT FOLGEN",
+       "accent": "Diplomatie",
+       "search": "diplomats shaking hands",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "Großbritannien"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Auch für junge Menschen aus Deutschland vereinfacht sich der Zugang zum britischen Arbeitsmarkt.",
+       "headline": "CHANCEN IN GROSSBRITANNIEN",
+       "accent": "Zukunft",
+       "search": "young traveler airport",
+       "style": "headline",
+       "countries": [
+        "GBR",
+        "DEU"
+       ],
+       "country_names": [
+        "Großbritannien",
+        "Deutschland"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Damit steht Europa vor einer völlig neuen Ära der grenzüberschreitenden Zusammenarbeit.",
+       "headline": "NEUE ERA",
+       "accent": "Aufbruch",
+       "search": "map of europe",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "Großbritannien"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-20T08:27:46Z",
+     "elevenlabs": {
+      "used": 15215,
+      "limit": 40000,
+      "left": 24785,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 24.785 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44700012003-de"
+    }
+   ],
+   "ts": "2026-11-20T08:22:49"
+  }
+ },
  "_removed": [
-  "af6ed91f3a79",
-  "443091847971",
-  "c947dac9becb",
-  "41416ec5f7f6",
-  "443631404172",
-  "445944378441",
-  "445944378440",
-  "446184028240",
   "9849bc2ef437",
-  "b34b7bca5216",
-  "d42fcbc4ce3d",
-  "442639882090",
-  "873320f3cd81",
-  "445761614490",
-  "444854651743",
   "bc7037909ba6",
-  "74775df4be80",
+  "442639882090",
+  "443631404172",
+  "d42fcbc4ce3d",
   "446184028241",
+  "446184028240",
+  "445761614490",
+  "1edbeb303dcc",
+  "74775df4be80",
+  "443091847971",
   "445296633124",
+  "b34b7bca5216",
+  "41416ec5f7f6",
+  "c947dac9becb",
+  "445944378440",
+  "445944378441",
+  "444854651743",
   "0d9dbcf465cd",
-  "1edbeb303dcc"
+  "af6ed91f3a79",
+  "873320f3cd81"
  ],
  "reminded": "",
  "yt_stories": {
