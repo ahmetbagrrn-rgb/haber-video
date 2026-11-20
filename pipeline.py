@@ -258,7 +258,8 @@ def handle_callback(cb, st):
         except Exception as e:  # noqa  bir dil hata verse de diğerleri yayınlansın
             log("Yayın hatası:", r["lang"], e)
             failed.append(r)
-            out.append(f"• {ch}: ⚠️ hata ({str(e)[:80]})")
+            hint = " — kanal günlük YouTube yükleme sınırına takılmış olabilir, yarın tekrar dene" if "500" in str(e) else ""
+            out.append(f"• {ch}: ⚠️ hata ({str(e)[:60]}){hint}")
     tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
     tg_send(chat, "✅ Yayına gönderildi:\n" + "\n".join(out) + "\n\n" + quota_block(item["results"][-1]))
     if failed:  # hatalı olanları yeniden onaya koy
@@ -783,7 +784,7 @@ def process_updates(st, ups):
         multi = text.startswith("/ucdil") or text.startswith("/ikidil")
         text = re.sub(r"^/(ucdil|ikidil)\s*", "", text)
         tg_send(chat, "🎬 Video hazırlanıyor, 3-5 dk sürer.")
-        for _ in range(60):  # dinleyici araçları arka planda kuruyorsa bekle
+        for _ in range(180):  # dinleyici araçları arka planda kuruyorsa bekle (en fazla 15 dk)
             if not os.environ.get("LISTEN_MINUTES") or Path("/tmp/tools_ready").exists():
                 break
             time.sleep(5)
