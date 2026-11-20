@@ -76,7 +76,5 @@
   "elevenlabs_langs": [
     "en"
   ],
-  "daily_lang_limit": {
-    "de": 3
-  }
+  "daily_lang_limit": {}
 }
