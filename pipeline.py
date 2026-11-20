@@ -687,6 +687,100 @@ def weekly_reminder(st):
                 "Hazır olunca Claude'a 'ElevenLabs'i aç' demen yeterli.")
 
 
+# ---------------------------------------------------------------- check komutu
+
+CHECK_QUICK = {"check", "/check", "kontrol", "check haber"}
+CHECK_FULL = {"check tam", "check youtube", "check hafta"}
+CHECK_HELP = ("Kullanılabilir komutlar:\n• check (ya da /check, kontrol, check haber) → hızlı sağlık raporu\n"
+              "• check tam → Make + YouTube tam kontrol\n• check youtube → YouTube kontrolü\n"
+              "• check hafta → haftalık özet")
+
+
+def parse_check(text):
+    """'quick' | 'full' | 'unknown' | None (check komutu değil)."""
+    t = " ".join((text or "").strip().lower().split())
+    if t in CHECK_QUICK:
+        return "quick"
+    if t in CHECK_FULL:
+        return "full"
+    if t.startswith("check ") or t.startswith("/check "):
+        return "unknown"
+    return None
+
+
+def gh_get(path):
+    tok = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    req = urllib.request.Request(f"https://api.github.com/{path}", headers={
+        "Accept": "application/vnd.github+json", **({"Authorization": f"Bearer {tok}"} if tok else {})})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.loads(r.read().decode())
+
+
+def _parse_ts(s):
+    return dt.datetime.fromisoformat(s.replace("Z", "+00:00")).replace(tzinfo=None)
+
+
+def check_report(st):
+    """Ücretsiz hızlı sağlık raporu (Actions içinde, GITHUB_TOKEN + REST)."""
+    now = dt.datetime.utcnow()
+    issues, lines = [], []
+    repo = REPO or "ahmetbagrrn-rgb/haber-video"
+    for wf in ("auto.yml", "telegram.yml", "republish.yml"):
+        try:
+            runs = gh_get(f"repos/{repo}/actions/workflows/{wf}/runs?per_page=50").get("workflow_runs", [])
+            bad = [r for r in runs if r.get("conclusion") in ("failure", "cancelled")
+                   and now - _parse_ts(r["created_at"]) < dt.timedelta(hours=6)]
+            ok = next((r for r in runs if r.get("conclusion") == "success"), None)
+            last_ok = to_tr_time(ok["updated_at"]) if ok else "yok"
+            lines.append(f"• {wf}: son 6 sa hata/iptal {len(bad)}, son başarılı {last_ok}")
+            if bad:
+                issues.append(f"⚠️ {wf}: son 6 saatte {len(bad)} hata/iptal (son başarılı: {last_ok})")
+            elif not ok:
+                issues.append(f"⚠️ {wf}: hiç başarılı çalışma bulunamadı")
+        except Exception as e:  # noqa
+            issues.append(f"⚠️ {wf}: GitHub API okunamadı ({str(e)[:80]})")
+    pend = st.get("pending", {})
+    oldest = None
+    for v in pend.values():
+        try:
+            age = (now - dt.datetime.fromisoformat(v["ts"])).total_seconds() / 3600
+            oldest = age if oldest is None else max(oldest, age)
+        except Exception:  # noqa
+            pass
+    pend_txt = f"Bekleyen onay: {len(pend)}" + (f" (en eskisi {oldest:.1f} sa)" if oldest is not None else "")
+    if oldest is not None and oldest > 24:
+        issues.append(f"⏳ {pend_txt} — 48 saatte otomatik düşer")
+    daily = f"Bugün otomatik: {st.get('daily', {}).get(today(), 0)}/{CONFIG.get('max_auto_per_day', 3)}"
+    try:
+        rels = gh_get(f"repos/{repo}/releases?per_page=3")
+        rel_txt = "Son release: " + ", ".join(f"{r['tag_name']} ({to_tr_time(r['created_at'])})" for r in rels[:3])
+        if not rels:
+            rel_txt = "Son release: yok"
+    except Exception as e:  # noqa
+        rel_txt = "Son release: okunamadı"
+        issues.append(f"⚠️ Release listesi okunamadı ({str(e)[:80]})")
+    tail = "\nTam kontrol (Make + YouTube) için: check tam"
+    if not issues:
+        return f"✅ Haber sistemi sağlıklı — bekleyen onay: {len(pend)}\n{daily}\n🎧 Dinleyici çalışıyor." + tail
+    out = issues[:4] + [pend_txt, daily]
+    return "🩺 Haber sistemi kontrolü\n" + "\n".join(out[:6]) + "\n🎧 Dinleyici çalışıyor." + tail
+
+
+def handle_check(kind, text, chat, st):
+    if kind == "quick":
+        tg_send(chat, check_report(st)[:4000])
+    elif kind == "full":
+        st.setdefault("check_requests", []).append({
+            "cmd": " ".join(text.strip().lower().split()),
+            "ts": dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")})
+        st["check_requests"] = st["check_requests"][-20:]
+        save_state(st)
+        tg_send(chat, "🔎 Tam kontrol talebi alındı. Rapor en geç bir sonraki rutin kontrolde "
+                      "(11:13 / 16:13 / 21:13) buraya gelecek.")
+    else:
+        tg_send(chat, "❓ Bilinmeyen check komutu.\n" + CHECK_HELP)
+
+
 def cmd_tg_check():
     st = load_state()
     me = (tg("getMe") or {}).get("result") or {}
@@ -765,6 +859,14 @@ def process_updates(st, ups):
             save_state(st)
         if chat != st["owner_chat"]:
             log("Yabancı sohbetten mesaj yok sayıldı")
+            continue
+        kind = parse_check(text)
+        if kind:
+            try:
+                handle_check(kind, text, chat, st)
+            except Exception as e:  # noqa
+                log("check komutu hatası:", e)
+                tg_send(chat, f"⚠️ Kontrol yapılamadı: {str(e)[:300]}")
             continue
         if text.startswith("/start") or text.startswith("/durum"):
             tg_send(chat, f"✅ Sistem çalışıyor.\nBugün otomatik: {st['daily'].get(today(), 0)}/"
@@ -892,6 +994,16 @@ def merge_states(local, remote):
         for lg, xs in src.items():
             lw[lg] = sorted(set(lw.get(lg, [])) | set(xs))[-20:]
     m["lang_week"] = lw
+    cr = {}
+    for src in (remote.get("check_requests", []), local.get("check_requests", [])):
+        for x in src:
+            cr[(x.get("cmd"), x.get("ts"))] = x
+    if cr or "check_requests" in local or "check_requests" in remote:
+        done = set(local.get("_check_done", [])) | set(remote.get("_check_done", []))
+        if done:  # rutin kontrol işlediği taleplerin ts'sini buraya yazar (silinenler geri gelmesin)
+            m["_check_done"] = sorted(done)[-50:]
+        m["check_requests"] = sorted([x for x in cr.values() if x.get("ts") not in done],
+                                     key=lambda x: x.get("ts", ""))[-20:]
     return m
 
 

@@ -1,0 +1,40 @@
+name: Telegram mesaj gönder
+
+# Rutin sağlık kontrolü raporunu Telegram'a iletir:
+# gh api -X POST repos/ahmetbagrrn-rgb/haber-video/dispatches -f event_type=tg_send -f 'client_payload[text]=...'
+on:
+  repository_dispatch:
+    types: [tg_send]
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: state
+      - name: Gönder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_TEXT: ${{ github.event.client_payload.text }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys, urllib.request
+          tok = os.environ.get("TELEGRAM_BOT_TOKEN")
+          text = os.environ.get("TG_TEXT") or ""
+          chat = json.load(open("state/state.json")).get("owner_chat")  # izinli sohbet (dinleyiciyle aynı)
+          if not tok or not chat or not text.strip():
+              sys.exit(f"Eksik: token={'var' if tok else 'YOK'} chat={'var' if chat else 'YOK'} text={'var' if text.strip() else 'YOK'}")
+          parts = [text[i:i + 4096] for i in range(0, len(text), 4096)]
+          for p in parts:
+              req = urllib.request.Request(f"https://api.telegram.org/bot{tok}/sendMessage",
+                  data=json.dumps({"chat_id": chat, "text": p, "disable_web_page_preview": True}).encode(),
+                  headers={"Content-Type": "application/json"})
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  assert json.loads(r.read()).get("ok"), "Telegram ok=false"
+          print(f"Gönderildi: {len(parts)} parça")
+          PY
