@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897455,
+ "tg_offset": 691897456,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -139,7 +139,8 @@
    "2026-11-21T17:00:00Z",
    "2026-11-21T19:30:00Z",
    "2026-11-22T07:00:00Z",
-   "2026-11-22T11:00:00Z"
+   "2026-11-22T11:00:00Z",
+   "2026-11-22T14:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -157,7 +158,7 @@
   ]
  },
  "pending": {
-  "a5e09c77f7f8": {
+  "ddbd76050660": {
    "results": [
     {
      "title": "Russland Treibstoffkrise: Ukrainische Drohnen treffen Raffinerien",
@@ -277,7 +278,7 @@
      ],
      "chat_id": null,
      "source": "",
-     "publish_at": "2026-11-22T11:00:00Z",
+     "publish_at": "2026-11-22T14:00:00Z",
      "elevenlabs": {
       "used": 15482,
       "limit": 40000,
@@ -290,7 +291,7 @@
      "tag": "auto-44740281292-de"
     }
    ],
-   "ts": "2026-11-20T15:18:56"
+   "ts": "2026-11-20T15:19:58"
   }
  },
  "_removed": [
@@ -302,6 +303,7 @@
   "41416ec5f7f6",
   "c947dac9becb",
   "445761614490",
+  "a5e09c77f7f8",
   "bc7037909ba6",
   "d42fcbc4ce3d",
   "445944378441",
