@@ -11,7 +11,8 @@
   "news:https://www.bbc.co.uk/news/articles/c623j4kpg94go?at_medium=RSS&at_campaign=rss",
   "trend:US:regions",
   "news:https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-  "trend:TR:baykar bayraktar kızılelma"
+  "trend:TR:baykar bayraktar kızılelma",
+  "news:https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
  ],
  "topics": [
   {
@@ -113,12 +114,17 @@
    "topic": "Baykar delivers world first unmanned fighter jet",
    "ts": "2026-11-21T13:08:36",
    "summary": "Bayraktar Kızılelma envantere girdi, dünya ilk kez unvanı aldı. Selçuk Bayraktar'a göre dünyada ilk kez bir insansız savaş uçağı güvenlik güçlerine teslim edildi. Baykar üretimi Bayraktar Kızılelma uçuş testlerini tamamlayarak resmi envantere girdi. Yerli ve milli imkanlarla geliştirilen platform, muharebe sahasındaki taktikleri kökten değiştiriyor. Bu hamle, ülkenin hava savunma kapasitesini ve caydırıcılığını küresel ölçekte en üst seviyeye taşıyor. Savunma sanayiindeki bu dönüm noktası, Türk havacılığını uluslararası alanda lider konuma yükseltiyor. Gök vatanın yeni koruyucusu olarak hizmet veren sistemler sınırların güvenliğini kesintisiz sağlıyor."
+  },
+  {
+   "topic": "Ukraine strikes Crimean Bridge following Russian aerial attacks",
+   "ts": "2026-11-21T17:35:44",
+   "summary": "Ukrayna'dan Rusya'nın 109 Saldırısına Kırım Köprüsü Misillemesi. Ukrayna Devlet Başkanı Zelenski, Rusya'nın Ukrayna'daki köprülere düzenlediği 109 hava saldırısına yanıt olarak Kırım Köprüsü'nü hedef aldıklarını açıkladı. Zelenski, Kırım Köprüsü'ne yapılan bu misillemenin adil bir yanıt olduğunu ifade etti. İngiliz yetkili Streeting ile bir araya gelen Zelenski, görüşmede son durum değerlendirmesinde bulundu. Karşılıklı altyapı saldırıları, Karadeniz'deki lojistik hatları tamamen kesintiye uğratma riski taşıyor. Bölgedeki deniz ulaşımının aksaması, Türkiye dahil tüm Karadeniz kıyıdaşlarının ticaretini doğrudan etkileyebilir. Köprülerin hedef alındığı bu stratejik savaşta tarafların bir sonraki hamlesi dengeleri değiştirebilir."
   }
  ],
  "daily": {
   "2026-11-19": 2,
   "2026-11-20": 3,
-  "2026-11-21": 1
+  "2026-11-21": 2
  },
  "scheduled": {
   "en": [
@@ -181,42 +187,456 @@
    "2026-11-22T09:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "ccd67624d8c3": {
+   "results": [
+    {
+     "title": "Ukrayna'dan Rusya'nın 109 Saldırısına Kırım Köprüsü Misillemesi",
+     "description": "Ukrayna, Rusya'nın köprülere düzenlediği 109 hava saldırısına Kırım Köprüsü'nü vurarak yanıt verdiğini açıkladı.\nSizce köprülere yapılan bu saldırılar savaşın seyrini nasıl etkiler?\n\nKaynak: bbc.co.uk\n\n#Ukrayna #KırımKöprüsü #RusyaUkraynaSavaşı #Jeopolitik",
+     "tags": [
+      "Ukrayna",
+      "Rusya",
+      "Kırım Köprüsü",
+      "Zelenski",
+      "İngiltere",
+      "Karadeniz",
+      "savaş haberleri",
+      "askeri lojistik",
+      "jeopolitik"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukrayna",
+      "#KırımKöprüsü",
+      "#RusyaUkraynaSavaşı",
+      "#Jeopolitik"
+     ],
+     "lang": "tr",
+     "topic": "Ukraine strikes Crimean Bridge following Russian aerial attacks",
+     "tts": "edge",
+     "duration": 47.04,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ukrayna Devlet Başkanı Zelenski, Rusya'nın Ukrayna'daki köprülere düzenlediği 109 hava saldırısına yanıt olarak Kırım Köprüsü'nü hedef aldıklarını açıkladı.",
+       "headline": "109 Saldırıya Yanıt",
+       "accent": "Hedefte",
+       "search": "explosion bridge military",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Zelenski, Kırım Köprüsü'ne yapılan bu misillemenin adil bir yanıt olduğunu ifade etti.",
+       "headline": "Kırım Köprüsü",
+       "accent": "Misilleme",
+       "search": "military speech president",
+       "style": "subtitle",
+       "countries": [
+        "UKR"
+       ],
+       "country_names": [
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "İngiliz yetkili Streeting ile bir araya gelen Zelenski, görüşmede son durum değerlendirmesinde bulundu.",
+       "headline": "İngiltere Görüşmesi",
+       "accent": "Temaslar",
+       "search": "diplomatic meeting handshakes",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "GBR"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Birleşik Krallık"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Karşılıklı altyapı saldırıları, Karadeniz'deki lojistik hatları tamamen kesintiye uğratma riski taşıyor.",
+       "headline": "Lojistik Savaşı",
+       "accent": "Tırmanış",
+       "search": "war map tactics",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bölgedeki deniz ulaşımının aksaması, Türkiye dahil tüm Karadeniz kıyıdaşlarının ticaretini doğrudan etkileyebilir.",
+       "headline": "Karadeniz Ticareti",
+       "accent": "Risk",
+       "search": "cargo ship sea",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Köprülerin hedef alındığı bu stratejik savaşta tarafların bir sonraki hamlesi dengeleri değiştirebilir.",
+       "headline": "Kritik Altyapı",
+       "accent": "Hesaplaşma",
+       "search": "damaged bridge smoke",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-21T17:36:56Z",
+     "elevenlabs": {
+      "used": 15998,
+      "limit": 40000,
+      "left": 24002,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 24.002 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-44930236469-tr"
+    },
+    {
+     "title": "Ukraine Strikes Crimean Bridge in Response to Russia’s 109 Attacks",
+     "description": "Ukraine said it struck the Crimean Bridge in response to Russia’s 109 air strikes on bridges.\nHow do you think these bridge attacks will affect the war’s course?\n\nSource: bbc.co.uk\n\n#Ukraine #CrimeanBridge #RussiaUkraineWar #Geopolitics",
+     "tags": [
+      "Ukraine",
+      "Russia",
+      "Crimean Bridge",
+      "Zelensky",
+      "United Kingdom",
+      "Black Sea",
+      "war news",
+      "military logistics",
+      "geopolitics"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukraine",
+      "#CrimeanBridge",
+      "#RussiaUkraineWar",
+      "#Geopolitics"
+     ],
+     "lang": "en",
+     "topic": "Ukraine strikes Crimean Bridge following Russian aerial attacks",
+     "tts": "elevenlabs",
+     "duration": 34.71,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "President Zelensky said Ukraine targeted the Crimean Bridge in response to Russia’s 109 air strikes on Ukrainian bridges.",
+       "headline": "Response to 109 Strikes",
+       "accent": "Targeted",
+       "search": "explosion bridge military",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Zelensky called the missile strike on the bridge a justified response.",
+       "headline": "Crimean Bridge",
+       "accent": "Missile Strike",
+       "search": "military speech president",
+       "style": "subtitle",
+       "countries": [
+        "UKR"
+       ],
+       "country_names": [
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Zelensky met British official Streeting and assessed the latest situation.",
+       "headline": "UK Talks",
+       "accent": "Contacts",
+       "search": "diplomatic meeting handshakes",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "GBR"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Birleşik Krallık"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Reciprocal infrastructure attacks risk severing Black Sea logistics routes.",
+       "headline": "Logistics War",
+       "accent": "Escalation",
+       "search": "war map tactics",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Disruption of maritime traffic could directly affect trade of all Black Sea littoral states, including Turkey.",
+       "headline": "Black Sea Trade",
+       "accent": "Risk",
+       "search": "cargo ship sea",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "In this strategic war targeting bridges, the next move by either side could shift the balance.",
+       "headline": "Critical Infrastructure",
+       "accent": "Showdown",
+       "search": "damaged bridge smoke",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-21T17:38:27Z",
+     "elevenlabs": {
+      "used": 15998,
+      "limit": 40000,
+      "left": 24002,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 24.002 / 40.000 karakter kaldı (bu video 544 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44930236469-en"
+    },
+    {
+     "title": "Ukraine antwortet auf Russlands 109 Angriffe mit Raketenangriff auf die Krim-Brücke",
+     "description": "Die Ukraine erklärte, auf 109 russische Luftangriffe auf Brücken mit einem Raketenangriff auf die Krim-Brücke reagiert zu haben.\nWie beeinflussen diese Brückenangriffe Ihrer Meinung nach den Kriegsverlauf?\n\nQuelle: bbc.co.uk\n\n#Ukraine #KrimBrücke #RusslandUkraineKrieg #Geopolitik",
+     "tags": [
+      "Ukraine",
+      "Russland",
+      "Krim-Brücke",
+      "Selenskyj",
+      "Großbritannien",
+      "Schwarzes Meer",
+      "Kriegsnachrichten",
+      "Militärlogistik",
+      "Geopolitik"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukraine",
+      "#KrimBrücke",
+      "#RusslandUkraineKrieg",
+      "#Geopolitik"
+     ],
+     "lang": "de",
+     "topic": "Ukraine strikes Crimean Bridge following Russian aerial attacks",
+     "tts": "edge",
+     "duration": 36.6,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44930236469-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ukraines Präsident Selenskyj erklärte, die Krim-Brücke als Antwort auf 109 russische Luftangriffe auf Brücken angegriffen zu haben.",
+       "headline": "Antwort auf 109 Angriffe",
+       "accent": "Ziel",
+       "search": "explosion bridge military",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Selenskyj nannte den Raketenangriff auf die Krim-Brücke gerechte Vergeltung.",
+       "headline": "Krim-Brücke",
+       "accent": "Raketenangriff",
+       "search": "military speech president",
+       "style": "subtitle",
+       "countries": [
+        "UKR"
+       ],
+       "country_names": [
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Beim Treffen mit britischem Vertreter Streeting bewertete Selenskyj die Lage.",
+       "headline": "Gespräch mit Großbritannien",
+       "accent": "Kontakte",
+       "search": "diplomatic meeting handshakes",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "GBR"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Birleşik Krallık"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Gegenseitige Infrastrukturangriffe gefährden die Logistikrouten im Schwarzen Meer.",
+       "headline": "Logistikkrieg",
+       "accent": "Eskalation",
+       "search": "war map tactics",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Eine Beeinträchtigung der Seeverkehrswege trifft den Handel aller Schwarzmeer-Anrainer, auch der Türkei.",
+       "headline": "Schwarzmeer-Handel",
+       "accent": "Risiko",
+       "search": "cargo ship sea",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Im strategischen Brückenkrieg könnte der nächste Zug das Gleichgewicht verschieben.",
+       "headline": "Kritische Infrastruktur",
+       "accent": "Abrechnung",
+       "search": "damaged bridge smoke",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-21T17:40:41Z",
+     "elevenlabs": {
+      "used": 16216,
+      "limit": 40000,
+      "left": 23784,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 23.784 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-44930236469-de"
+    }
+   ],
+   "ts": "2026-11-21T17:35:44"
+  }
+ },
  "_removed": [
-  "0c7c07a879a6",
+  "d42fcbc4ce3d",
   "66eba903a865",
-  "af6ed91f3a79",
-  "445944378440",
-  "443631404172",
-  "bc7037909ba6",
-  "32fa0d1d693a",
-  "be8762e28854",
   "444854651743",
-  "a5e09c77f7f8",
-  "446184028241",
-  "41416ec5f7f6",
-  "63bfb40d47b6",
-  "443091847971",
-  "e545b5536757",
-  "1edbeb303dcc",
-  "57b4fdc6596f",
-  "c947dac9becb",
-  "446184028240",
-  "9849bc2ef437",
-  "86277101f5be",
-  "0d9dbcf465cd",
+  "74775df4be80",
+  "af6ed91f3a79",
+  "445296633124",
+  "be8762e28854",
   "b34b7bca5216",
   "873320f3cd81",
-  "74775df4be80",
-  "442639882090",
-  "abe41c1aaf94",
-  "445296633124",
-  "2f1a20151385",
-  "d42fcbc4ce3d",
+  "e545b5536757",
+  "446184028240",
+  "443631404172",
+  "445944378440",
+  "bc7037909ba6",
   "445944378441",
-  "f02172b50f8c",
+  "ddbd76050660",
+  "0c7c07a879a6",
   "445761614490",
-  "ddbd76050660"
+  "0d9dbcf465cd",
+  "a5e09c77f7f8",
+  "1edbeb303dcc",
+  "2f1a20151385",
+  "41416ec5f7f6",
+  "57b4fdc6596f",
+  "f02172b50f8c",
+  "32fa0d1d693a",
+  "c947dac9becb",
+  "abe41c1aaf94",
+  "442639882090",
+  "9849bc2ef437",
+  "443091847971",
+  "446184028241",
+  "63bfb40d47b6",
+  "86277101f5be"
  ],
  "reminded": "",
  "yt_stories": {
@@ -423,23 +843,40 @@
     "2026-11-21": {
      "actions_dk": 1
     }
+   },
+   "44930236469-60a08d": {
+    "2026-11-21": {
+     "uretilen": 3,
+     "render_sn": 287.6,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 7
+    }
    }
   },
   "gunluk": {
    "2026-11-21": {
-    "actions_dk": 28,
-    "uretilen": 3,
-    "render_sn": 865.0,
-    "render_n": 3,
-    "prov:gemini_1:ok": 4,
-    "prov:gemini:ok": 3,
+    "actions_dk": 35,
+    "uretilen": 6,
+    "render_sn": 1152.6,
+    "render_n": 6,
+    "prov:gemini_1:ok": 5,
+    "prov:gemini:ok": 4,
     "prov:openrouter_nemotron:hata": 2,
     "prov:make_metin:hata": 2,
-    "ses:edge": 2,
-    "ses:elevenlabs": 1,
-    "llm_cagri": 6,
+    "ses:edge": 4,
+    "ses:elevenlabs": 2,
+    "llm_cagri": 9,
     "llm_tamamen_basarisiz": 2,
-    "ceviri_yedek": 2
+    "ceviri_yedek": 2,
+    "prov:openrouter_nemotron:ok": 2,
+    "ceviri_nemotron": 2
    }
   }
  }
