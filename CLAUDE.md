@@ -16,3 +16,8 @@ World Shift haber kanalları (TR / EN / DE) için Telegram → GitHub Actions �
    - `state/state.json` içinde yalnız işlenen talepleri `check_requests` listesinden çıkarıp ts değerlerini `_check_done` listesine eklemek. Başka alana dokunma; `git pull --rebase` sonrası push et.
    Bunların dışında 3. ve 7. kurallar aynen geçerli: `auto`, `render`, `tiktok-*` elle çalıştırılmaz, başka `repository_dispatch` gönderilmez.
 9. Kod değiştirdikten sonra en az `python -m py_compile pipeline.py render.py` çalıştır. `main` dalına push etmeden önce neyin değiştiğini iki üç satırda özetle ve onay al.
+10. Çalışma düzeni:
+   - Önce görevle ilgili dosyaları belirle ve yalnızca gerekli bölümleri oku.
+   - Değişiklikten sonra ilgili testleri çalıştır. Hataları ve sonucu kısa özetle.
+   - Uzun loglarda önce hata satırlarını ve çevresindeki gerekli satırları incele.
+   - Son yanıtta yapılan değişikliği, doğrulamayı ve açık kalan sorunu yaz.
