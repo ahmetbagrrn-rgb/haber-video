@@ -425,6 +425,21 @@ def llm_call(gorev, prompt, system=None, json_mode=False, ok=None, temperature=0
     raise RuntimeError(f"{gorev}: tüm sağlayıcılar başarısız ({last})")
 
 
+def youtube_transcript_make(url, timeout=170):
+    """YouTube yedeği: Make senaryosu (url ile) videoyu Gemini ile izler, HAM TRANSKRİPT + bölüm özeti döndürür."""
+    if not make_text_url():
+        raise RuntimeError("Make webhook adresi yok")
+    try:
+        txt = http_text(make_text_url(), {"url": url}, timeout=timeout).strip()
+        if len(txt) < 200 or txt.startswith("HATA") or txt.lower() in ("accepted", "ok"):
+            raise RuntimeError(f"Make transkript döndürmedi: {txt[:80]}")
+        stat("make_youtube", "ok")
+        return txt[:30000]
+    except Exception:
+        stat("make_youtube", "hata")
+        raise
+
+
 # ---------------------------------------------------------------- Çeviri (TR → EN/DE, önce ücretsiz Nemotron)
 
 WORD_LIMITS = {"tr": 80, "en": 90, "de": 75}
@@ -551,8 +566,8 @@ def make_script(payload):
     if not text and not yt:
         sys.exit("Haber metni boş: PAYLOAD_JSON içinde 'text' ya da 'scenes' yok.")
     key = os.environ.get("GEMINI_API_KEY")
-    if not key and yt:
-        sys.exit("YouTube kaynağı için GEMINI_API_KEY gerekli")
+    if not key and yt and not make_text_url():
+        sys.exit("YouTube kaynağı için GEMINI_API_KEY ya da Make webhook gerekli")
     if not key and not any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS) and not make_text_url():
         log("GEMINI_API_KEY yok: metin cümlelere bölünüyor")
         sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()][:8]
@@ -585,7 +600,19 @@ def make_script(payload):
     except Exception as e:  # noqa
         stat("gemini", "hata")
         if yt:
-            sys.exit(f"Gemini senaryo üretemedi (video yalnızca Gemini ile işlenebilir): {e}")
+            log("Gemini videoyu işleyemedi, Make transkript yedeği deneniyor:", str(e)[:120])
+            try:
+                tr_txt = youtube_transcript_make(yt)
+                p2 = build_prompt({k: v for k, v in payload.items() if k != "youtube_url"})
+                data = llm_call("senaryo-yt", p2 + "KAYNAK VİDEONUN TRANSKRİPTİ VE ÖZETİ:\n" + tr_txt + "\n" + (text or ""),
+                                "Yalnızca geçerli JSON döndür.", json_mode=True, ok=good)
+                stat("make_youtube", "yedek")
+                count("llm_yedek")
+            except Exception as e3:  # noqa
+                sys.exit(f"Gemini senaryo üretemedi, Make transkript yedeği de olmadı: {e3}")
+            if data.get("skip"):
+                return {"skip": True}
+            return verify_script(data, {**payload, "text": tr_txt[:6000]})
         log("Gemini senaryo üretemedi, alternatif deneniyor:", str(e)[:120])
         try:
             data = llm_call("senaryo", prompt + text, "Yalnızca geçerli JSON döndür.", json_mode=True, ok=good,
