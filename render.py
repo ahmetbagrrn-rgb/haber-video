@@ -284,16 +284,242 @@ def alt_json(prompt, temperature=0.7, ok=None):
     raise RuntimeError(f"Alternatif sağlayıcı yok ya da başarısız: {last}")
 
 
-def llm_json(prompt, temperature=0.7, models=None, ok=None, timeout=60):
-    """Metin görevleri: önce Gemini, olmazsa Groq/OpenRouter."""
-    models = models or ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]
+# ---------------------------------------------------------------- Yedek zinciri (tek giriş: llm_call)
+# Sıra: Gemini anahtar 1 → Gemini anahtar 2/3 → OpenRouter Nemotron (ücretsiz) → Groq (varsa) → Make webhook (task=metin)
+# Her deneme ≤90 sn; 429/5xx/zaman aşımı kalıcı hata sayılmaz, sıradakine geçilir.
+
+STATS = {"prov": {}, "ses": {}, "n": {}}  # pipeline.save_state bunu metrics'e aktarır
+
+
+def stat(prov, kind):
+    d = STATS["prov"].setdefault(prov, {"ok": 0, "hata": 0, "yedek": 0})
+    d[kind] = d.get(kind, 0) + 1
+
+
+def count(key, n=1):
+    STATS["n"][key] = STATS["n"].get(key, 0) + n
+
+
+def drain_stats():
+    """Birikmiş sayaçları verir ve sıfırlar."""
+    out = json.loads(json.dumps(STATS))
+    for v in STATS.values():
+        v.clear()
+    return out
+
+
+NEMOTRON_FREE = "nvidia/nemotron-3-ultra-550b-a55b:free"
+LLM_TIMEOUT = 90
+
+
+def http_text(url, data, headers=None, timeout=LLM_TIMEOUT):
+    headers = dict(headers or {})
+    headers.setdefault("Content-Type", "application/json")
+    headers.setdefault("User-Agent", "haber-video/1.0")
+    req = urllib.request.Request(url, data=json.dumps(data).encode(), headers=headers)
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _gemini_text(key, prompt, system, json_mode, temperature, models, timeout):
+    last = None
+    for model in models:
+        gen = {"temperature": temperature}
+        if json_mode:
+            gen["responseMimeType"] = "application/json"
+        body = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gen}
+        if system:
+            body["systemInstruction"] = {"parts": [{"text": system}]}
+        try:
+            r = http_json(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                          body, {"x-goog-api-key": key}, timeout=timeout)
+            return "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought")), model
+        except Exception as e:  # noqa  bu model olmadı → aynı anahtarla sıradaki model
+            last = e
+            log(f"Gemini ({model}) hatası:", str(e)[:120])
+    raise RuntimeError(f"Gemini modelleri başarısız: {last}")
+
+
+def _openai_text(url, key, model, prompt, system, json_mode, temperature, timeout):
+    msgs = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": prompt}]
+    body = {"model": model, "temperature": temperature, "messages": msgs}
+    if json_mode:
+        body["response_format"] = {"type": "json_object"}
+    r = http_json(url, body, {"Authorization": f"Bearer {key}"}, timeout=timeout)
+    return r["choices"][0]["message"]["content"] or ""
+
+
+def make_text_url():
+    return os.environ.get("MAKE_TEXT_WEBHOOK_URL") or os.environ.get("MAKE_WEBHOOK_URL") or ""
+
+
+def _make_text(prompt, system, model=None, timeout=LLM_TIMEOUT):
+    """Make senaryosu (OmniRoute → Nemotron, çökerse Gemini 2.5 Flash). Yanıt düz metin; ikisi de çökerse 502."""
+    url = make_text_url()
+    if not url:
+        raise RuntimeError("Make webhook adresi yok")
+    body = {"task": "metin", "prompt": prompt}
+    if system:
+        body["system"] = system
+    if model:
+        body["model"] = model
+    txt = http_text(url, body, timeout=timeout).strip()
+    if not txt or txt.lower() in ("accepted", "ok"):
+        raise RuntimeError("Make metin döndürmedi (senaryo yanıt modülü yok ya da kapalı)")
+    return txt
+
+
+def provider_chain(include=("gemini", "openrouter", "groq", "make"), gemini_models=None):
+    """(ad, çağrı) listesi; anahtarı olmayan sağlayıcılar atlanır."""
+    models = gemini_models or ["gemini-3.5-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]
+    chain = []
+    if "gemini" in include and time.time() >= GEMINI_DOWN["until"]:
+        for i, k in enumerate(gemini_keys()):
+            chain.append((f"gemini_{i + 1}", lambda p, s, j, t, to, k=k: _gemini_text(k, p, s, j, t, models, to)[0]))
+    if "openrouter" in include and os.environ.get("OPENROUTER_API_KEY"):
+        or_models = (CONFIG.get("alt_models") or {}).get("OPENROUTER_API_KEY") or [NEMOTRON_FREE]
+        for m in or_models[:2]:
+            name = "openrouter_nemotron" if m == NEMOTRON_FREE else "openrouter_" + m.split("/")[-1].split(":")[0]
+            chain.append((name, lambda p, s, j, t, to, m=m: _openai_text(
+                "https://openrouter.ai/api/v1/chat/completions", os.environ["OPENROUTER_API_KEY"], m, p, s, j, t, to)))
+    if "groq" in include and os.environ.get("GROQ_API_KEY"):
+        chain.append(("groq", lambda p, s, j, t, to: _openai_text(
+            "https://api.groq.com/openai/v1/chat/completions", os.environ["GROQ_API_KEY"], "openai/gpt-oss-120b", p, s, j, t, to)))
+    if "make" in include and make_text_url():
+        chain.append(("make_metin", lambda p, s, j, t, to: _make_text(
+            p + ("\n\nYalnızca geçerli JSON döndür." if j else ""), s, timeout=to)))
+    return chain
+
+
+def llm_call(gorev, prompt, system=None, json_mode=False, ok=None, temperature=0.7, timeout=LLM_TIMEOUT,
+             include=("gemini", "openrouter", "groq", "make"), gemini_models=None, chain=None):
+    """Tek yardımcı: zinciri sırayla dener. JSON modunda sözlük, değilse metin döndürür."""
+    chain = chain if chain is not None else provider_chain(include, gemini_models)
+    if not chain:
+        raise RuntimeError(f"{gorev}: kullanılabilir yapay zekâ sağlayıcısı yok")
+    timeout = min(timeout, LLM_TIMEOUT)
+    count("llm_cagri")
+    last = None
+    gem_fail = 0
+    for idx, (name, fn) in enumerate(chain):
+        try:
+            raw = fn(prompt, system, json_mode, temperature, timeout)
+            out = json.loads(strip_fences(raw)) if json_mode else raw.strip()
+            if not out or (ok is not None and not ok(out)):
+                raise ValueError("boş ya da geçersiz çıktı")
+            stat(name, "ok")
+            if idx:
+                stat(name, "yedek")
+                count("llm_yedek")
+                log(f"{gorev}: yedek sağlayıcı kullanıldı → {name}")
+            return out
+        except Exception as e:  # noqa  429/5xx/zaman aşımı/bozuk çıktı: sıradakine geç
+            last = e
+            stat(name, "hata")
+            if name.startswith("gemini"):
+                gem_fail += 1
+            log(f"{gorev}: {name} başarısız ({str(e)[:120]}), sıradakine geçiliyor")
+    if gem_fail and gem_fail == len(gemini_keys()):
+        GEMINI_DOWN["until"] = time.time() + 600
+    count("llm_tamamen_basarisiz")
+    raise RuntimeError(f"{gorev}: tüm sağlayıcılar başarısız ({last})")
+
+
+# ---------------------------------------------------------------- Çeviri (TR → EN/DE, önce ücretsiz Nemotron)
+
+WORD_LIMITS = {"tr": 80, "en": 90, "de": 75}
+TRANSLATE_SYSTEM = """You are the translator of the "World Shift" news channels. Style: Cyber Pandemic tone — tight, urgent,
+cinematic but strictly factual and neutral. Translate the given Turkish short-video script.
+RULES:
+- Stay faithful to the user's sentences: same facts, same order, same number of scenes. Do NOT add any information,
+  number, name, title, date or quote that is not in the source. Keep "[DOĞRULANACAK]" markers as "[TO VERIFY]".
+- Natural, native wording for the target audience (not word-for-word).
+- German: always address the viewer formally with "Sie" (never du/dich/dir/dein).
+- Word limit for ALL scene "text" fields together: {limit} words. If needed, shorten slightly without changing facts.
+- Return ONLY valid JSON: {{"lang":"{lang}","title":"...","description":"...","hashtags":["#..."],"tags":["..."],
+  "scenes":[{{"text":"...","headline":"...","accent":"..."}}]}} with exactly {n} scenes."""
+
+_STOP = {"en": {"the", "and", "of", "to", "in", "is", "a", "for", "on", "that", "with", "its", "has", "are"},
+         "de": {"der", "die", "das", "und", "ist", "nicht", "mit", "den", "zu", "ein", "eine", "für", "auf", "sich", "im"},
+         "tr": {"ve", "bir", "bu", "için", "ile", "olarak", "da", "de", "çok", "daha"}}
+
+
+def _wc(s):
+    return len(re.findall(r"\w+", s or ""))
+
+
+def translation_ok(data, n, lang):
+    """Boş / bozuk / yanlış dil / sınır aşımı → False (neden ile)."""
+    if not isinstance(data, dict) or not isinstance(data.get("scenes"), list) or len(data["scenes"]) != n:
+        return False, "sahne sayısı uyuşmuyor"
+    texts = [(s or {}).get("text", "").strip() if isinstance(s, dict) else "" for s in data["scenes"]]
+    if not all(texts) or not (data.get("title") or "").strip():
+        return False, "boş alan"
+    body = " ".join(texts + [data["title"]])
+    if re.search(r"[ğışİĞŞ]", body):
+        return False, "Türkçe karakter kalmış"
+    toks = [t.lower() for t in re.findall(r"\w+", body)]
+    hits = {lg: sum(t in sw for t in toks) for lg, sw in _STOP.items()}
+    if hits.get(lang, 0) < 2 or hits[lang] < max(v for k, v in hits.items() if k != lang):
+        return False, f"dil {lang} gibi görünmüyor"
+    if lang == "de" and re.search(r"\b(du|dich|dir|dein|deine|deinen)\b", body, re.I):
+        return False, "Almancada 'du' kullanılmış"
+    wc = sum(_wc(t) for t in texts)
+    if wc > WORD_LIMITS.get(lang, 999):
+        return False, f"kelime sınırı aşıldı ({wc}>{WORD_LIMITS[lang]})"
+    return True, ""
+
+
+def translate_result(src, lang):
+    """TR sonucunu (render.produce çıktısı) EN/DE'ye çevirir. Önce ücretsiz Nemotron (OpenRouter → Make).
+    Başarısızsa None döner; çağıran mevcut yola (dile göre yeniden yazım) düşer."""
+    if lang not in ("en", "de") or src.get("long") or not src.get("scenes"):
+        return None
+    scenes = src["scenes"]
+    n = len(scenes)
+    system = TRANSLATE_SYSTEM.format(limit=WORD_LIMITS[lang], lang=lang, n=n)
+    name = {"en": "English (US)", "de": "German"}[lang]
+    payload = {"title": src.get("title"), "description": (src.get("description") or "").split("\n\n")[0][:600],
+               "hashtags": src.get("hashtags") or [], "tags": src.get("tags") or [],
+               "scenes": [{k: s.get(k) or "" for k in ("text", "headline", "accent")} for s in scenes]}
+    prompt = f"Target language: {name}. Translate this Turkish script JSON:\n" + json.dumps(payload, ensure_ascii=False)
+    chain = []
+    if os.environ.get("OPENROUTER_API_KEY"):
+        chain.append(("openrouter_nemotron", lambda p, s, j, t, to: _openai_text(
+            "https://openrouter.ai/api/v1/chat/completions", os.environ["OPENROUTER_API_KEY"], NEMOTRON_FREE, p, s, j, t, to)))
+    if make_text_url():
+        chain.append(("make_metin", lambda p, s, j, t, to: _make_text(p + "\n\nReturn ONLY valid JSON.", s, timeout=to)))
+    if not chain:
+        return None
+    why = {}
+
+    def good(d):
+        ok, reason = translation_ok(d, n, lang)
+        why["r"] = reason
+        return ok
     try:
-        if gemini_keys() and time.time() >= GEMINI_DOWN["until"]:
-            return gemini_json([{"text": prompt}], {"responseMimeType": "application/json", "temperature": temperature},
-                               models, timeout=timeout, ok=ok)
+        data = llm_call(f"çeviri-{lang}", prompt, system, json_mode=True, ok=good, temperature=0.3, chain=chain)
     except Exception as e:  # noqa
-        log("Gemini kullanılamadı, alternatife geçiliyor:", str(e)[:120])
-    return alt_json(prompt, temperature, ok=ok)
+        log(f"Nemotron çevirisi ({lang}) kullanılamadı: {why.get('r') or str(e)[:120]} → mevcut çeviri yolu")
+        count("ceviri_yedek")
+        return None
+    count("ceviri_nemotron")
+    out_scenes = []
+    for s, t in zip(scenes, data["scenes"]):
+        sc = {k: v for k, v in s.items() if k not in ("text", "headline", "accent")}
+        sc.update({"text": t["text"].strip(), "headline": (t.get("headline") or "").strip(),
+                   "accent": (t.get("accent") or "").strip()})
+        out_scenes.append(sc)
+    log(f"Çeviri ({lang}): Nemotron, {sum(_wc(s['text']) for s in out_scenes)} kelime")
+    return {"scenes": out_scenes, "title": data["title"].strip(), "description": (data.get("description") or "").strip(),
+            "hashtags": data.get("hashtags") or [], "tags": data.get("tags") or [], "topic": src.get("topic") or "",
+            "lang": lang, "target_lang": lang, "translated_by": "nemotron"}
+
+
+def llm_json(prompt, temperature=0.7, models=None, ok=None, timeout=60):
+    """Metin görevleri (JSON): yedek zinciri llm_call üzerinden."""
+    return llm_call("metin", prompt, "Yalnızca geçerli JSON döndür.", json_mode=True, ok=ok,
+                    temperature=temperature, timeout=timeout, gemini_models=models)
 
 
 def verify_script(data, payload, key=None):
@@ -327,7 +553,7 @@ def make_script(payload):
     key = os.environ.get("GEMINI_API_KEY")
     if not key and yt:
         sys.exit("YouTube kaynağı için GEMINI_API_KEY gerekli")
-    if not key and not any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS):
+    if not key and not any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS) and not make_text_url():
         log("GEMINI_API_KEY yok: metin cümlelere bölünüyor")
         sents = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()][:8]
         scenes = []
@@ -352,15 +578,18 @@ def make_script(payload):
     try:
         if not gemini_keys():
             raise RuntimeError("Gemini anahtarı yok")
-        if not yt and time.time() < GEMINI_DOWN["until"] and any(os.environ.get(e) for e, _, _ in ALT_PROVIDERS):
+        if not yt and time.time() < GEMINI_DOWN["until"]:
             raise RuntimeError("Gemini az önce yanıt vermedi")
         data = gemini_json(parts, gen, models, timeout=240 if yt else 60, ok=good)
+        stat("gemini", "ok")
     except Exception as e:  # noqa
+        stat("gemini", "hata")
         if yt:
             sys.exit(f"Gemini senaryo üretemedi (video yalnızca Gemini ile işlenebilir): {e}")
         log("Gemini senaryo üretemedi, alternatif deneniyor:", str(e)[:120])
         try:
-            data = alt_json(prompt + text, 0.7, ok=good)
+            data = llm_call("senaryo", prompt + text, "Yalnızca geçerli JSON döndür.", json_mode=True, ok=good,
+                            include=("openrouter", "groq", "make"))
         except Exception as e2:  # noqa
             sys.exit(f"Senaryo üretilemedi (Gemini + alternatifler): {e2}")
     if data.get("skip"):
@@ -485,6 +714,7 @@ def choose_provider(scenes):
     need = sum(len(sc["text"]) for sc in scenes) + 200
     if q and q["left"] < need:
         log(f"ElevenLabs kotası yetersiz ({q['left']} karakter): ücretsiz sese geçiliyor")
+        count("ses_kota_yedek")
         return "edge"
     return "elevenlabs"
 
@@ -492,12 +722,19 @@ def choose_provider(scenes):
 def make_audio(scenes):
     provider = choose_provider(scenes)
     try:
-        return _make_audio(scenes, provider)
+        out = _make_audio(scenes, provider)
+        STATS["ses"][provider] = STATS["ses"].get(provider, 0) + 1
+        return out
     except Exception as e:  # noqa
         if provider == "edge":
+            stat("edge_tts", "hata")
             raise
+        stat(provider, "hata")
+        count("ses_hata_yedek")
         log(f"{provider} hata verdi ({e}); ücretsiz Microsoft sesine geçiliyor")
-        return _make_audio(scenes, "edge")
+        out = _make_audio(scenes, "edge")
+        STATS["ses"]["edge"] = STATS["ses"].get("edge", 0) + 1
+        return out
 
 
 def _make_audio(scenes, provider):
