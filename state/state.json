@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897467,
+ "tg_offset": 691897468,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -181,410 +181,42 @@
    "2026-11-22T09:30:00Z"
   ]
  },
- "pending": {
-  "abe41c1aaf94": {
-   "results": [
-    {
-     "title": "Bayraktar Kızılelma envantere girdi, dünya ilk kez unvanı aldı",
-     "description": "Bayraktar Kızılelma insansız savaş uçağının güvenlik güçlerine teslim edilmesi küresel savunma dengelerini değiştirdi.\nSizce bu teknoloji hava savaşlarının geleceğini tamamen dönüştürecek mi?\n\n#Kızılelma #Baykar #SavunmaSanayii #İHA #Türkiye",
-     "tags": [
-      "Bayraktar Kızılelma",
-      "Baykar",
-      "Selçuk Bayraktar",
-      "insansız savaş uçağı",
-      "Türk savunma sanayii",
-      "askeri teknoloji",
-      "Hürriyet",
-      "Anadolu Ajansı",
-      "Habertürk",
-      "Hazine ve Maliye"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Kızılelma",
-      "#Baykar",
-      "#SavunmaSanayii",
-      "#İHA",
-      "#Türkiye"
-     ],
-     "lang": "tr",
-     "topic": "Baykar delivers world first unmanned fighter jet",
-     "tts": "edge",
-     "duration": 43.44,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Selçuk Bayraktar'a göre dünyada ilk kez bir insansız savaş uçağı güvenlik güçlerine teslim edildi.",
-       "headline": "Dünyada İlk",
-       "accent": "Teslimat",
-       "search": "military drone flight",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Baykar üretimi Bayraktar Kızılelma uçuş testlerini tamamlayarak resmi envantere girdi.",
-       "headline": "Kızılelma Envanterde",
-       "accent": "Başarı",
-       "search": "fighter jet takeoff",
-       "style": "subtitle",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Yerli ve milli imkanlarla geliştirilen platform, muharebe sahasındaki taktikleri kökten değiştiriyor.",
-       "headline": "Yeni Nesil",
-       "accent": "Güç",
-       "search": "advanced technology jet",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bu hamle, ülkenin hava savunma kapasitesini ve caydırıcılığını küresel ölçekte en üst seviyeye taşıyor.",
-       "headline": "Stratejik Hamle",
-       "accent": "Caydırıcılık",
-       "search": "radar control room",
-       "style": "subtitle",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Savunma sanayiindeki bu dönüm noktası, Türk havacılığını uluslararası alanda lider konuma yükseltiyor.",
-       "headline": "Bölgesel Etki",
-       "accent": "Liderlik",
-       "search": "military technology presentation",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Gök vatanın yeni koruyucusu olarak hizmet veren sistemler sınırların güvenliğini kesintisiz sağlıyor.",
-       "headline": "Gök Vatan",
-       "accent": "Güvenlik",
-       "search": "jet flying in clouds",
-       "style": "subtitle",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-21T13:03:07Z",
-     "elevenlabs": {
-      "used": 15739,
-      "limit": 40000,
-      "left": 24261,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.261 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-44905894493-tr"
-    },
-    {
-     "title": "Turkey Deploys World's First Unmanned Fighter Jet",
-     "description": "Turkey officially integrated the Kızılelma autonomous combat jet into its armed forces as a world first.\nDo you think pilotless fighter jets will completely replace human pilots in future warfare?\n\n#Kizilelma #MilitaryTech #DroneWarfare #DefenseNews",
-     "tags": [
-      "Turkey defense",
-      "Kızılelma jet",
-      "Baykar drone",
-      "unmanned combat aircraft",
-      "military technology",
-      "autonomous warplane",
-      "future air force",
-      "stealth drone"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Kizilelma",
-      "#MilitaryTech",
-      "#DroneWarfare",
-      "#DefenseNews"
-     ],
-     "lang": "en",
-     "topic": "Turkey deploys world's first operational unmanned combat aircraft",
-     "tts": "elevenlabs",
-     "duration": 42.42,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "According to Selçuk Bayraktar, Turkey officially deployed the world's first operational unmanned fighter jet into active military service.",
-       "headline": "World First",
-       "accent": "Deployment",
-       "search": "stealth jet flyby",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Turkey"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Developed by defense firm Baykar, the stealthy Kızılelma aircraft successfully completed all required flight testing.",
-       "headline": "Fully Tested",
-       "accent": "Aviation",
-       "search": "military drone flight",
-       "style": "subtitle",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Turkey"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The autonomous platform delivers advanced tactical capabilities designed to reshape modern combat tactics permanently.",
-       "headline": "New Tactics",
-       "accent": "Combat",
-       "search": "military control room",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Global defense analysts view this operational milestone as a major turning point in modern warfare.",
-       "headline": "Major Shift",
-       "accent": "Strategy",
-       "search": "radar screen display",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Western defense planners must now recalculate air superiority costs against scalable autonomous jet fleets.",
-       "headline": "Global Impact",
-       "accent": "Industry",
-       "search": "fighter jet sunset",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "A new era of robotic sky defense has officially taken off worldwide.",
-       "headline": "Future Arrived",
-       "accent": "Airpower",
-       "search": "cloudy sky flight",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-21T13:09:25Z",
-     "elevenlabs": {
-      "used": 15998,
-      "limit": 40000,
-      "left": 24002,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.002 / 40.000 karakter kaldı (bu video 647 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-44905894493-en"
-    },
-    {
-     "title": "Türkeis Kızılelma: Erster unbemannter Kampfjet geht in Dienst",
-     "description": "Laut Selçuk Bayraktar wurde Türkeis Kızılelma als weltweit erster unbemannter Kampfjet an das Militär übergeben.\nVerändern autonome Systeme die Zukunft der Luftverteidigung grundlegend?\n\n#Kizilelma #Drohnen #Militärtechnologie #Türkei #Geopolitik",
-     "tags": [
-      "Bayraktar Kizilelma",
-      "Türkei Militär",
-      "Kampfdrohne",
-      "Baykar",
-      "Militärtechnologie",
-      "Luftwaffe",
-      "NATO",
-      "Verteidigungspolitik",
-      "Unbemannte Luftfahrt",
-      "Geopolitik"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Kizilelma",
-      "#Drohnen",
-      "#Militärtechnologie",
-      "#Türkei",
-      "#Geopolitik"
-     ],
-     "lang": "de",
-     "topic": "Turkey deploys world's first unmanned fighter jet Kizilelma",
-     "tts": "edge",
-     "duration": 39.98,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-44905894493-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Laut Selçuk Bayraktar wurde Türkeis unbemannter Kampfjet Kızılelma als weltweit erster offiziell an die Streitkräfte übergeben.",
-       "headline": "Weltweiter Rekord",
-       "accent": "Erstflug",
-       "search": "military jet sky",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkei"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Der vom Hersteller Baykar entwickelte Jet bestand alle verbleibenden Testflüge mit vollem Erfolg.",
-       "headline": "Erfolgreiche Tests",
-       "accent": "Serienreife",
-       "search": "drone flight runway",
-       "style": "subtitle",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkei"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Die autonome Plattform soll künftig hochkomplexe Luftkämpfe und taktische Missionen eigenständig ausführen.",
-       "headline": "Autonomer Luftkampf",
-       "accent": "Zukunft",
-       "search": "hitech cockpit radar",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkei"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Militärexperten sehen in diesem Meilenstein den Beginn einer völlig neuen Ära autonomen Luftkampfs.",
-       "headline": "Neues Zeitalter",
-       "accent": "Strategie",
-       "search": "military command center",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Für die Sicherheitsstrategie europäischer NATO-Staaten erzwingt dieser Erfolg eine grundlegende Neuausrichtung.",
-       "headline": "Folgen für NATO",
-       "accent": "Sicherheit",
-       "search": "european flag map",
-       "style": "headline",
-       "countries": [
-        "DEU"
-       ],
-       "country_names": [
-        "Deutschland"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Damit erreicht das globale Wettrüsten im Himmel eine völlig neue Ebene.",
-       "headline": "Neues Wettrüsten",
-       "accent": "Aufrüstung",
-       "search": "fighter jet clouds",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "",
-     "publish_at": "2026-11-21T13:13:32Z",
-     "elevenlabs": {
-      "used": 15998,
-      "limit": 40000,
-      "left": 24002,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 24.002 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-44905894493-de"
-    }
-   ],
-   "ts": "2026-11-21T13:08:36"
-  }
- },
+ "pending": {},
  "_removed": [
-  "b34b7bca5216",
-  "442639882090",
-  "bc7037909ba6",
-  "c947dac9becb",
-  "86277101f5be",
-  "63bfb40d47b6",
-  "f02172b50f8c",
-  "2f1a20151385",
-  "445296633124",
-  "873320f3cd81",
-  "445761614490",
-  "ddbd76050660",
-  "af6ed91f3a79",
-  "443631404172",
-  "a5e09c77f7f8",
   "446184028240",
-  "0c7c07a879a6",
-  "0d9dbcf465cd",
-  "66eba903a865",
-  "446184028241",
-  "41416ec5f7f6",
-  "445944378440",
-  "74775df4be80",
-  "e545b5536757",
-  "443091847971",
-  "32fa0d1d693a",
-  "be8762e28854",
-  "57b4fdc6596f",
-  "9849bc2ef437",
-  "445944378441",
   "d42fcbc4ce3d",
+  "873320f3cd81",
+  "63bfb40d47b6",
+  "ddbd76050660",
+  "443091847971",
+  "9849bc2ef437",
+  "bc7037909ba6",
+  "445944378441",
+  "c947dac9becb",
+  "74775df4be80",
+  "41416ec5f7f6",
+  "0d9dbcf465cd",
+  "446184028241",
+  "442639882090",
+  "86277101f5be",
+  "a5e09c77f7f8",
+  "445761614490",
+  "0c7c07a879a6",
+  "e545b5536757",
+  "af6ed91f3a79",
+  "57b4fdc6596f",
+  "66eba903a865",
+  "32fa0d1d693a",
+  "445944378440",
+  "abe41c1aaf94",
+  "2f1a20151385",
+  "1edbeb303dcc",
+  "f02172b50f8c",
+  "445296633124",
+  "443631404172",
+  "b34b7bca5216",
   "444854651743",
-  "1edbeb303dcc"
+  "be8762e28854"
  ],
  "reminded": "",
  "yt_stories": {
@@ -781,11 +413,16 @@
      "ceviri_yedek": 2,
      "actions_dk": 18
     }
+   },
+   "44906218216-4d360c": {
+    "2026-11-21": {
+     "actions_dk": 8
+    }
    }
   },
   "gunluk": {
    "2026-11-21": {
-    "actions_dk": 19,
+    "actions_dk": 27,
     "uretilen": 3,
     "render_sn": 865.0,
     "render_n": 3,
