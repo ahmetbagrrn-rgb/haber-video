@@ -52,6 +52,7 @@ jobs:
           TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
           EDGE_VOICE: ${{ vars.EDGE_VOICE }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
           PUBLISH: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish || 'true' }}
         run: python render.py

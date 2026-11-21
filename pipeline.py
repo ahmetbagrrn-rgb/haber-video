@@ -12,6 +12,7 @@ Durum (işlenen videolar, konular, Telegram offset) state/state.json içinde tut
 import datetime as dt
 import html
 import json
+import math
 import time
 import uuid
 import os
@@ -50,10 +51,90 @@ def load_state():
 DRY = os.environ.get("PUBLISH", "true").lower() == "false"
 
 
+# ---------------------------------------------------------------- verimlilik ölçümü (son 7 gün)
+# Her süreç kendi kaydını tutar (metrics.runs[<id>]); eşzamanlı iş akışları birleşince sayılar kaybolmaz.
+START = time.time()
+RUN_KEY = f"{RUN_ID}-{uuid.uuid4().hex[:6]}"
+MET = {}  # {gün: {sayaç: değer}}
+METRIC_DAYS = 7
+
+
+def met(key, n=1):
+    d = MET.setdefault(today(), {})
+    d[key] = round(d.get(key, 0) + n, 1)
+
+
+def absorb_render_stats():
+    s = render.drain_stats()
+    for prov, kinds in s.get("prov", {}).items():
+        for k, v in kinds.items():
+            if v:
+                met(f"prov:{prov}:{k}", v)
+    for prov, v in s.get("ses", {}).items():
+        met(f"ses:{prov}", v)
+    for k, v in s.get("n", {}).items():
+        met(k, v)
+
+
+def metrics_prune(m):
+    cut = (dt.datetime.utcnow() - dt.timedelta(days=METRIC_DAYS - 1)).strftime("%Y-%m-%d")
+    runs = {}
+    for rid, days in (m.get("runs") or {}).items():
+        keep = {d: c for d, c in days.items() if d >= cut and c}
+        if keep:
+            runs[rid] = keep
+    gun = {}
+    for days in runs.values():
+        for d, c in days.items():
+            g = gun.setdefault(d, {})
+            for k, v in c.items():
+                g[k] = round(g.get(k, 0) + v, 1)
+    return {"runs": runs, "gunluk": {d: gun[d] for d in sorted(gun)}}
+
+
+def metrics_update(st):
+    absorb_render_stats()
+    MET.setdefault(today(), {})["actions_dk"] = math.ceil((time.time() - START) / 60)
+    m = st.get("metrics") or {}
+    runs = dict(m.get("runs") or {})
+    runs[RUN_KEY] = json.loads(json.dumps(MET))
+    st["metrics"] = metrics_prune({"runs": runs})
+
+
+def metrics_summary(st):
+    """check raporu için 2 satır."""
+    g = (st.get("metrics") or {}).get("gunluk") or {}
+    if not g:
+        return "📊 Verimlilik: henüz veri yok (ölçüm yeni başladı)"
+    tot = {}
+    for c in g.values():
+        for k, v in c.items():
+            tot[k] = tot.get(k, 0) + v
+    karar = tot.get("onay", 0) + tot.get("red", 0) + tot.get("sure_dolan", 0)
+    onay = f"%{round(100 * tot.get('onay', 0) / karar)}" if karar else "—"
+    yedek = f"%{round(100 * tot.get('llm_yedek', 0) / tot['llm_cagri'])}" if tot.get("llm_cagri") else "—"
+    gun = max(1, len(g))
+    ort = round(tot.get("uretilen", 0) / gun, 1)
+    errs = {}
+    for k, v in tot.items():
+        if k.startswith("prov:") and k.endswith(":hata"):
+            errs[k.split(":")[1]] = errs.get(k.split(":")[1], 0) + v
+    worst = max(errs.items(), key=lambda x: x[1]) if errs and max(errs.values()) > 0 else None
+    rnd = f", ort. render {round(tot['render_sn'] / tot['render_n'])} sn" if tot.get("render_n") else ""
+    l1 = f"📊 Verimlilik ({gun} gün): onay oranı {onay}, yedeğe düşme {yedek}, günlük ort. {ort} video{rnd}"
+    l2 = (f"En çok hata veren sağlayıcı: {worst[0]} ({int(worst[1])} hata)" if worst else "En çok hata veren sağlayıcı: yok")
+    yb = len(st.get("yayin_bekliyor") or [])
+    return l1 + "\n" + l2 + (f"\n📮 Make'e ulaşmayan (yayin_bekliyor): {yb}" if yb else "")
+
+
 def save_state(st):
     if DRY:
         log("Test modu: durum kaydedilmedi")
         return
+    try:
+        metrics_update(st)
+    except Exception as e:  # noqa  ölçüm hiçbir zaman akışı durdurmasın
+        log("Metrik güncellenemedi:", e)
     STATE_FILE.parent.mkdir(exist_ok=True)
     st["processed"] = st["processed"][-500:]
     st["topics"] = st["topics"][-200:]
@@ -161,17 +242,24 @@ def publish(result):
     if result.get("test") or not url:
         log("Yayın atlandı (test ya da webhook yok)")
         return False
-    req = urllib.request.Request(url, data=json.dumps(result).encode(),
-                                 headers={"Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            log("Make cevabı:", r.status)
-    except urllib.error.HTTPError:
-        raise
-    except Exception as e:  # noqa  zaman aşımı: Make isteği aldı, yüklemeyi kendi sürdürüyor
-        if "timed out" not in str(e).lower():
-            raise
-        log("Make isteği aldı, yükleme arka planda sürüyor")
+    waits = [int(x) for x in (os.environ.get("PUBLISH_RETRY_WAITS") or "15,45").split(",")]
+    for attempt in range(len(waits) + 1):  # ilk deneme + 2 yeniden deneme (artan bekleme)
+        req = urllib.request.Request(url, data=json.dumps(result).encode(),
+                                     headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                log("Make cevabı:", r.status)
+            break
+        except Exception as e:  # noqa
+            if not isinstance(e, urllib.error.HTTPError) and "timed out" in str(e).lower():
+                log("Make isteği aldı, yükleme arka planda sürüyor")  # zaman aşımı: Make yüklemeyi kendi sürdürüyor
+                break
+            met("make_gonderim_hata")
+            if attempt >= len(waits):
+                raise
+            log(f"Make gönderimi başarısız ({str(e)[:80]}), {waits[attempt]} sn sonra tekrar")
+            time.sleep(waits[attempt])
+    met(f"yayin_{result.get('lang', 'x')}")
     try:
         result["tiktok"] = tiktok_publish(result)
     except Exception as e:  # noqa
@@ -243,6 +331,7 @@ def handle_callback(cb, st):
     if not item:
         tg_send(chat, "Bu video zaten işlenmiş ya da süresi dolmuş.")
         return
+    met("red" if action == "no" else "onay")
     if action == "no":
         tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
         tg_send(chat, "❌ İptal edildi, yayınlanmadı.")
@@ -262,8 +351,19 @@ def handle_callback(cb, st):
             out.append(f"• {ch}: ⚠️ hata ({str(e)[:60]}){hint}")
     tg("editMessageReplyMarkup", chat_id=chat, message_id=msg_id, reply_markup={"inline_keyboard": []})
     tg_send(chat, "✅ Yayına gönderildi:\n" + "\n".join(out) + "\n\n" + quota_block(item["results"][-1]))
-    if failed:  # hatalı olanları yeniden onaya koy
-        queue_or_publish(failed, st, "🔁 Yayınlanamayanlar (tekrar dene)")
+    if failed:
+        # Kullanıcı ZATEN onayladı: tekrar onay istemek yerine republish kuyruğuna yaz
+        retry = [r for r in failed if not r.get("tag")]
+        yb = st.setdefault("yayin_bekliyor", [])
+        for r in failed:
+            if r.get("tag") and r["tag"] not in [x["tag"] for x in yb]:
+                yb.append({"tag": r["tag"], "lang": r["lang"], "ts": dt.datetime.utcnow().isoformat(timespec="seconds"),
+                           "deneme": 0})
+        if len(failed) > len(retry):
+            tg_send(chat, "📮 Make'e ulaşmayan video(lar) 'yayin_bekliyor' listesine yazıldı; republish ile "
+                          "otomatik yeniden gönderilecek (yeniden onay gerekmez).")
+        if retry:  # etiketi olmayan eski kayıtlar: eskisi gibi yeniden onaya
+            queue_or_publish(retry, st, "🔁 Yayınlanamayanlar (tekrar dene)")
 
 
 def to_tr_time(iso):
@@ -279,15 +379,33 @@ def expire_pending(st, hours=48):
             if dt.datetime.fromisoformat(st["pending"][gid]["ts"]) < lim:
                 st["pending"].pop(gid)
                 st.setdefault("_removed", []).append(gid)
+                met("sure_dolan")
         except Exception:  # noqa
             st["pending"].pop(gid, None)
 
 
+def lang_payload(first, lang, extra):
+    """2. ve 3. dil: önce ücretsiz Nemotron çevirisi (sahneler hazır gelir); olmazsa mevcut yeniden yazım yolu."""
+    try:
+        tr = render.translate_result(first, lang)
+    except Exception as e:  # noqa
+        log("Çeviri hatası:", e)
+        tr = None
+    if tr:
+        return {**extra, **tr}
+    return {**extra, "mode": "rewrite", "target_lang": lang,
+            "text": first["title"] + ".\n" + "\n".join(sc["text"] for sc in first["scenes"])}
+
+
 def make_video(payload, tag, instagram=True):
     out_dir = ROOT / "out" / tag
+    t0 = time.time()
     res = render.produce(payload, out_dir=out_dir, tag=tag)
     if res.get("skip"):
         return res
+    met("uretilen")
+    met("render_sn", round(time.time() - t0, 1))
+    met("render_n")
     res["instagram"] = bool(instagram)
     res["tag"] = tag
     (out_dir / "result.json").write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -516,8 +634,7 @@ def produce_topic(cand, st, header):
         pl = {**base, "target_lang": lang}
         if i > 0 and results:
             first = results[0]
-            pl = {"mode": "rewrite", "source": base["source"], "target_lang": lang,
-                  "text": first["title"] + ".\n" + "\n".join(sc["text"] for sc in first["scenes"])}
+            pl = lang_payload(first, lang, {"source": base["source"]})
         res = make_video(pl, tag, instagram=(lang == ig_lang))
         if res.get("skip"):
             break
@@ -760,10 +877,14 @@ def check_report(st):
         rel_txt = "Son release: okunamadı"
         issues.append(f"⚠️ Release listesi okunamadı ({str(e)[:80]})")
     tail = "\nTam kontrol (Make + YouTube) için: check tam"
+    try:
+        eff = "\n" + metrics_summary(st)
+    except Exception as e:  # noqa
+        eff = f"\n📊 Verimlilik okunamadı ({str(e)[:60]})"
     if not issues:
-        return f"✅ Haber sistemi sağlıklı — bekleyen onay: {len(pend)}\n{daily}\n🎧 Dinleyici çalışıyor." + tail
+        return f"✅ Haber sistemi sağlıklı — bekleyen onay: {len(pend)}\n{daily}{eff}\n🎧 Dinleyici çalışıyor." + tail
     out = issues[:4] + [pend_txt, daily]
-    return "🩺 Haber sistemi kontrolü\n" + "\n".join(out[:6]) + "\n🎧 Dinleyici çalışıyor." + tail
+    return "🩺 Haber sistemi kontrolü\n" + "\n".join(out[:6]) + eff + "\n🎧 Dinleyici çalışıyor." + tail
 
 
 def handle_check(kind, text, chat, st):
@@ -902,8 +1023,7 @@ def process_updates(st, ups):
                 if lang:
                     payload["target_lang"] = lang
                     if results:
-                        payload = {"mode": "rewrite", "target_lang": lang, "chat_id": chat,
-                                   "text": results[0]["title"] + ".\n" + "\n".join(sc["text"] for sc in results[0]["scenes"])}
+                        payload = lang_payload(results[0], lang, {"chat_id": chat})
                 tag = f"tg-{RUN_ID}-{n}-{lang or 'x'}"
                 res = make_video(payload, tag, instagram=(not multi or lang == CONFIG.get("instagram_lang", "tr")))
                 results.append(res)
@@ -919,18 +1039,38 @@ def cmd_republish():
     """Hazır videoları (release etiketleriyle) yeniden yayına gönderir; yayın saati yeni slottan."""
     st = load_state()
     out = []
-    for tag in sys.argv[2:]:
-        d = Path("/tmp") / tag
-        d.mkdir(exist_ok=True)
-        subprocess.run(["gh", "release", "download", tag, "-p", "result.json", "-D", str(d), "--clobber"], check=True)
-        r = json.loads((d / "result.json").read_text(encoding="utf-8"))
-        slot = next_slot(r["lang"], st)
-        r["publish_at"] = slot or soon()
-        publish(r)
+    yb = st.setdefault("yayin_bekliyor", [])
+    tags = [t for t in sys.argv[2:] if t.strip()] or [x["tag"] for x in yb]  # etiket yoksa: yayin_bekliyor kuyruğu
+    for tag in tags:
+        rec = next((x for x in yb if x["tag"] == tag), None)
+        try:
+            d = Path("/tmp") / tag
+            d.mkdir(exist_ok=True)
+            subprocess.run(["gh", "release", "download", tag, "-p", "result.json", "-D", str(d), "--clobber"], check=True)
+            r = json.loads((d / "result.json").read_text(encoding="utf-8"))
+            slot = next_slot(r["lang"], st)
+            r["publish_at"] = slot or soon()
+            publish(r)
+        except Exception as e:  # noqa
+            log("Yeniden gönderilemedi:", tag, e)
+            if rec:
+                rec["deneme"] = rec.get("deneme", 0) + 1
+                if rec["deneme"] >= 5:
+                    yb.remove(rec)
+                    st.setdefault("_yb_done", []).append(tag)
+                    out.append(f"• {tag}: ⚠️ 5 denemede gönderilemedi, kuyruktan çıkarıldı")
+                    continue
+            out.append(f"• {tag}: ⚠️ hata ({str(e)[:60]}), sonra tekrar denenecek")
+            continue
+        if rec:
+            yb.remove(rec)
+        st.setdefault("_yb_done", []).append(tag)
         out.append(f"• {CHANNEL_NAMES.get(r['lang'], r['lang'])}: {r['title']} → {to_tr_time(slot) if slot else 'hemen'}")
         log("Yeniden gönderildi:", tag, r["publish_at"])
+    st["_yb_done"] = st.get("_yb_done", [])[-100:]
     save_state(st)
-    tg_send(st.get("owner_chat"), "🔁 Yeniden yayına gönderildi:\n" + "\n".join(out))
+    if out:
+        tg_send(st.get("owner_chat"), "🔁 Yeniden yayına gönderildi:\n" + "\n".join(out))
 
 
 def cmd_requeue():
@@ -994,6 +1134,18 @@ def merge_states(local, remote):
         for lg, xs in src.items():
             lw[lg] = sorted(set(lw.get(lg, [])) | set(xs))[-20:]
     m["lang_week"] = lw
+    runs = {**((remote.get("metrics") or {}).get("runs") or {}), **((local.get("metrics") or {}).get("runs") or {})}
+    if runs:
+        m["metrics"] = metrics_prune({"runs": runs})
+    ybd = set(local.get("_yb_done", [])) | set(remote.get("_yb_done", []))
+    yb = {}
+    for src in (remote.get("yayin_bekliyor", []), local.get("yayin_bekliyor", [])):
+        for x in src:
+            if x.get("tag") not in ybd:
+                yb[x["tag"]] = x
+    if yb or "yayin_bekliyor" in local or "yayin_bekliyor" in remote:
+        m["yayin_bekliyor"] = list(yb.values())[-50:]
+        m["_yb_done"] = sorted(ybd)[-100:]
     cr = {}
     for src in (remote.get("check_requests", []), local.get("check_requests", [])):
         for x in src:
