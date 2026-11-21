@@ -539,7 +539,7 @@ Haber niteliğinde olay yoksa {"stories":[]} döndür."""
 
 def extract_stories(url, n):
     if not render.gemini_keys():
-        return None
+        return extract_stories_fallback(url, n)
     parts = [{"fileData": {"fileUri": url}, "videoMetadata": {"startOffset": "0s", "endOffset": "900s"}},
              {"text": STORY_PROMPT.replace("{n}", str(n))}]
     gen = {"responseMimeType": "application/json", "temperature": 0.3, "mediaResolution": "MEDIA_RESOLUTION_LOW"}
@@ -548,7 +548,27 @@ def extract_stories(url, n):
                                   timeout=240, ok=lambda d: isinstance(d.get("stories"), list))
     except Exception as e:  # noqa
         log("Haber çıkarma başarısız:", str(e)[:150])
+        return extract_stories_fallback(url, n)
+    return _stories(data, n)
+
+
+def extract_stories_fallback(url, n):
+    """Gemini videoyu izleyemezse: Make transkripti + metin yedek zinciri."""
+    try:
+        txt = render.youtube_transcript_make(url)
+        prompt = (STORY_PROMPT.replace("{n}", str(n)).replace("Ekteki YouTube videosunu (ilk 15 dakika) izle.",
+                                                              "Aşağıdaki YouTube videosu transkriptini ve özetini oku.")
+                  + "\n\nTRANSKRİPT VE ÖZET:\n" + txt)
+        data = render.llm_call("haber-cikar-yt", prompt, "Yalnızca geçerli JSON döndür.", json_mode=True, temperature=0.3,
+                               ok=lambda d: isinstance(d.get("stories"), list))
+        log("Haberler Make transkript yedeğiyle çıkarıldı")
+    except Exception as e:  # noqa
+        log("Yedek haber çıkarma da başarısız:", str(e)[:150])
         return None
+    return _stories(data, n)
+
+
+def _stories(data, n):
     st = [x for x in data["stories"] if x.get("title") and x.get("facts")]
     st.sort(key=lambda x: -(x.get("score") or 0))
     log(f"Videodan {len(st)} haber çıkarıldı:", " | ".join(x["title"] for x in st))

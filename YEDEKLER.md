@@ -3,7 +3,7 @@
 | Adım | Ana yol | Çökerse sırayla devreye giren yedek(ler) | Hiçbiri olmazsa |
 |---|---|---|---|
 | Haber metni / senaryo (metin kaynağı) | Gemini (anahtar 1, 3 model) | Gemini anahtar 2 (ve 3) → OpenRouter `nvidia/nemotron-3-ultra-550b-a55b:free` → Groq (anahtar varsa) → Make webhook `task=metin` (Nemotron → Make içinde Gemini 2.5 Flash) | Video üretilmez, Telegram'a hata yazılır |
-| YouTube videosundan konu/senaryo | Gemini video analizi (tüm anahtarlar) | Yok — video yalnız Gemini ile izlenebiliyor; 10 dk Gemini'yi atlayıp RSS/haber kaynaklarına geçilir | O konu atlanır |
+| YouTube videosundan konu/senaryo | Gemini video analizi (tüm anahtarlar) | Make senaryosu (`url` ile, içinde Gemini 3.1 Flash Lite → 2.5 Flash) transkript + özet döndürür → metin yedek zinciriyle senaryo/haber çıkarılır | O konu atlanır, RSS/haber kaynaklarına geçilir |
 | Doğrulama ve konu seçimi (`llm_json`) | Gemini | Aynı zincir: Gemini 2 → OpenRouter Nemotron → Groq → Make `task=metin` | Doğrulama atlanır, senaryo olduğu gibi kalır |
 | TR → EN / DE çeviri | Ücretsiz Nemotron: OpenRouter (anahtar varsa) → Make webhook `task=metin` | Çıktı boş / bozuk / yanlış dil / Almancada "du" / kelime sınırı (EN 90, DE 75) aşılırsa → eski yol: hedef dile yeniden yazım (yukarıdaki metin zinciri) | O dil atlanır, diğer diller devam eder |
 | Seslendirme | ElevenLabs (config'teki dillerde) | Kota yetersiz ya da hata → ücretsiz Microsoft edge-tts (dil başına 2-3 ses, 2'şer deneme) | Video üretilmez |
