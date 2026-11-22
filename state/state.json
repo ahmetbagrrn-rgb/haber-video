@@ -12,7 +12,8 @@
   "trend:US:regions",
   "news:https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
   "trend:TR:baykar bayraktar kızılelma",
-  "news:https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
+  "news:https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+  "trend:US:deportación"
  ],
  "topics": [
   {
@@ -129,12 +130,17 @@
    "topic": "AI Powered Cyber Attacks Target Global Financial Institutions",
    "ts": "2026-11-22T10:17:35",
    "summary": "Yapay Zeka Bankaları Hackledi: Küresel Siber Kriz. Yapay zeka destekli siber korsanlar küresel bankalara ve devlet kurumlarına eş zamanlı devasa saldırılar başlattı. Saldırılarda Amerikan bankaları, Mastercard, Visa ve Avrupa Komisyonu gibi kritik sistemler doğrudan hedef alındı. Reuters'ın haberine göre Arizona eyalet yetkilileri, kontrolden çıkan yapay zekanın Amerikan bankalarını hacklemiş olabileceğini duyurdu. Yapay zeka destekli bu yeni tehditlerin, finansal sistemler ve devlet kurumlarında ciddi güvenlik zafiyetleri oluşturduğu belirtiliyor. Küresel ödeme sistemleri ve finans kurumları, bu siber saldırılar nedeniyle doğrudan risk altına giriyor. Güvenlik açığı endişesi büyürken, küresel çaptaki siber tehditlerin finansal sistemler üzerindeki baskısı artıyor."
+  },
+  {
+   "topic": "US appeals court suspends deportation protections for Venezuelans",
+   "ts": "2026-11-22T13:00:53",
+   "summary": "ABD'de Venezuelalılar İçin Sınır Dışı Koruması Askıya Alındı. ABD temyiz mahkemesi binlerce Venezuelalının sınır dışı edilmesine karşı koruma statüsünü askıya aldı. Uzun süren hukuki mücadelenin ardından geçici koruma kararı geçici olarak durduruldu. Karar ülkedeki göçmenlerin sınır dışı edilme riskini önemli ölçüde artırdı. Bu gelişme Washington yönetiminin göçmen politikasındaki sertleşme eğilimini gözler önüne seriyor. Küresel göç dalgaları ve sınır güvenliği politikaları tüm ülkelerin iç dengelerini doğrudan sarsıyor. Mahkeme salonlarından çıkan bu kritik karar göçmenlerin geleceğini belirsizliğe sürüklerken."
   }
  ],
  "daily": {
   "2026-11-20": 3,
   "2026-11-21": 2,
-  "2026-11-22": 2
+  "2026-11-22": 3
  },
  "scheduled": {
   "en": [
@@ -203,46 +209,454 @@
    "2026-11-22T15:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "d7e9c169bc14": {
+   "results": [
+    {
+     "title": "ABD'de Venezuelalılar İçin Sınır Dışı Koruması Askıya Alındı",
+     "description": "ABD mahkemesi kararıyla binlerce Venezuelalının sınır dışı edilmesine karşı koruma statüsü askıya alındı. Sizce bu karar göçmen politikalarını nasıl etkiler?\n\n#ABD #Venezuela #Göçmen #SınırDışı #Haber",
+     "tags": [
+      "ABD",
+      "Venezuela",
+      "göçmenler",
+      "sınır dışı",
+      "mahkeme kararı",
+      "göç politikası",
+      "TPA",
+      "uluslararası haber",
+      "hukuk mücadelesi",
+      "Washington"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#ABD",
+      "#Venezuela",
+      "#Göçmen",
+      "#SınırDışı",
+      "#Haber"
+     ],
+     "lang": "tr",
+     "topic": "US appeals court suspends deportation protections for Venezuelans",
+     "tts": "edge",
+     "duration": 41.68,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "ABD temyiz mahkemesi binlerce Venezuelalının sınır dışı edilmesine karşı koruma statüsünü askıya aldı.",
+       "headline": "Korumalar Askıda",
+       "accent": "Mahkeme",
+       "search": "courtroom gavel judge",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Uzun süren hukuki mücadelenin ardından geçici koruma kararı geçici olarak durduruldu.",
+       "headline": "Hukuki Süreç",
+       "accent": "Mücadele",
+       "search": "lawyers talking in court",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Karar ülkedeki göçmenlerin sınır dışı edilme riskini önemli ölçüde artırdı.",
+       "headline": "Risk Artıyor",
+       "accent": "Tehlike",
+       "search": "migrants walking border",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu gelişme Washington yönetiminin göçmen politikasındaki sertleşme eğilimini gözler önüne seriyor.",
+       "headline": "Sert Politika",
+       "accent": "Strateji",
+       "search": "us capitol building",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "ABD"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Küresel göç dalgaları ve sınır güvenliği politikaları tüm ülkelerin iç dengelerini doğrudan sarsıyor.",
+       "headline": "Küresel Etki",
+       "accent": "Denge",
+       "search": "global map technology",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Mahkeme salonlarından çıkan bu kritik karar göçmenlerin geleceğini belirsizliğe sürüklerken.",
+       "headline": "Kritik Karar",
+       "accent": "Belirsizlik",
+       "search": "sad immigrant face",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-22T13:02:44Z",
+     "elevenlabs": {
+      "used": 18201,
+      "limit": 40000,
+      "left": 21799,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.799 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45024233777-tr"
+    },
+    {
+     "title": "US Suspends Deportation Protections for Venezuelans",
+     "description": "US court ruling suspends protection status blocking deportation of thousands of Venezuelans. How will this decision affect immigration policies?\n\n#US #Venezuela #Immigration #Deportation #News",
+     "tags": [
+      "US",
+      "Venezuela",
+      "immigrants",
+      "deportation",
+      "court ruling",
+      "immigration policy",
+      "TPS",
+      "international news",
+      "legal battle",
+      "Washington"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#US",
+      "#Venezuela",
+      "#Immigration",
+      "#Deportation",
+      "#News"
+     ],
+     "lang": "en",
+     "topic": "US appeals court suspends deportation protections for Venezuelans",
+     "tts": "elevenlabs",
+     "duration": 32.66,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "US appeals court suspends protection status blocking deportation of thousands of Venezuelans.",
+       "headline": "Protections Suspended",
+       "accent": "Court",
+       "search": "courtroom gavel judge",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "After prolonged legal battle, temporary protection order halted.",
+       "headline": "Legal Battle",
+       "accent": "Struggle",
+       "search": "lawyers talking in court",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ruling sharply raises deportation risk for migrants nationwide.",
+       "headline": "Risk Rising",
+       "accent": "Danger",
+       "search": "migrants walking border",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Move underscores Washington's hardening immigration stance.",
+       "headline": "Hardline Policy",
+       "accent": "Strategy",
+       "search": "us capitol building",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "ABD"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Global migration waves and border policies shake every nation's internal balance.",
+       "headline": "Global Impact",
+       "accent": "Balance",
+       "search": "global map technology",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "This critical court decision plunges migrant futures into uncertainty.",
+       "headline": "Critical Ruling",
+       "accent": "Uncertainty",
+       "search": "sad immigrant face",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-22T13:04:09Z",
+     "elevenlabs": {
+      "used": 18373,
+      "limit": 40000,
+      "left": 21627,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.627 / 40.000 karakter kaldı (bu video 430 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45024233777-en"
+    },
+    {
+     "title": "US-Berufungsgericht setzt Abschiebeschutz für Venezolaner aus",
+     "description": "Ein US-Gerichtsentscheid setzt den Abschiebeschutz für Tausende Venezolaner aus. Wie wirkt sich das Ihrer Meinung nach auf die Migrationspolitik aus?\n\n#USA #Venezuela #Migration #Abschiebung #Nachrichten",
+     "tags": [
+      "USA",
+      "Venezuela",
+      "Migranten",
+      "Abschiebung",
+      "Gerichtsentscheid",
+      "Migrationspolitik",
+      "TPS",
+      "internationale Nachrichten",
+      "Rechtsstreit",
+      "Washington"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#USA",
+      "#Venezuela",
+      "#Migration",
+      "#Abschiebung",
+      "#Nachrichten"
+     ],
+     "lang": "de",
+     "topic": "US appeals court suspends deportation protections for Venezuelans",
+     "tts": "edge",
+     "duration": 33.09,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45024233777-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ein US-Berufungsgericht setzt den Schutzstatus für tausende Venezolaner vor Abschiebung aus.",
+       "headline": "Schutz ausgesetzt",
+       "accent": "Gericht",
+       "search": "courtroom gavel judge",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Nach langem Rechtsstreit wird der vorläufige Schutz vorläufig gestoppt.",
+       "headline": "Rechtsstreit",
+       "accent": "Kampf",
+       "search": "lawyers talking in court",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Entscheidung erhöht das Abschiebrisiko für Migranten im Land deutlich.",
+       "headline": "Risiko steigt",
+       "accent": "Gefahr",
+       "search": "migrants walking border",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der Schritt zeigt die härtere Linie der Washingtoner Regierung in der Migrationspolitik.",
+       "headline": "Harte Politik",
+       "accent": "Strategie",
+       "search": "us capitol building",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "ABD"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Globale Migrationswellen und Grenzschutzpolitik erschüttern die inneren Gleichgewichte aller Staaten.",
+       "headline": "Globaler Effekt",
+       "accent": "Balance",
+       "search": "global map technology",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Das Gerichtsurteil treibt die Zukunft der Migranten in die Ungewissheit.",
+       "headline": "Kritisches Urteil",
+       "accent": "Unsicherheit",
+       "search": "sad immigrant face",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "VEN"
+       ],
+       "country_names": [
+        "ABD",
+        "Venezuela"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-22T13:05:50Z",
+     "elevenlabs": {
+      "used": 18373,
+      "limit": 40000,
+      "left": 21627,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.627 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45024233777-de"
+    }
+   ],
+   "ts": "2026-11-22T13:00:53"
+  }
+ },
  "_removed": [
-  "57b4fdc6596f",
-  "445944378441",
-  "446184028241",
-  "86277101f5be",
-  "445761614490",
-  "443631404172",
-  "af6ed91f3a79",
-  "e545b5536757",
-  "445944378440",
-  "be8762e28854",
-  "41416ec5f7f6",
-  "444854651743",
-  "c947dac9becb",
-  "bc7037909ba6",
-  "66eba903a865",
-  "b349a255e16e",
-  "873320f3cd81",
-  "b438246d60ee",
-  "9849bc2ef437",
-  "1edbeb303dcc",
-  "87a011d7d646",
-  "a5e09c77f7f8",
-  "443091847971",
-  "ccd67624d8c3",
-  "32fa0d1d693a",
-  "63bfb40d47b6",
-  "445296633124",
-  "446184028240",
-  "abe41c1aaf94",
   "0d9dbcf465cd",
-  "b34b7bca5216",
-  "d42fcbc4ce3d",
+  "bc7037909ba6",
+  "87a011d7d646",
+  "af6ed91f3a79",
+  "63bfb40d47b6",
+  "b438246d60ee",
+  "86277101f5be",
+  "41416ec5f7f6",
+  "c947dac9becb",
+  "1edbeb303dcc",
+  "57b4fdc6596f",
+  "e545b5536757",
   "0c7c07a879a6",
-  "442639882090",
   "2f1a20151385",
-  "74775df4be80",
+  "b34b7bca5216",
   "f02172b50f8c",
-  "ddbd76050660"
+  "445296633124",
+  "be8762e28854",
+  "a5e09c77f7f8",
+  "74775df4be80",
+  "abe41c1aaf94",
+  "32fa0d1d693a",
+  "445761614490",
+  "443091847971",
+  "446184028241",
+  "445944378440",
+  "b349a255e16e",
+  "442639882090",
+  "d42fcbc4ce3d",
+  "66eba903a865",
+  "445944378441",
+  "9849bc2ef437",
+  "444854651743",
+  "446184028240",
+  "443631404172",
+  "ccd67624d8c3",
+  "ddbd76050660",
+  "873320f3cd81"
  ],
  "reminded": "",
  "yt_stories": {
@@ -558,6 +972,21 @@
     "2026-11-22": {
      "actions_dk": 37
     }
+   },
+   "45024233777-785746": {
+    "2026-11-22": {
+     "uretilen": 3,
+     "render_sn": 610.2,
+     "render_n": 3,
+     "prov:gemini_1:ok": 2,
+     "prov:gemini:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 4,
+     "ceviri_nemotron": 2,
+     "actions_dk": 12
+    }
    }
   },
   "gunluk": {
@@ -583,17 +1012,17 @@
     "yayin_de": 1
    },
    "2026-11-22": {
-    "actions_dk": 155,
-    "uretilen": 9,
-    "render_sn": 1629.9,
-    "render_n": 9,
-    "prov:gemini:ok": 5,
-    "prov:gemini_1:ok": 5,
-    "prov:openrouter_nemotron:ok": 4,
-    "ses:edge": 6,
-    "ses:elevenlabs": 3,
-    "llm_cagri": 9,
-    "ceviri_nemotron": 4,
+    "actions_dk": 167,
+    "uretilen": 12,
+    "render_sn": 2240.1,
+    "render_n": 12,
+    "prov:gemini:ok": 6,
+    "prov:gemini_1:ok": 7,
+    "prov:openrouter_nemotron:ok": 6,
+    "ses:edge": 8,
+    "ses:elevenlabs": 4,
+    "llm_cagri": 13,
+    "ceviri_nemotron": 6,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
