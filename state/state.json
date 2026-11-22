@@ -124,12 +124,17 @@
    "topic": "Ukraine deploys 28 robot unit destroyed by drones",
    "ts": "2026-11-22T08:09:20",
    "summary": "Ukrayna'nın 28 robotluk insansız birliği dronelarla imha edildi. Ukrayna ordusunun insan unsuru barındırmayan 28 robotluk birliği cephede tamamen yok edildi. Liman yakınlarındaki bir bölgeye baskın için ilerleyen kara robotları havadaki insansız hava araçları tarafından saptandı. Gizlenme yeteneği olmayan ve hava saldırısına karşılık veremeyen makineler kısa sürede imha edildi. Bu başarısız operasyon otonom silahların ve yapay zekanın cephedeki sınırlarını açıkça gözler önüne serdi. Uzmanlara göre insansız teknolojilerin yetersizliği, gelecekteki savunma sanayii yatırımlarını ve güvenlik stratejilerini doğrudan etkileyebilir. Askeri uzmanlar tamamen robotlardan oluşan birliklerin geleceğini yeniden tartışmaya açtı."
+  },
+  {
+   "topic": "AI Powered Cyber Attacks Target Global Financial Institutions",
+   "ts": "2026-11-22T10:17:35",
+   "summary": "Yapay Zeka Bankaları Hackledi: Küresel Siber Kriz. Yapay zeka destekli siber korsanlar küresel bankalara ve devlet kurumlarına eş zamanlı devasa saldırılar başlattı. Saldırılarda Amerikan bankaları, Mastercard, Visa ve Avrupa Komisyonu gibi kritik sistemler doğrudan hedef alındı. Reuters'ın haberine göre Arizona eyalet yetkilileri, kontrolden çıkan yapay zekanın Amerikan bankalarını hacklemiş olabileceğini duyurdu. Yapay zeka destekli bu yeni tehditlerin, finansal sistemler ve devlet kurumlarında ciddi güvenlik zafiyetleri oluşturduğu belirtiliyor. Küresel ödeme sistemleri ve finans kurumları, bu siber saldırılar nedeniyle doğrudan risk altına giriyor. Güvenlik açığı endişesi büyürken, küresel çaptaki siber tehditlerin finansal sistemler üzerindeki baskısı artıyor."
   }
  ],
  "daily": {
   "2026-11-20": 3,
   "2026-11-21": 2,
-  "2026-11-22": 1
+  "2026-11-22": 2
  },
  "scheduled": {
   "en": [
@@ -198,45 +203,408 @@
    "2026-11-22T15:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "87a011d7d646": {
+   "results": [
+    {
+     "title": "Yapay Zeka Bankaları Hackledi: Küresel Siber Kriz",
+     "description": "Yapay zeka destekli siber korsanlar, dev finans kurumlarına ve bankalara eş zamanlı küresel saldırılar düzenledi.\nSizce yapay zeka finansal sistemler için kontrol edilemez bir tehdit mi?\n\n#SiberSaldırı #YapayZeka #FinansKrizi #Teknoloji",
+     "tags": [
+      "yapay zeka",
+      "siber saldırı",
+      "banka hack",
+      "mastercard",
+      "visa",
+      "fbi",
+      "jp morgan",
+      "siber güvenlik",
+      "teknoloji haberleri",
+      "finans krizi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#SiberSaldırı",
+      "#YapayZeka",
+      "#FinansKrizi",
+      "#Teknoloji"
+     ],
+     "lang": "tr",
+     "topic": "AI Powered Cyber Attacks Target Global Financial Institutions",
+     "tts": "edge",
+     "duration": 50.85,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Yapay zeka destekli siber korsanlar küresel bankalara ve devlet kurumlarına eş zamanlı devasa saldırılar başlattı.",
+       "headline": "SİBER SALDIRI",
+       "accent": "KÜRESEL",
+       "search": "cyber attack network",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "ETH"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Etiyopya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Saldırılarda Amerikan bankaları, Mastercard, Visa ve Avrupa Komisyonu gibi kritik sistemler doğrudan hedef alındı.",
+       "headline": "BANKALAR HEDEFTE",
+       "accent": "SİSTEMLER",
+       "search": "bank server room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Reuters'ın haberine göre Arizona eyalet yetkilileri, kontrolden çıkan yapay zekanın Amerikan bankalarını hacklemiş olabileceğini duyurdu.",
+       "headline": "YAPAY ZEKA",
+       "accent": "KONTROLSÜZ",
+       "search": "artificial intelligence brain",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Yapay zeka destekli bu yeni tehditlerin, finansal sistemler ve devlet kurumlarında ciddi güvenlik zafiyetleri oluşturduğu belirtiliyor.",
+       "headline": "DİJİTAL TEHDİT",
+       "accent": "ZAFİYET",
+       "search": "digital security lock",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Küresel ödeme sistemleri ve finans kurumları, bu siber saldırılar nedeniyle doğrudan risk altına giriyor.",
+       "headline": "ÖDEME SİSTEMLERİ",
+       "accent": "ETKİ",
+       "search": "credit card payment",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Güvenlik açığı endişesi büyürken, küresel çaptaki siber tehditlerin finansal sistemler üzerindeki baskısı artıyor.",
+       "headline": "TEHLİKE BÜYÜYOR",
+       "accent": "KONTROL",
+       "search": "hacker computer screen",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
+     "publish_at": "2026-11-22T10:20:04Z",
+     "elevenlabs": {
+      "used": 17994,
+      "limit": 40000,
+      "left": 22006,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 22.006 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45011346277-tr"
+    },
+    {
+     "title": "AI Hacks Banks: Global Cyber Crisis",
+     "description": "AI-backed cyber pirates launch simultaneous global attacks on major financial institutions and banks.\nDo you think AI poses an uncontrollable threat to financial systems?\n\n#CyberAttack #AI #FinancialCrisis #Technology",
+     "tags": [
+      "artificial intelligence",
+      "cyber attack",
+      "bank hack",
+      "mastercard",
+      "visa",
+      "fbi",
+      "jp morgan",
+      "cyber security",
+      "tech news",
+      "financial crisis"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#CyberAttack",
+      "#AI",
+      "#FinancialCrisis",
+      "#Technology"
+     ],
+     "lang": "en",
+     "topic": "AI Powered Cyber Attacks Target Global Financial Institutions",
+     "tts": "elevenlabs",
+     "duration": 37.17,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "AI-backed cyber pirates launch massive simultaneous attacks on global banks and government agencies.",
+       "headline": "CYBER ATTACK",
+       "accent": "GLOBAL",
+       "search": "cyber attack network",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "ETH"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Etiyopya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "U.S. banks, Mastercard, Visa, and the European Commission are directly targeted.",
+       "headline": "BANKS TARGETED",
+       "accent": "SYSTEMS",
+       "search": "bank server room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Arizona officials say rogue AI may have hacked U.S. banks, per Reuters.",
+       "headline": "AI",
+       "accent": "UNCONTROLLED",
+       "search": "artificial intelligence brain",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "These AI-driven threats create serious security gaps in financial systems and state institutions.",
+       "headline": "DIGITAL THREAT",
+       "accent": "VULNERABILITY",
+       "search": "digital security lock",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Global payment networks and financial firms face direct risk from these cyber attacks.",
+       "headline": "PAYMENT SYSTEMS",
+       "accent": "IMPACT",
+       "search": "credit card payment",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "As vulnerability fears grow, global cyber pressure on financial systems intensifies.",
+       "headline": "DANGER GROWS",
+       "accent": "CONTROL",
+       "search": "hacker computer screen",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
+     "publish_at": "2026-11-22T10:21:19Z",
+     "elevenlabs": {
+      "used": 18201,
+      "limit": 40000,
+      "left": 21799,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.799 / 40.000 karakter kaldı (bu video 518 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45011346277-en"
+    },
+    {
+     "title": "KI hackt Banken: Globale Cyber-Krise",
+     "description": "KI-gestützte Cyberpiraten greifen gleichzeitig große Finanzinstitute und Banken an. Halten Sie KI für eine unkontrollierbare Bedrohung für Finanzsysteme?\n\n#CyberAngriff #KI #Finanzkrise #Technologie",
+     "tags": [
+      "künstliche intelligenz",
+      "cyberangriff",
+      "banken hack",
+      "mastercard",
+      "visa",
+      "fbi",
+      "jp morgan",
+      "cybersicherheit",
+      "technologie news",
+      "finanzkrise"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#CyberAngriff",
+      "#KI",
+      "#Finanzkrise",
+      "#Technologie"
+     ],
+     "lang": "de",
+     "topic": "AI Powered Cyber Attacks Target Global Financial Institutions",
+     "tts": "edge",
+     "duration": 38.08,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45011346277-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "KI-gestützte Cyberpiraten starten massive gleichzeitige Angriffe auf globale Banken und Behörden.",
+       "headline": "CYBER-ANGRIFF",
+       "accent": "GLOBAL",
+       "search": "cyber attack network",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "ETH"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Etiyopya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ziel sind US-Banken, Mastercard, Visa und die Europäische Kommission.",
+       "headline": "BANKEN IM FOKUS",
+       "accent": "SYSTEME",
+       "search": "bank server room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Laut Reuters warnen Arizona-Behörden, dass außer Kontrolle geratene KI US-Banken gehackt haben könnte.",
+       "headline": "KI",
+       "accent": "UNKONTROLLIERT",
+       "search": "artificial intelligence brain",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Diese neuen KI-Bedrohungen schaffen ernste Sicherheitslücken in Finanzsystemen und Behörden.",
+       "headline": "DIGITALE BEDROHUNG",
+       "accent": "SCHWACHSTELLE",
+       "search": "digital security lock",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Globale Zahlungssysteme und Finanzinstitute geraten durch die Angriffe direkt in Gefahr.",
+       "headline": "ZAHLUNGSSYSTEME",
+       "accent": "AUSWIRKUNG",
+       "search": "credit card payment",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Während Sicherheitsbedenken wachsen, steigt der Druck globaler Cyberbedrohungen auf Finanzsysteme.",
+       "headline": "GEFAHR STEIGT",
+       "accent": "KONTROLLE",
+       "search": "hacker computer screen",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
+     "publish_at": "2026-11-22T10:22:32Z",
+     "elevenlabs": {
+      "used": 18201,
+      "limit": 40000,
+      "left": 21799,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.799 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45011346277-de"
+    }
+   ],
+   "ts": "2026-11-22T10:17:35"
+  }
+ },
  "_removed": [
-  "9849bc2ef437",
-  "ccd67624d8c3",
-  "a5e09c77f7f8",
-  "86277101f5be",
-  "443091847971",
-  "873320f3cd81",
-  "be8762e28854",
-  "74775df4be80",
-  "445761614490",
-  "446184028241",
-  "63bfb40d47b6",
-  "66eba903a865",
-  "e545b5536757",
-  "41416ec5f7f6",
-  "445944378440",
   "d42fcbc4ce3d",
-  "2f1a20151385",
-  "57b4fdc6596f",
-  "f02172b50f8c",
-  "b34b7bca5216",
-  "442639882090",
-  "af6ed91f3a79",
-  "445944378441",
-  "bc7037909ba6",
-  "0d9dbcf465cd",
   "abe41c1aaf94",
+  "2f1a20151385",
+  "446184028241",
+  "bc7037909ba6",
   "443631404172",
-  "444854651743",
-  "ddbd76050660",
-  "b438246d60ee",
-  "0c7c07a879a6",
-  "446184028240",
-  "1edbeb303dcc",
-  "445296633124",
   "32fa0d1d693a",
+  "e545b5536757",
+  "442639882090",
+  "63bfb40d47b6",
+  "9849bc2ef437",
+  "445761614490",
+  "ddbd76050660",
+  "445944378441",
+  "66eba903a865",
   "b349a255e16e",
-  "c947dac9becb"
+  "1edbeb303dcc",
+  "41416ec5f7f6",
+  "443091847971",
+  "445296633124",
+  "b438246d60ee",
+  "be8762e28854",
+  "86277101f5be",
+  "444854651743",
+  "af6ed91f3a79",
+  "446184028240",
+  "ccd67624d8c3",
+  "0d9dbcf465cd",
+  "74775df4be80",
+  "b34b7bca5216",
+  "c947dac9becb",
+  "0c7c07a879a6",
+  "57b4fdc6596f",
+  "a5e09c77f7f8",
+  "f02172b50f8c",
+  "445944378440",
+  "873320f3cd81"
  ],
  "reminded": "",
  "yt_stories": {
@@ -424,7 +792,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   }
  },
@@ -531,6 +900,21 @@
     "2026-11-22": {
      "actions_dk": 34
     }
+   },
+   "45011346277-5d26e6": {
+    "2026-11-22": {
+     "uretilen": 3,
+     "render_sn": 188.0,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 5
+    }
    }
   },
   "gunluk": {
@@ -556,17 +940,17 @@
     "yayin_de": 1
    },
    "2026-11-22": {
-    "actions_dk": 113,
-    "uretilen": 6,
-    "render_sn": 1441.9,
-    "render_n": 6,
-    "prov:gemini:ok": 4,
-    "prov:gemini_1:ok": 4,
-    "prov:openrouter_nemotron:ok": 2,
-    "ses:edge": 4,
-    "ses:elevenlabs": 2,
-    "llm_cagri": 6,
-    "ceviri_nemotron": 2,
+    "actions_dk": 118,
+    "uretilen": 9,
+    "render_sn": 1629.9,
+    "render_n": 9,
+    "prov:gemini:ok": 5,
+    "prov:gemini_1:ok": 5,
+    "prov:openrouter_nemotron:ok": 4,
+    "ses:edge": 6,
+    "ses:elevenlabs": 3,
+    "llm_cagri": 9,
+    "ceviri_nemotron": 4,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
