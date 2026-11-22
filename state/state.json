@@ -141,12 +141,17 @@
    "topic": "APEC Summit In Shenzhen Issues Nuclear Non Use Declaration",
    "ts": "2026-11-22T15:22:33",
    "summary": "Çin'deki APEC Zirvesi'nden tarihi karar: Nükleer silah uyarısı!. Çin'deki APEC zirvesinde liderler nükleer silahların hiçbir koşulda kullanılmaması gerektiğini ilan etti. Shenzhen kentinde toplanan Asya Pasifik ülkeleri nükleer savaş riskinin derhal önlenmesi çağrısında bulundu. Ortak bildiride küresel güvenlik için nükleer tehditlerin tamamen ortadan kaldırılması gerektiği vurgulandı. Büyük güçler arasındaki gerilim tırmanırken yapılan bu ortak açıklama diplomatik dengeleri yeniden şekillendiriyor. Artan jeopolitik risklerin kontrol altına alınması küresel piyasaları ve enerji fiyatlarını doğrudan koruyor. Dünyanın gözü şimdi zirveden çıkan bu tarihi kararın sahada nasıl uygulanacağına çevrildi."
+  },
+  {
+   "topic": "Iran plans 14 tanker convoy to break blockade",
+   "ts": "2026-11-22T17:36:28",
+   "summary": "İran 14 Tankerle ABD Ablokasına Meydan Okuyor: Hürmüz'de Kriz. İran, ABD ambargosunu kırmak amacıyla içinde sivil ve gazetecilerin de olacağı 14 tankeri sefere çıkarmayı planlıyor. Tahran yönetimi, tanker filosuyla Basra Körfezi'ndeki abluka şartlarını tamamen geçersiz kılmayı hedefliyor. Olası müdahalede Suudi Arabistan, Katar ve Birleşik Arap Emirlikleri'nin enerji tesisleri hedef gösterildi. ABD ise Bahreyn'e Patriot sistemleri konuşlandırarak askeri komuta kademesinde hazırlıkları üst seviyeye çıkardı. Hürmüz Boğazı'nda yaşanacak askeri bir sıcak çatışmanın, küresel akaryakıt fiyatlarını doğrudan yukarı çekebileceği belirtiliyor. Basra Körfezi'ndeki bu tehlikeli seyrüsefer hamlesi küresel bir enerji krizini başlatmak üzere."
   }
  ],
  "daily": {
   "2026-11-20": 3,
   "2026-11-21": 2,
-  "2026-11-22": 4
+  "2026-11-22": 5
  },
  "scheduled": {
   "en": [
@@ -215,48 +220,444 @@
    "2026-11-22T15:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "7eb47a5db7cd": {
+   "results": [
+    {
+     "title": "İran 14 Tankerle ABD Ablokasına Meydan Okuyor: Hürmüz'de Kriz",
+     "description": "İran 14 tankerlik filoyla ABD ambargosunu kırmak için Hürmüz Boğazı'nda askeri gerilimi tırmandırıyor.\nSizce Hürmüz Boğazı'ndaki bu gerilim küresel bir savaşa dönüşür mü?\n\n#İran #HürmüzBoğazı #OrtaDoğu #Petrol #Jeopolitik",
+     "tags": [
+      "İran ABD gerilimi",
+      "Hürmüz Boğazı",
+      "İran tankerleri",
+      "Patriot füzeleri",
+      "Orta Doğu krizi",
+      "petrol fiyatları",
+      "Basra Körfezi",
+      "enerji krizi",
+      "ABD Bahreyn",
+      "askeri gerilim"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#İran",
+      "#HürmüzBoğazı",
+      "#OrtaDoğu",
+      "#Petrol",
+      "#Jeopolitik"
+     ],
+     "lang": "tr",
+     "topic": "Iran plans 14 tanker convoy to break blockade",
+     "tts": "edge",
+     "duration": 50.13,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "İran, ABD ambargosunu kırmak amacıyla içinde sivil ve gazetecilerin de olacağı 14 tankeri sefere çıkarmayı planlıyor.",
+       "headline": "14 Tanker",
+       "accent": "Hamlesi",
+       "search": "oil tanker sea",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Tahran yönetimi, tanker filosuyla Basra Körfezi'ndeki abluka şartlarını tamamen geçersiz kılmayı hedefliyor.",
+       "headline": "Abluka Planı",
+       "accent": "Hedefte",
+       "search": "navy ship ocean",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Olası müdahalede Suudi Arabistan, Katar ve Birleşik Arap Emirlikleri'nin enerji tesisleri hedef gösterildi.",
+       "headline": "Enerji Hatları",
+       "accent": "Tehditte",
+       "search": "oil refinery fire",
+       "style": "headline",
+       "countries": [
+        "SAU",
+        "QAT",
+        "ARE"
+       ],
+       "country_names": [
+        "Suudi Arabistan",
+        "Katar",
+        "Birleşik Arap Emirlikleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "ABD ise Bahreyn'e Patriot sistemleri konuşlandırarak askeri komuta kademesinde hazırlıkları üst seviyeye çıkardı.",
+       "headline": "Patriot Sevkıyatı",
+       "accent": "Alarmda",
+       "search": "missile defense system",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "BHR"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Bahreyn"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Hürmüz Boğazı'nda yaşanacak askeri bir sıcak çatışmanın, küresel akaryakıt fiyatlarını doğrudan yukarı çekebileceği belirtiliyor.",
+       "headline": "Benzin Fiyatları",
+       "accent": "Yükselişte",
+       "search": "gas station pump",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Basra Körfezi'ndeki bu tehlikeli seyrüsefer hamlesi küresel bir enerji krizini başlatmak üzere.",
+       "headline": "Küresel Kriz",
+       "accent": "Kapıda",
+       "search": "global map network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-22T17:38:30Z",
+     "elevenlabs": {
+      "used": 18598,
+      "limit": 40000,
+      "left": 21402,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.402 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45049783207-tr"
+    },
+    {
+     "title": "Iran Challenges US Blockade with 14 Tankers: Crisis in Hormuz",
+     "description": "Iran escalates military tension in the Strait of Hormuz with a 14‑tanker fleet to break the US embargo. Do you think this tension in the Strait of Hormuz will turn into a global war?\n\n#Iran #StraitOfHormuz #MiddleEast #Oil #Geopolitics",
+     "tags": [
+      "Iran US tension",
+      "Strait of Hormuz",
+      "Iran tankers",
+      "Patriot missiles",
+      "Middle East crisis",
+      "oil prices",
+      "Basra Gulf",
+      "energy crisis",
+      "US Bahrain",
+      "military tension"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Iran",
+      "#StraitOfHormuz",
+      "#MiddleEast",
+      "#Oil",
+      "#Geopolitics"
+     ],
+     "lang": "en",
+     "topic": "Iran plans 14 tanker convoy to break blockade",
+     "tts": "elevenlabs",
+     "duration": 36.15,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Iran plans to deploy 14 tankers, carrying civilians and journalists, to break the US embargo.",
+       "headline": "14 Tankers",
+       "accent": "Move",
+       "search": "oil tanker sea",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Tehran aims to nullify the blockade conditions in the Basra Gulf with the tanker fleet.",
+       "headline": "Blockade Plan",
+       "accent": "Targeted",
+       "search": "navy ship ocean",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "In a possible intervention, energy facilities in Saudi Arabia, Qatar, and the UAE were targeted.",
+       "headline": "Energy Lines",
+       "accent": "Threatened",
+       "search": "oil refinery fire",
+       "style": "headline",
+       "countries": [
+        "SAU",
+        "QAT",
+        "ARE"
+       ],
+       "country_names": [
+        "Suudi Arabistan",
+        "Katar",
+        "Birleşik Arap Emirlikleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The US has deployed Patriot systems to Bahrain, raising military command readiness.",
+       "headline": "Patriot Deployments",
+       "accent": "On Alert",
+       "search": "missile defense system",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "BHR"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Bahreyn"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "A military clash in the Strait of Hormuz could drive global fuel prices higher.",
+       "headline": "Fuel Prices",
+       "accent": "Rising",
+       "search": "gas station pump",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "This dangerous sortie in the Basra Gulf is poised to trigger a global energy crisis.",
+       "headline": "Global Crisis",
+       "accent": "Imminent",
+       "search": "global map network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-22T17:39:58Z",
+     "elevenlabs": {
+      "used": 18807,
+      "limit": 40000,
+      "left": 21193,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.193 / 40.000 karakter kaldı (bu video 522 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45049783207-en"
+    },
+    {
+     "title": "Iran fordert US-Blockade mit 14 Tankern heraus: Krise in Hormus",
+     "description": "Iran eskaliert die militärische Spannung in der Straße von Hormus mit einer 14-Tanker-Flotte, um das US-Embargo zu brechen. Wird diese Spannung in einen globalen Krieg münden?\n\n#Iran #Hormusstraße #Nahost #Öl #Geopolitik",
+     "tags": [
+      "Iran-US-Spannung",
+      "Hormusstraße",
+      "Iran-Tanker",
+      "Patriot-Raketen",
+      "Nahost-Krise",
+      "Ölpreise",
+      "Golf von Basra",
+      "Energiekrise",
+      "US-Bahrain",
+      "militärische Spannung"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Iran",
+      "#Hormusstraße",
+      "#Nahost",
+      "#Öl",
+      "#Geopolitik"
+     ],
+     "lang": "de",
+     "topic": "Iran plans 14 tanker convoy to break blockade",
+     "tts": "edge",
+     "duration": 33.76,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45049783207-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Iran plant mit 14 Tankern – an Bord Zivilisten und Journalisten – den US-Embargo-Bruch.",
+       "headline": "14 Tanker",
+       "accent": "Der Schritt",
+       "search": "oil tanker sea",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Teheran will die Basra-Blockade durch die Flotte vollständig aushebeln.",
+       "headline": "Blockadeplan",
+       "accent": "Im Visier",
+       "search": "navy ship ocean",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bei Eingriff drohen Angriffe auf Energieanlagen in Saudi-Arabien, Katar und den VAE.",
+       "headline": "Energielinien",
+       "accent": "Bedroht",
+       "search": "oil refinery fire",
+       "style": "headline",
+       "countries": [
+        "SAU",
+        "QAT",
+        "ARE"
+       ],
+       "country_names": [
+        "Suudi Arabistan",
+        "Katar",
+        "Birleşik Arap Emirlikleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "USA verlegen Patriots nach Bahrain, erhöhen militärische Alarmbereitschaft.",
+       "headline": "Patriot-Verlegung",
+       "accent": "Alarm",
+       "search": "missile defense system",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "BHR"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Bahreyn"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Konflikt in Hormus treibt globale Kraftstoffpreise direkt nach oben.",
+       "headline": "Kraftstoffpreise",
+       "accent": "Steigend",
+       "search": "gas station pump",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Riskantes Manöver im Golf von Basra droht globale Energiekrise auszulösen.",
+       "headline": "Globale Krise",
+       "accent": "Vor der Tür",
+       "search": "global map network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-22T17:41:24Z",
+     "elevenlabs": {
+      "used": 18807,
+      "limit": 40000,
+      "left": 21193,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.193 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45049783207-de"
+    }
+   ],
+   "ts": "2026-11-22T17:36:28"
+  }
+ },
  "_removed": [
-  "ddbd76050660",
-  "c947dac9becb",
-  "445944378440",
-  "41416ec5f7f6",
-  "445761614490",
-  "87a011d7d646",
-  "9849bc2ef437",
-  "d7e9c169bc14",
-  "0c7c07a879a6",
   "54f34c42d936",
+  "e545b5536757",
+  "444854651743",
+  "443631404172",
+  "c947dac9becb",
+  "41416ec5f7f6",
+  "87a011d7d646",
+  "d42fcbc4ce3d",
+  "443091847971",
+  "b349a255e16e",
+  "445944378440",
+  "63bfb40d47b6",
+  "d7e9c169bc14",
+  "0d9dbcf465cd",
+  "0c7c07a879a6",
   "be8762e28854",
+  "32fa0d1d693a",
+  "445944378441",
+  "2f1a20151385",
+  "ccd67624d8c3",
+  "86277101f5be",
+  "abe41c1aaf94",
   "b438246d60ee",
+  "b34b7bca5216",
+  "9849bc2ef437",
+  "74775df4be80",
+  "57b4fdc6596f",
+  "ddbd76050660",
+  "1edbeb303dcc",
+  "445761614490",
+  "442639882090",
+  "66eba903a865",
+  "bc7037909ba6",
+  "f02172b50f8c",
   "446184028241",
   "af6ed91f3a79",
-  "444854651743",
-  "b349a255e16e",
-  "1edbeb303dcc",
-  "66eba903a865",
-  "74775df4be80",
-  "63bfb40d47b6",
-  "b34b7bca5216",
-  "bc7037909ba6",
-  "2f1a20151385",
-  "445296633124",
-  "443631404172",
-  "443091847971",
-  "f02172b50f8c",
-  "0d9dbcf465cd",
-  "86277101f5be",
-  "32fa0d1d693a",
-  "a5e09c77f7f8",
-  "442639882090",
-  "57b4fdc6596f",
-  "abe41c1aaf94",
-  "e545b5536757",
-  "873320f3cd81",
   "446184028240",
-  "ccd67624d8c3",
-  "445944378441",
-  "d42fcbc4ce3d"
+  "a5e09c77f7f8",
+  "873320f3cd81",
+  "445296633124"
  ],
  "reminded": "",
  "yt_stories": {
@@ -448,6 +849,28 @@
     1,
     2
    ]
+  },
+  "yt:AKEpaV_XTjw": {
+   "stories": [
+    {
+     "title": "İran'ın ABD Ablokasını Kırma Planı ve Hürmüz Boğazı Gerilimi",
+     "facts": "İran, ABD'nin uyguladığı ekonomik ablukayı kırmak amacıyla içinde sivil ve gazetecilerin de bulunacağı 14 tankeri toplu halde sefere çıkarmayı planlamaktadır. İran Yüksek Ulusal Güvenlik Konseyi ve dini liderlikten yapılan açıklamalarda \"ne savaş ne barış\" durumuna son verileceği belirtilmiştir. ABD'nin bu tankerlere saldırması halinde İran; Suudi Arabistan, Birleşik Arap Emirlikleri ve Katar'ın enerji altyapılarını hedef alacağını ilan etmiştir. Hürmüz Boğazı ve çevresinde gerilim tırmanırken ABD, Bahreyn'e Patriot hava savunma sistemleri sevk etmiş ve bölgedeki askeri tedbirlerini artırmıştır. İsrail ve ABD askeri komuta kademelerinin olası bir çatışma senaryosuna karşı temaslarını sıklaştırdığı ifade edilmektedir.",
+     "score": 9
+    },
+    {
+     "title": "Yapay Zeka Düzenlemeleri ve Çip Geopolitiğinde Güç Mücadelesi",
+     "facts": "Yapay zeka teknolojilerinin kısıtlanması ve düzenlenmesi konusunda küresel teknoloji devleri ile siyasi aktörler arasında derin görüş ayrılıkları yaşanmaktadır. OpenAI ve Anthropic gibi firmalar devlet gözetiminde kısıtlama talep ederken, Nvidia yönetimi ve Donald Trump kısıtlamasız gelişimi savunmaktadır. Nvidia CEO'su Jensen Huang, Çin'e uygulanan yapay zeka çipi kısıtlamalarının aksine Çin'in kendi teknolojisini hızla geliştirmesine yol açacağını iddia etmektedir. ABD medyasında, finansal kurumlara yönelik siber saldırılar üzerinden yapay zekanın kontrolden çıktığı algısının bilinçli olarak oluşturulduğu ileri sürülmektedir. Bu gelişmelerin arkasında küresel dijital dünyayı kontrol etme ve bilgiyi tekel altına alma arayışının bulunduğu aktarılmaktadır.",
+     "score": 8
+    },
+    {
+     "title": "Yunanistan ve İsrail'in Atina'daki Ortak Askeri Tatbikatı",
+     "facts": "Yunanistan ve İsrail ordusu, Atina'da Türk elektronik haberleşme sistemlerine karşı koyma önlemlerini içeren ortak bir tatbikat gerçekleştirmiştir. Bölgesel gerilimin tırmandığı bir dönemde Basra'daki bir elektrik santralinde ve Suriye'nin Deyrizor bölgesindeki gaz sahasında sabotaj kaynaklı patlamalar yaşanmıştır. İsrail iç siyasetinde muhalefet kanadı, ulusal acil durum hükümeti kurulmaması halinde alternatif hükümet arayışlarına gireceğini açıklamıştır. Türkiye Dışişleri Bakanı Hakan Fidan ise dış müdahalelere karşı bölge ülkelerinin ortak hareket etmesini savunan \"bölgesel sahiplenme\" kavramının önemine vurgu yapmıştır. Doğu Akdeniz, Kızıldeniz ve Basra Körfezi hattında nüfuz mücadelesinin devam ettiği belirtilmektedir.",
+     "score": 7
+    }
+   ],
+   "used": [
+    0
+   ]
   }
  },
  "lang_week": {
@@ -613,6 +1036,21 @@
     "2026-11-22": {
      "actions_dk": 29
     }
+   },
+   "45049783207-c6b06f": {
+    "2026-11-22": {
+     "actions_dk": 6,
+     "uretilen": 3,
+     "render_sn": 252.4,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2
+    }
    }
   },
   "gunluk": {
@@ -638,17 +1076,17 @@
     "yayin_de": 1
    },
    "2026-11-22": {
-    "actions_dk": 253,
-    "uretilen": 15,
-    "render_sn": 2481.6,
-    "render_n": 15,
-    "prov:gemini:ok": 7,
-    "prov:gemini_1:ok": 8,
-    "prov:openrouter_nemotron:ok": 8,
-    "ses:edge": 10,
-    "ses:elevenlabs": 5,
-    "llm_cagri": 16,
-    "ceviri_nemotron": 8,
+    "actions_dk": 259,
+    "uretilen": 18,
+    "render_sn": 2734.0,
+    "render_n": 18,
+    "prov:gemini:ok": 8,
+    "prov:gemini_1:ok": 9,
+    "prov:openrouter_nemotron:ok": 10,
+    "ses:edge": 12,
+    "ses:elevenlabs": 6,
+    "llm_cagri": 19,
+    "ceviri_nemotron": 10,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
