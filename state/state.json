@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897469,
+ "tg_offset": 691897470,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -147,7 +147,8 @@
    "2026-11-21T17:00:00Z",
    "2026-11-21T20:00:00Z",
    "2026-11-21T23:00:00Z",
-   "2026-11-22T02:00:00Z"
+   "2026-11-22T02:00:00Z",
+   "2026-11-22T13:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -177,7 +178,8 @@
    "2026-11-24T14:00:00Z",
    "2026-11-24T17:00:00Z",
    "2026-11-24T19:30:00Z",
-   "2026-11-25T07:00:00Z"
+   "2026-11-25T07:00:00Z",
+   "2026-11-25T11:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -192,379 +194,48 @@
    "2026-11-21T18:00:00Z",
    "2026-11-22T06:30:00Z",
    "2026-11-22T09:30:00Z",
-   "2026-11-22T12:30:00Z"
+   "2026-11-22T12:30:00Z",
+   "2026-11-22T15:30:00Z"
   ]
  },
- "pending": {
-  "b349a255e16e": {
-   "results": [
-    {
-     "title": "Ukrayna'nın 28 robotluk insansız birliği dronelarla imha edildi",
-     "description": "Ukrayna ordusunun cepheye sürdüğü 28 robotluk insansız birlik hava saldırısıyla imha edildi.\nSizce savaş alanlarında insan askerlerin yerini tamamen robotlar alabilir mi?\n\n#Ukrayna #RobotSavaşı #YapayZeka #SavunmaSanayii #AskeriTeknoloji",
-     "tags": [
-      "ukrayna savaşı",
-      "robot birlik",
-      "otonom silahlar",
-      "yapay zeka savaşı",
-      "insansız kara aracı",
-      "drone saldırısı",
-      "savunma teknolojisi",
-      "rusya ukrayna",
-      "askeri robotlar"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukrayna",
-      "#RobotSavaşı",
-      "#YapayZeka",
-      "#SavunmaSanayii",
-      "#AskeriTeknoloji"
-     ],
-     "lang": "tr",
-     "topic": "Ukraine deploys 28 robot unit destroyed by drones",
-     "tts": "edge",
-     "duration": 46.72,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukrayna ordusunun insan unsuru barındırmayan 28 robotluk birliği cephede tamamen yok edildi.",
-       "headline": "28 ROBOT",
-       "accent": "imha",
-       "search": "military robot battlefield",
-       "style": "headline",
-       "countries": [
-        "UKR"
-       ],
-       "country_names": [
-        "Ukrayna"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Liman yakınlarındaki bir bölgeye baskın için ilerleyen kara robotları havadaki insansız hava araçları tarafından saptandı.",
-       "headline": "HAVA TESPİTİ",
-       "accent": "baskın",
-       "search": "drone surveillance explosion",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Gizlenme yeteneği olmayan ve hava saldırısına karşılık veremeyen makineler kısa sürede imha edildi.",
-       "headline": "SAVUNMASIZ BİRLİK",
-       "accent": "makineler",
-       "search": "robot explosion military",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Bu başarısız operasyon otonom silahların ve yapay zekanın cephedeki sınırlarını açıkça gözler önüne serdi.",
-       "headline": "YAPAY ZEKA",
-       "accent": "sınırlar",
-       "search": "artificial intelligence war",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Uzmanlara göre insansız teknolojilerin yetersizliği, gelecekteki savunma sanayii yatırımlarını ve güvenlik stratejilerini doğrudan etkileyebilir.",
-       "headline": "SAVUNMA STRATEJİSİ",
-       "accent": "yatırımlar",
-       "search": "military technology futuristic",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Askeri uzmanlar tamamen robotlardan oluşan birliklerin geleceğini yeniden tartışmaya açtı.",
-       "headline": "ROBOTİK SAVAŞ",
-       "accent": "gelecek",
-       "search": "futuristic army soldier",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
-     "publish_at": "2026-11-22T08:11:07Z",
-     "elevenlabs": {
-      "used": 16216,
-      "limit": 40000,
-      "left": 23784,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 23.784 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-45000929818-tr"
-    },
-    {
-     "title": "Ukraine's 28-Robot Unmanned Unit Annihilated by Drones",
-     "description": "Ukraine's frontline-deployed 28-robot unmanned unit destroyed by air strike. Can robots fully replace human soldiers on the battlefield?\n\n#Ukraine #RobotWarfare #AI #DefenseIndustry #MilitaryTech",
-     "tags": [
-      "ukraine war",
-      "robot unit",
-      "autonomous weapons",
-      "ai warfare",
-      "unmanned ground vehicle",
-      "drone strike",
-      "defense technology",
-      "russia ukraine",
-      "military robots"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukraine",
-      "#RobotWarfare",
-      "#AI",
-      "#DefenseIndustry",
-      "#MilitaryTech"
-     ],
-     "lang": "en",
-     "topic": "Ukraine deploys 28 robot unit destroyed by drones",
-     "tts": "elevenlabs",
-     "duration": 30.99,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukraine's 28-robot unmanned unit wiped out on the front line.",
-       "headline": "28 ROBOTS",
-       "accent": "annihilated",
-       "search": "military robot battlefield",
-       "style": "headline",
-       "countries": [
-        "UKR"
-       ],
-       "country_names": [
-        "Ukrayna"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Ground robots advancing on a port-area raid detected by airborne drones.",
-       "headline": "AIRBORNE DETECTION",
-       "accent": "raid",
-       "search": "drone surveillance explosion",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Exposed machines, unable to hide or counter air strikes, destroyed in minutes.",
-       "headline": "DEFENSELESS UNIT",
-       "accent": "machines",
-       "search": "robot explosion military",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Failed op exposes frontline limits of autonomous weapons and AI.",
-       "headline": "AI LIMITS",
-       "accent": "limits",
-       "search": "artificial intelligence war",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Experts: unmanned tech gaps may reshape defense investment and security strategy.",
-       "headline": "DEFENSE STRATEGY",
-       "accent": "investment",
-       "search": "military technology futuristic",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Military analysts reopen debate on all-robot units' future.",
-       "headline": "ROBOTIC WARFARE",
-       "accent": "future",
-       "search": "futuristic army soldier",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
-     "publish_at": "2026-11-22T08:12:17Z",
-     "elevenlabs": {
-      "used": 16216,
-      "limit": 40000,
-      "left": 23784,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 23.784 / 40.000 karakter kaldı (bu video 415 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45000929818-en"
-    },
-    {
-     "title": "Ukraines 28-Roboter-Einheit durch Drohnen vernichtet",
-     "description": "Die ukrainische Armee verlor ihre 28 Roboter umfassende Einheit ohne menschliches Personal an der Front durch einen Luftangriff. Glauben Sie, dass Roboter auf dem Schlachtfeld menschliche Soldaten vollständig ersetzen können?\n\n#Ukrayna #RobotSavaşı #YapayZeka #SavunmaSanayii #AskeriTeknoloji",
-     "tags": [
-      "ukraine-krieg",
-      "roboter-einheit",
-      "autonome-waffen",
-      "ki-krieg",
-      "unbemanntes-bodenfahrzeug",
-      "drohnenangriff",
-      "verteidigungstechnologie",
-      "russland-ukraine",
-      "militaerroboter"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukrayna",
-      "#RobotSavaşı",
-      "#YapayZeka",
-      "#SavunmaSanayii",
-      "#AskeriTeknoloji"
-     ],
-     "lang": "de",
-     "topic": "Ukraine deploys 28 robot unit destroyed by drones",
-     "tts": "edge",
-     "duration": 39.45,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45000929818-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Die ukrainische Armee verlor ihre 28 Roboter-Einheit ohne Personal an der Front vollständig.",
-       "headline": "28 ROBOTER",
-       "accent": "VERNICHTUNG",
-       "search": "military robot battlefield",
-       "style": "headline",
-       "countries": [
-        "UKR"
-       ],
-       "country_names": [
-        "Ukrayna"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bodenroboter, die auf ein Gebiet nahe dem Hafen vorrückten, wurden von Luftdrohnen erkannt.",
-       "headline": "LUFTERKENNUNG",
-       "accent": "ANGRIFF",
-       "search": "drone surveillance explosion",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Ohne Tarnfähigkeit und Luftabwehr wurden die Maschinen kurz darauf vernichtet.",
-       "headline": "UNGESCHÜTZTE EINHEIT",
-       "accent": "MASCHINEN",
-       "search": "robot explosion military",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Der fehlgeschlagene Einsatz zeigte deutlich die Grenzen autonomer Waffen und KI an der Front.",
-       "headline": "KÜNSTLICHE INTELLIGENZ",
-       "accent": "GRENZEN",
-       "search": "artificial intelligence war",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Experten warnen, dass die Unzulänglichkeit unbemannter Technologien künftige Rüstungsinvestitionen und Sicherheitsstrategien direkt beeinflussen könnte.",
-       "headline": "VERTEIDIGUNGSSTRATEGIE",
-       "accent": "INVESTITIONEN",
-       "search": "military technology futuristic",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Militärexperten stellen die Zukunft rein robotischer Verbände nun infrage.",
-       "headline": "ROBOTISCHER KRIEG",
-       "accent": "ZUKUNFT",
-       "search": "futuristic army soldier",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=JMdum8F28xU",
-     "publish_at": "2026-11-22T08:14:17Z",
-     "elevenlabs": {
-      "used": 16382,
-      "limit": 40000,
-      "left": 23618,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 23.618 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45000929818-de"
-    }
-   ],
-   "ts": "2026-11-22T08:09:20"
-  }
- },
+ "pending": {},
  "_removed": [
-  "446184028240",
-  "b34b7bca5216",
-  "57b4fdc6596f",
-  "63bfb40d47b6",
-  "ccd67624d8c3",
-  "be8762e28854",
-  "445944378441",
-  "c947dac9becb",
-  "41416ec5f7f6",
-  "f02172b50f8c",
-  "445761614490",
   "445944378440",
-  "74775df4be80",
-  "2f1a20151385",
-  "446184028241",
-  "32fa0d1d693a",
-  "0c7c07a879a6",
-  "445296633124",
-  "86277101f5be",
-  "873320f3cd81",
-  "443631404172",
-  "9849bc2ef437",
-  "442639882090",
-  "ddbd76050660",
+  "57b4fdc6596f",
+  "41416ec5f7f6",
+  "a5e09c77f7f8",
   "66eba903a865",
-  "0d9dbcf465cd",
+  "74775df4be80",
+  "ddbd76050660",
+  "abe41c1aaf94",
+  "445296633124",
+  "f02172b50f8c",
+  "32fa0d1d693a",
+  "444854651743",
+  "be8762e28854",
+  "b349a255e16e",
+  "442639882090",
+  "2f1a20151385",
+  "ccd67624d8c3",
+  "86277101f5be",
+  "0c7c07a879a6",
+  "1edbeb303dcc",
   "d42fcbc4ce3d",
+  "445761614490",
+  "63bfb40d47b6",
   "af6ed91f3a79",
+  "873320f3cd81",
+  "446184028240",
+  "445944378441",
+  "443631404172",
+  "0d9dbcf465cd",
   "e545b5536757",
   "bc7037909ba6",
-  "a5e09c77f7f8",
-  "444854651743",
-  "1edbeb303dcc",
-  "443091847971",
-  "abe41c1aaf94"
+  "c947dac9becb",
+  "9849bc2ef437",
+  "b34b7bca5216",
+  "446184028241",
+  "443091847971"
  ],
  "reminded": "",
  "yt_stories": {
@@ -832,6 +503,15 @@
      "llm_cagri": 3,
      "ceviri_nemotron": 2
     }
+   },
+   "45003074743-f72014": {
+    "2026-11-22": {
+     "actions_dk": 52,
+     "onay": 1,
+     "yayin_tr": 1,
+     "yayin_en": 1,
+     "yayin_de": 1
+    }
    }
   },
   "gunluk": {
@@ -857,7 +537,7 @@
     "yayin_de": 1
    },
    "2026-11-22": {
-    "actions_dk": 6,
+    "actions_dk": 58,
     "uretilen": 3,
     "render_sn": 234.9,
     "render_n": 3,
@@ -867,7 +547,11 @@
     "ses:edge": 2,
     "ses:elevenlabs": 1,
     "llm_cagri": 3,
-    "ceviri_nemotron": 2
+    "ceviri_nemotron": 2,
+    "onay": 1,
+    "yayin_tr": 1,
+    "yayin_en": 1,
+    "yayin_de": 1
    }
   }
  }
