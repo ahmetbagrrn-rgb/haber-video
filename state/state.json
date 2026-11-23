@@ -15,7 +15,9 @@
   "news:https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
   "trend:US:deportación",
   "yt:JMdum8F28xU",
-  "yt:AKEpaV_XTjw"
+  "yt:AKEpaV_XTjw",
+  "trend:US:crwd",
+  "trend:US:copper price"
  ],
  "topics": [
   {
@@ -157,12 +159,17 @@
    "topic": "Greece and Israel joint military exercise in Athens",
    "ts": "2026-11-23T10:41:43",
    "summary": "Yunanistan ve İsrail'den Türk Sistemlerine Karşı Tatbikat. Yunanistan ve İsrail, Atina'da Türk elektronik haberleşme sistemlerine karşı ortak askeri tatbikat düzenledi. Tatbikatta iki ülke ordusu, Türk iletişim ağlarını engelleme ve savunma senaryoları üzerinde çalıştı. Akdeniz'de tırmanan gerilim sürerken, Atina ve Tel Aviv savunma alanındaki iş birliğini derinleştiriyor. Bu hamle, Ege ve Doğu Akdeniz'deki teknolojik üstünlük yarışının yeni bir boyuta taşındığını gösteriyor. Gelişmeler, Türkiye'nin yerli elektronik savunma teknolojilerine olan ihtiyacını ve stratejik önemini artırıyor. Bölgedeki bu gövde gösterileri, Doğu Akdeniz güç dengesini doğrudan etkilemeye devam ediyor."
+  },
+  {
+   "topic": "copper price drop on AI jitters",
+   "ts": "2026-11-23T13:24:35",
+   "summary": "Bakır fiyatı 12 bin dolar seviyelerine geriledi. Bloomberg'e göre bakır fiyatları ton başına 12 bin dolar seviyelerine geriledi. Bloomberg'e göre yapay zeka pazarındaki büyüme endişeleri küresel metal piyasasını sarsıyor. Bloomberg'e göre yapay zeka endişeleri piyasalarda satış baskısı yaratıyor. Robert Friedland'e göre bu metal, endüstriyel büyümenin ve küresel talebin en net göstergesidir. İmalatçılar için hammadde maliyetlerinde geçici bir rahatlama sağlanabilir. Küresel sanayi talebinin yönü endüstriyel metallerin kaderini belirliyor."
   }
  ],
  "daily": {
   "2026-11-21": 2,
   "2026-11-22": 5,
-  "2026-11-23": 2
+  "2026-11-23": 3
  },
  "scheduled": {
   "en": [
@@ -237,51 +244,369 @@
    "2026-11-23T15:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "27b1f9c04076": {
+   "results": [
+    {
+     "title": "Bakır fiyatı 12 bin dolar seviyelerine geriledi",
+     "description": "Bakır fiyatları yapay zeka endişeleriyle sert düşüş yaşayarak ton başına 12 bin dolar seviyelerine geriledi. Bu ani düşüş küresel ekonomi için ne anlama geliyor?\n\n#bakırfiyatları #yapayzeka #ekonomi #küreselpazar",
+     "tags": [
+      "bakır fiyatı",
+      "bakır borsası",
+      "yapay zeka kriz",
+      "küresel ekonomi",
+      "emtia piyasası",
+      "sanayi metalleri",
+      "hammadde fiyatları",
+      "yatırım haberleri",
+      "bloomberg ekonomi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#bakırfiyatları",
+      "#yapayzeka",
+      "#ekonomi",
+      "#küreselpazar"
+     ],
+     "lang": "tr",
+     "topic": "copper price drop on AI jitters",
+     "tts": "edge",
+     "duration": 37.84,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Bloomberg'e göre bakır fiyatları ton başına 12 bin dolar seviyelerine geriledi.",
+       "headline": "Sert Düşüş",
+       "accent": "12 Bin",
+       "search": "copper mine factory",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bloomberg'e göre yapay zeka pazarındaki büyüme endişeleri küresel metal piyasasını sarsıyor.",
+       "headline": "Yapay Zeka",
+       "accent": "Kriz",
+       "search": "technology stock market",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bloomberg'e göre yapay zeka endişeleri piyasalarda satış baskısı yaratıyor.",
+       "headline": "Panik Satış",
+       "accent": "Yatırımcı",
+       "search": "traders computers desk",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Robert Friedland'e göre bu metal, endüstriyel büyümenin ve küresel talebin en net göstergesidir.",
+       "headline": "Öncü Gösterge",
+       "accent": "Talep",
+       "search": "industrial warehouse metal",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "İmalatçılar için hammadde maliyetlerinde geçici bir rahatlama sağlanabilir.",
+       "headline": "Yerel Etki",
+       "accent": "Maliyet",
+       "search": "factory workers turkey",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Küresel sanayi talebinin yönü endüstriyel metallerin kaderini belirliyor.",
+       "headline": "Kritik Eşik",
+       "accent": "Sanayi",
+       "search": "copper wires production",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-23T13:26:28Z",
+     "elevenlabs": {
+      "used": 19240,
+      "limit": 40000,
+      "left": 20760,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.760 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45181540353-tr"
+    },
+    {
+     "title": "Copper price falls to $12,000 level",
+     "description": "Copper prices plunged sharply on AI worries, dropping to around $12,000 per ton. What does this sudden drop mean for the global economy?\n\n#copperprices #AI #economy #globalmarket",
+     "tags": [
+      "copper price",
+      "copper exchange",
+      "AI crisis",
+      "global economy",
+      "commodity market",
+      "industrial metals",
+      "raw material prices",
+      "investment news",
+      "Bloomberg economy"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#copperprices",
+      "#AI",
+      "#economy",
+      "#globalmarket"
+     ],
+     "lang": "en",
+     "topic": "copper price drop on AI jitters",
+     "tts": "elevenlabs",
+     "duration": 32.25,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Bloomberg reports copper prices have fallen to around $12,000 per ton.",
+       "headline": "Sharp Drop",
+       "accent": "$12K",
+       "search": "copper mine factory",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bloomberg says AI market growth fears are shaking global metal markets.",
+       "headline": "AI",
+       "accent": "Crisis",
+       "search": "technology stock market",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bloomberg notes AI concerns are creating selling pressure in markets.",
+       "headline": "Panic Selling",
+       "accent": "Investor",
+       "search": "traders computers desk",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "According to Robert Friedland, this metal is the clearest gauge of industrial growth and global demand.",
+       "headline": "Leading Indicator",
+       "accent": "Demand",
+       "search": "industrial warehouse metal",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Manufacturers may see temporary relief in raw‑material costs.",
+       "headline": "Local Impact",
+       "accent": "Cost",
+       "search": "factory workers turkey",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "The direction of global industrial demand decides the fate of industrial metals.",
+       "headline": "Critical Threshold",
+       "accent": "Industry",
+       "search": "copper wires production",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-23T13:27:55Z",
+     "elevenlabs": {
+      "used": 19421,
+      "limit": 40000,
+      "left": 20579,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.579 / 40.000 karakter kaldı (bu video 454 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45181540353-en"
+    },
+    {
+     "title": "Kupferpreis fällt auf 12.000 Dollar",
+     "description": "Kupferpreise stürzen wegen KI-Sorgen auf 12.000 Dollar pro Tonne ab. Was bedeutet der plötzliche Rückgang für die Weltwirtschaft?\n\n#Kupferpreis #KI #Wirtschaft #GlobalerMarkt",
+     "tags": [
+      "Kupferpreis",
+      "Kupferbörse",
+      "KI-Krise",
+      "globale Wirtschaft",
+      "Rohstoffmarkt",
+      "Industriemetalle",
+      "Rohstoffpreise",
+      "Investmentnews",
+      "Bloomberg Wirtschaft"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Kupferpreis",
+      "#KI",
+      "#Wirtschaft",
+      "#GlobalerMarkt"
+     ],
+     "lang": "de",
+     "topic": "copper price drop on AI jitters",
+     "tts": "edge",
+     "duration": 31.99,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45181540353-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Bloomberg meldet, dass Kupfer auf 12.000 Dollar pro Tonne gefallen ist.",
+       "headline": "Scharfer Rückgang",
+       "accent": "12.000",
+       "search": "copper mine factory",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "KI-Wachstumssorgen erschüttern den globalen Metallmarkt.",
+       "headline": "Künstliche Intelligenz",
+       "accent": "Krise",
+       "search": "technology stock market",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "KI-Ängste erzeugen Verkaufsdruck an den Märkten.",
+       "headline": "Panikverkäufe",
+       "accent": "Anleger",
+       "search": "traders computers desk",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Robert Friedland nennt Kupfer den klarsten Indikator für industrielles Wachstum und globale Nachfrage.",
+       "headline": "Leitindikator",
+       "accent": "Nachfrage",
+       "search": "industrial warehouse metal",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Hersteller könnten vorübergehend von niedrigeren Rohstoffkosten profitieren.",
+       "headline": "Lokaler Effekt",
+       "accent": "Kosten",
+       "search": "factory workers turkey",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Die Richtung der globalen Industriennachfrage entscheidet über das Schicksal der Industriemetalle.",
+       "headline": "Kritische Schwelle",
+       "accent": "Industrie",
+       "search": "copper wires production",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-23T13:29:32Z",
+     "elevenlabs": {
+      "used": 19421,
+      "limit": 40000,
+      "left": 20579,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.579 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45181540353-de"
+    }
+   ],
+   "ts": "2026-11-23T13:24:35"
+  }
+ },
  "_removed": [
-  "0c7c07a879a6",
-  "443091847971",
-  "7eb47a5db7cd",
-  "445296633124",
   "54f34c42d936",
-  "be8762e28854",
-  "446184028240",
-  "abe41c1aaf94",
-  "444854651743",
-  "b349a255e16e",
-  "0d9dbcf465cd",
-  "442639882090",
-  "1f8d57fecf3b",
-  "443631404172",
-  "446184028241",
-  "9849bc2ef437",
-  "32fa0d1d693a",
-  "e545b5536757",
-  "d7e9c169bc14",
-  "a5e09c77f7f8",
-  "ddbd76050660",
-  "f02172b50f8c",
-  "d42fcbc4ce3d",
-  "445761614490",
-  "1edbeb303dcc",
-  "445944378441",
-  "6f78216803dc",
-  "87a011d7d646",
-  "66eba903a865",
-  "86277101f5be",
-  "41416ec5f7f6",
-  "ccd67624d8c3",
-  "b438246d60ee",
+  "74775df4be80",
   "57b4fdc6596f",
   "b34b7bca5216",
-  "bc7037909ba6",
-  "873320f3cd81",
-  "445944378440",
+  "ccd67624d8c3",
+  "87a011d7d646",
+  "443631404172",
   "af6ed91f3a79",
+  "b349a255e16e",
+  "d42fcbc4ce3d",
   "c947dac9becb",
+  "41416ec5f7f6",
+  "1edbeb303dcc",
+  "445944378440",
   "2f1a20151385",
-  "74775df4be80",
-  "63bfb40d47b6"
+  "445761614490",
+  "f02172b50f8c",
+  "0c7c07a879a6",
+  "a5e09c77f7f8",
+  "bc7037909ba6",
+  "0d9dbcf465cd",
+  "446184028241",
+  "445296633124",
+  "873320f3cd81",
+  "86277101f5be",
+  "1f8d57fecf3b",
+  "d7e9c169bc14",
+  "442639882090",
+  "63bfb40d47b6",
+  "e545b5536757",
+  "32fa0d1d693a",
+  "9849bc2ef437",
+  "be8762e28854",
+  "7eb47a5db7cd",
+  "abe41c1aaf94",
+  "443091847971",
+  "445944378441",
+  "66eba903a865",
+  "446184028240",
+  "444854651743",
+  "b438246d60ee",
+  "6f78216803dc",
+  "ddbd76050660"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -738,6 +1063,25 @@
      "prov:edge_tts:hata": 1,
      "llm_cagri": 1
     }
+   },
+   "45181540353-d59112": {
+    "2026-11-23": {
+     "uretilen": 3,
+     "render_sn": 442.1,
+     "render_n": 3,
+     "prov:gemini_1:ok": 1,
+     "prov:gemini_1:hata": 1,
+     "prov:gemini:ok": 2,
+     "prov:gemini_2:hata": 1,
+     "prov:openrouter_nemotron:ok": 3,
+     "prov:openrouter_nemotron:yedek": 1,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 4,
+     "llm_yedek": 1,
+     "ceviri_nemotron": 2,
+     "actions_dk": 13
+    }
    }
   },
   "gunluk": {
@@ -780,26 +1124,30 @@
     "yayin_de": 2
    },
    "2026-11-23": {
-    "uretilen": 6,
-    "render_sn": 507.7,
-    "render_n": 6,
-    "prov:gemini:ok": 4,
-    "prov:gemini_1:ok": 4,
-    "prov:openrouter_nemotron:ok": 3,
+    "uretilen": 9,
+    "render_sn": 949.8,
+    "render_n": 9,
+    "prov:gemini:ok": 6,
+    "prov:gemini_1:ok": 5,
+    "prov:openrouter_nemotron:ok": 6,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:hata": 1,
-    "ses:edge": 4,
-    "ses:elevenlabs": 2,
-    "llm_cagri": 8,
-    "ceviri_nemotron": 3,
+    "ses:edge": 6,
+    "ses:elevenlabs": 3,
+    "llm_cagri": 12,
+    "ceviri_nemotron": 5,
     "llm_tamamen_basarisiz": 1,
     "ceviri_yedek": 1,
-    "actions_dk": 85,
+    "actions_dk": 98,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
     "yayin_de": 1,
-    "prov:edge_tts:hata": 1
+    "prov:edge_tts:hata": 1,
+    "prov:gemini_1:hata": 1,
+    "prov:gemini_2:hata": 1,
+    "prov:openrouter_nemotron:yedek": 1,
+    "llm_yedek": 1
    }
   }
  }
