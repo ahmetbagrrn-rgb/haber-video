@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897477,
+ "tg_offset": 691897478,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -257,8 +257,8 @@
   "7eb47a5db7cd",
   "74775df4be80",
   "445296633124",
-  "444854651743",
   "bc7037909ba6",
+  "444854651743",
   "442639882090",
   "c947dac9becb",
   "446184028241",
@@ -732,7 +732,11 @@
      "onay": 1,
      "yayin_tr": 1,
      "yayin_en": 1,
-     "yayin_de": 1
+     "yayin_de": 1,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:edge_tts:hata": 1,
+     "llm_cagri": 1
     }
    }
   },
@@ -779,14 +783,14 @@
     "uretilen": 6,
     "render_sn": 507.7,
     "render_n": 6,
-    "prov:gemini:ok": 3,
-    "prov:gemini_1:ok": 3,
+    "prov:gemini:ok": 4,
+    "prov:gemini_1:ok": 4,
     "prov:openrouter_nemotron:ok": 3,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:hata": 1,
     "ses:edge": 4,
     "ses:elevenlabs": 2,
-    "llm_cagri": 7,
+    "llm_cagri": 8,
     "ceviri_nemotron": 3,
     "llm_tamamen_basarisiz": 1,
     "ceviri_yedek": 1,
@@ -794,7 +798,8 @@
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
-    "yayin_de": 1
+    "yayin_de": 1,
+    "prov:edge_tts:hata": 1
    }
   }
  }
