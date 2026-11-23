@@ -146,12 +146,17 @@
    "topic": "Iran plans 14 tanker convoy to break blockade",
    "ts": "2026-11-22T17:36:28",
    "summary": "İran 14 Tankerle ABD Ablokasına Meydan Okuyor: Hürmüz'de Kriz. İran, ABD ambargosunu kırmak amacıyla içinde sivil ve gazetecilerin de olacağı 14 tankeri sefere çıkarmayı planlıyor. Tahran yönetimi, tanker filosuyla Basra Körfezi'ndeki abluka şartlarını tamamen geçersiz kılmayı hedefliyor. Olası müdahalede Suudi Arabistan, Katar ve Birleşik Arap Emirlikleri'nin enerji tesisleri hedef gösterildi. ABD ise Bahreyn'e Patriot sistemleri konuşlandırarak askeri komuta kademesinde hazırlıkları üst seviyeye çıkardı. Hürmüz Boğazı'nda yaşanacak askeri bir sıcak çatışmanın, küresel akaryakıt fiyatlarını doğrudan yukarı çekebileceği belirtiliyor. Basra Körfezi'ndeki bu tehlikeli seyrüsefer hamlesi küresel bir enerji krizini başlatmak üzere."
+  },
+  {
+   "topic": "Nvidia CEO opposes AI chip restrictions on China",
+   "ts": "2026-11-23T08:30:23",
+   "summary": "Nvidia ve Trump Çin Yapay Zeka Çip Kısıtlamasına Karşı. Nvidia CEO'su Jensen Huang Çin'e uygulanan yapay zeka çipi kısıtlamalarına açıkça karşı çıkıyor. Huang çip ambargolarının Çin'in kendi yerli teknolojisini daha hızlı geliştirmesine yol açacağını iddia ediyor. OpenAI devlet denetimi isterken Donald Trump ve Nvidia kısıtlamasız serbest gelişimi savunuyor. Aktarılanlara göre bu gelişmelerin arkasında küresel dijital dünyayı kontrol etme ve bilgiyi tekel altına alma arayışı bulunuyor. ABD medyasında ise siber saldırılar üzerinden yapay zekanın kontrolden çıktığı algısının bilinçli olarak oluşturulduğu öne sürülüyor. Küresel teknoloji devlerinin kapışması mikroçip pazarındaki tüm dengeleri baştan aşağı değiştiriyor."
   }
  ],
  "daily": {
-  "2026-11-20": 3,
   "2026-11-21": 2,
-  "2026-11-22": 5
+  "2026-11-22": 5,
+  "2026-11-23": 1
  },
  "scheduled": {
   "en": [
@@ -223,51 +228,431 @@
    "2026-11-23T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "6f78216803dc": {
+   "results": [
+    {
+     "title": "Nvidia ve Trump Çin Yapay Zeka Çip Kısıtlamasına Karşı",
+     "description": "Nvidia CEO'su Jensen Huang, Çin'e yönelik yapay zeka kısıtlamalarının Pekin'i daha hızlı geliştireceğini savundu.\nSizce yapay zeka alanında uygulanan ambargolar küresel teknoloji yarışını nasıl etkiler?\n\n#Nvidia #YapayZeka #ÇipSavaşları #Teknoloji",
+     "tags": [
+      "Nvidia",
+      "Jensen Huang",
+      "Donald Trump",
+      "Çin",
+      "Yapay Zeka",
+      "Çip Savaşları",
+      "OpenAI",
+      "Anthropic",
+      "Teknoloji Geopolitiği",
+      "Mikroçip"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Nvidia",
+      "#YapayZeka",
+      "#ÇipSavaşları",
+      "#Teknoloji"
+     ],
+     "lang": "tr",
+     "topic": "Nvidia CEO opposes AI chip restrictions on China",
+     "tts": "edge",
+     "duration": 47.2,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Nvidia CEO'su Jensen Huang Çin'e uygulanan yapay zeka çipi kısıtlamalarına açıkça karşı çıkıyor.",
+       "headline": "Çip Savaşları",
+       "accent": "Derinleşiyor",
+       "search": "microchip factory",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Huang çip ambargolarının Çin'in kendi yerli teknolojisini daha hızlı geliştirmesine yol açacağını iddia ediyor.",
+       "headline": "Çin Ambargosu",
+       "accent": "Tersine",
+       "search": "china technology city",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "OpenAI devlet denetimi isterken Donald Trump ve Nvidia kısıtlamasız serbest gelişimi savunuyor.",
+       "headline": "Teknoloji Devleri",
+       "accent": "Ayrıştı",
+       "search": "artificial intelligence server",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Aktarılanlara göre bu gelişmelerin arkasında küresel dijital dünyayı kontrol etme ve bilgiyi tekel altına alma arayışı bulunuyor.",
+       "headline": "Dijital Kontrol",
+       "accent": "Mücadelesi",
+       "search": "global digital network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "ABD medyasında ise siber saldırılar üzerinden yapay zekanın kontrolden çıktığı algısının bilinçli olarak oluşturulduğu öne sürülüyor.",
+       "headline": "Medya İddiası",
+       "accent": "Öne Sürülüyor",
+       "search": "computer tech lab",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Küresel teknoloji devlerinin kapışması mikroçip pazarındaki tüm dengeleri baştan aşağı değiştiriyor.",
+       "headline": "Güç Dengesi",
+       "accent": "Değişiyor",
+       "search": "semiconductor circuit",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T08:31:17Z",
+     "elevenlabs": {
+      "used": 18807,
+      "limit": 40000,
+      "left": 21193,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 21.193 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45138206678-tr"
+    },
+    {
+     "title": "Nvidia and Trump Oppose China AI Chip Restrictions",
+     "description": "Nvidia CEO Jensen Huang argues that AI restrictions on China will accelerate Beijing's development.\nHow do you think embargoes in AI affect the global tech race?\n\n#Nvidia #AI #ChipWars #Technology",
+     "tags": [
+      "Nvidia",
+      "Jensen Huang",
+      "Donald Trump",
+      "China",
+      "AI",
+      "Chip Wars",
+      "OpenAI",
+      "Anthropic",
+      "Tech Geopolitics",
+      "Microchip"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Nvidia",
+      "#AI",
+      "#ChipWars",
+      "#Technology"
+     ],
+     "lang": "en",
+     "topic": "Nvidia CEO opposes AI chip restrictions on China",
+     "tts": "elevenlabs",
+     "duration": 33.96,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Nvidia CEO Jensen Huang openly opposes AI chip restrictions on China.",
+       "headline": "Chip Wars",
+       "accent": "Deepening",
+       "search": "microchip factory",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Huang claims chip embargoes will accelerate China's domestic tech development.",
+       "headline": "China Embargo",
+       "accent": "Backfiring",
+       "search": "china technology city",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "While OpenAI seeks state oversight, Trump and Nvidia back unrestricted free development.",
+       "headline": "Tech Giants",
+       "accent": "Diverging",
+       "search": "artificial intelligence server",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Reportedly, these moves hide a drive to control the global digital sphere and monopolize information.",
+       "headline": "Digital Control",
+       "accent": "Struggle",
+       "search": "global digital network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "U.S. media allegedly crafts a narrative that AI has escaped control via cyberattacks.",
+       "headline": "Media Claim",
+       "accent": "Alleged",
+       "search": "computer tech lab",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The clash of global tech giants upends every balance in the microchip market.",
+       "headline": "Power Balance",
+       "accent": "Shifting",
+       "search": "semiconductor circuit",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T08:32:46Z",
+     "elevenlabs": {
+      "used": 19006,
+      "limit": 40000,
+      "left": 20994,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.994 / 40.000 karakter kaldı (bu video 498 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45138206678-en"
+    },
+    {
+     "title": "Nvidia und Trump fordern Ende der KI-Chip-Sanktionen gegen China",
+     "description": "Nvidia und Donald Trump warnen vor strengen US-Exportverboten für KI-Chips nach China.\nSollte der Markt für künstliche Intelligenz völlig frei bleiben?\n\n#Nvidia #KI #Trump #Technologie #Geopolitik",
+     "tags": [
+      "Nvidia",
+      "Donald Trump",
+      "Jensen Huang",
+      "KI Chips",
+      "China USA Konflikt",
+      "Künstliche Intelligenz",
+      "Halbleiter",
+      "Tech Krieg",
+      "OpenAI",
+      "Mikrochips"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Nvidia",
+      "#KI",
+      "#Trump",
+      "#Technologie",
+      "#Geopolitik"
+     ],
+     "lang": "de",
+     "topic": "Nvidia CEO and Donald Trump oppose US AI chip sanctions on China",
+     "tts": "edge",
+     "duration": 39.6,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45138206678-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Nvidia-Chef Jensen Huang warnt öffentlich vor strengen US-Exportstopps für KI-Chips nach China.",
+       "headline": "KI-CHIP VERBOT",
+       "accent": "STREIT",
+       "search": "microchip factory production",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Vereinigte Staaten",
+        "China"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ein Verbot beschleunige lediglich die Entwicklung eigener chinesischer Halbleiter, behauptet der Tech-Gigant.",
+       "headline": "CHINAS CHIPS",
+       "accent": "EIGENE",
+       "search": "china technology city",
+       "style": "subtitle",
+       "countries": [
+        "CHN"
+       ],
+       "country_names": [
+        "China"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Während OpenAI staatliche Kontrolle fordert, plädiert Donald Trump für eine uneingeschränkte Marktentwicklung.",
+       "headline": "TRUMP DAGEGEN",
+       "accent": "FREIHEIT",
+       "search": "donald trump podium",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Vereinigte Staaten"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Hinter diesen Entwicklungen steht laut Berichten das Ringen um die Kontrolle der digitalen Welt.",
+       "headline": "MACHTKAMPF",
+       "accent": "GLOBALE",
+       "search": "artificial intelligence server",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "In den US-Medien wird Berichten zufolge gezielt das Bild erzeugt, dass KI durch Cyberangriffe außer Kontrolle gerät.",
+       "headline": "US-MEDIEN",
+       "accent": "KONTROLLE",
+       "search": "cyber attack computer screen",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Vereinigte Staaten"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der Streit um Mikrochips entscheidet bereits jetzt über den führenden Tech-Konzern von morgen.",
+       "headline": "ZUKUNFT DER KI",
+       "accent": "MARKT",
+       "search": "futuristic tech network",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T08:35:20Z",
+     "elevenlabs": {
+      "used": 19006,
+      "limit": 40000,
+      "left": 20994,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.994 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45138206678-de"
+    }
+   ],
+   "ts": "2026-11-23T08:30:23"
+  }
+ },
  "_removed": [
-  "d42fcbc4ce3d",
-  "54f34c42d936",
-  "1edbeb303dcc",
-  "c947dac9becb",
-  "7eb47a5db7cd",
-  "86277101f5be",
-  "66eba903a865",
-  "2f1a20151385",
-  "445944378441",
-  "446184028240",
-  "b438246d60ee",
-  "32fa0d1d693a",
-  "41416ec5f7f6",
-  "446184028241",
-  "b349a255e16e",
-  "87a011d7d646",
   "e545b5536757",
-  "a5e09c77f7f8",
-  "ddbd76050660",
-  "bc7037909ba6",
-  "442639882090",
-  "b34b7bca5216",
-  "d7e9c169bc14",
-  "ccd67624d8c3",
-  "445296633124",
+  "443631404172",
   "9849bc2ef437",
-  "74775df4be80",
+  "bc7037909ba6",
   "0c7c07a879a6",
-  "f02172b50f8c",
-  "0d9dbcf465cd",
-  "443091847971",
-  "be8762e28854",
-  "57b4fdc6596f",
-  "445761614490",
-  "abe41c1aaf94",
+  "a5e09c77f7f8",
   "445944378440",
   "af6ed91f3a79",
-  "63bfb40d47b6",
-  "443631404172",
+  "446184028241",
+  "445944378441",
+  "32fa0d1d693a",
+  "ddbd76050660",
+  "41416ec5f7f6",
+  "b34b7bca5216",
+  "b438246d60ee",
+  "7eb47a5db7cd",
+  "d42fcbc4ce3d",
+  "446184028240",
+  "abe41c1aaf94",
+  "ccd67624d8c3",
+  "2f1a20151385",
+  "c947dac9becb",
+  "445296633124",
+  "66eba903a865",
+  "57b4fdc6596f",
+  "be8762e28854",
+  "86277101f5be",
+  "873320f3cd81",
+  "1edbeb303dcc",
   "444854651743",
-  "873320f3cd81"
+  "87a011d7d646",
+  "443091847971",
+  "f02172b50f8c",
+  "63bfb40d47b6",
+  "0d9dbcf465cd",
+  "445761614490",
+  "54f34c42d936",
+  "b349a255e16e",
+  "d7e9c169bc14",
+  "442639882090",
+  "74775df4be80"
  ],
- "reminded": "",
+ "reminded": "2026-11-23",
  "yt_stories": {
   "yt:icuQEZvg7M0": {
    "stories": [
@@ -477,7 +862,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   }
  },
@@ -668,6 +1054,25 @@
      "yayin_en": 1,
      "yayin_de": 1
     }
+   },
+   "45138206678-62027d": {
+    "2026-11-23": {
+     "uretilen": 3,
+     "render_sn": 315.4,
+     "render_n": 3,
+     "prov:gemini:ok": 2,
+     "prov:gemini_1:ok": 2,
+     "prov:openrouter_nemotron:ok": 1,
+     "prov:openrouter_nemotron:hata": 1,
+     "prov:make_metin:hata": 1,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 4,
+     "ceviri_nemotron": 1,
+     "llm_tamamen_basarisiz": 1,
+     "ceviri_yedek": 1,
+     "actions_dk": 7
+    }
    }
   },
   "gunluk": {
@@ -708,6 +1113,23 @@
     "yayin_tr": 2,
     "yayin_en": 2,
     "yayin_de": 2
+   },
+   "2026-11-23": {
+    "uretilen": 3,
+    "render_sn": 315.4,
+    "render_n": 3,
+    "prov:gemini:ok": 2,
+    "prov:gemini_1:ok": 2,
+    "prov:openrouter_nemotron:ok": 1,
+    "prov:openrouter_nemotron:hata": 1,
+    "prov:make_metin:hata": 1,
+    "ses:edge": 2,
+    "ses:elevenlabs": 1,
+    "llm_cagri": 4,
+    "ceviri_nemotron": 1,
+    "llm_tamamen_basarisiz": 1,
+    "ceviri_yedek": 1,
+    "actions_dk": 7
    }
   }
  }
