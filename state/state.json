@@ -14,7 +14,8 @@
   "trend:TR:baykar bayraktar kızılelma",
   "news:https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
   "trend:US:deportación",
-  "yt:JMdum8F28xU"
+  "yt:JMdum8F28xU",
+  "yt:AKEpaV_XTjw"
  ],
  "topics": [
   {
@@ -151,12 +152,17 @@
    "topic": "Nvidia CEO opposes AI chip restrictions on China",
    "ts": "2026-11-23T08:30:23",
    "summary": "Nvidia ve Trump Çin Yapay Zeka Çip Kısıtlamasına Karşı. Nvidia CEO'su Jensen Huang Çin'e uygulanan yapay zeka çipi kısıtlamalarına açıkça karşı çıkıyor. Huang çip ambargolarının Çin'in kendi yerli teknolojisini daha hızlı geliştirmesine yol açacağını iddia ediyor. OpenAI devlet denetimi isterken Donald Trump ve Nvidia kısıtlamasız serbest gelişimi savunuyor. Aktarılanlara göre bu gelişmelerin arkasında küresel dijital dünyayı kontrol etme ve bilgiyi tekel altına alma arayışı bulunuyor. ABD medyasında ise siber saldırılar üzerinden yapay zekanın kontrolden çıktığı algısının bilinçli olarak oluşturulduğu öne sürülüyor. Küresel teknoloji devlerinin kapışması mikroçip pazarındaki tüm dengeleri baştan aşağı değiştiriyor."
+  },
+  {
+   "topic": "Greece and Israel joint military exercise in Athens",
+   "ts": "2026-11-23T10:41:43",
+   "summary": "Yunanistan ve İsrail'den Türk Sistemlerine Karşı Tatbikat. Yunanistan ve İsrail, Atina'da Türk elektronik haberleşme sistemlerine karşı ortak askeri tatbikat düzenledi. Tatbikatta iki ülke ordusu, Türk iletişim ağlarını engelleme ve savunma senaryoları üzerinde çalıştı. Akdeniz'de tırmanan gerilim sürerken, Atina ve Tel Aviv savunma alanındaki iş birliğini derinleştiriyor. Bu hamle, Ege ve Doğu Akdeniz'deki teknolojik üstünlük yarışının yeni bir boyuta taşındığını gösteriyor. Gelişmeler, Türkiye'nin yerli elektronik savunma teknolojilerine olan ihtiyacını ve stratejik önemini artırıyor. Bölgedeki bu gövde gösterileri, Doğu Akdeniz güç dengesini doğrudan etkilemeye devam ediyor."
   }
  ],
  "daily": {
   "2026-11-21": 2,
   "2026-11-22": 5,
-  "2026-11-23": 1
+  "2026-11-23": 2
  },
  "scheduled": {
   "en": [
@@ -228,50 +234,500 @@
    "2026-11-23T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "1f8d57fecf3b": {
+   "results": [
+    {
+     "title": "Yunanistan ve İsrail'den Türk Sistemlerine Karşı Tatbikat",
+     "description": "Yunanistan ve İsrail, Atina'da Türk elektronik haberleşme sistemlerine karşı koyma odaklı ortak askeri tatbikat gerçekleştirdi.\nSizce Doğu Akdeniz'deki bu askeri yakınlaşma bölgedeki dengeleri nasıl etkiler?\n\n#DoğuAkdeniz #Yunanistan #İsrail #ElektronikHarp #SavunmaSanayii",
+     "tags": [
+      "Yunanistan",
+      "İsrail",
+      "Türkiye",
+      "Atina tatbikatı",
+      "elektronik harp",
+      "Doğu Akdeniz",
+      "savunma sanayii",
+      "askeri tatbikat",
+      "jeopolitik",
+      "Türk ordusu"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#DoğuAkdeniz",
+      "#Yunanistan",
+      "#İsrail",
+      "#ElektronikHarp",
+      "#SavunmaSanayii"
+     ],
+     "lang": "tr",
+     "topic": "Greece and Israel joint military exercise in Athens",
+     "tts": "edge",
+     "duration": 44.9,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Yunanistan ve İsrail, Atina'da Türk elektronik haberleşme sistemlerine karşı ortak askeri tatbikat düzenledi.",
+       "headline": "Atina'da Ortak Tatbikat",
+       "accent": "Sinyal",
+       "search": "military radar antenna",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Tatbikatta iki ülke ordusu, Türk iletişim ağlarını engelleme ve savunma senaryoları üzerinde çalıştı.",
+       "headline": "Hedef Türk Sistemleri",
+       "accent": "Savunma",
+       "search": "military communication equipment",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Akdeniz'de tırmanan gerilim sürerken, Atina ve Tel Aviv savunma alanındaki iş birliğini derinleştiriyor.",
+       "headline": "Derinleşen Askeri İttifak",
+       "accent": "Akdeniz",
+       "search": "warship sea patrol",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu hamle, Ege ve Doğu Akdeniz'deki teknolojik üstünlük yarışının yeni bir boyuta taşındığını gösteriyor.",
+       "headline": "Bölgesel Güç Dengesi",
+       "accent": "Strateji",
+       "search": "digital map technology",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Gelişmeler, Türkiye'nin yerli elektronik savunma teknolojilerine olan ihtiyacını ve stratejik önemini artırıyor.",
+       "headline": "Milli Sistemlerin Önemi",
+       "accent": "Güvenlik",
+       "search": "military satellite dish",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bölgedeki bu gövde gösterileri, Doğu Akdeniz güç dengesini doğrudan etkilemeye devam ediyor.",
+       "headline": "Kritik Hamleler",
+       "accent": "Dengeler",
+       "search": "fighter jet sky",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T10:44:16Z",
+     "elevenlabs": {
+      "used": 19006,
+      "limit": 40000,
+      "left": 20994,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.994 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45157451668-tr"
+    },
+    {
+     "title": "Joint Exercise by Greece and Israel Against Turkish Systems",
+     "description": "Greece and Israel conducted a joint military exercise in Athens focused on countering Turkish electronic communication systems. How do you think this military rapprochement in the Eastern Mediterranean affects regional balances?\n\n#EasternMediterranean #Greece #Israel #ElectronicWarfare #DefenseIndustry",
+     "tags": [
+      "Greece",
+      "Israel",
+      "Turkey",
+      "Athens exercise",
+      "electronic warfare",
+      "Eastern Mediterranean",
+      "defense industry",
+      "military exercise",
+      "geopolitics",
+      "Turkish Armed Forces"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#EasternMediterranean",
+      "#Greece",
+      "#Israel",
+      "#ElectronicWarfare",
+      "#DefenseIndustry"
+     ],
+     "lang": "en",
+     "topic": "Greece and Israel joint military exercise in Athens",
+     "tts": "elevenlabs",
+     "duration": 36.66,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Greece and Israel held a joint military exercise in Athens targeting Turkish electronic communication systems.",
+       "headline": "Joint Exercise in Athens",
+       "accent": "Signal",
+       "search": "military radar antenna",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The drill focused on blocking Turkish communication networks and defense scenarios.",
+       "headline": "Targeting Turkish Systems",
+       "accent": "Defense",
+       "search": "military communication equipment",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "As Mediterranean tensions rise, Athens and Tel Aviv deepen defense cooperation.",
+       "headline": "Deepening Military Alliance",
+       "accent": "Mediterranean",
+       "search": "warship sea patrol",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The move shows the tech superiority race in the Aegean and Eastern Mediterranean has entered a new phase.",
+       "headline": "Regional Power Balance",
+       "accent": "Strategy",
+       "search": "digital map technology",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Developments increase Turkey's need for indigenous electronic defense technologies and their strategic importance.",
+       "headline": "Importance of Domestic Systems",
+       "accent": "Security",
+       "search": "military satellite dish",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "These power displays continue to directly affect the Eastern Mediterranean balance of power.",
+       "headline": "Critical Moves",
+       "accent": "Balances",
+       "search": "fighter jet sky",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T10:45:26Z",
+     "elevenlabs": {
+      "used": 19006,
+      "limit": 40000,
+      "left": 20994,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.994 / 40.000 karakter kaldı (bu video 583 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45157451668-en"
+    },
+    {
+     "title": "Griechenland und Israel üben gegen türkische Systeme",
+     "description": "Griechenland und Israel führten in Athen ein gemeinsames Militärmanöver durch, das auf türkische elektronische Kommunikationssysteme abzielte. Wie wirkt sich diese militärische Annäherung im östlichen Mittelmeer auf die regionalen Machtverhältnisse aus?\n\n#Ostmittelmeer #Griechenland #Israel #ElektronischerKrieg #Rüstungsindustrie",
+     "tags": [
+      "Griechenland",
+      "Israel",
+      "Türkei",
+      "Athen-Manöver",
+      "elektronischer Krieg",
+      "Ostmittelmeer",
+      "Rüstungsindustrie",
+      "Militärmanöver",
+      "Geopolitik",
+      "Türkische Streitkräfte"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ostmittelmeer",
+      "#Griechenland",
+      "#Israel",
+      "#ElektronischerKrieg",
+      "#Rüstungsindustrie"
+     ],
+     "lang": "de",
+     "topic": "Greece and Israel joint military exercise in Athens",
+     "tts": "edge",
+     "duration": 38.35,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45157451668-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Griechenland und Israel führten in Athen ein gemeinsames Manöver gegen türkische Kommunikationssysteme durch.",
+       "headline": "Gemeinsames Manöver in Athen",
+       "accent": "Signal",
+       "search": "military radar antenna",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Beide Armeen übten das Stören und Abwehren türkischer Kommunikationsnetze.",
+       "headline": "Ziel: Türkische Systeme",
+       "accent": "Abwehr",
+       "search": "military communication equipment",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Während die Spannungen im Mittelmeer steigen, vertiefen Athen und Tel Aviv ihre Verteidigungszusammenarbeit.",
+       "headline": "Vertiefendes Militärbündnis",
+       "accent": "Mittelmeer",
+       "search": "warship sea patrol",
+       "style": "headline",
+       "countries": [
+        "GRC",
+        "ISR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der Schritt zeigt, dass der technologische Wettlauf in Ägäis und Ostmittelmeer eine neue Dimension erreicht.",
+       "headline": "Regionales Machtgleichgewicht",
+       "accent": "Strategie",
+       "search": "digital map technology",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Entwicklung erhöht den Bedarf Türkeis an eigener elektronischer Verteidigungstechnik.",
+       "headline": "Bedeutung einheimischer Systeme",
+       "accent": "Sicherheit",
+       "search": "military satellite dish",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Solche Machtdemonstrationen beeinflussen weiterhin das Kräftegleichgewicht im östlichen Mittelmeer.",
+       "headline": "Kritische Züge",
+       "accent": "Gleichgewichte",
+       "search": "fighter jet sky",
+       "style": "subtitle",
+       "countries": [
+        "GRC",
+        "ISR",
+        "TUR"
+       ],
+       "country_names": [
+        "Yunanistan",
+        "İsrail",
+        "Türkiye"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=AKEpaV_XTjw",
+     "publish_at": "2026-11-23T10:46:40Z",
+     "elevenlabs": {
+      "used": 19240,
+      "limit": 40000,
+      "left": 20760,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.760 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45157451668-de"
+    }
+   ],
+   "ts": "2026-11-23T10:41:43"
+  }
+ },
  "_removed": [
-  "443631404172",
-  "b438246d60ee",
-  "e545b5536757",
-  "b349a255e16e",
-  "bc7037909ba6",
-  "444854651743",
-  "57b4fdc6596f",
   "6f78216803dc",
-  "d7e9c169bc14",
-  "7eb47a5db7cd",
-  "c947dac9becb",
-  "2f1a20151385",
-  "ccd67624d8c3",
-  "445761614490",
-  "445944378441",
-  "446184028241",
-  "445296633124",
-  "be8762e28854",
-  "41416ec5f7f6",
-  "0c7c07a879a6",
-  "86277101f5be",
-  "9849bc2ef437",
-  "54f34c42d936",
-  "74775df4be80",
-  "ddbd76050660",
-  "0d9dbcf465cd",
-  "32fa0d1d693a",
-  "87a011d7d646",
-  "a5e09c77f7f8",
+  "1edbeb303dcc",
   "f02172b50f8c",
+  "63bfb40d47b6",
+  "41416ec5f7f6",
+  "443091847971",
+  "444854651743",
+  "446184028240",
+  "b438246d60ee",
+  "443631404172",
+  "bc7037909ba6",
+  "74775df4be80",
+  "32fa0d1d693a",
   "abe41c1aaf94",
+  "a5e09c77f7f8",
+  "be8762e28854",
+  "86277101f5be",
+  "2f1a20151385",
+  "445761614490",
+  "445296633124",
+  "c947dac9becb",
+  "9849bc2ef437",
+  "e545b5536757",
+  "57b4fdc6596f",
+  "7eb47a5db7cd",
+  "87a011d7d646",
   "b34b7bca5216",
   "445944378440",
-  "d42fcbc4ce3d",
-  "446184028240",
-  "873320f3cd81",
-  "63bfb40d47b6",
+  "b349a255e16e",
   "442639882090",
-  "443091847971",
-  "1edbeb303dcc",
+  "0d9dbcf465cd",
+  "873320f3cd81",
+  "af6ed91f3a79",
+  "d42fcbc4ce3d",
   "66eba903a865",
-  "af6ed91f3a79"
+  "d7e9c169bc14",
+  "446184028241",
+  "445944378441",
+  "0c7c07a879a6",
+  "54f34c42d936",
+  "ddbd76050660",
+  "ccd67624d8c3"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -484,7 +940,8 @@
    ],
    "used": [
     0,
-    1
+    1,
+    2
    ]
   }
  },
@@ -699,6 +1156,21 @@
     "2026-11-23": {
      "actions_dk": 25
     }
+   },
+   "45157451668-b74bd6": {
+    "2026-11-23": {
+     "uretilen": 3,
+     "render_sn": 192.3,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 5
+    }
    }
   },
   "gunluk": {
@@ -741,21 +1213,21 @@
     "yayin_de": 2
    },
    "2026-11-23": {
-    "uretilen": 3,
-    "render_sn": 315.4,
-    "render_n": 3,
-    "prov:gemini:ok": 2,
-    "prov:gemini_1:ok": 2,
-    "prov:openrouter_nemotron:ok": 1,
+    "uretilen": 6,
+    "render_sn": 507.7,
+    "render_n": 6,
+    "prov:gemini:ok": 3,
+    "prov:gemini_1:ok": 3,
+    "prov:openrouter_nemotron:ok": 3,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:hata": 1,
-    "ses:edge": 2,
-    "ses:elevenlabs": 1,
-    "llm_cagri": 4,
-    "ceviri_nemotron": 1,
+    "ses:edge": 4,
+    "ses:elevenlabs": 2,
+    "llm_cagri": 7,
+    "ceviri_nemotron": 3,
     "llm_tamamen_basarisiz": 1,
     "ceviri_yedek": 1,
-    "actions_dk": 32
+    "actions_dk": 37
    }
   }
  }
