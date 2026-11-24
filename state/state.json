@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897482,
+ "tg_offset": 691897483,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -217,7 +217,8 @@
    "2026-11-23T13:00:00Z",
    "2026-11-24T13:00:00Z",
    "2026-11-24T17:00:00Z",
-   "2026-11-24T20:00:00Z"
+   "2026-11-24T20:00:00Z",
+   "2026-11-24T23:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -253,7 +254,8 @@
    "2026-11-25T17:00:00Z",
    "2026-11-25T19:30:00Z",
    "2026-11-26T07:00:00Z",
-   "2026-11-26T11:00:00Z"
+   "2026-11-26T11:00:00Z",
+   "2026-11-26T14:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -274,384 +276,11 @@
    "2026-11-23T15:30:00Z",
    "2026-11-24T06:30:00Z",
    "2026-11-24T09:30:00Z",
-   "2026-11-24T12:30:00Z"
+   "2026-11-24T12:30:00Z",
+   "2026-11-24T18:00:00Z"
   ]
  },
  "pending": {
-  "9fa68b731dc8": {
-   "results": [
-    {
-     "title": "Trump'tan İran'a 14 Tanker Tehdidi",
-     "description": "Trump'tan İran'a 14 tanker tehdidi sonrası Orta Doğu'da deniz gerilimi zirveye tırmandı.\nSizce gemilerin batırılması küresel bir savaşı tetikler mi?\n\n#İran #Trump #PetrolKrizi #OrtaDoğu",
-     "tags": [
-      "İran",
-      "Trump",
-      "ABD İran gerilimi",
-      "petrol tankeri",
-      "Orta Doğu kriz",
-      "akaryakıt fiyatları",
-      "askeri müdahale",
-      "dünya gündemi"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#İran",
-      "#Trump",
-      "#PetrolKrizi",
-      "#OrtaDoğu"
-     ],
-     "lang": "tr",
-     "topic": "Iran sends 14 tankers prompting Trump threat",
-     "tts": "edge",
-     "duration": 38.01,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "İran ablukayı delmek için 14 tankerle denize açılacağını duyurdu.",
-       "headline": "14 Tanker",
-       "accent": "Meydan-Okuma",
-       "search": "oil tanker ocean",
-       "style": "headline",
-       "countries": [
-        "IRN"
-       ],
-       "country_names": [
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Donald Trump bu açıklamaya yanıt vererek gemilerin tamamını batırma tehdidinde bulundu.",
-       "headline": "Sert Misilleme",
-       "accent": "Tehdit",
-       "search": "military ship launch",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "İki ülke arasındaki gerilim stratejik petrol sevkiyat yollarını doğrudan riske atıyor.",
-       "headline": "Sevkiyat Krizi",
-       "accent": "Risk",
-       "search": "cargo ship sea",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Askerî hamleler küresel enerji piyasalarında ani fiyat dalgalanmalarını tetikleme potansiyeli taşıyor.",
-       "headline": "Enerji Piyasası",
-       "accent": "Şok",
-       "search": "stock market chart",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Orta Doğu'daki bu kriz Türkiye'de akaryakıt fiyatlarını doğrudan yükseltebilir.",
-       "headline": "Türkiye'ye Etkisi",
-       "accent": "Zam",
-       "search": "gas station pump",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sıcak çatışma riski tırmanırken tüm gözler denize açılacak filoya çevrildi.",
-       "headline": "Kritik Bekleyiş",
-       "accent": "Gerilim",
-       "search": "naval fleet sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
-     "publish_at": "2026-11-24T10:35:43Z",
-     "elevenlabs": {
-      "used": 19867,
-      "limit": 40000,
-      "left": 20133,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 20.133 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-45374983990-tr"
-    },
-    {
-     "title": "Trump Threatens Iran with 14 Tankers",
-     "description": "After Trump's threat of 14 tankers to Iran, maritime tension in the Middle East peaked. Do you think sinking the ships could trigger a global war?\n\n#Iran #Trump #OilCrisis #MiddleEast",
-     "tags": [
-      "Iran",
-      "Trump",
-      "US-Iran tension",
-      "oil tanker",
-      "Middle East crisis",
-      "fuel prices",
-      "military intervention",
-      "world news"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iran",
-      "#Trump",
-      "#OilCrisis",
-      "#MiddleEast"
-     ],
-     "lang": "en",
-     "topic": "Iran sends 14 tankers prompting Trump threat",
-     "tts": "elevenlabs",
-     "duration": 25.93,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Iran announces it will send 14 tankers to break the blockade.",
-       "headline": "14 Tankers",
-       "accent": "Challenge",
-       "search": "oil tanker ocean",
-       "style": "headline",
-       "countries": [
-        "IRN"
-       ],
-       "country_names": [
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Donald Trump responds by threatening to sink all the vessels.",
-       "headline": "Hardline Threat",
-       "accent": "Threat",
-       "search": "military ship launch",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Tensions between the two countries put strategic oil shipping routes at risk.",
-       "headline": "Shipping Crisis",
-       "accent": "Risk",
-       "search": "cargo ship sea",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Military moves could trigger sudden price swings in global energy markets.",
-       "headline": "Energy Market",
-       "accent": "Shock",
-       "search": "stock market chart",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "The crisis may directly raise fuel prices in Turkey.",
-       "headline": "Impact on Turkey",
-       "accent": "Hike",
-       "search": "gas station pump",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "As conflict risk rises, all eyes turn to the departing fleet.",
-       "headline": "Critical Wait",
-       "accent": "Tension",
-       "search": "naval fleet sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
-     "publish_at": "2026-11-24T10:37:10Z",
-     "elevenlabs": {
-      "used": 20021,
-      "limit": 40000,
-      "left": 19979,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 19.979 / 40.000 karakter kaldı (bu video 386 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45374983990-en"
-    },
-    {
-     "title": "Trumps 14‑Tanker‑Drohung gegen Iran",
-     "description": "Nach Trumps Drohung, 14 Tanker gegen Iran zu versenken, eskaliert die maritime Spannung im Nahen Osten. Glauben Sie, dass das Versenken der Schiffe einen globalen Krieg auslösen könnte?\n\n#Iran #Trump #Ölkrise #NaherOsten",
-     "tags": [
-      "Iran",
-      "Trump",
-      "USA‑Iran‑Spannung",
-      "Öltanker",
-      "Nahost‑Krise",
-      "Kraftstoffpreise",
-      "Militäreinsatz",
-      "Weltgeschehen"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iran",
-      "#Trump",
-      "#Ölkrise",
-      "#NaherOsten"
-     ],
-     "lang": "de",
-     "topic": "Iran sends 14 tankers prompting Trump threat",
-     "tts": "edge",
-     "duration": 32.3,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45374983990-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Iran kündigt an, die Blockade mit 14 Tankern zu durchbrechen.",
-       "headline": "14 Tanker",
-       "accent": "Herausforderung",
-       "search": "oil tanker ocean",
-       "style": "headline",
-       "countries": [
-        "IRN"
-       ],
-       "country_names": [
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Donald Trump droht, alle Schiffe zu versenken.",
-       "headline": "Scharfe Drohung",
-       "accent": "Drohung",
-       "search": "military ship launch",
-       "style": "subtitle",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Die Spannung gefährdet strategische Öl‑Versorgungsrouten.",
-       "headline": "Versorgungs‑Krise",
-       "accent": "Risiko",
-       "search": "cargo ship sea",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Militärische Aktionen könnten plötzliche Preisschwankungen auf den globalen Energiemärkten auslösen.",
-       "headline": "Energiemarkt",
-       "accent": "Schock",
-       "search": "stock market chart",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Die Krise im Nahen Osten kann die Kraftstoffpreise in Deutschland direkt steigen lassen.",
-       "headline": "Auswirkung auf Deutschland",
-       "accent": "Preisanstieg",
-       "search": "gas station pump",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Während das Risiko eines heißen Konflikts wächst, richtet sich die Aufmerksamkeit auf die auslaufende Flotte.",
-       "headline": "Kritisches Warten",
-       "accent": "Spannung",
-       "search": "naval fleet sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
-     "publish_at": "2026-11-24T10:39:08Z",
-     "elevenlabs": {
-      "used": 20021,
-      "limit": 40000,
-      "left": 19979,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 19.979 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45374983990-de"
-    }
-   ],
-   "ts": "2026-11-24T10:34:12"
-  },
   "9d8c10911957": {
    "results": [
     {
@@ -995,52 +624,53 @@
   }
  },
  "_removed": [
-  "2f1a20151385",
-  "a86c24402051",
-  "41416ec5f7f6",
-  "443091847971",
-  "be8762e28854",
-  "af6ed91f3a79",
-  "c947dac9becb",
-  "63bfb40d47b6",
-  "445944378440",
-  "444854651743",
-  "74775df4be80",
-  "d7e9c169bc14",
-  "1f8d57fecf3b",
-  "32fa0d1d693a",
-  "86277101f5be",
-  "57b4fdc6596f",
-  "abe41c1aaf94",
-  "9849bc2ef437",
-  "a5e09c77f7f8",
-  "f02172b50f8c",
-  "1edbeb303dcc",
-  "ccd67624d8c3",
-  "bc7037909ba6",
   "54f34c42d936",
-  "0c7c07a879a6",
-  "e545b5536757",
-  "443631404172",
-  "d42fcbc4ce3d",
-  "ddbd76050660",
-  "7eb47a5db7cd",
-  "873320f3cd81",
-  "66eba903a865",
-  "445296633124",
+  "d7e9c169bc14",
+  "63bfb40d47b6",
   "27b1f9c04076",
-  "445944378441",
-  "6ad3bacfd1c7",
-  "b349a255e16e",
-  "6f78216803dc",
-  "0d9dbcf465cd",
-  "446184028241",
-  "445761614490",
-  "87a011d7d646",
-  "446184028240",
   "b34b7bca5216",
+  "ddbd76050660",
+  "2f1a20151385",
+  "af6ed91f3a79",
+  "a5e09c77f7f8",
+  "57b4fdc6596f",
+  "87a011d7d646",
+  "873320f3cd81",
+  "446184028240",
+  "66eba903a865",
+  "b349a255e16e",
+  "ccd67624d8c3",
+  "be8762e28854",
+  "443631404172",
+  "9849bc2ef437",
+  "abe41c1aaf94",
+  "32fa0d1d693a",
+  "444854651743",
+  "41416ec5f7f6",
+  "e545b5536757",
+  "f02172b50f8c",
+  "a86c24402051",
+  "446184028241",
+  "1edbeb303dcc",
+  "b438246d60ee",
+  "6f78216803dc",
+  "7eb47a5db7cd",
+  "9fa68b731dc8",
+  "bc7037909ba6",
+  "6ad3bacfd1c7",
+  "d42fcbc4ce3d",
+  "445944378441",
+  "0c7c07a879a6",
+  "86277101f5be",
+  "443091847971",
+  "1f8d57fecf3b",
+  "c947dac9becb",
   "442639882090",
-  "b438246d60ee"
+  "445761614490",
+  "445944378440",
+  "0d9dbcf465cd",
+  "74775df4be80",
+  "445296633124"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1638,6 +1268,15 @@
      "ceviri_nemotron": 2,
      "actions_dk": 11
     }
+   },
+   "45441191451-10e001": {
+    "2026-11-24": {
+     "actions_dk": 10,
+     "onay": 1,
+     "yayin_tr": 1,
+     "yayin_en": 1,
+     "yayin_de": 1
+    }
    }
   },
   "gunluk": {
@@ -1708,11 +1347,11 @@
     "prov:gemini_2:yedek": 1
    },
    "2026-11-24": {
-    "actions_dk": 59,
-    "onay": 3,
-    "yayin_tr": 3,
-    "yayin_en": 3,
-    "yayin_de": 3,
+    "actions_dk": 69,
+    "onay": 4,
+    "yayin_tr": 4,
+    "yayin_en": 4,
+    "yayin_de": 4,
     "uretilen": 11,
     "render_sn": 1308.1,
     "render_n": 11,
