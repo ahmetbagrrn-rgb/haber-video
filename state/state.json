@@ -170,12 +170,17 @@
    "topic": "Ukrainian drone strike on Russian warship in Libya",
    "ts": "2026-11-23T17:52:25",
    "summary": "Ukrayna Libya'da Rus Savaş Gemisini İHA ile Vurdu. Ukrayna Devlet Başkanı Zelenski'ye göre, Ukrayna insansız hava araçları Libya açıklarında konuşlu bir Rus savaş gemisini vurdu. Ukrayna Devlet Başkanı Zelenski Akdeniz'deki bu operasyonun detaylarını kamuoyuna duyurdu. Kremlin doğrudan saldırıyı doğrulamasa da bölgedeki gerilimin tehlikeli şekilde tırmandığı konusunda uyarılarda bulundu. İki ülke arasındaki çatışmanın Karadeniz sınırlarını aşarak Kuzey Afrika'ya sıçraması küresel güvenlik krizini derinleştiriyor. Doğu Akdeniz'deki artan askeri hareketlilik Türkiye'nin deniz güvenliği ve bölgesel enerji rotaları açısından önem taşıyor. Çatışmanın yeni adresi artık sadece Karadeniz değil, açık denizlerdeki tüm Rus askeri unsurları."
+  },
+  {
+   "topic": "Ukraine drone attack sinks Russian warship in Libya",
+   "ts": "2026-11-24T08:32:13",
+   "summary": "Ukrayna Bingazi'de Rus Gemisini Batırdı. Ukrayna Devlet Başkanı Zelenski'nin açıklamasına göre, Libya'daki Bingazi Limanı'nda konuşlanan Rus savaş gemisi yedi İHA ile batırıldı. Akdeniz'deki hedefe düzenlenen nokta operasyon, Rusya'nın Afrika ve Akdeniz'deki askeri lojistik hatlarını doğrudan hedef aldı. Ukrayna yönetimi, Rus donanmasının ticari ve askeri gelir yollarını küresel ölçekte kesmeyi amaçladıklarını açıkladı. Çatışmanın Kuzey Afrika'ya taşınması, Akdeniz ve Afrika'daki güç dengelerini kökten sarsacak yeni bir süreç başlattı. Akdeniz'de tırmanan bu deniz savaşı, bölgedeki enerji sevkiyatı ve deniz ticareti güvenliğini doğrudan riske atıyor. Küresel deniz hatlarında başlayan bu yeni cephe, hedeflerin ne kadar uzakta olduğunu yeniden sorgulatıyor."
   }
  ],
  "daily": {
-  "2026-11-21": 2,
   "2026-11-22": 5,
-  "2026-11-23": 4
+  "2026-11-23": 4,
+  "2026-11-24": 1
  },
  "scheduled": {
   "en": [
@@ -256,53 +261,461 @@
    "2026-11-24T09:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "a86c24402051": {
+   "results": [
+    {
+     "title": "Ukrayna Bingazi'de Rus Gemisini Batırdı",
+     "description": "Zelenski'nin açıklamasına göre Ukrayna, Bingazi Limanı'nda konuşlanan bir Rus savaş gemisini 7 İHA kullanarak batırdı.\nAkdeniz'deki bu yeni gerilim küresel deniz ticaretini nasıl etkiler?\n\n#Ukrayna #Rusya #Bingazi #Akdeniz #DenizSavaşı",
+     "tags": [
+      "Ukrayna",
+      "Rusya",
+      "Bingazi",
+      "Libya",
+      "Rus savaş gemisi",
+      "İHA saldırısı",
+      "Akdeniz",
+      "askeri haberler",
+      "donanma",
+      "deniz savaşı"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukrayna",
+      "#Rusya",
+      "#Bingazi",
+      "#Akdeniz",
+      "#DenizSavaşı"
+     ],
+     "lang": "tr",
+     "topic": "Ukraine drone attack sinks Russian warship in Libya",
+     "tts": "edge",
+     "duration": 50.35,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ukrayna Devlet Başkanı Zelenski'nin açıklamasına göre, Libya'daki Bingazi Limanı'nda konuşlanan Rus savaş gemisi yedi İHA ile batırıldı.",
+       "headline": "Bingazi'de Rus Gemisi",
+       "accent": "Vuruldu",
+       "search": "warship explosion harbor",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Akdeniz'deki hedefe düzenlenen nokta operasyon, Rusya'nın Afrika ve Akdeniz'deki askeri lojistik hatlarını doğrudan hedef aldı.",
+       "headline": "Akdeniz'de Darbe",
+       "accent": "Lojistik",
+       "search": "military drone flight",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ukrayna yönetimi, Rus donanmasının ticari ve askeri gelir yollarını küresel ölçekte kesmeyi amaçladıklarını açıkladı.",
+       "headline": "Donanmaya Saldırı",
+       "accent": "Strateji",
+       "search": "navy ship sea",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Çatışmanın Kuzey Afrika'ya taşınması, Akdeniz ve Afrika'daki güç dengelerini kökten sarsacak yeni bir süreç başlattı.",
+       "headline": "Afrika'da Gerilim",
+       "accent": "Denge",
+       "search": "world map geopolitics",
+       "style": "subtitle",
+       "countries": [
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Akdeniz'de tırmanan bu deniz savaşı, bölgedeki enerji sevkiyatı ve deniz ticareti güvenliğini doğrudan riske atıyor.",
+       "headline": "Ticaret Riski",
+       "accent": "Enerji",
+       "search": "cargo ship ocean",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Küresel deniz hatlarında başlayan bu yeni cephe, hedeflerin ne kadar uzakta olduğunu yeniden sorgulatıyor.",
+       "headline": "Yeni Cephe",
+       "accent": "Tehdit",
+       "search": "ocean surveillance radar",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T08:33:58Z",
+     "elevenlabs": {
+      "used": 19652,
+      "limit": 40000,
+      "left": 20348,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.348 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45355415148-tr"
+    },
+    {
+     "title": "Ukraine Sinks Russian Ship in Benghazi",
+     "description": "Per Zelenskyy, Ukraine sank a Russian warship anchored at Benghazi port using seven drones. How will this new Mediterranean tension affect global maritime trade?\n\n#Ukraine #Russia #Benghazi #Mediterranean #NavalWarfare",
+     "tags": [
+      "Ukraine",
+      "Russia",
+      "Benghazi",
+      "Libya",
+      "Russian warship",
+      "drone strike",
+      "Mediterranean",
+      "military news",
+      "navy",
+      "naval warfare"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukraine",
+      "#Russia",
+      "#Benghazi",
+      "#Mediterranean",
+      "#NavalWarfare"
+     ],
+     "lang": "en",
+     "topic": "Ukraine drone attack sinks Russian warship in Libya",
+     "tts": "elevenlabs",
+     "duration": 35.13,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Per Zelenskyy, a Russian warship at Benghazi port, Libya, was sunk by seven drones.",
+       "headline": "Russian Ship in Benghazi",
+       "accent": "Hit",
+       "search": "warship explosion harbor",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The Mediterranean precision strike hit Russia's military logistics lines across Africa and the Med.",
+       "headline": "Strike in the Mediterranean",
+       "accent": "Logistics",
+       "search": "military drone flight",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Kyiv aims to sever the Russian fleet's commercial and military revenue streams worldwide.",
+       "headline": "Attack on the Fleet",
+       "accent": "Strategy",
+       "search": "navy ship sea",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The conflict's shift to North Africa upends power balances across the Mediterranean and Africa.",
+       "headline": "Tension in Africa",
+       "accent": "Balance",
+       "search": "world map geopolitics",
+       "style": "subtitle",
+       "countries": [
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This naval escalation threatens energy shipments and maritime trade security in the region.",
+       "headline": "Trade at Risk",
+       "accent": "Energy",
+       "search": "cargo ship ocean",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "The new front on global sea lanes raises questions about how far targets reach.",
+       "headline": "New Front",
+       "accent": "Threat",
+       "search": "ocean surveillance radar",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T08:35:31Z",
+     "elevenlabs": {
+      "used": 19652,
+      "limit": 40000,
+      "left": 20348,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.348 / 40.000 karakter kaldı (bu video 536 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45355415148-en"
+    },
+    {
+     "title": "Ukraine versenkt russisches Schiff in Bengasi",
+     "description": "Laut Selenskyj hat die Ukraine ein russisches Kriegsschiff im Hafen von Bengasi mit sieben Drohnen versenkt. Wie wirkt sich diese neue Spannung im Mittelmeer auf den globalen Seehandel aus?\n\n#Ukraine #Russland #Bengasi #Mittelmeer #Seekrieg",
+     "tags": [
+      "Ukraine",
+      "Russland",
+      "Bengasi",
+      "Libyen",
+      "Russisches Kriegsschiff",
+      "Drohnenangriff",
+      "Mittelmeer",
+      "Militärnachrichten",
+      "Flotte",
+      "Seekrieg"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ukraine",
+      "#Russland",
+      "#Bengasi",
+      "#Mittelmeer",
+      "#Seekrieg"
+     ],
+     "lang": "de",
+     "topic": "Ukraine drone attack sinks Russian warship in Libya",
+     "tts": "edge",
+     "duration": 34.05,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45355415148-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Laut Selenskyj wurde ein russisches Kriegsschiff in Bengasi mit sieben Drohnen versenkt.",
+       "headline": "Russisches Schiff in Bengasi",
+       "accent": "Getroffen",
+       "search": "warship explosion harbor",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Operation im Mittelmeer traf Russlands Logistik in Afrika und im Mittelmeer direkt.",
+       "headline": "Schlag im Mittelmeer",
+       "accent": "Logistik",
+       "search": "military drone flight",
+       "style": "subtitle",
+       "countries": [
+        "UKR",
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Kiew will weltweit Handels- und Militärwege der russischen Flotte kappen.",
+       "headline": "Angriff auf die Flotte",
+       "accent": "Strategie",
+       "search": "navy ship sea",
+       "style": "headline",
+       "countries": [
+        "UKR",
+        "RUS"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Ausweitung nach Nordafrika erschüttert die Machtbalance im Mittelmeer und Afrika.",
+       "headline": "Spannung in Afrika",
+       "accent": "Balance",
+       "search": "world map geopolitics",
+       "style": "subtitle",
+       "countries": [
+        "RUS",
+        "LBY"
+       ],
+       "country_names": [
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der eskalierende Seekrieg gefährdet Energieversorgung und Seehandelssicherheit in der Region.",
+       "headline": "Handelsrisiko",
+       "accent": "Energie",
+       "search": "cargo ship ocean",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Die neue globale See-Front lässt fragen, wie weit die Ziele wirklich sind.",
+       "headline": "Neue Front",
+       "accent": "Bedrohung",
+       "search": "ocean surveillance radar",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T08:37:09Z",
+     "elevenlabs": {
+      "used": 19867,
+      "limit": 40000,
+      "left": 20133,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 20.133 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45355415148-de"
+    }
+   ],
+   "ts": "2026-11-24T08:32:13"
+  }
+ },
  "_removed": [
-  "57b4fdc6596f",
-  "87a011d7d646",
-  "0c7c07a879a6",
-  "443631404172",
-  "27b1f9c04076",
-  "54f34c42d936",
-  "444854651743",
-  "443091847971",
+  "2f1a20151385",
+  "445944378440",
+  "be8762e28854",
   "c947dac9becb",
-  "d7e9c169bc14",
-  "bc7037909ba6",
-  "873320f3cd81",
-  "41416ec5f7f6",
-  "442639882090",
-  "e545b5536757",
+  "1edbeb303dcc",
+  "445761614490",
+  "443091847971",
+  "63bfb40d47b6",
+  "0d9dbcf465cd",
+  "9849bc2ef437",
+  "66eba903a865",
+  "86277101f5be",
+  "445944378441",
+  "af6ed91f3a79",
+  "6ad3bacfd1c7",
+  "87a011d7d646",
+  "74775df4be80",
+  "446184028241",
   "32fa0d1d693a",
   "b438246d60ee",
-  "af6ed91f3a79",
-  "445296633124",
-  "445761614490",
-  "446184028241",
+  "0c7c07a879a6",
+  "d42fcbc4ce3d",
+  "d7e9c169bc14",
+  "444854651743",
+  "27b1f9c04076",
   "abe41c1aaf94",
-  "0d9dbcf465cd",
-  "1edbeb303dcc",
-  "6ad3bacfd1c7",
-  "74775df4be80",
+  "7eb47a5db7cd",
+  "1f8d57fecf3b",
+  "446184028240",
+  "41416ec5f7f6",
   "6f78216803dc",
-  "a5e09c77f7f8",
-  "9849bc2ef437",
+  "57b4fdc6596f",
+  "bc7037909ba6",
+  "b349a255e16e",
+  "e545b5536757",
+  "442639882090",
+  "b34b7bca5216",
+  "445296633124",
   "ddbd76050660",
   "f02172b50f8c",
-  "63bfb40d47b6",
-  "446184028240",
-  "445944378441",
-  "7eb47a5db7cd",
-  "d42fcbc4ce3d",
-  "66eba903a865",
+  "54f34c42d936",
+  "a5e09c77f7f8",
+  "873320f3cd81",
   "ccd67624d8c3",
-  "2f1a20151385",
-  "1f8d57fecf3b",
-  "86277101f5be",
-  "445944378440",
-  "b34b7bca5216",
-  "be8762e28854",
-  "b349a255e16e"
+  "443631404172"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -517,6 +930,28 @@
     0,
     1,
     2
+   ]
+  },
+  "yt:pYMmJ98n4sk": {
+   "stories": [
+    {
+     "title": "Ukrayna'nın Bingazi'de Rus Savaş Gemisini Batırması ve Küresel Deniz Saldırıları",
+     "facts": "Doğu Libya'nın Bingazi Limanı'nda konuşlanan bir Rus savaş gemisi İHA saldırısı sonucu batırıldı. Ukrayna Devlet Başkanı Zelenski, bu operasyonun 7 adet İHA ile gerçekleştirildiğini açıkladı. Bingazi'deki olaydan kısa süre önce Baltık Denizi'ndeki Finlandiya Körfezi'nde bir Rus kargo gemisine de saldırı düzenlendi. Saldırıların, Rusya'nın Afrika ve Akdeniz'deki lojistik hatlarını ile savaş finansmanını kesmeyi amaçladığı belirtildi. Rusya Güvenlik Konseyi Başkan Yardımcısı Medvedev ise ülkesine yönelik askeri saldırılara karşı önleyici nükleer yanıt verilebileceğini ifade etti.",
+     "score": 9
+    },
+    {
+     "title": "İran'ın Batı Ülkelerine Dava Açması ve Trump'ın Misilleme Tehdidi",
+     "facts": "İran yönetimi, savaştaki sivil kayıpları gerekçe göstererek ABD ve dört Avrupa ülkesine karşı hukuki süreç başlattığını duyurdu. İran ayrıca 14 tanker ve gemiyle ablukayı deleceğini açıkladı. Donald Trump bu açıklamaya yanıt vererek 14 geminin tamamının denizin dibine indirileceğini söyledi. İsrail askeri istihbaratı, İran'a tek taraflı bir saldırının Lübnan, Suriye ve Gazze'yi kapsayarak ulusal güvenliği tehdit edeceğini bildirdi. Muhalefet lideri Yair Lapid de tek taraflı saldırı için acil bir durum olmadığını belirtti.",
+     "score": 8
+    },
+    {
+     "title": "BM İklim ile Otonom Silah Konferanslarının Başarısızlıkla Sonuçlanması",
+     "facts": "Birleşmiş Milletler bünyesinde Antalya'da düzenlenen iklim konferansı, 2009 yılından bu yana ilk kez anlaşma sağlanamadan sona erdi. BM'nin Cenevre'de katil robotlar ve otonom silah sistemlerinin yasaklanmasına ilişkin yürüttüğü görüşmelerden de bir karar çıkmadı. ABD Ulusal İstihbarat Direktörü, kritik altyapılara ve limanlara yönelik siber saldırıların devam edeceğini açıkladı. ABD'nin Alabama eyaletinde hafta sonu bir doğal gaz boru hattında patlama yaşandı ve alevler 30 metreye yükseldi.",
+     "score": 7
+    }
+   ],
+   "used": [
+    0
    ]
   }
  },
@@ -810,6 +1245,21 @@
      "yayin_en": 2,
      "yayin_de": 2
     }
+   },
+   "45355415148-f0c7b2": {
+    "2026-11-24": {
+     "actions_dk": 11,
+     "uretilen": 3,
+     "render_sn": 218.5,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2
+    }
    }
   },
   "gunluk": {
@@ -880,11 +1330,21 @@
     "prov:gemini_2:yedek": 1
    },
    "2026-11-24": {
-    "actions_dk": 24,
+    "actions_dk": 35,
     "onay": 2,
     "yayin_tr": 2,
     "yayin_en": 2,
-    "yayin_de": 2
+    "yayin_de": 2,
+    "uretilen": 3,
+    "render_sn": 218.5,
+    "render_n": 3,
+    "prov:gemini:ok": 1,
+    "prov:gemini_1:ok": 1,
+    "prov:openrouter_nemotron:ok": 2,
+    "ses:edge": 2,
+    "ses:elevenlabs": 1,
+    "llm_cagri": 3,
+    "ceviri_nemotron": 2
    }
   }
  }
