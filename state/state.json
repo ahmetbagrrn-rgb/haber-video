@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897480,
+ "tg_offset": 691897481,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -197,7 +197,8 @@
    "2026-11-22T13:00:00Z",
    "2026-11-22T23:00:00Z",
    "2026-11-23T13:00:00Z",
-   "2026-11-24T13:00:00Z"
+   "2026-11-24T13:00:00Z",
+   "2026-11-24T17:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -231,7 +232,8 @@
    "2026-11-25T11:00:00Z",
    "2026-11-25T14:00:00Z",
    "2026-11-25T17:00:00Z",
-   "2026-11-25T19:30:00Z"
+   "2026-11-25T19:30:00Z",
+   "2026-11-26T07:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -250,408 +252,14 @@
    "2026-11-22T15:30:00Z",
    "2026-11-23T06:30:00Z",
    "2026-11-23T15:30:00Z",
-   "2026-11-24T06:30:00Z"
+   "2026-11-24T06:30:00Z",
+   "2026-11-24T09:30:00Z"
   ]
  },
- "pending": {
-  "6ad3bacfd1c7": {
-   "results": [
-    {
-     "title": "Ukrayna Libya'da Rus Savaş Gemisini İHA ile Vurdu",
-     "description": "Ukrayna ordusu Libya açıklarında Rusya'ya ait bir savaş gemisini insansız hava araçlarıyla hedef aldı.\nKaradeniz'deki savaşın Akdeniz'e taşınması bölgesel dengeleri nasıl etkiler?\n\nKaynak: bbc.co.uk\n\n#Ukrayna #Rusya #Libya #Savaş #Jeopolitik",
-     "tags": [
-      "Ukrayna Rusya savaşı",
-      "Libya haberleri",
-      "Zelenski açıklama",
-      "Rus savaş gemisi",
-      "Ukrayna İHA saldırısı",
-      "Akdeniz güvenlik",
-      "Kremlin gerilim",
-      "askeri gelişmeler"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukrayna",
-      "#Rusya",
-      "#Libya",
-      "#Savaş",
-      "#Jeopolitik"
-     ],
-     "lang": "tr",
-     "topic": "Ukrainian drone strike on Russian warship in Libya",
-     "tts": "edge",
-     "duration": 47.01,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Ukrayna Devlet Başkanı Zelenski'ye göre, Ukrayna insansız hava araçları Libya açıklarında konuşlu bir Rus savaş gemisini vurdu.",
-       "headline": "RUS GEMİSİ VURULDU",
-       "accent": "Akdeniz",
-       "search": "warship explosion sea",
-       "style": "headline",
-       "countries": [
-        "UKR",
-        "RUS",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Rusya",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Ukrayna Devlet Başkanı Zelenski Akdeniz'deki bu operasyonun detaylarını kamuoyuna duyurdu.",
-       "headline": "SÜRPRİZ OPERASYON",
-       "accent": "Zelenski",
-       "search": "naval warship sea",
-       "style": "subtitle",
-       "countries": [
-        "UKR",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Kremlin doğrudan saldırıyı doğrulamasa da bölgedeki gerilimin tehlikeli şekilde tırmandığı konusunda uyarılarda bulundu.",
-       "headline": "KREMLİN'DEN UYARI",
-       "accent": "Gerilim",
-       "search": "kremlin moscow night",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "İki ülke arasındaki çatışmanın Karadeniz sınırlarını aşarak Kuzey Afrika'ya sıçraması küresel güvenlik krizini derinleştiriyor.",
-       "headline": "KÜRESEL ETKİ",
-       "accent": "Çatışma",
-       "search": "world map military",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Doğu Akdeniz'deki artan askeri hareketlilik Türkiye'nin deniz güvenliği ve bölgesel enerji rotaları açısından önem taşıyor.",
-       "headline": "AKDENİZ GÜVENLİĞİ",
-       "accent": "Türkiye",
-       "search": "mediterranean sea aerial",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Çatışmanın yeni adresi artık sadece Karadeniz değil, açık denizlerdeki tüm Rus askeri unsurları.",
-       "headline": "YENİ CEPHELER",
-       "accent": "Hedef",
-       "search": "military drone ocean",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-     "publish_at": "2026-11-23T17:53:21Z",
-     "elevenlabs": {
-      "used": 19421,
-      "limit": 40000,
-      "left": 20579,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 20.579 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-45231063351-tr"
-    },
-    {
-     "title": "Ukraine Strikes Russian Warship Off Libya With Drones",
-     "description": "Ukraine’s military targeted a Russian warship off Libya with drones. How does the Black Sea war’s shift to the Mediterranean affect regional balances?\n\nSource: bbc.co.uk\n\n#Ukraine #Russia #Libya #War #Geopolitics",
-     "tags": [
-      "Ukraine Russia war",
-      "Libya news",
-      "Zelensky statement",
-      "Russian warship",
-      "Ukraine drone strike",
-      "Mediterranean security",
-      "Kremlin tension",
-      "military developments"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukraine",
-      "#Russia",
-      "#Libya",
-      "#War",
-      "#Geopolitics"
-     ],
-     "lang": "en",
-     "topic": "Ukrainian drone strike on Russian warship in Libya",
-     "tts": "elevenlabs",
-     "duration": 36.75,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "According to Ukrainian President Zelensky, Ukrainian drones struck a manned Russian warship off Libya.",
-       "headline": "RUSSIAN WARSHIP HIT",
-       "accent": "Mediterranean",
-       "search": "warship explosion sea",
-       "style": "headline",
-       "countries": [
-        "UKR",
-        "RUS",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Rusya",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Zelensky publicly disclosed details of the Mediterranean operation.",
-       "headline": "SURPRISE OPERATION",
-       "accent": "Zelensky",
-       "search": "naval warship sea",
-       "style": "subtitle",
-       "countries": [
-        "UKR",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The Kremlin did not confirm the attack but warned that regional tensions are dangerously escalating.",
-       "headline": "KREMLIN WARNING",
-       "accent": "Tension",
-       "search": "kremlin moscow night",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The conflict spreading from the Black Sea to North Africa deepens the global security crisis.",
-       "headline": "GLOBAL IMPACT",
-       "accent": "Conflict",
-       "search": "world map military",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Increased military activity in the Eastern Mediterranean matters for Turkey’s maritime security and regional energy routes.",
-       "headline": "MEDITERRANEAN SECURITY",
-       "accent": "Turkey",
-       "search": "mediterranean sea aerial",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The new front now extends beyond the Black Sea to all Russian naval assets on the open seas.",
-       "headline": "NEW FRONTS",
-       "accent": "Target",
-       "search": "military drone ocean",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-     "publish_at": "2026-11-23T17:55:35Z",
-     "elevenlabs": {
-      "used": 19652,
-      "limit": 40000,
-      "left": 20348,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 20.348 / 40.000 karakter kaldı (bu video 577 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45231063351-en"
-    },
-    {
-     "title": "Ukraine trifft russisches Kriegsschiff vor Libyen mit Drohnen",
-     "description": "Die ukrainische Armee griff ein russisches Kriegsschiff vor der libyschen Küste mit Drohnen an.\nWie wirkt sich die Ausweitung des Schwarzmeer-Kriegs auf das Mittelmeer auf die regionalen Machtverhältnisse aus?\n\nQuelle: bbc.co.uk\n\n#Ukraine #Russland #Libyen #Krieg #Geopolitik",
-     "tags": [
-      "Ukraine-Russland-Krieg",
-      "Libyen-Nachrichten",
-      "Selenskyj-Erklärung",
-      "Russisches Kriegsschiff",
-      "Ukrainischer Drohnenangriff",
-      "Mittelmeer-Sicherheit",
-      "Kreml-Spannung",
-      "Militärische Entwicklungen"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Ukraine",
-      "#Russland",
-      "#Libyen",
-      "#Krieg",
-      "#Geopolitik"
-     ],
-     "lang": "de",
-     "topic": "Ukrainian drone strike on Russian warship in Libya",
-     "tts": "edge",
-     "duration": 34.65,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45231063351-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Laut Selenskyj trafen ukrainische Drohnen ein bemanntes russisches Kriegsschiff vor Libyen.",
-       "headline": "RUSSISCHES KRIEGSSCHIFF GETROFFEN",
-       "accent": "Mittelmeer",
-       "search": "warship explosion sea",
-       "style": "headline",
-       "countries": [
-        "UKR",
-        "RUS",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Rusya",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Selenskyj veröffentlichte Details der Mittelmeer-Operation.",
-       "headline": "ÜBERRASCHUNGSOPERATION",
-       "accent": "Selenskyj",
-       "search": "naval warship sea",
-       "style": "subtitle",
-       "countries": [
-        "UKR",
-        "LBY"
-       ],
-       "country_names": [
-        "Ukrayna",
-        "Libya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Der Kreml bestätigte den Angriff nicht, warnte aber vor gefährlicher Eskalation.",
-       "headline": "WARNUNG DES KREMLS",
-       "accent": "Spannung",
-       "search": "kremlin moscow night",
-       "style": "headline",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Der Konflikt überschreitet das Schwarze Meer nach Nordafrika und verschärft die globale Sicherheitskrise.",
-       "headline": "GLOBALE AUSWIRKUNGEN",
-       "accent": "Konflikt",
-       "search": "world map military",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Steigende Militäraktivität im östlichen Mittelmeer gefährdet Türkiets Meeressicherheit und Energiewege.",
-       "headline": "MITTELMEER-SICHERHEIT",
-       "accent": "Türkei",
-       "search": "mediterranean sea aerial",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Neues Ziel: alle russischen Einheiten auf offener See, nicht nur das Schwarze Meer.",
-       "headline": "NEUE FRONTLINIEN",
-       "accent": "Ziel",
-       "search": "military drone ocean",
-       "style": "subtitle",
-       "countries": [
-        "RUS"
-       ],
-       "country_names": [
-        "Rusya"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-     "publish_at": "2026-11-23T17:57:22Z",
-     "elevenlabs": {
-      "used": 19652,
-      "limit": 40000,
-      "left": 20348,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 20.348 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45231063351-de"
-    }
-   ],
-   "ts": "2026-11-23T17:52:25"
-  }
- },
+ "pending": {},
  "_removed": [
   "443631404172",
+  "6ad3bacfd1c7",
   "abe41c1aaf94",
   "442639882090",
   "af6ed91f3a79",
@@ -1196,11 +804,11 @@
    },
    "45308484067-1ea73b": {
     "2026-11-24": {
-     "actions_dk": 23,
-     "onay": 1,
-     "yayin_tr": 1,
-     "yayin_en": 1,
-     "yayin_de": 1
+     "actions_dk": 24,
+     "onay": 2,
+     "yayin_tr": 2,
+     "yayin_en": 2,
+     "yayin_de": 2
     }
    }
   },
@@ -1272,11 +880,11 @@
     "prov:gemini_2:yedek": 1
    },
    "2026-11-24": {
-    "actions_dk": 23,
-    "onay": 1,
-    "yayin_tr": 1,
-    "yayin_en": 1,
-    "yayin_de": 1
+    "actions_dk": 24,
+    "onay": 2,
+    "yayin_tr": 2,
+    "yayin_en": 2,
+    "yayin_de": 2
    }
   }
  }
