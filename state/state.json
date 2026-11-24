@@ -20,7 +20,8 @@
   "trend:US:copper price",
   "news:https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
   "trend:US:习近平",
-  "trend:TR:askerî nakliye uçağı"
+  "trend:TR:askerî nakliye uçağı",
+  "yt:pYMmJ98n4sk"
  ],
  "topics": [
   {
@@ -182,12 +183,17 @@
    "topic": "Iran sends 14 tankers prompting Trump threat",
    "ts": "2026-11-24T10:34:12",
    "summary": "Trump'tan İran'a 14 Tanker Tehdidi. İran ablukayı delmek için 14 tankerle denize açılacağını duyurdu. Donald Trump bu açıklamaya yanıt vererek gemilerin tamamını batırma tehdidinde bulundu. İki ülke arasındaki gerilim stratejik petrol sevkiyat yollarını doğrudan riske atıyor. Askerî hamleler küresel enerji piyasalarında ani fiyat dalgalanmalarını tetikleme potansiyeli taşıyor. Orta Doğu'daki bu kriz Türkiye'de akaryakıt fiyatlarını doğrudan yükseltebilir. Sıcak çatışma riski tırmanırken tüm gözler denize açılacak filoya çevrildi."
+  },
+  {
+   "topic": "UN climate conference in Antalya fails to reach agreement",
+   "ts": "2026-11-24T15:44:02",
+   "summary": "BM Antalya İklim Konferansı 2009'dan Beri İlk Kez Anlaşmasız Bitti. Birleşmiş Milletler Antalya İklim Konferansı, 2009 yılından bu yana ilk kez anlaşma sağlanamadan sona erdi. Günler süren çetin müzakerelere rağmen üye ülkeler nihai bir uzlaşı metni üzerinde anlaşamadı. 2009 yılından bu yana yaşanan bu ilk başarısızlığın, küresel iklim hedeflerini olumsuz etkileyebileceği belirtiliyor. Uluslararası arenada tırmanan görüş ayrılıkları, ortak çevre politikalarının uygulanmasını giderek zorlaştırıyor. Yaşanan bu belirsizliğin, yeşil dönüşüm projelerini ve enerji yatırımlarını etkileyebileceği ifade ediliyor. Gelecek zirveler öncesinde ortaya çıkan bu tablo, küresel iklim diplomasisini büyük bir krizle sınayacak."
   }
  ],
  "daily": {
   "2026-11-22": 5,
   "2026-11-23": 4,
-  "2026-11-24": 2
+  "2026-11-24": 3
  },
  "scheduled": {
   "en": [
@@ -645,55 +651,396 @@
     }
    ],
    "ts": "2026-11-24T10:34:12"
+  },
+  "9d8c10911957": {
+   "results": [
+    {
+     "title": "BM Antalya İklim Konferansı 2009'dan Beri İlk Kez Anlaşmasız Bitti",
+     "description": "BM Antalya İklim Konferansı tarafların uzlaşamaması nedeniyle 2009 yılından bu yana ilk kez kararsız sonuçlandı.\nSizce iklim krizine karşı küresel uzlaşma tekrar sağlanabilir mi?\n\n#BM #Antalya #İklimKrizi #Çevre #Haber",
+     "tags": [
+      "BM İklim Konferansı",
+      "Antalya İklim Zirvesi",
+      "Birleşmiş Milletler",
+      "İklim Krizi",
+      "Çevre Politikaları",
+      "Enerji Haberleri",
+      "Türkiye İklim Zirvesi",
+      "İklim Anlaşması"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#BM",
+      "#Antalya",
+      "#İklimKrizi",
+      "#Çevre",
+      "#Haber"
+     ],
+     "lang": "tr",
+     "topic": "UN climate conference in Antalya fails to reach agreement",
+     "tts": "edge",
+     "duration": 46.51,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Birleşmiş Milletler Antalya İklim Konferansı, 2009 yılından bu yana ilk kez anlaşma sağlanamadan sona erdi.",
+       "headline": "BM Antalya Zirvesi",
+       "accent": "Sonuçsuz",
+       "search": "climate conference speaker",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Günler süren çetin müzakerelere rağmen üye ülkeler nihai bir uzlaşı metni üzerinde anlaşamadı.",
+       "headline": "Sert Müzakereler",
+       "accent": "Tıkanıklık",
+       "search": "diplomats meeting",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "2009 yılından bu yana yaşanan bu ilk başarısızlığın, küresel iklim hedeflerini olumsuz etkileyebileceği belirtiliyor.",
+       "headline": "2009'dan Beri İlk",
+       "accent": "Tehlike",
+       "search": "factory smoke",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Uluslararası arenada tırmanan görüş ayrılıkları, ortak çevre politikalarının uygulanmasını giderek zorlaştırıyor.",
+       "headline": "Küresel Kilitlenme",
+       "accent": "Ayrılık",
+       "search": "earth globe",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Yaşanan bu belirsizliğin, yeşil dönüşüm projelerini ve enerji yatırımlarını etkileyebileceği ifade ediliyor.",
+       "headline": "Yerel Etki",
+       "accent": "Maliyet",
+       "search": "wind turbines",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Gelecek zirveler öncesinde ortaya çıkan bu tablo, küresel iklim diplomasisini büyük bir krizle sınayacak.",
+       "headline": "Büyük Kriz",
+       "accent": "Gelecek",
+       "search": "storm clouds",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T15:45:39Z",
+     "elevenlabs": {
+      "used": 20021,
+      "limit": 40000,
+      "left": 19979,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.979 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45426757729-tr"
+    },
+    {
+     "title": "UN Antalya Climate Conference Ends Without Agreement for First Time Since 2009",
+     "description": "UN Antalya Climate Conference ended inconclusively for first time since 2009 as parties failed to agree. Can global consensus on climate crisis be restored?\n\n#UN #Antalya #ClimateCrisis #Environment #News",
+     "tags": [
+      "UN Climate Conference",
+      "Antalya Climate Summit",
+      "United Nations",
+      "Climate Crisis",
+      "Environmental Policies",
+      "Energy News",
+      "Turkey Climate Summit",
+      "Climate Agreement"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#UN",
+      "#Antalya",
+      "#ClimateCrisis",
+      "#Environment",
+      "#News"
+     ],
+     "lang": "en",
+     "topic": "UN climate conference in Antalya fails to reach agreement",
+     "tts": "elevenlabs",
+     "duration": 32.06,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "UN Antalya Climate Conference ended without agreement for first time since 2009.",
+       "headline": "UN Antalya Summit",
+       "accent": "Inconclusive",
+       "search": "climate conference speaker",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Member states failed to agree on final text despite days of tough talks.",
+       "headline": "Tough Talks",
+       "accent": "Deadlock",
+       "search": "diplomats meeting",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "First such failure since 2009 may undermine global climate targets.",
+       "headline": "First Since 2009",
+       "accent": "Risk",
+       "search": "factory smoke",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Rising international divisions increasingly hinder joint environmental policies.",
+       "headline": "Global Gridlock",
+       "accent": "Division",
+       "search": "earth globe",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Uncertainty could impact green transition projects and energy investments.",
+       "headline": "Local Impact",
+       "accent": "Cost",
+       "search": "wind turbines",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Emerging picture tests global climate diplomacy with crisis before next summits.",
+       "headline": "Major Crisis",
+       "accent": "Future",
+       "search": "storm clouds",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T15:47:08Z",
+     "elevenlabs": {
+      "used": 20021,
+      "limit": 40000,
+      "left": 19979,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.979 / 40.000 karakter kaldı (bu video 453 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45426757729-en"
+    },
+    {
+     "title": "UN-Antalya-Klimakonferenz endet erstmals seit 2009 ohne Einigung",
+     "description": "Die UN-Klimakonferenz in Antalya endete erstmals seit 2009 ohne Einigung, weil sich die Parteien nicht einigen konnten.\nGlauben Sie, dass eine globale Einigung im Kampf gegen die Klimakrise wieder möglich ist?\n\n#UN #Antalya #Klimakrise #Umwelt #Nachrichten",
+     "tags": [
+      "UN-Klimakonferenz",
+      "Antalya-Klimagipfel",
+      "Vereinte Nationen",
+      "Klimakrise",
+      "Umweltpolitik",
+      "Energienachrichten",
+      "Türkei-Klimagipfel",
+      "Klimaabkommen"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#UN",
+      "#Antalya",
+      "#Klimakrise",
+      "#Umwelt",
+      "#Nachrichten"
+     ],
+     "lang": "de",
+     "topic": "UN climate conference in Antalya fails to reach agreement",
+     "tts": "edge",
+     "duration": 39.79,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45426757729-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Die UN-Klimakonferenz in Antalya endete 2009 erstmals ohne Einigung.",
+       "headline": "UN-Antalya-Gipfel",
+       "accent": "Ergebnislos",
+       "search": "climate conference speaker",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Trotz tagelanger harter Verhandlungen konnten sich die Mitgliedstaaten auf keinen endgültigen Kompromisstext einigen.",
+       "headline": "Harte Verhandlungen",
+       "accent": "Blockade",
+       "search": "diplomats meeting",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Experten warnen, dass dieser erste Misserfolg seit 2009 die globalen Klimaziele gefährden könnte.",
+       "headline": "Erster seit 2009",
+       "accent": "Gefahr",
+       "search": "factory smoke",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Zunehmende Meinungsverschiedenheiten auf internationaler Ebene erschweren die Umsetzung gemeinsamer Umweltpolitiken.",
+       "headline": "Globale Blockade",
+       "accent": "Uneinigkeit",
+       "search": "earth globe",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Die Unsicherheit könnte grüne Transformationsprojekte und Energieinvestitionen beeinträchtigen.",
+       "headline": "Lokale Auswirkungen",
+       "accent": "Kosten",
+       "search": "wind turbines",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Vor den nächsten Gipfeln stellt sich die globale Klimadiplomatie einer schweren Prüfung.",
+       "headline": "Große Krise",
+       "accent": "Zukunft",
+       "search": "storm clouds",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=pYMmJ98n4sk",
+     "publish_at": "2026-11-24T15:48:57Z",
+     "elevenlabs": {
+      "used": 20203,
+      "limit": 40000,
+      "left": 19797,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.797 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45426757729-de"
+    }
+   ],
+   "ts": "2026-11-24T15:44:02"
   }
  },
  "_removed": [
-  "b34b7bca5216",
+  "66eba903a865",
+  "e545b5536757",
+  "0c7c07a879a6",
+  "63bfb40d47b6",
+  "9849bc2ef437",
+  "445944378440",
   "d42fcbc4ce3d",
+  "445761614490",
+  "446184028240",
+  "445296633124",
+  "0d9dbcf465cd",
+  "c947dac9becb",
+  "6f78216803dc",
+  "446184028241",
+  "b34b7bca5216",
+  "27b1f9c04076",
   "32fa0d1d693a",
+  "86277101f5be",
+  "f02172b50f8c",
+  "74775df4be80",
+  "444854651743",
+  "a5e09c77f7f8",
   "abe41c1aaf94",
-  "b438246d60ee",
+  "a86c24402051",
+  "6ad3bacfd1c7",
+  "ddbd76050660",
   "873320f3cd81",
   "bc7037909ba6",
-  "27b1f9c04076",
-  "54f34c42d936",
-  "445761614490",
-  "57b4fdc6596f",
-  "f02172b50f8c",
-  "445944378440",
-  "2f1a20151385",
-  "444854651743",
-  "442639882090",
-  "6ad3bacfd1c7",
-  "d7e9c169bc14",
-  "443091847971",
-  "1edbeb303dcc",
-  "87a011d7d646",
-  "446184028241",
-  "66eba903a865",
-  "63bfb40d47b6",
-  "a5e09c77f7f8",
-  "41416ec5f7f6",
-  "74775df4be80",
-  "7eb47a5db7cd",
-  "446184028240",
-  "a86c24402051",
-  "b349a255e16e",
-  "6f78216803dc",
-  "be8762e28854",
-  "445944378441",
-  "1f8d57fecf3b",
-  "445296633124",
-  "86277101f5be",
-  "0d9dbcf465cd",
-  "e545b5536757",
-  "ddbd76050660",
-  "af6ed91f3a79",
   "443631404172",
-  "9849bc2ef437",
+  "b438246d60ee",
+  "54f34c42d936",
+  "d7e9c169bc14",
+  "af6ed91f3a79",
+  "be8762e28854",
+  "443091847971",
+  "87a011d7d646",
+  "41416ec5f7f6",
+  "1f8d57fecf3b",
   "ccd67624d8c3",
-  "c947dac9becb",
-  "0c7c07a879a6"
+  "57b4fdc6596f",
+  "442639882090",
+  "445944378441",
+  "7eb47a5db7cd",
+  "b349a255e16e",
+  "2f1a20151385",
+  "1edbeb303dcc"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -930,7 +1277,8 @@
    ],
    "used": [
     0,
-    1
+    1,
+    2
    ]
   }
  },
@@ -1275,6 +1623,21 @@
      "llm_cagri": 3,
      "actions_dk": 5
     }
+   },
+   "45426757729-af47f0": {
+    "2026-11-24": {
+     "uretilen": 3,
+     "render_sn": 546.5,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 11
+    }
    }
   },
   "gunluk": {
@@ -1345,21 +1708,21 @@
     "prov:gemini_2:yedek": 1
    },
    "2026-11-24": {
-    "actions_dk": 48,
+    "actions_dk": 59,
     "onay": 3,
     "yayin_tr": 3,
     "yayin_en": 3,
     "yayin_de": 3,
-    "uretilen": 8,
-    "render_sn": 761.6,
-    "render_n": 8,
-    "prov:gemini:ok": 4,
-    "prov:gemini_1:ok": 5,
-    "prov:openrouter_nemotron:ok": 4,
-    "ses:edge": 6,
-    "ses:elevenlabs": 2,
-    "llm_cagri": 9,
-    "ceviri_nemotron": 4
+    "uretilen": 11,
+    "render_sn": 1308.1,
+    "render_n": 11,
+    "prov:gemini:ok": 5,
+    "prov:gemini_1:ok": 6,
+    "prov:openrouter_nemotron:ok": 6,
+    "ses:edge": 8,
+    "ses:elevenlabs": 3,
+    "llm_cagri": 12,
+    "ceviri_nemotron": 6
    }
   }
  }
