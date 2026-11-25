@@ -24,7 +24,8 @@
   "yt:pYMmJ98n4sk",
   "news:https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
   "trend:DE:polnische regierung",
-  "yt:_wQku0eU7jQ"
+  "yt:_wQku0eU7jQ",
+  "news:https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
  ],
  "topics": [
   {
@@ -211,12 +212,17 @@
    "topic": "Russian missile in Poland triggers NATO jet alert",
    "ts": "2026-11-25T13:20:56",
    "summary": "Polonya Üzerinde Rus Füzesi Alarmı: NATO Jetleri Havalandı. Rusya'ya ait olduğu iddia edilen bir seyir füzesi Polonya hava sahasına girerek NATO hava savunmasını alarm durumuna geçirdi. Polonya üzerinde devriye atan İsveç savaş uçaklarının füzeye ateş açmaya çok yaklaştığı bildirildi. Moskova füze iddiasını reddederken Varşova yönetimi Amerika Birleşik Devletleri'nin temkinli tepkisinden rahatsızlığını dile getirdi. Doğu Avrupa semalarındaki bu tür ihlaller NATO ile Rusya'yı doğrudan sıcak çatışmanın eşiğine getiriyor. Bölgedeki askeri tırmanma küresel uçuş rotalarını, enerji hatlarını ve tüm bölge ekonomisini doğrudan etkiliyor. Doğu Avrupa'da atılacak yanlış bir adım tüm dünyayı anında yeni bir krizin içine çekebilir."
+  },
+  {
+   "topic": "Russia leaked data shows 500000 war casualties",
+   "ts": "2026-11-25T17:52:09",
+   "summary": "Rusya Ukrayna Savaşında 500 Bin Kayıp Verdi. Sızdırılan resmi veriler Rusya'nın Ukrayna savaşında yaklaşık 500 bin kayıp verdiğini ortaya çıkardı. Sızdırılan veriler göre, ülkedeki resmi kayıtlar işgalin başlamasından bu yana ölüm oranlarının benzeri görülmemiş şekilde değiştiğini gösteriyor. Yüksek kayıpların nüfus dengesini ve genç erkek nüfusunu etkileme riski var. Bu çapta bir insan kaybı Moskova'nın uzun vadeli askeri kapasitesini ve ekonomisini zayıflatma riski taşıyor. Bu gelişmeler bölgesel dengeleri ve ilgili ülkelerin güvenlik hesaplarını etkileyebilir. Sızdırılan veriler, savaşın gerçek insani maliyetinin resmi belgelerden saklanamayacak boyuta ulaştığını gösteriyor."
   }
  ],
  "daily": {
   "2026-11-23": 4,
   "2026-11-24": 4,
-  "2026-11-25": 3
+  "2026-11-25": 4
  },
  "scheduled": {
   "en": [
@@ -707,60 +713,455 @@
     }
    ],
    "ts": "2026-11-25T13:20:56"
+  },
+  "3f6ae6499c1b": {
+   "results": [
+    {
+     "title": "Rusya Ukrayna Savaşında 500 Bin Kayıp Verdi",
+     "description": "Rusya'nın sızan resmi verileri Ukrayna savaşındaki toplam kaybın 500 bine ulaştığını ortaya koydu.\nSizce bu ağır bilanço savaşın gidişatını nasıl etkileyecek?\n\nKaynak: bbc.co.uk\n\n#Rusya #UkraynaSavaşı #Jeopolitik #AskeriHaberler",
+     "tags": [
+      "Rusya Ukrayna savaşı",
+      "Rusya askeri kayıplar",
+      "Ukrayna savaşı son durum",
+      "Rusya nüfus krizi",
+      "Moskova kayıp sayısı",
+      "Karadeniz güvenliği",
+      "jeopolitik",
+      "askeri analiz",
+      " Rus ordusu"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Rusya",
+      "#UkraynaSavaşı",
+      "#Jeopolitik",
+      "#AskeriHaberler"
+     ],
+     "lang": "tr",
+     "topic": "Russia leaked data shows 500000 war casualties",
+     "tts": "edge",
+     "duration": 46.24,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Sızdırılan resmi veriler Rusya'nın Ukrayna savaşında yaklaşık 500 bin kayıp verdiğini ortaya çıkardı.",
+       "headline": "Yaklaşık 500 Bin Kayıp",
+       "accent": "Rusya",
+       "search": "military soldiers march",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "UKR"
+       ],
+       "country_names": [
+        "Rusya",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Sızdırılan veriler göre, ülkedeki resmi kayıtlar işgalin başlamasından bu yana ölüm oranlarının benzeri görülmemiş şekilde değiştiğini gösteriyor.",
+       "headline": "Sızan Veriler",
+       "accent": "İstatistik",
+       "search": "cemetery graveyard cross",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Yüksek kayıpların nüfus dengesini ve genç erkek nüfusunu etkileme riski var.",
+       "headline": "Ağır Bilanço",
+       "accent": "Nüfus",
+       "search": "military hospital war",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu çapta bir insan kaybı Moskova'nın uzun vadeli askeri kapasitesini ve ekonomisini zayıflatma riski taşıyor.",
+       "headline": "Derin Etki",
+       "accent": "Ekonomi",
+       "search": "empty city street",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu gelişmeler bölgesel dengeleri ve ilgili ülkelerin güvenlik hesaplarını etkileyebilir.",
+       "headline": "Bölgesel Denge",
+       "accent": "Karadeniz",
+       "search": "world map europe",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Sızdırılan veriler, savaşın gerçek insani maliyetinin resmi belgelerden saklanamayacak boyuta ulaştığını gösteriyor.",
+       "headline": "Gizlenen Gerçek",
+       "accent": "Bilanço",
+       "search": "classified secret document",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-25T17:53:20Z",
+     "elevenlabs": {
+      "used": 21241,
+      "limit": 40000,
+      "left": 18759,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.759 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45666718553-tr"
+    },
+    {
+     "title": "Russia Reports 500,000 Casualties in Ukraine War",
+     "description": "Leaked official Russian data show total losses in the Ukraine war have reached 500,000.\nHow do you think this heavy toll will affect the course of the war?\n\nSource: bbc.co.uk\n\n#Russia #UkraineWar #Geopolitics #MilitaryNews",
+     "tags": [
+      "Russia Ukraine war",
+      "Russian military casualties",
+      "Ukraine war latest",
+      "Russia demographic crisis",
+      "Moscow casualty figures",
+      "Black Sea security",
+      "geopolitics",
+      "military analysis",
+      "Russian army"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Russia",
+      "#UkraineWar",
+      "#Geopolitics",
+      "#MilitaryNews"
+     ],
+     "lang": "en",
+     "topic": "Russia leaked data shows 500000 war casualties",
+     "tts": "elevenlabs",
+     "duration": 38.1,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Leaked official data reveal Russia suffered roughly 500,000 casualties in the Ukraine war.",
+       "headline": "Roughly 500,000 Casualties",
+       "accent": "Russia",
+       "search": "military soldiers march",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "UKR"
+       ],
+       "country_names": [
+        "Rusya",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The leaked figures show unprecedented shifts in official death records since the invasion began.",
+       "headline": "Leaked Data",
+       "accent": "Statistics",
+       "search": "cemetery graveyard cross",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "High losses risk disrupting demographic balance and the young male population.",
+       "headline": "Heavy Toll",
+       "accent": "Demographics",
+       "search": "military hospital war",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Such massive human loss threatens Moscow’s long‑term military capacity and economy.",
+       "headline": "Deep Impact",
+       "accent": "Economy",
+       "search": "empty city street",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "These developments could alter regional balances and security calculations of involved states.",
+       "headline": "Regional Balance",
+       "accent": "Black Sea",
+       "search": "world map europe",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The leaks indicate the war’s true human cost has reached a scale official documents cannot hide.",
+       "headline": "Hidden Truth",
+       "accent": "Casualty Count",
+       "search": "classified secret document",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-25T17:55:06Z",
+     "elevenlabs": {
+      "used": 21455,
+      "limit": 40000,
+      "left": 18545,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.545 / 40.000 karakter kaldı (bu video 537 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45666718553-en"
+    },
+    {
+     "title": "Russland verzeichnet 500.000 Verluste im Ukraine‑Krieg",
+     "description": "Geleakte offizielle Daten zeigen, dass die Gesamtverluste Russlands im Ukraine‑Krieg 500.000 erreicht haben. Wie wird diese schwere Bilanz den Kriegsverlauf Ihrer Meinung nach beeinflussen?\n\nQuelle: bbc.co.uk\n\n#Russland #UkraineKrieg #Geopolitik #Militärnachrichten",
+     "tags": [
+      "Russland Ukraine Krieg",
+      "Russische Militärverluste",
+      "Aktuelle Lage Ukraine Krieg",
+      "Russische Bevölkerungskrise",
+      "Moskau Verlustzahlen",
+      "Schwarzes Meer Sicherheit",
+      "geopolitik",
+      "militärische Analyse",
+      "Russische Armee"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Russland",
+      "#UkraineKrieg",
+      "#Geopolitik",
+      "#Militärnachrichten"
+     ],
+     "lang": "de",
+     "topic": "Russia leaked data shows 500000 war casualties",
+     "tts": "edge",
+     "duration": 38.56,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45666718553-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Geleakte offizielle Daten zeigen, dass Russland im Ukraine‑Krieg rund 500.000 Verluste erlitt.",
+       "headline": "Rund 500.000 Verluste",
+       "accent": "Russland",
+       "search": "military soldiers march",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "UKR"
+       ],
+       "country_names": [
+        "Rusya",
+        "Ukrayna"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die geleakten Zahlen belegen, dass die offiziellen Sterberaten seit Kriegsbeginn beispiellos gestiegen sind.",
+       "headline": "Geleakte Daten",
+       "accent": "Statistik",
+       "search": "cemetery graveyard cross",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Hohe Verluste gefährden das Bevölkerungsgleichgewicht und den Bestand junger Männer.",
+       "headline": "Schwere Bilanz",
+       "accent": "Bevölkerung",
+       "search": "military hospital war",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ein solcher Menschenverlust schwächt Moskaus langfristige Militärkapazität und Wirtschaft.",
+       "headline": "Tiefe Auswirkungen",
+       "accent": "Wirtschaft",
+       "search": "empty city street",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Diese Entwicklungen können regionale Machtverhältnisse und Sicherheitskalkulationen der Beteiligten beeinflussen.",
+       "headline": "Regionales Gleichgewicht",
+       "accent": "Schwarzes Meer",
+       "search": "world map europe",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die geleakten Daten zeigen, dass der wahre menschliche Kriegspreis nicht mehr verborgen bleiben kann.",
+       "headline": "Verborgene Wahrheit",
+       "accent": "Bilanz",
+       "search": "classified secret document",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-25T17:57:06Z",
+     "elevenlabs": {
+      "used": 21455,
+      "limit": 40000,
+      "left": 18545,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.545 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45666718553-de"
+    }
+   ],
+   "ts": "2026-11-25T17:52:09"
   }
  },
  "_removed": [
-  "57b4fdc6596f",
-  "0c7c07a879a6",
-  "2f1a20151385",
-  "445296633124",
-  "f02172b50f8c",
-  "e545b5536757",
-  "446184028240",
-  "445761614490",
-  "66eba903a865",
-  "a5e09c77f7f8",
-  "abe41c1aaf94",
-  "41416ec5f7f6",
-  "b34b7bca5216",
-  "9fa68b731dc8",
-  "130b7970530f",
   "74775df4be80",
-  "443631404172",
-  "6ad3bacfd1c7",
-  "d42fcbc4ce3d",
-  "1f8d57fecf3b",
-  "9849bc2ef437",
-  "442639882090",
+  "63bfb40d47b6",
   "444854651743",
-  "873320f3cd81",
-  "27b1f9c04076",
-  "26c2e83ebba1",
-  "b438246d60ee",
-  "bc7037909ba6",
-  "c947dac9becb",
-  "ddbd76050660",
-  "445944378441",
+  "66eba903a865",
+  "abe41c1aaf94",
+  "445944378440",
   "32fa0d1d693a",
-  "ccd67624d8c3",
-  "1edbeb303dcc",
+  "e545b5536757",
   "be8762e28854",
   "af6ed91f3a79",
-  "7eb47a5db7cd",
+  "445761614490",
   "54f34c42d936",
-  "9d8c10911957",
-  "86277101f5be",
-  "6f78216803dc",
+  "6ad3bacfd1c7",
   "87a011d7d646",
-  "b349a255e16e",
-  "0d9dbcf465cd",
+  "9d8c10911957",
   "443091847971",
-  "3cc9d1e06e50",
+  "9fa68b731dc8",
+  "6f78216803dc",
   "a86c24402051",
   "446184028241",
-  "445944378440",
-  "63bfb40d47b6",
-  "d7e9c169bc14"
+  "ddbd76050660",
+  "f02172b50f8c",
+  "ccd67624d8c3",
+  "1edbeb303dcc",
+  "443631404172",
+  "1f8d57fecf3b",
+  "873320f3cd81",
+  "445944378441",
+  "d42fcbc4ce3d",
+  "130b7970530f",
+  "446184028240",
+  "bc7037909ba6",
+  "445296633124",
+  "26c2e83ebba1",
+  "b349a255e16e",
+  "2f1a20151385",
+  "3cc9d1e06e50",
+  "9849bc2ef437",
+  "442639882090",
+  "b438246d60ee",
+  "c947dac9becb",
+  "0d9dbcf465cd",
+  "a5e09c77f7f8",
+  "57b4fdc6596f",
+  "27b1f9c04076",
+  "d7e9c169bc14",
+  "41416ec5f7f6",
+  "0c7c07a879a6",
+  "7eb47a5db7cd",
+  "86277101f5be",
+  "b34b7bca5216"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1499,6 +1900,24 @@
      "ceviri_nemotron": 2,
      "actions_dk": 10
     }
+   },
+   "45666718553-12312d": {
+    "2026-11-25": {
+     "uretilen": 3,
+     "render_sn": 762.4,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:hata": 1,
+     "prov:gemini_2:hata": 1,
+     "prov:openrouter_nemotron:ok": 3,
+     "prov:openrouter_nemotron:yedek": 1,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "llm_yedek": 1,
+     "ceviri_nemotron": 2,
+     "actions_dk": 15
+    }
    }
   },
   "gunluk": {
@@ -1590,28 +2009,30 @@
     "llm_yedek": 1
    },
    "2026-11-25": {
-    "actions_dk": 32,
-    "uretilen": 12,
-    "render_sn": 1076.5,
-    "render_n": 12,
-    "prov:gemini:ok": 4,
+    "actions_dk": 47,
+    "uretilen": 15,
+    "render_sn": 1838.9,
+    "render_n": 15,
+    "prov:gemini:ok": 5,
     "prov:gemini_1:ok": 4,
-    "prov:openrouter_nemotron:ok": 7,
-    "ses:edge": 8,
-    "ses:elevenlabs": 4,
-    "llm_cagri": 13,
-    "ceviri_nemotron": 8,
+    "prov:openrouter_nemotron:ok": 10,
+    "ses:edge": 10,
+    "ses:elevenlabs": 5,
+    "llm_cagri": 16,
+    "ceviri_nemotron": 10,
     "onay": 2,
     "yayin_tr": 2,
     "yayin_en": 2,
     "yayin_de": 2,
-    "prov:gemini_1:hata": 1,
+    "prov:gemini_1:hata": 2,
     "prov:gemini_2:ok": 1,
     "prov:gemini_2:yedek": 1,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:ok": 1,
     "prov:make_metin:yedek": 1,
-    "llm_yedek": 2
+    "llm_yedek": 3,
+    "prov:gemini_2:hata": 1,
+    "prov:openrouter_nemotron:yedek": 1
    }
   }
  }
