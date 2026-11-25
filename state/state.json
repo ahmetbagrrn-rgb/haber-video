@@ -22,7 +22,8 @@
   "trend:US:习近平",
   "trend:TR:askerî nakliye uçağı",
   "yt:pYMmJ98n4sk",
-  "news:https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss"
+  "news:https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+  "trend:DE:polnische regierung"
  ],
  "topics": [
   {
@@ -204,12 +205,17 @@
    "topic": "Iran threatens military action over Hormuz blockade",
    "ts": "2026-11-25T10:36:20",
    "summary": "İran Hürmüz Boğazı'nda ABD Ablukasını Askeri Güçle Kıracak. İran Devrim Muhafızları, ABD'nin Hürmüz Boğazı'ndaki ablukasını askeri yöntemlerle kıracağını resmen duyurdu. İran Meclis Başkanı Kalibaf, ABD belirlenen 7 şartı kabul etmediği sürece Washington ile müzakere yapılmayacağını açıkladı. İsrail Kanal 12'nin haberine göre İsrail ordusunun, ABD katılmasa bile İran'a tek taraflı askeri müdahale seçeneğini değerlendirdiği bildiriliyor. Dünyanın en kritik enerji geçiş noktasındaki bu gerilim, bölgesel bir savaş riskini zirveye çıkarıyor. Türkiye'de ise pompa fiyatlarının tırmanması ve navlun maliyetlerinin artması günlük hayatı doğrudan etkileyebilir. Boğazda patlak verecek tek bir sıcak temas, küresel piyasaları anında felç edebilir."
+  },
+  {
+   "topic": "Russian missile in Poland triggers NATO jet alert",
+   "ts": "2026-11-25T13:20:56",
+   "summary": "Polonya Üzerinde Rus Füzesi Alarmı: NATO Jetleri Havalandı. Rusya'ya ait olduğu iddia edilen bir seyir füzesi Polonya hava sahasına girerek NATO hava savunmasını alarm durumuna geçirdi. Polonya üzerinde devriye atan İsveç savaş uçaklarının füzeye ateş açmaya çok yaklaştığı bildirildi. Moskova füze iddiasını reddederken Varşova yönetimi Amerika Birleşik Devletleri'nin temkinli tepkisinden rahatsızlığını dile getirdi. Doğu Avrupa semalarındaki bu tür ihlaller NATO ile Rusya'yı doğrudan sıcak çatışmanın eşiğine getiriyor. Bölgedeki askeri tırmanma küresel uçuş rotalarını, enerji hatlarını ve tüm bölge ekonomisini doğrudan etkiliyor. Doğu Avrupa'da atılacak yanlış bir adım tüm dünyayı anında yeni bir krizin içine çekebilir."
   }
  ],
  "daily": {
   "2026-11-23": 4,
   "2026-11-24": 4,
-  "2026-11-25": 2
+  "2026-11-25": 3
  },
  "scheduled": {
   "en": [
@@ -305,59 +311,455 @@
    "2026-11-25T15:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "20dcc23cea11": {
+   "results": [
+    {
+     "title": "Polonya Üzerinde Rus Füzesi Alarmı: NATO Jetleri Havalandı",
+     "description": "Polonya hava sahasına giren Rus füzesi nedeniyle NATO savaş uçakları alarm durumuna geçti.\nSizce NATO bu tür ihlallere karşı daha sert tedbirler almalı mı?\n\n#Polonya #Rusya #NATO #Jeopolitik #Haber",
+     "tags": [
+      "Polonya",
+      "Rusya",
+      "NATO",
+      "İsveç",
+      "seyir füzesi",
+      "jeopolitik",
+      "Doğu Avrupa",
+      "askeri gerilim",
+      "hava sahası ihlali",
+      "dış haberler"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Polonya",
+      "#Rusya",
+      "#NATO",
+      "#Jeopolitik",
+      "#Haber"
+     ],
+     "lang": "tr",
+     "topic": "Russian missile in Poland triggers NATO jet alert",
+     "tts": "edge",
+     "duration": 46.65,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Rusya'ya ait olduğu iddia edilen bir seyir füzesi Polonya hava sahasına girerek NATO hava savunmasını alarm durumuna geçirdi.",
+       "headline": "Füze Alarmı",
+       "accent": "Tehlike",
+       "search": "fighter jet launch",
+       "style": "headline",
+       "countries": [
+        "POL",
+        "RUS"
+       ],
+       "country_names": [
+        "Polonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Polonya üzerinde devriye atan İsveç savaş uçaklarının füzeye ateş açmaya çok yaklaştığı bildirildi.",
+       "headline": "Sıcak Temas",
+       "accent": "Müdahale",
+       "search": "cockpit fighter jet",
+       "style": "subtitle",
+       "countries": [
+        "POL",
+        "SWE"
+       ],
+       "country_names": [
+        "Polonya",
+        "İsveç"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Moskova füze iddiasını reddederken Varşova yönetimi Amerika Birleşik Devletleri'nin temkinli tepkisinden rahatsızlığını dile getirdi.",
+       "headline": "Diplomatik Kriz",
+       "accent": "Gerilim",
+       "search": "press conference military",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "POL",
+        "USA"
+       ],
+       "country_names": [
+        "Rusya",
+        "Polonya",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Doğu Avrupa semalarındaki bu tür ihlaller NATO ile Rusya'yı doğrudan sıcak çatışmanın eşiğine getiriyor.",
+       "headline": "Tehlikeli Eşik",
+       "accent": "Tırmanma",
+       "search": "military radar screen",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bölgedeki askeri tırmanma küresel uçuş rotalarını, enerji hatlarını ve tüm bölge ekonomisini doğrudan etkiliyor.",
+       "headline": "Ekonomik Etki",
+       "accent": "Güvenlik",
+       "search": "commercial airplane sky",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Doğu Avrupa'da atılacak yanlış bir adım tüm dünyayı anında yeni bir krizin içine çekebilir.",
+       "headline": "Kritik Saniyeler",
+       "accent": "Döngü",
+       "search": "storm clouds threat",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-25T13:22:19Z",
+     "elevenlabs": {
+      "used": 20822,
+      "limit": 40000,
+      "left": 19178,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.178 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45621635088-tr"
+    },
+    {
+     "title": "Russian Missile Alarm Over Poland: NATO Jets Scrambled",
+     "description": "A Russian missile entered Polish airspace, prompting NATO jets to scramble. Should NATO take tougher measures against such violations?\n\n#Poland #Russia #NATO #Geopolitics #News",
+     "tags": [
+      "Poland",
+      "Russia",
+      "NATO",
+      "Sweden",
+      "cruise missile",
+      "geopolitics",
+      "Eastern Europe",
+      "military tension",
+      "airspace violation",
+      "world news"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Poland",
+      "#Russia",
+      "#NATO",
+      "#Geopolitics",
+      "#News"
+     ],
+     "lang": "en",
+     "topic": "Russian missile in Poland triggers NATO jet alert",
+     "tts": "elevenlabs",
+     "duration": 34.94,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "A cruise missile claimed to be Russian entered Polish airspace, triggering NATO air defenses.",
+       "headline": "Missile Alert",
+       "accent": "Danger",
+       "search": "fighter jet launch",
+       "style": "headline",
+       "countries": [
+        "POL",
+        "RUS"
+       ],
+       "country_names": [
+        "Polonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Swedish fighters patrolling over Poland nearly fired on the missile.",
+       "headline": "Close Encounter",
+       "accent": "Intervention",
+       "search": "cockpit fighter jet",
+       "style": "subtitle",
+       "countries": [
+        "POL",
+        "SWE"
+       ],
+       "country_names": [
+        "Polonya",
+        "İsveç"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Moscow denied the claim while Warsaw expressed dissatisfaction with Washington's restrained response.",
+       "headline": "Diplomatic Crisis",
+       "accent": "Tension",
+       "search": "press conference military",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "POL",
+        "USA"
+       ],
+       "country_names": [
+        "Rusya",
+        "Polonya",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Such incursions over Eastern Europe push NATO and Russia to the brink of direct conflict.",
+       "headline": "Dangerous Threshold",
+       "accent": "Escalation",
+       "search": "military radar screen",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Regional military escalation directly affects global flight routes, energy lines, and the entire regional economy.",
+       "headline": "Economic Impact",
+       "accent": "Security",
+       "search": "commercial airplane sky",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "A single misstep in Eastern Europe could instantly plunge the world into a new crisis.",
+       "headline": "Critical Seconds",
+       "accent": "Cycle",
+       "search": "storm clouds threat",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-25T13:23:57Z",
+     "elevenlabs": {
+      "used": 21042,
+      "limit": 40000,
+      "left": 18958,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.958 / 40.000 karakter kaldı (bu video 551 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45621635088-en"
+    },
+    {
+     "title": "Raketenalarm über Polen: NATO‑Jets starten",
+     "description": "Ein angeblich russischer Marschflugkörper verletzte polnischen Luftraum, woraufhin NATO‑Kampfflugzeuge Alarmbereitschaft erlangten. Sollte NATO bei solchen Verletzungen härter durchgreifen?\n\n#Polen #Russland #NATO #Geopolitik #Nachrichten",
+     "tags": [
+      "Polen",
+      "Russland",
+      "NATO",
+      "Schweden",
+      "Marschflugkörper",
+      "Geopolitik",
+      "Osteuropa",
+      "militärische Spannung",
+      "Luftraumverletzung",
+      "Auslandsnachrichten"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Polen",
+      "#Russland",
+      "#NATO",
+      "#Geopolitik",
+      "#Nachrichten"
+     ],
+     "lang": "de",
+     "topic": "Russian missile in Poland triggers NATO jet alert",
+     "tts": "edge",
+     "duration": 39.4,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45621635088-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ein angeblich russischer Marschflugkörper drang in polnischen Luftraum ein und löste NATO‑Luftverteidigungsalarm aus.",
+       "headline": "Raketenalarm",
+       "accent": "Gefahr",
+       "search": "fighter jet launch",
+       "style": "headline",
+       "countries": [
+        "POL",
+        "RUS"
+       ],
+       "country_names": [
+        "Polonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Schwedische Kampfflugzeuge über Polen kamen dem Abschuss der Rakete gefährlich nahe.",
+       "headline": "Heißer Kontakt",
+       "accent": "Eingriff",
+       "search": "cockpit fighter jet",
+       "style": "subtitle",
+       "countries": [
+        "POL",
+        "SWE"
+       ],
+       "country_names": [
+        "Polonya",
+        "İsveç"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Moskau weist den Vorwurf zurück, Warschau kritisiert die zurückhaltende US‑Reaktion.",
+       "headline": "Diplomatische Krise",
+       "accent": "Spannung",
+       "search": "press conference military",
+       "style": "headline",
+       "countries": [
+        "RUS",
+        "POL",
+        "USA"
+       ],
+       "country_names": [
+        "Rusya",
+        "Polonya",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Solche Luftraumverletzungen in Osteuropa bringen NATO und Russland an den Rand direkter Konfrontation.",
+       "headline": "Gefährliche Schwelle",
+       "accent": "Eskalation",
+       "search": "military radar screen",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die militärische Eskalation beeinträchtigt globale Flugrouten, Energielieferungen und die gesamte Regionalwirtschaft.",
+       "headline": "Wirtschaftliche Auswirkungen",
+       "accent": "Sicherheit",
+       "search": "commercial airplane sky",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Ein Fehltritt in Osteuropa könnte die Welt augenblicklich in eine neue Krise stürzen.",
+       "headline": "Kritische Sekunden",
+       "accent": "Kreislauf",
+       "search": "storm clouds threat",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-25T13:25:52Z",
+     "elevenlabs": {
+      "used": 21042,
+      "limit": 40000,
+      "left": 18958,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.958 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45621635088-de"
+    }
+   ],
+   "ts": "2026-11-25T13:20:56"
+  }
+ },
  "_removed": [
-  "443091847971",
-  "d42fcbc4ce3d",
-  "27b1f9c04076",
-  "b34b7bca5216",
-  "ccd67624d8c3",
-  "a5e09c77f7f8",
-  "f02172b50f8c",
-  "9849bc2ef437",
-  "87a011d7d646",
-  "9d8c10911957",
-  "32fa0d1d693a",
-  "445761614490",
-  "a86c24402051",
-  "3cc9d1e06e50",
-  "444854651743",
-  "d7e9c169bc14",
-  "0c7c07a879a6",
-  "0d9dbcf465cd",
-  "54f34c42d936",
-  "ddbd76050660",
-  "9fa68b731dc8",
-  "be8762e28854",
-  "7eb47a5db7cd",
-  "abe41c1aaf94",
-  "41416ec5f7f6",
   "26c2e83ebba1",
-  "443631404172",
-  "1edbeb303dcc",
-  "86277101f5be",
-  "445944378440",
-  "63bfb40d47b6",
-  "2f1a20151385",
+  "a86c24402051",
+  "7eb47a5db7cd",
+  "d42fcbc4ce3d",
   "1f8d57fecf3b",
-  "130b7970530f",
-  "e545b5536757",
-  "bc7037909ba6",
-  "445296633124",
-  "442639882090",
-  "af6ed91f3a79",
-  "873320f3cd81",
-  "445944378441",
-  "446184028241",
-  "74775df4be80",
-  "6ad3bacfd1c7",
-  "57b4fdc6596f",
-  "b438246d60ee",
-  "b349a255e16e",
-  "446184028240",
-  "6f78216803dc",
+  "41416ec5f7f6",
+  "87a011d7d646",
+  "0c7c07a879a6",
+  "f02172b50f8c",
   "c947dac9becb",
-  "66eba903a865"
+  "be8762e28854",
+  "445944378440",
+  "444854651743",
+  "86277101f5be",
+  "2f1a20151385",
+  "9d8c10911957",
+  "a5e09c77f7f8",
+  "54f34c42d936",
+  "446184028240",
+  "442639882090",
+  "443091847971",
+  "af6ed91f3a79",
+  "445761614490",
+  "abe41c1aaf94",
+  "32fa0d1d693a",
+  "ddbd76050660",
+  "d7e9c169bc14",
+  "445944378441",
+  "63bfb40d47b6",
+  "130b7970530f",
+  "1edbeb303dcc",
+  "3cc9d1e06e50",
+  "bc7037909ba6",
+  "9fa68b731dc8",
+  "9849bc2ef437",
+  "b438246d60ee",
+  "6ad3bacfd1c7",
+  "66eba903a865",
+  "445296633124",
+  "74775df4be80",
+  "b34b7bca5216",
+  "27b1f9c04076",
+  "873320f3cd81",
+  "e545b5536757",
+  "6f78216803dc",
+  "0d9dbcf465cd",
+  "b349a255e16e",
+  "443631404172",
+  "57b4fdc6596f",
+  "446184028241",
+  "ccd67624d8c3"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1065,6 +1467,21 @@
      "yayin_en": 1,
      "yayin_de": 1
     }
+   },
+   "45621635088-f00374": {
+    "2026-11-25": {
+     "uretilen": 3,
+     "render_sn": 237.4,
+     "render_n": 3,
+     "prov:gemini_1:ok": 2,
+     "prov:gemini:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 4,
+     "ceviri_nemotron": 2,
+     "actions_dk": 6
+    }
    }
   },
   "gunluk": {
@@ -1156,17 +1573,17 @@
     "llm_yedek": 1
    },
    "2026-11-25": {
-    "actions_dk": 16,
-    "uretilen": 6,
-    "render_sn": 487.5,
-    "render_n": 6,
-    "prov:gemini:ok": 2,
-    "prov:gemini_1:ok": 1,
-    "prov:openrouter_nemotron:ok": 3,
-    "ses:edge": 4,
-    "ses:elevenlabs": 2,
-    "llm_cagri": 6,
-    "ceviri_nemotron": 4,
+    "actions_dk": 22,
+    "uretilen": 9,
+    "render_sn": 724.9,
+    "render_n": 9,
+    "prov:gemini:ok": 3,
+    "prov:gemini_1:ok": 3,
+    "prov:openrouter_nemotron:ok": 5,
+    "ses:edge": 6,
+    "ses:elevenlabs": 3,
+    "llm_cagri": 10,
+    "ceviri_nemotron": 6,
     "onay": 2,
     "yayin_tr": 2,
     "yayin_en": 2,
