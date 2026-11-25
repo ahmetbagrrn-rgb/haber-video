@@ -194,12 +194,17 @@
    "topic": "Nvidia shares drop over political scrutiny of Huang",
    "ts": "2026-11-24T17:47:01",
    "summary": "Nvidia hisseleri Trump iddiası sonrası düşüşe geçti. Nvidia'nın piyasa değeri yöneticisinin geri dönüşüyle fırladıktan hemen sonra siyasilerin tepkisiyle düştü. Jensen Huang'ın göreve dönme kararı çip devinin borsadaki değerinde büyük bir artış sağlamıştı. Amerikalı siyasetçiler bu süreçte Donald Trump'ın oynadığı iddia edilen rolü açıkça sorgulamaya başladı. Teknoloji dünyası ile siyaset arasındaki bu gerilimin yapay zeka yatırımlarının geleceğini etkileyebileceği belirtiliyor. Küresel teknoloji pazarlarındaki bu dalgalanma Türkiye'deki donanım fiyatlarını ve çip tedarikini yakından etkileyebilir. Siyasi müdahaleler çip devinin küresel pazardaki dengelerini tamamen değiştirebilir."
+  },
+  {
+   "topic": "US and China split world into AI technology blocs",
+   "ts": "2026-11-25T08:33:10",
+   "summary": "ABD ve Çin Yapay Zekada Dünyayı 3 Bloka Bölüyor. ABD 35 ülkeyle Pax Silica ittifakını kurarken Çin kendi küresel örgütünü ilan etti. Küresel yapay zeka veri işleme gücünün yüzde 73'ü tek başına Amerika Birleşik Devletleri'nde bulunuyor. Çin yüzde 10 ila 15 payla rekabet ederken Avrupa Birliği 46 ülkeyle üçüncü kutbu oluşturuyor. Uluslararası Enerji Ajansı verilerine göre veri merkezlerinin harcadığı elektriğin yüzde 70'ini tüketen iki dev küresel enerjiyi de şekillendiriyor. Bu teknolojik kutuplaşmanın kullanıcıların erişeceği yazılımları ve dijital ürün fiyatlarını etkileyebileceği öngörülüyor. Teknoloji devlerinin yeni güç mücadelesi dijital haritayı kökten değiştirmeye devam ediyor."
   }
  ],
  "daily": {
-  "2026-11-22": 5,
   "2026-11-23": 4,
-  "2026-11-24": 4
+  "2026-11-24": 4,
+  "2026-11-25": 1
  },
  "scheduled": {
   "en": [
@@ -289,57 +294,450 @@
    "2026-11-25T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "130b7970530f": {
+   "results": [
+    {
+     "title": "ABD ve Çin Yapay Zekada Dünyayı 3 Bloka Bölüyor",
+     "description": "ABD ve Çin merkezli yapay zeka rekabeti dünyayı üç büyük teknoloji bloğuna ayırıyor.\nSizce bu kutuplaşma teknoloji fiyatlarını nasıl etkiler?\n\n#YapayZeka #TeknolojiSavaşları #ABD #Çin #Jeopolitik",
+     "tags": [
+      "yapay zeka",
+      "ABD",
+      "Çin",
+      "Pax Silica",
+      "teknoloji savaşı",
+      "veri merkezi",
+      "jeopolitik",
+      "AB yapay zeka",
+      "küresel ekonomi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#YapayZeka",
+      "#TeknolojiSavaşları",
+      "#ABD",
+      "#Çin",
+      "#Jeopolitik"
+     ],
+     "lang": "tr",
+     "topic": "US and China split world into AI technology blocs",
+     "tts": "edge",
+     "duration": 47.47,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "ABD 35 ülkeyle Pax Silica ittifakını kurarken Çin kendi küresel örgütünü ilan etti.",
+       "headline": "Yapay Zeka Savaşı",
+       "accent": "Bloklaşma",
+       "search": "artificial intelligence server",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Küresel yapay zeka veri işleme gücünün yüzde 73'ü tek başına Amerika Birleşik Devletleri'nde bulunuyor.",
+       "headline": "%73 Veri Gücü",
+       "accent": "Liderlik",
+       "search": "data center room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Çin yüzde 10 ila 15 payla rekabet ederken Avrupa Birliği 46 ülkeyle üçüncü kutbu oluşturuyor.",
+       "headline": "3 Farklı Kutup",
+       "accent": "Denge",
+       "search": "world map technology",
+       "style": "headline",
+       "countries": [
+        "CHN"
+       ],
+       "country_names": [
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Uluslararası Enerji Ajansı verilerine göre veri merkezlerinin harcadığı elektriğin yüzde 70'ini tüketen iki dev küresel enerjiyi de şekillendiriyor.",
+       "headline": "%70 Enerji Tüketimi",
+       "accent": "Kaynaklar",
+       "search": "power grid station",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu teknolojik kutuplaşmanın kullanıcıların erişeceği yazılımları ve dijital ürün fiyatlarını etkileyebileceği öngörülüyor.",
+       "headline": "Türkiye'ye Etkisi",
+       "accent": "Maliyet",
+       "search": "person using phone",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Teknoloji devlerinin yeni güç mücadelesi dijital haritayı kökten değiştirmeye devam ediyor.",
+       "headline": "Yeni Gelecek",
+       "accent": "Kutuplaşma",
+       "search": "cyber security futuristic",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=_wQku0eU7jQ",
+     "publish_at": "2026-11-25T08:34:38Z",
+     "elevenlabs": {
+      "used": 20421,
+      "limit": 40000,
+      "left": 19579,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.579 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45576340597-tr"
+    },
+    {
+     "title": "U.S. and China Split the World into Three AI Blocs",
+     "description": "U.S.- and China‑centered AI competition is dividing the world into three major technology blocs.\nHow do you think this polarization will affect technology prices?\n\n#AI #TechWars #USA #China #Geopolitics",
+     "tags": [
+      "artificial intelligence",
+      "USA",
+      "China",
+      "Pax Silica",
+      "tech war",
+      "data center",
+      "geopolitics",
+      "EU AI",
+      "global economy"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#AI",
+      "#TechWars",
+      "#USA",
+      "#China",
+      "#Geopolitics"
+     ],
+     "lang": "en",
+     "topic": "US and China split world into AI technology blocs",
+     "tts": "elevenlabs",
+     "duration": 38.89,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "The U.S. forms the Pax Silica alliance with 35 nations as China announces its own global body.",
+       "headline": "AI War",
+       "accent": "Bloc Formation",
+       "search": "artificial intelligence server",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The United States alone holds 73% of global AI data‑processing power.",
+       "headline": "73% Data Power",
+       "accent": "Leadership",
+       "search": "data center room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "China competes with a 10‑15% share while the EU, with 46 members, forms a third pole.",
+       "headline": "Three Poles",
+       "accent": "Balance",
+       "search": "world map technology",
+       "style": "headline",
+       "countries": [
+        "CHN"
+       ],
+       "country_names": [
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Per the International Energy Agency, data centers consume 70% of their electricity, shaping global energy.",
+       "headline": "70% Energy Use",
+       "accent": "Resources",
+       "search": "power grid station",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This tech polarization may affect software access and digital product prices for users.",
+       "headline": "Impact on Turkey",
+       "accent": "Cost",
+       "search": "person using phone",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The new power struggle of tech giants keeps reshaping the digital map.",
+       "headline": "New Future",
+       "accent": "Polarization",
+       "search": "cyber security futuristic",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=_wQku0eU7jQ",
+     "publish_at": "2026-11-25T08:36:12Z",
+     "elevenlabs": {
+      "used": 20626,
+      "limit": 40000,
+      "left": 19374,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.374 / 40.000 karakter kaldı (bu video 511 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45576340597-en"
+    },
+    {
+     "title": "USA und China teilen die Welt in drei KI‑Blöcke",
+     "description": "Der von den USA und China getriebene KI‑Wettbewerb spaltet die Welt in drei große Technologieblöcke. Wie wirkt sich diese Polarisierung Ihrer Meinung nach auf Technologiepreise aus?\n\n#KI #TechnologieKrieg #USA #China #Geopolitik",
+     "tags": [
+      "künstliche intelligenz",
+      "USA",
+      "China",
+      "Pax Silica",
+      "technologiekrieg",
+      "rechenzentrum",
+      "geopolitik",
+      "EU KI",
+      "globale wirtschaft"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#KI",
+      "#TechnologieKrieg",
+      "#USA",
+      "#China",
+      "#Geopolitik"
+     ],
+     "lang": "de",
+     "topic": "US and China split world into AI technology blocs",
+     "tts": "edge",
+     "duration": 40.05,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45576340597-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Die USA gründen mit 35 Staaten die Pax‑Silica‑Allianz, während China eine eigene globale Organisation verkündet.",
+       "headline": "KI‑Krieg",
+       "accent": "Blockbildung",
+       "search": "artificial intelligence server",
+       "style": "headline",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "73 % der weltweiten KI‑Rechenleistung liegen allein in den USA.",
+       "headline": "73 % Rechenleistung",
+       "accent": "Führungsrolle",
+       "search": "data center room",
+       "style": "subtitle",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "China hält 10‑15 % Anteil, die EU formiert mit 46 Staaten den dritten Pol.",
+       "headline": "Drei Pole",
+       "accent": "Gleichgewicht",
+       "search": "world map technology",
+       "style": "headline",
+       "countries": [
+        "CHN"
+       ],
+       "country_names": [
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Laut IEA verbrauchen Rechenzentren 70 % des Stroms und prägen so die globale Energieversorgung.",
+       "headline": "70 % Energieverbrauch",
+       "accent": "Ressourcen",
+       "search": "power grid station",
+       "style": "subtitle",
+       "countries": [
+        "USA",
+        "CHN"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri",
+        "Çin"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Polarisierung könnte Softwarezugang und digitale Produktpreise für Nutzer beeinflussen.",
+       "headline": "Auswirkungen auf Nutzer",
+       "accent": "Kosten",
+       "search": "person using phone",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der neue Machtkampf der Tech‑Giganten verändert die digitale Landkarte grundlegend.",
+       "headline": "Neue Zukunft",
+       "accent": "Polarisierung",
+       "search": "cyber security futuristic",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=_wQku0eU7jQ",
+     "publish_at": "2026-11-25T08:38:07Z",
+     "elevenlabs": {
+      "used": 20626,
+      "limit": 40000,
+      "left": 19374,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 19.374 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45576340597-de"
+    }
+   ],
+   "ts": "2026-11-25T08:33:10"
+  }
+ },
  "_removed": [
-  "57b4fdc6596f",
-  "b34b7bca5216",
-  "c947dac9becb",
-  "443631404172",
-  "9fa68b731dc8",
-  "445296633124",
-  "0c7c07a879a6",
-  "d7e9c169bc14",
-  "445944378440",
-  "3cc9d1e06e50",
-  "442639882090",
-  "6ad3bacfd1c7",
-  "0d9dbcf465cd",
-  "bc7037909ba6",
-  "ddbd76050660",
-  "873320f3cd81",
   "41416ec5f7f6",
-  "443091847971",
-  "1f8d57fecf3b",
-  "abe41c1aaf94",
-  "444854651743",
   "be8762e28854",
-  "86277101f5be",
-  "446184028241",
-  "63bfb40d47b6",
-  "a86c24402051",
-  "446184028240",
-  "87a011d7d646",
-  "ccd67624d8c3",
-  "32fa0d1d693a",
-  "66eba903a865",
-  "a5e09c77f7f8",
-  "b349a255e16e",
-  "f02172b50f8c",
-  "d42fcbc4ce3d",
-  "9d8c10911957",
-  "54f34c42d936",
-  "6f78216803dc",
-  "445944378441",
-  "445761614490",
   "9849bc2ef437",
-  "1edbeb303dcc",
-  "27b1f9c04076",
-  "2f1a20151385",
-  "e545b5536757",
-  "b438246d60ee",
-  "af6ed91f3a79",
+  "54f34c42d936",
+  "445944378440",
+  "66eba903a865",
   "7eb47a5db7cd",
-  "74775df4be80"
+  "442639882090",
+  "6f78216803dc",
+  "445296633124",
+  "e545b5536757",
+  "9d8c10911957",
+  "57b4fdc6596f",
+  "873320f3cd81",
+  "27b1f9c04076",
+  "ccd67624d8c3",
+  "0c7c07a879a6",
+  "f02172b50f8c",
+  "1f8d57fecf3b",
+  "a86c24402051",
+  "87a011d7d646",
+  "446184028240",
+  "b438246d60ee",
+  "445944378441",
+  "c947dac9becb",
+  "6ad3bacfd1c7",
+  "446184028241",
+  "bc7037909ba6",
+  "443631404172",
+  "abe41c1aaf94",
+  "b34b7bca5216",
+  "443091847971",
+  "d7e9c169bc14",
+  "a5e09c77f7f8",
+  "af6ed91f3a79",
+  "3cc9d1e06e50",
+  "d42fcbc4ce3d",
+  "1edbeb303dcc",
+  "ddbd76050660",
+  "32fa0d1d693a",
+  "86277101f5be",
+  "444854651743",
+  "63bfb40d47b6",
+  "b349a255e16e",
+  "445761614490",
+  "74775df4be80",
+  "2f1a20151385",
+  "9fa68b731dc8",
+  "0d9dbcf465cd"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -578,6 +976,28 @@
     0,
     1,
     2
+   ]
+  },
+  "yt:_wQku0eU7jQ": {
+   "stories": [
+    {
+     "title": "Küresel Güçlerin Yapay Zeka Teknolojisinde Yeni Bloklaşması",
+     "facts": "Konuşmacıya göre 21. yüzyılın teknolojik rekabetinde yapay zeka ön plana çıkmakta ve küresel ölçekte yeni kutuplaşmalara yol açmaktadır. ABD 'Pax Silica' girişimiyle 35 ülkeyi yanına çekerken, Çin kendi 'Dünya Yapay Zeka İşbirliği Örgütü'nü kurmuştur. Avrupa Birliği öncülüğünde ise 46 ülkenin katılımıyla 'Küresel Yapay Zeka Ortaklığı' oluşturulmuştur. Yapay zeka veri işleme gücünün yüzde 73'ü ABD'de bulunurken, Çin yüzde 10 ila 15'lik bir paya sahiptir. Uluslararası Enerji Ajansı verilerine göre yapay zeka veri merkezlerinin tükettiği elektriğin yüzde 70'i ABD ve Çin kaynaklıdır.",
+     "score": 9
+    },
+    {
+     "title": "İran, ABD ve İsrail Hattında Askeri Gerilim ve Hürmüz Boğazı Açıklamaları",
+     "facts": "İran Meclis Başkanı Kalibaf, ABD'nin belirlenen 7 şartı kabul etmemesi halinde herhangi bir müzakerenin yapılmayacağını ilan etmiştir. İran Devrim Muhafızları ise ABD'nin Hürmüz Boğazı ablukasını askeri yöntemlerle kıracaklarını duyurmuştur. İsrail Kanal 12'nin haberine göre İsrail ordusu İran'a karşı savaşa hazırlanmakta ve ABD katılmasa bile tek taraflı müdahale seçeneğini değerlendirmektedir. ABD makamları ticari gemilere yönelik İran kaynaklı siber saldırı riskine dair uyarılarda bulunurken, İngiltere istihbarat teşkilatı MI5 de savunma şirketlerini olası Rus siber saldırılarına karşı uyarmıştır.",
+     "score": 8
+    },
+    {
+     "title": "Güney Kore'de Yapay Zekayla Kopya Skandalı ve Eğitim Bakanı'nın İstifası",
+     "facts": "Güney Kore'de yılda bir kez gerçekleştirilen üniversite giriş sınavında 110 adayın yapay zeka araçlarıyla kopya çektiğinden şüphelenilmiştir. Skandalın ardından Güney Kore Eğitim Bakanı sorumluluğu üzerine alarak görevinden istifa etmiştir. Güney Kore hükümeti, yapay zekayla kopya çekenleri yakalatacak kişilere 375 bin dolar ödül verileceğini kararlaştırmıştır. Olay, yapay zeka ihlallerine karşı devlet düzeyinde hızlı hukuki müdahale örneği olarak değerlendirilmiştir.",
+     "score": 7
+    }
+   ],
+   "used": [
+    0
    ]
   }
  },
@@ -970,6 +1390,21 @@
     "2026-11-24": {
      "actions_dk": 40
     }
+   },
+   "45576340597-8108e4": {
+    "2026-11-25": {
+     "actions_dk": 6,
+     "uretilen": 3,
+     "render_sn": 235.0,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2
+    }
    }
   },
   "gunluk": {
@@ -1059,6 +1494,19 @@
     "prov:make_metin:ok": 1,
     "prov:make_metin:yedek": 1,
     "llm_yedek": 1
+   },
+   "2026-11-25": {
+    "actions_dk": 6,
+    "uretilen": 3,
+    "render_sn": 235.0,
+    "render_n": 3,
+    "prov:gemini:ok": 1,
+    "prov:gemini_1:ok": 1,
+    "prov:openrouter_nemotron:ok": 2,
+    "ses:edge": 2,
+    "ses:elevenlabs": 1,
+    "llm_cagri": 3,
+    "ceviri_nemotron": 2
    }
   }
  }
