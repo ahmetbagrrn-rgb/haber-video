@@ -222,12 +222,17 @@
    "topic": "Cyberattacks target US intelligence agencies CIA and DNI",
    "ts": "2026-11-26T08:35:36",
    "summary": "ABD İstihbaratı Hedefte: CIA ve DNI Siber Saldırıya Uğradı. Amerika Birleşik Devletleri'nde CIA ve Ulusal İstihbarat Direktörlüğü sistemleri siber saldırıya uğradı. Saldırıların kritik devlet kurumlarının dijital altyapılarını hedef aldığı bildirildi. Saldırıların kaynağı ve etkilerine yönelik incelemelerin sürdüğü ifade ediliyor. Bu tablo, küresel güçlerin dijital alandaki mücadelesinin ve tehditlerinin boyutlarını gözler önüne seriyor. Küresel siber güvenlik açıkları, kurumların dijital veri güvenliğini ve altyapılarını tehdit etmeyi sürdürüyor. İstihbarat servislerinin bile hedef alınması, siber alandaki güvenlik zafiyetlerini gündeme getiriyor."
+  },
+  {
+   "topic": "Russia allocates massive defense budget amidst ongoing war",
+   "ts": "2026-11-26T10:51:49",
+   "summary": "Rusya'dan Savunma Bütçesi. Rusya, iki bin yirmi yedi ve iki bin yirmi dokuz yıllarını kapsayan dev bütçesini açıkladı. Moskova yönetimi, savunma sanayisini güçlendirmek için bütçe ayırdı. Avrupa genelinde artan güvenlik endişeleri ve silahlanma yarışını bu devasa finansman tetikliyor. Bu büyük ekonomik hamle, bölgedeki devam eden savaşın maliyetini ve şiddetini doğrudan artırıyor. Türkiye'nin sınır komşuluğundaki bu devasa askeri yatırımlar, enerji ve güvenlik dengelerini yakından ilgilendiriyor. Küresel güçlerin ayırdığı bu devasa fonlar yeni krizlerin habercisi mi?"
   }
  ],
  "daily": {
   "2026-11-24": 4,
   "2026-11-25": 4,
-  "2026-11-26": 1
+  "2026-11-26": 2
  },
  "scheduled": {
   "en": [
@@ -685,62 +690,445 @@
     }
    ],
    "ts": "2026-11-26T08:35:36"
+  },
+  "d05d46e84530": {
+   "results": [
+    {
+     "title": "Rusya'dan Savunma Bütçesi",
+     "description": "Rusya'nın savunma sanayi için ayırdığı devasa bütçe dengeleri nasıl değiştirecek?\nSizce bu bütçe küresel çatışmaları nasıl tetikler?\n\n#Rusya #SavunmaBütçesi #AskeriGüç #Jeopolitik",
+     "tags": [
+      "Rusya",
+      "savunma bütçesi",
+      "Rusya Ukrayna savaşı",
+      "askeri harcamalar",
+      "küresel ekonomi",
+      "silahlanma",
+      "Moskova",
+      "jeopolitik",
+      "uluslararası ilişkiler"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Rusya",
+      "#SavunmaBütçesi",
+      "#AskeriGüç",
+      "#Jeopolitik"
+     ],
+     "lang": "tr",
+     "topic": "Russia allocates massive defense budget amidst ongoing war",
+     "tts": "edge",
+     "duration": 40.51,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Rusya, iki bin yirmi yedi ve iki bin yirmi dokuz yıllarını kapsayan dev bütçesini açıkladı.",
+       "headline": "Savunma Bütçesi",
+       "accent": "bütçe",
+       "search": "military budget money finance",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Moskova yönetimi, savunma sanayisini güçlendirmek için bütçe ayırdı.",
+       "headline": "Dev Kaynak",
+       "accent": "yatırım",
+       "search": "military factory production",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Avrupa genelinde artan güvenlik endişeleri ve silahlanma yarışını bu devasa finansman tetikliyor.",
+       "headline": "Silahlanma Yarışı",
+       "accent": "gerilim",
+       "search": "military parade tanks",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu büyük ekonomik hamle, bölgedeki devam eden savaşın maliyetini ve şiddetini doğrudan artırıyor.",
+       "headline": "Savaşın Maliyeti",
+       "accent": "ekonomi",
+       "search": "war destruction economy",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Türkiye'nin sınır komşuluğundaki bu devasa askeri yatırımlar, enerji ve güvenlik dengelerini yakından ilgilendiriyor.",
+       "headline": "Bölgesel Etki",
+       "accent": "güvenlik",
+       "search": "border control military",
+       "style": "headline",
+       "countries": [
+        "TUR",
+        "RUS"
+       ],
+       "country_names": [
+        "Türkiye",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Küresel güçlerin ayırdığı bu devasa fonlar yeni krizlerin habercisi mi?",
+       "headline": "Yeni Krizler",
+       "accent": "gelecek",
+       "search": "global crisis warning",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T10:52:43Z",
+     "elevenlabs": {
+      "used": 21646,
+      "limit": 40000,
+      "left": 18354,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.354 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45801834988-tr"
+    },
+    {
+     "title": "Russia's Defense Budget",
+     "description": "How will the massive budget Russia allocates for its defense industry shift balances? Do you think this budget will trigger global conflicts?\n\n#Russia #DefenseBudget #MilitaryPower #Geopolitics",
+     "tags": [
+      "Russia",
+      "defense budget",
+      "Russia Ukraine war",
+      "military spending",
+      "global economy",
+      "arms race",
+      "Moscow",
+      "geopolitics",
+      "international relations"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Russia",
+      "#DefenseBudget",
+      "#MilitaryPower",
+      "#Geopolitics"
+     ],
+     "lang": "en",
+     "topic": "Russia allocates massive defense budget amidst ongoing war",
+     "tts": "elevenlabs",
+     "duration": 32.94,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Russia unveiled a massive budget covering 2027 and 2029.",
+       "headline": "Defense Budget",
+       "accent": "budget",
+       "search": "military budget money finance",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Moscow allocated funds to strengthen its defense industry.",
+       "headline": "Massive Resources",
+       "accent": "investment",
+       "search": "military factory production",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The huge financing fuels rising security fears and an arms race across Europe.",
+       "headline": "Arms Race",
+       "accent": "tension",
+       "search": "military parade tanks",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This major economic move directly raises the cost and intensity of the ongoing regional war.",
+       "headline": "War Cost",
+       "accent": "economy",
+       "search": "war destruction economy",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Massive military investments near Turkey’s borders affect energy and security balances.",
+       "headline": "Regional Impact",
+       "accent": "security",
+       "search": "border control military",
+       "style": "headline",
+       "countries": [
+        "TUR",
+        "RUS"
+       ],
+       "country_names": [
+        "Türkiye",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Are the vast funds earmarked by global powers heralding new crises?",
+       "headline": "New Crises",
+       "accent": "future",
+       "search": "global crisis warning",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T10:55:16Z",
+     "elevenlabs": {
+      "used": 21646,
+      "limit": 40000,
+      "left": 18354,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.354 / 40.000 karakter kaldı (bu video 438 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45801834988-en"
+    },
+    {
+     "title": "Russlands Verteidigungsbudget",
+     "description": "Wie wird das enorme Budget, das Russland für die Rüstungsindustrie bereitstellt, die Machtverhältnisse verändern? Wie Ihrer Meinung nach löst dieser Haushalt globale Konflikte aus?\n\n#Rusya #SavunmaBütçesi #AskeriGüç #Jeopolitik",
+     "tags": [
+      "Rusya",
+      "savunma bütçesi",
+      "Rusya Ukrayna savaşı",
+      "askeri harcamalar",
+      "küresel ekonomi",
+      "silahlanma",
+      "Moskova",
+      "jeopolitik",
+      "uluslararası ilişkiler"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Rusya",
+      "#SavunmaBütçesi",
+      "#AskeriGüç",
+      "#Jeopolitik"
+     ],
+     "lang": "de",
+     "topic": "Russia allocates massive defense budget amidst ongoing war",
+     "tts": "edge",
+     "duration": 37.63,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45801834988-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Russland hat seinen riesigen Haushalt für die Jahre 2027 und 2029 vorgestellt.",
+       "headline": "Verteidigungshaushalt",
+       "accent": "Haushalt",
+       "search": "military budget money finance",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die Moskauer Führung stellt Mittel bereit, um die Rüstungsindustrie zu stärken.",
+       "headline": "Riesige Mittel",
+       "accent": "Investition",
+       "search": "military factory production",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die massive Finanzierung schürt in Europa wachsende Sicherheitsängste und einen Rüstungswettlauf.",
+       "headline": "Rüstungswettlauf",
+       "accent": "Spannung",
+       "search": "military parade tanks",
+       "style": "headline",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Dieser große wirtschaftliche Schritt erhöht direkt die Kosten und die Intensität des laufenden Krieges.",
+       "headline": "Kriegskosten",
+       "accent": "Wirtschaft",
+       "search": "war destruction economy",
+       "style": "subtitle",
+       "countries": [
+        "RUS"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die enormen Militärausgaben an der türkischen Grenze betreffen Energie- und Sicherheitsbilanzen unmittelbar.",
+       "headline": "Regionale Auswirkungen",
+       "accent": "Sicherheit",
+       "search": "border control military",
+       "style": "headline",
+       "countries": [
+        "TUR",
+        "RUS"
+       ],
+       "country_names": [
+        "Türkiye",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Sind die gewaltigen Mittel der Weltmächte Vorboten neuer Krisen?",
+       "headline": "Neue Krisen",
+       "accent": "Zukunft",
+       "search": "global crisis warning",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T10:56:45Z",
+     "elevenlabs": {
+      "used": 21821,
+      "limit": 40000,
+      "left": 18179,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 18.179 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45801834988-de"
+    }
+   ],
+   "ts": "2026-11-26T10:51:49"
   }
  },
  "_removed": [
   "444854651743",
-  "445296633124",
-  "bc7037909ba6",
-  "f02172b50f8c",
-  "9849bc2ef437",
-  "e545b5536757",
-  "abe41c1aaf94",
-  "87a011d7d646",
-  "130b7970530f",
-  "873320f3cd81",
-  "af6ed91f3a79",
-  "b349a255e16e",
   "c947dac9becb",
-  "6f78216803dc",
-  "86277101f5be",
-  "d7e9c169bc14",
-  "be8762e28854",
-  "d42fcbc4ce3d",
-  "2f1a20151385",
-  "ddbd76050660",
-  "446184028240",
-  "445944378440",
-  "66eba903a865",
-  "b34b7bca5216",
-  "32fa0d1d693a",
-  "1edbeb303dcc",
-  "0d9dbcf465cd",
-  "446184028241",
   "a5e09c77f7f8",
-  "63bfb40d47b6",
-  "74775df4be80",
-  "54f34c42d936",
-  "443091847971",
-  "7eb47a5db7cd",
-  "ccd67624d8c3",
-  "6ad3bacfd1c7",
+  "86277101f5be",
+  "bc7037909ba6",
+  "32fa0d1d693a",
   "443631404172",
-  "41416ec5f7f6",
-  "26c2e83ebba1",
-  "a86c24402051",
-  "442639882090",
-  "b438246d60ee",
-  "27b1f9c04076",
-  "1f8d57fecf3b",
-  "0c7c07a879a6",
-  "3f6ae6499c1b",
-  "3cc9d1e06e50",
-  "445944378441",
+  "f02172b50f8c",
+  "873320f3cd81",
+  "7eb47a5db7cd",
   "9fa68b731dc8",
-  "9d8c10911957",
-  "445761614490",
+  "442639882090",
+  "27b1f9c04076",
+  "0d9dbcf465cd",
+  "87a011d7d646",
+  "443091847971",
+  "20dcc23cea11",
+  "abe41c1aaf94",
+  "445296633124",
   "57b4fdc6596f",
-  "20dcc23cea11"
+  "af6ed91f3a79",
+  "63bfb40d47b6",
+  "d7e9c169bc14",
+  "54f34c42d936",
+  "130b7970530f",
+  "3f6ae6499c1b",
+  "1f8d57fecf3b",
+  "74775df4be80",
+  "d42fcbc4ce3d",
+  "445761614490",
+  "6ad3bacfd1c7",
+  "41416ec5f7f6",
+  "446184028240",
+  "1edbeb303dcc",
+  "446184028241",
+  "9849bc2ef437",
+  "6f78216803dc",
+  "0c7c07a879a6",
+  "a86c24402051",
+  "66eba903a865",
+  "2f1a20151385",
+  "e545b5536757",
+  "b34b7bca5216",
+  "ccd67624d8c3",
+  "9d8c10911957",
+  "445944378440",
+  "be8762e28854",
+  "26c2e83ebba1",
+  "b438246d60ee",
+  "445944378441",
+  "b349a255e16e",
+  "3cc9d1e06e50",
+  "ddbd76050660"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1024,7 +1412,8 @@
     }
    ],
    "used": [
-    0
+    0,
+    1
    ]
   }
  },
@@ -1543,6 +1932,24 @@
      "llm_cagri": 3,
      "ceviri_nemotron": 2
     }
+   },
+   "45801834988-b0c5e3": {
+    "2026-11-26": {
+     "uretilen": 3,
+     "render_sn": 387.3,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:hata": 1,
+     "prov:gemini_2:ok": 1,
+     "prov:gemini_2:yedek": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "llm_yedek": 1,
+     "ceviri_nemotron": 2,
+     "actions_dk": 9
+    }
    }
   },
   "gunluk": {
@@ -1660,17 +2067,21 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-26": {
-    "actions_dk": 11,
-    "uretilen": 3,
-    "render_sn": 188.9,
-    "render_n": 3,
-    "prov:gemini:ok": 1,
+    "actions_dk": 20,
+    "uretilen": 6,
+    "render_sn": 576.2,
+    "render_n": 6,
+    "prov:gemini:ok": 2,
     "prov:gemini_1:ok": 1,
-    "prov:openrouter_nemotron:ok": 2,
-    "ses:edge": 2,
-    "ses:elevenlabs": 1,
-    "llm_cagri": 3,
-    "ceviri_nemotron": 2
+    "prov:openrouter_nemotron:ok": 4,
+    "ses:edge": 4,
+    "ses:elevenlabs": 2,
+    "llm_cagri": 6,
+    "ceviri_nemotron": 4,
+    "prov:gemini_1:hata": 1,
+    "prov:gemini_2:ok": 1,
+    "prov:gemini_2:yedek": 1,
+    "llm_yedek": 1
    }
   }
  }
