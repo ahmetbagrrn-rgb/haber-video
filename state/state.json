@@ -26,7 +26,8 @@
   "trend:DE:polnische regierung",
   "yt:_wQku0eU7jQ",
   "news:https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
-  "trend:US:tehran"
+  "trend:US:tehran",
+  "yt:mwIe-luij-0"
  ],
  "topics": [
   {
@@ -233,12 +234,17 @@
    "topic": "Iran electricity rationing amid severe US sanctions",
    "ts": "2026-11-26T13:23:20",
    "summary": "İran Elektrik Kesintisi: ABD Ambargosu Hayatı Durdurdu. İran genelinde elektrikler günlük olarak kesilmeye ve hayat durma noktasına gelmeye başladı. ABD yaptırımlarının ve ekonomik ablukanın derinleşmesinin enerji altyapısını ağır şekilde etkilediği ifade ediliyor. Tahran yönetimi artan mali baskılara karşı halka yönelik sıkı tasarruf tedbirleri açıkladı. Yaşanan bu derin ekonomik daralma, bölgedeki enerji ticaretini ve sınır güvenliğini doğrudan tehdit ediyor. Türkiye ile olan enerji akışı ve sınır ticaretindeki olası aksamalar piyasalarda yakından izleniyor. Derinleşen ambargolar sadece İran halkını değil tüm enerji koridorunu karanlığa gömmeye hazırlanıyor."
+  },
+  {
+   "topic": "Iran files 290 billion lawsuit against US",
+   "ts": "2026-11-26T15:40:22",
+   "summary": "İran'dan ABD'ye 290 Milyar Dolarlık Tazminat Davası. İran mahkemesi savaşta yapay zeka kullanan Amerika'ya 290 milyar dolar tazminat davası açtı. İddialara göre Tahran yönetimi Amerikan ordusunun çatışmalarda gizli yapay zeka modellerini devreye soktuğunu belgeledi. Washington'ın askeri operasyonlarda yapay zeka teknolojilerini aktif olarak kullandığı iddia ediliyor. Bu hukuki hamle iki ülke arasındaki jeopolitik ve teknolojik cepheleşmeyi tırmandıran yeni bir eşik. Bölgesel gerilimin tırmanması riskler barındırıyor. Yapay zeka temelli bu hukuk savaşı küresel dengeleri altüst etmeye hazırlanıyor."
   }
  ],
  "daily": {
   "2026-11-24": 4,
   "2026-11-25": 4,
-  "2026-11-26": 3
+  "2026-11-26": 4
  },
  "scheduled": {
   "en": [
@@ -1486,62 +1492,439 @@
     }
    ],
    "ts": "2026-11-26T13:23:20"
+  },
+  "ea76cda66aa7": {
+   "results": [
+    {
+     "title": "İran'dan ABD'ye 290 Milyar Dolarlık Tazminat Davası",
+     "description": "İran mahkemesi savaşta yapay zeka kullanımı gerekçesiyle ABD'ye 290 milyar dolarlık dev bir tazminat davası açtı. Sizce bu dava iki ülke arasındaki gerilimi daha da tırmandırır mı?\n\n#İranABD #Tazminat #YapayZeka #Ortadoğu #Haber",
+     "tags": [
+      "İran",
+      "ABD",
+      "tazminat davası",
+      "yapay zeka",
+      "Pentagon",
+      "savaş teknolojisi",
+      "jeopolitik",
+      "Ortadoğu",
+      "uluslararası hukuk",
+      "küresel kriz"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#İranABD",
+      "#Tazminat",
+      "#YapayZeka",
+      "#Ortadoğu",
+      "#Haber"
+     ],
+     "lang": "tr",
+     "topic": "Iran files 290 billion lawsuit against US",
+     "tts": "edge",
+     "duration": 41.52,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "İran mahkemesi savaşta yapay zeka kullanan Amerika'ya 290 milyar dolar tazminat davası açtı.",
+       "headline": "290 Milyar",
+       "accent": "Tazminat",
+       "search": "courtroom judge gavel",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "İddialara göre Tahran yönetimi Amerikan ordusunun çatışmalarda gizli yapay zeka modellerini devreye soktuğunu belgeledi.",
+       "headline": "Gizli Modeller",
+       "accent": "Savaş",
+       "search": "military computer server room",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Washington'ın askeri operasyonlarda yapay zeka teknolojilerini aktif olarak kullandığı iddia ediliyor.",
+       "headline": "Askeri İhlal",
+       "accent": "Hukuk",
+       "search": "artificial intelligence war tech",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu hukuki hamle iki ülke arasındaki jeopolitik ve teknolojik cepheleşmeyi tırmandıran yeni bir eşik.",
+       "headline": "Yeni Eşik",
+       "accent": "Cephe",
+       "search": "global map political tension",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bölgesel gerilimin tırmanması riskler barındırıyor.",
+       "headline": "Riskler",
+       "accent": "Güvenlik",
+       "search": "oil pipeline border security",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Yapay zeka temelli bu hukuk savaşı küresel dengeleri altüst etmeye hazırlanıyor.",
+       "headline": "Küresel Denge",
+       "accent": "Kriz",
+       "search": "digital globe futuristic tech",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T15:42:04Z",
+     "elevenlabs": {
+      "used": 22035,
+      "limit": 40000,
+      "left": 17965,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.965 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45849954061-tr"
+    },
+    {
+     "title": "Iran Files $290 Billion Lawsuit Against the U.S.",
+     "description": "An Iranian court has launched a massive $290 billion compensation suit against the United States, citing the use of artificial intelligence in warfare. Will this case further escalate tensions between the two nations?\n\n#IranUS #Compensation #AI #MiddleEast #News",
+     "tags": [
+      "Iran",
+      "U.S.",
+      "compensation lawsuit",
+      "artificial intelligence",
+      "Pentagon",
+      "war technology",
+      "geopolitics",
+      "Middle East",
+      "international law",
+      "global crisis"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#IranUS",
+      "#Compensation",
+      "#AI",
+      "#MiddleEast",
+      "#News"
+     ],
+     "lang": "en",
+     "topic": "Iran files 290 billion lawsuit against US",
+     "tts": "elevenlabs",
+     "duration": 41.67,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "An Iranian court filed a $290 billion compensation lawsuit against the United States for using artificial intelligence in war.",
+       "headline": "290 Billion",
+       "accent": "Compensation",
+       "search": "courtroom judge gavel",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "According to allegations, the Tehran administration documented that the U.S. military deployed secret AI models in combat.",
+       "headline": "Secret Models",
+       "accent": "War",
+       "search": "military computer server room",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "It is claimed that Washington actively employs AI technologies in military operations.",
+       "headline": "Military Violation",
+       "accent": "Law",
+       "search": "artificial intelligence war tech",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This legal move marks a new threshold escalating the geopolitical and technological confrontation between the two nations.",
+       "headline": "New Threshold",
+       "accent": "Front",
+       "search": "global map political tension",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Rising regional tensions carry significant risks.",
+       "headline": "Risks",
+       "accent": "Security",
+       "search": "oil pipeline border security",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This AI-driven legal battle is poised to upend global balances.",
+       "headline": "Global Balance",
+       "accent": "Crisis",
+       "search": "digital globe futuristic tech",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T15:43:45Z",
+     "elevenlabs": {
+      "used": 22035,
+      "limit": 40000,
+      "left": 17965,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.965 / 40.000 karakter kaldı (bu video 568 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45849954061-en"
+    },
+    {
+     "title": "Iran verklagt USA auf 290 Milliarden Dollar Schadenersatz",
+     "description": "Ein iranisches Gericht erhebt Klage gegen die USA wegen des Einsatzes künstlicher Intelligenz im Krieg und fordert 290 Milliarden Dollar. Glauben Sie, dass dieser Prozess die Spannungen zwischen den beiden Ländern weiter anheizt?\n\n#IranUSA #Schadenersatz #KI #Nahost #Nachrichten",
+     "tags": [
+      "Iran",
+      "USA",
+      "Schadenersatzklage",
+      "künstliche Intelligenz",
+      "Pentagon",
+      "Kriegstechnologie",
+      "Geopolitik",
+      "Nahost",
+      "Völkerrecht",
+      "globale Krise"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#IranUSA",
+      "#Schadenersatz",
+      "#KI",
+      "#Nahost",
+      "#Nachrichten"
+     ],
+     "lang": "de",
+     "topic": "Iran files 290 billion lawsuit against US",
+     "tts": "edge",
+     "duration": 35.18,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45849954061-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ein iranisches Gericht verklagt die USA auf 290 Milliarden Dollar Schadenersatz wegen KI-Einsatz im Krieg.",
+       "headline": "290 Milliarden",
+       "accent": "Schadenersatz",
+       "search": "courtroom judge gavel",
+       "style": "headline",
+       "countries": [
+        "IRN",
+        "USA"
+       ],
+       "country_names": [
+        "İran",
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Teheran wirft dem US-Militär vor, geheime KI-Modelle in Kämpfen eingesetzt zu haben.",
+       "headline": "Geheime Modelle",
+       "accent": "Krieg",
+       "search": "military computer server room",
+       "style": "subtitle",
+       "countries": [
+        "IRN"
+       ],
+       "country_names": [
+        "İran"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Washington soll KI-Technologien aktiv in Militäroperationen nutzen.",
+       "headline": "Militärischer Verstoß",
+       "accent": "Recht",
+       "search": "artificial intelligence war tech",
+       "style": "headline",
+       "countries": [
+        "USA"
+       ],
+       "country_names": [
+        "Amerika Birleşik Devletleri"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Dieser Rechtsstreit markiert eine neue Eskalationsstufe im geopolitisch-technologischen Konflikt.",
+       "headline": "Neue Schwelle",
+       "accent": "Front",
+       "search": "global map political tension",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Die Gefahr einer weiteren regionalen Spannungssteigerung wächst.",
+       "headline": "Risiken",
+       "accent": "Sicherheit",
+       "search": "oil pipeline border security",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der KI-basierte Rechtskrieg droht, globale Gleichgewichte zu erschüttern.",
+       "headline": "Globales Gleichgewicht",
+       "accent": "Krise",
+       "search": "digital globe futuristic tech",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
+     "publish_at": "2026-11-26T15:45:15Z",
+     "elevenlabs": {
+      "used": 22262,
+      "limit": 40000,
+      "left": 17738,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.738 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45849954061-de"
+    }
+   ],
+   "ts": "2026-11-26T15:40:22"
   }
  },
  "_removed": [
-  "2f1a20151385",
-  "87a011d7d646",
-  "444854651743",
   "a5e09c77f7f8",
-  "1f8d57fecf3b",
-  "86277101f5be",
-  "873320f3cd81",
-  "d7e9c169bc14",
-  "57b4fdc6596f",
-  "1edbeb303dcc",
-  "32fa0d1d693a",
-  "9d8c10911957",
-  "bc7037909ba6",
-  "41416ec5f7f6",
-  "c947dac9becb",
-  "7eb47a5db7cd",
-  "9849bc2ef437",
-  "3cc9d1e06e50",
-  "e545b5536757",
-  "443091847971",
-  "abe41c1aaf94",
-  "be8762e28854",
-  "442639882090",
-  "74775df4be80",
-  "63bfb40d47b6",
-  "0c7c07a879a6",
-  "6ad3bacfd1c7",
-  "af6ed91f3a79",
-  "3f6ae6499c1b",
-  "446184028240",
-  "445944378441",
-  "b438246d60ee",
-  "f02172b50f8c",
-  "54f34c42d936",
   "26c2e83ebba1",
+  "0c7c07a879a6",
   "0d9dbcf465cd",
-  "d42fcbc4ce3d",
-  "ddbd76050660",
-  "445761614490",
-  "66eba903a865",
-  "27b1f9c04076",
-  "130b7970530f",
-  "443631404172",
-  "b349a255e16e",
-  "446184028241",
-  "6f78216803dc",
-  "445944378440",
   "ccd67624d8c3",
+  "bc7037909ba6",
+  "9849bc2ef437",
+  "6ad3bacfd1c7",
+  "57b4fdc6596f",
+  "e545b5536757",
+  "3f6ae6499c1b",
+  "74775df4be80",
   "a86c24402051",
-  "9fa68b731dc8",
+  "be8762e28854",
+  "af6ed91f3a79",
+  "27b1f9c04076",
+  "abe41c1aaf94",
+  "b438246d60ee",
+  "6f78216803dc",
+  "446184028241",
+  "445296633124",
+  "1f8d57fecf3b",
+  "2f1a20151385",
+  "c947dac9becb",
+  "41416ec5f7f6",
+  "7eb47a5db7cd",
+  "443631404172",
+  "444854651743",
+  "63bfb40d47b6",
+  "130b7970530f",
+  "d42fcbc4ce3d",
+  "9d8c10911957",
+  "ddbd76050660",
+  "d7e9c169bc14",
+  "873320f3cd81",
+  "443091847971",
+  "f02172b50f8c",
+  "445761614490",
+  "86277101f5be",
+  "54f34c42d936",
+  "1edbeb303dcc",
+  "445944378440",
+  "445944378441",
+  "32fa0d1d693a",
+  "b349a255e16e",
+  "87a011d7d646",
+  "3cc9d1e06e50",
   "20dcc23cea11",
+  "66eba903a865",
   "b34b7bca5216",
-  "445296633124"
+  "9fa68b731dc8",
+  "446184028240",
+  "442639882090"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1826,7 +2209,8 @@
    ],
    "used": [
     0,
-    1
+    1,
+    2
    ]
   }
  },
@@ -2378,6 +2762,21 @@
      "ceviri_nemotron": 2,
      "actions_dk": 9
     }
+   },
+   "45849954061-9509ca": {
+    "2026-11-26": {
+     "uretilen": 3,
+     "render_sn": 409.2,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 9
+    }
    }
   },
   "gunluk": {
@@ -2495,17 +2894,17 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-26": {
-    "actions_dk": 29,
-    "uretilen": 9,
-    "render_sn": 1009.7,
-    "render_n": 9,
-    "prov:gemini:ok": 3,
-    "prov:gemini_1:ok": 3,
-    "prov:openrouter_nemotron:ok": 6,
-    "ses:edge": 6,
-    "ses:elevenlabs": 3,
-    "llm_cagri": 10,
-    "ceviri_nemotron": 6,
+    "actions_dk": 38,
+    "uretilen": 12,
+    "render_sn": 1418.9,
+    "render_n": 12,
+    "prov:gemini:ok": 4,
+    "prov:gemini_1:ok": 4,
+    "prov:openrouter_nemotron:ok": 8,
+    "ses:edge": 8,
+    "ses:elevenlabs": 4,
+    "llm_cagri": 13,
+    "ceviri_nemotron": 8,
     "prov:gemini_1:hata": 1,
     "prov:gemini_2:ok": 1,
     "prov:gemini_2:yedek": 1,
