@@ -688,21 +688,27 @@ def cmd_auto():
     if slot == "backfill":
         return cmd_backfill(st)
 
-    if slot == "trend":
-        cands, label = trend_candidates(st), "📈 Trend konu videosu"
-        if not cands:
-            cands, label = news_candidates(st), "📰 Ajans haberi (trend bulunamadı)"
-    else:
-        yts, latest = youtube_story_candidates(st)
+    # Öncelik YouTuber. Ajans/trend kaynakları YEDEK: sadece YouTuber `fallback_after_days` gündür video atmadıysa.
+    yts, latest = youtube_story_candidates(st)
+    silent_days = CONFIG.get("fallback_after_days", 7)
+    silent = latest is not None and (dt.datetime.utcnow() - latest).days >= silent_days  # RSS okunamazsa sessiz sayma
+    if yts:
         cands, label = yts, "🎥 YouTuber videosundan"
-        if not yts and slot == "yt":
-            log("YouTuber'da işlenecek konu yok; ek YouTuber saati atlandı")
-            save_state(st)
-            return
-        if not yts:
-            # YouTuber'da işlenmemiş yeni video yoksa (son 24 saatte paylaşım yok ya da zaten işlendi) ajanslara geç
-            log("YouTuber son yükleme:", latest)
-            cands, label = news_candidates(st), "📰 Ajans haberinden (YouTuber'da yeni video yok)"
+    elif not silent:
+        log(f"YouTuber'da işlenecek yeni konu yok (son yükleme {latest}); yedek kaynaklar pasif, bu saat atlandı")
+        save_state(st)
+        return
+    elif slot == "trend":
+        cands, label = trend_candidates(st), f"📈 Trend konu (YouTuber {silent_days}+ gündür sessiz)"
+        if not cands:
+            cands, label = news_candidates(st), f"📰 Ajans haberi (YouTuber {silent_days}+ gündür sessiz)"
+    elif slot == "yt":
+        log("YouTuber sessiz; ek YouTuber saati atlandı")
+        save_state(st)
+        return
+    else:
+        log("YouTuber son yükleme:", latest)
+        cands, label = news_candidates(st), f"📰 Ajans haberi (YouTuber {silent_days}+ gündür sessiz)"
 
     for cand in cands:
         if similar_topic(cand["title"], st):
@@ -786,8 +792,11 @@ def cmd_long(st):
                 notes.append("- " + t["summary"])
         except Exception:  # noqa
             pass
+    for rec in st.get("yt_stories", {}).values():  # YouTuber'dan çıkarılan haberlerin olguları da malzeme
+        for x in rec.get("stories", [])[:3]:
+            notes.append(f"- {x.get('title')}: {x.get('facts', '')[:400]}")
     yts, _ = youtube_candidates({"processed": []})
-    base = {"long": True, "mode": "rewrite", "text": "Haftanın notları:\n" + "\n".join(notes[-12:])}
+    base = {"long": True, "mode": "rewrite", "text": "Haftanın notları:\n" + "\n".join(notes[-18:])}
     if yts:
         base["youtube_url"] = yts[0]["url"]
         base["source"] = yts[0]["url"]
@@ -803,7 +812,22 @@ def cmd_long(st):
             pl = {"long": True, "mode": "rewrite", "target_lang": lang, "source": base.get("source", ""),
                   "text": first["title"] + "\n" + "\n".join(
                       (f"[{sc.get('chapter')}] " if sc.get("chapter") else "") + sc["text"] for sc in first["scenes"])}
-        res = make_video(pl, tag, instagram=False)
+        try:
+            res = make_video(pl, tag, instagram=False)
+        except (Exception, SystemExit) as e:  # noqa
+            if not results and pl.get("youtube_url"):
+                # Gemini videoyu izleyemedi (meşgul/kota): haftanın notlarıyla, yedek yapay zekâyla dene
+                log("Uzun video: video kaynağı başarısız, notlarla yeniden deneniyor:", str(e)[:150])
+                pl = {k: v for k, v in pl.items() if k != "youtube_url"}
+                try:
+                    res = make_video(pl, tag, instagram=False)
+                except (Exception, SystemExit) as e2:  # noqa
+                    tg_send(st.get("owner_chat"), f"⚠️ Haftalık uzun video üretilemedi: {str(e2)[:200]}")
+                    log("Uzun video üretilemedi:", e2)
+                    break
+            else:
+                log(f"Uzun video ({lang}) üretilemedi:", e)
+                continue
         if res.get("skip"):
             break
         results.append(res)
