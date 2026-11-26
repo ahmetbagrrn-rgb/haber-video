@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897491,
+ "tg_offset": 691897492,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -280,7 +280,8 @@
    "2026-11-25T13:00:00Z",
    "2026-11-25T17:00:00Z",
    "2026-11-25T20:00:00Z",
-   "2026-11-25T23:00:00Z"
+   "2026-11-25T23:00:00Z",
+   "2026-11-26T23:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -322,7 +323,8 @@
    "2026-11-26T19:30:00Z",
    "2026-11-27T07:00:00Z",
    "2026-11-27T11:00:00Z",
-   "2026-11-27T14:00:00Z"
+   "2026-11-27T14:00:00Z",
+   "2026-11-27T17:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -349,366 +351,11 @@
    "2026-11-25T12:30:00Z",
    "2026-11-25T15:30:00Z",
    "2026-11-26T06:30:00Z",
-   "2026-11-26T09:30:00Z"
+   "2026-11-26T09:30:00Z",
+   "2026-11-27T06:30:00Z"
   ]
  },
  "pending": {
-  "1ed2aefedb23": {
-   "results": [
-    {
-     "title": "ABD İstihbaratı Hedefte: CIA ve DNI Siber Saldırıya Uğradı",
-     "description": "ABD istihbarat kurumları CIA ve DNI siber saldırıyla gündemde.\nSizce küresel siber savaşlar bireysel veri güvenliğimizi tamamen ortadan kaldırabilir mi?\n\n#SiberSaldırı #ABD #CIA #SiberGüvenlik #Haber",
-     "tags": [
-      "ABD siber saldırı",
-      "CIA siber saldırı",
-      "Ulusal İstihbarat Direktörlüğü",
-      "siber güvenlik kriz",
-      "hacker saldırısı",
-      "dijital savaş",
-      "veri sızıntısı",
-      "ABD istihbarat",
-      "siber tehdit"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#SiberSaldırı",
-      "#ABD",
-      "#CIA",
-      "#SiberGüvenlik",
-      "#Haber"
-     ],
-     "lang": "tr",
-     "topic": "Cyberattacks target US intelligence agencies CIA and DNI",
-     "tts": "edge",
-     "duration": 42.12,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Amerika Birleşik Devletleri'nde CIA ve Ulusal İstihbarat Direktörlüğü sistemleri siber saldırıya uğradı.",
-       "headline": "İstihbarata Siber Saldırı",
-       "accent": "Baskın",
-       "search": "cyber attack screen",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Saldırıların kritik devlet kurumlarının dijital altyapılarını hedef aldığı bildirildi.",
-       "headline": "Kurumlar Hedefte",
-       "accent": "Tehlike",
-       "search": "hacker computer server",
-       "style": "subtitle",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Saldırıların kaynağı ve etkilerine yönelik incelemelerin sürdüğü ifade ediliyor.",
-       "headline": "İnceleme Başlatıldı",
-       "accent": "Şüphe",
-       "search": "digital security network",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bu tablo, küresel güçlerin dijital alandaki mücadelesinin ve tehditlerinin boyutlarını gözler önüne seriyor.",
-       "headline": "Küresel Dijital Savaş",
-       "accent": "Analiz",
-       "search": "world map cyber",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Küresel siber güvenlik açıkları, kurumların dijital veri güvenliğini ve altyapılarını tehdit etmeyi sürdürüyor.",
-       "headline": "Veri Güvenliği Tehdidi",
-       "accent": "Tehdit",
-       "search": "data center server",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "İstihbarat servislerinin bile hedef alınması, siber alandaki güvenlik zafiyetlerini gündeme getiriyor.",
-       "headline": "Güvenlik Tartışması",
-       "accent": "Kriz",
-       "search": "server room lock",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
-     "publish_at": "2026-11-26T08:37:47Z",
-     "elevenlabs": {
-      "used": 21455,
-      "limit": 40000,
-      "left": 18545,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 18.545 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-45782881423-tr"
-    },
-    {
-     "title": "US Intelligence Targeted: CIA and DNI Hit by Cyberattack",
-     "description": "US intelligence agencies CIA and DNI are in the spotlight after a cyberattack. Could global cyber wars completely erase personal data security?\n\n#CyberAttack #USA #CIA #CyberSecurity #News",
-     "tags": [
-      "US cyberattack",
-      "CIA cyberattack",
-      "Office of the Director of National Intelligence",
-      "cybersecurity crisis",
-      "hacker attack",
-      "digital war",
-      "data breach",
-      "US intelligence",
-      "cyber threat"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#CyberAttack",
-      "#USA",
-      "#CIA",
-      "#CyberSecurity",
-      "#News"
-     ],
-     "lang": "en",
-     "topic": "Cyberattacks target US intelligence agencies CIA and DNI",
-     "tts": "elevenlabs",
-     "duration": 32.11,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "CIA and the Office of the Director of National Intelligence systems were hit by a cyberattack.",
-       "headline": "Cyberattack on Intelligence",
-       "accent": "Raid",
-       "search": "cyber attack screen",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The attacks targeted critical government agencies' digital infrastructure.",
-       "headline": "Agencies Targeted",
-       "accent": "Danger",
-       "search": "hacker computer server",
-       "style": "subtitle",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Investigations into the attack source and impact are ongoing.",
-       "headline": "Investigation Launched",
-       "accent": "Suspicion",
-       "search": "digital security network",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "This reveals the scale of global powers' digital struggle and threats.",
-       "headline": "Global Digital War",
-       "accent": "Analysis",
-       "search": "world map cyber",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Global cybersecurity gaps continue to threaten institutions' digital data and infrastructure.",
-       "headline": "Data Security Threat",
-       "accent": "Threat",
-       "search": "data center server",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Even intelligence services being targeted highlights cyber security vulnerabilities.",
-       "headline": "Security Debate",
-       "accent": "Crisis",
-       "search": "server room lock",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
-     "publish_at": "2026-11-26T08:39:15Z",
-     "elevenlabs": {
-      "used": 21646,
-      "limit": 40000,
-      "left": 18354,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 18.354 / 40.000 karakter kaldı (bu video 476 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45782881423-en"
-    },
-    {
-     "title": "US-Geheimdienste im Visier: CIA und DNI Opfer von Cyberangriff",
-     "description": "US-Geheimdienste CIA und DNI stehen nach einem Cyberangriff im Fokus.\nKönnen globale Cyberkriege die persönliche Datensicherheit vollständig beseitigen?\n\n#Cyberangriff #USA #CIA #Cybersicherheit #Nachrichten",
-     "tags": [
-      "US-Cyberangriff",
-      "CIA-Cyberangriff",
-      "Büro des Direktors der Nationalen Geheimdienste",
-      "Cybersicherheitskrise",
-      "Hackerangriff",
-      "Digitaler Krieg",
-      "Datenleck",
-      "US-Geheimdienste",
-      "Cyberbedrohung"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Cyberangriff",
-      "#USA",
-      "#CIA",
-      "#Cybersicherheit",
-      "#Nachrichten"
-     ],
-     "lang": "de",
-     "topic": "Cyberattacks target US intelligence agencies CIA and DNI",
-     "tts": "edge",
-     "duration": 35.64,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45782881423-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "In den USA wurden CIA und das Office of the Director of National Intelligence Opfer eines Cyberangriffs.",
-       "headline": "Cyberangriff auf Geheimdienste",
-       "accent": "Angriff",
-       "search": "cyber attack screen",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Die Angriffe zielten auf die digitale Infrastruktur kritischer staatlicher Institutionen.",
-       "headline": "Institutionen im Visier",
-       "accent": "Gefahr",
-       "search": "hacker computer server",
-       "style": "subtitle",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Ermittlungen zu Herkunft und Auswirkungen der Attacken laufen noch.",
-       "headline": "Ermittlungen eingeleitet",
-       "accent": "Verdacht",
-       "search": "digital security network",
-       "style": "headline",
-       "countries": [
-        "USA"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Das zeigt die Dimension des digitalen Machtkampfs der Großmächte.",
-       "headline": "Globaler digitaler Krieg",
-       "accent": "Analyse",
-       "search": "world map cyber",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Globale Cybersicherheitslücken bedrohen weiterhin die Datensicherheit und Infrastruktur von Organisationen.",
-       "headline": "Bedrohung der Datensicherheit",
-       "accent": "Bedrohung",
-       "search": "data center server",
-       "style": "headline",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Dass selbst Geheimdienste angegriffen werden, legt Sicherheitslücken im Cyberraum offen.",
-       "headline": "Sicherheitsdebatte",
-       "accent": "Krise",
-       "search": "server room lock",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=mwIe-luij-0",
-     "publish_at": "2026-11-26T08:40:33Z",
-     "elevenlabs": {
-      "used": 21646,
-      "limit": 40000,
-      "left": 18354,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 18.354 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45782881423-de"
-    }
-   ],
-   "ts": "2026-11-26T08:35:36"
-  },
   "d05d46e84530": {
    "results": [
     {
@@ -2264,59 +1911,60 @@
   }
  },
  "_removed": [
-  "442639882090",
+  "54f34c42d936",
+  "57b4fdc6596f",
+  "443631404172",
+  "87a011d7d646",
+  "446184028240",
+  "9d8c10911957",
   "2f1a20151385",
-  "a86c24402051",
-  "b438246d60ee",
-  "32fa0d1d693a",
+  "0d9dbcf465cd",
+  "ccd67624d8c3",
+  "a5e09c77f7f8",
+  "6ad3bacfd1c7",
+  "af6ed91f3a79",
+  "abe41c1aaf94",
+  "443091847971",
+  "1f8d57fecf3b",
+  "ddbd76050660",
+  "41416ec5f7f6",
+  "9fa68b731dc8",
+  "74775df4be80",
+  "6f78216803dc",
+  "be8762e28854",
   "130b7970530f",
-  "1edbeb303dcc",
+  "3cc9d1e06e50",
+  "b34b7bca5216",
+  "445944378440",
+  "9849bc2ef437",
+  "446184028241",
+  "0c7c07a879a6",
   "66eba903a865",
   "445296633124",
-  "0c7c07a879a6",
-  "bc7037909ba6",
-  "9fa68b731dc8",
-  "445761614490",
-  "1f8d57fecf3b",
-  "a5e09c77f7f8",
-  "7eb47a5db7cd",
-  "54f34c42d936",
-  "86277101f5be",
-  "57b4fdc6596f",
-  "ccd67624d8c3",
-  "c947dac9becb",
-  "63bfb40d47b6",
-  "444854651743",
-  "20dcc23cea11",
-  "41416ec5f7f6",
-  "873320f3cd81",
-  "87a011d7d646",
-  "443631404172",
-  "af6ed91f3a79",
-  "3f6ae6499c1b",
-  "446184028240",
-  "445944378441",
-  "e545b5536757",
-  "b349a255e16e",
-  "446184028241",
-  "3cc9d1e06e50",
-  "abe41c1aaf94",
-  "f02172b50f8c",
-  "ddbd76050660",
-  "6ad3bacfd1c7",
   "27b1f9c04076",
-  "6f78216803dc",
-  "b34b7bca5216",
-  "be8762e28854",
-  "d42fcbc4ce3d",
-  "9d8c10911957",
-  "9849bc2ef437",
-  "445944378440",
-  "74775df4be80",
-  "443091847971",
-  "0d9dbcf465cd",
+  "e545b5536757",
+  "1ed2aefedb23",
+  "7eb47a5db7cd",
+  "3f6ae6499c1b",
+  "86277101f5be",
+  "445761614490",
+  "f02172b50f8c",
+  "442639882090",
+  "1edbeb303dcc",
+  "b349a255e16e",
+  "b438246d60ee",
+  "32fa0d1d693a",
+  "26c2e83ebba1",
+  "bc7037909ba6",
   "d7e9c169bc14",
-  "26c2e83ebba1"
+  "445944378441",
+  "444854651743",
+  "63bfb40d47b6",
+  "20dcc23cea11",
+  "873320f3cd81",
+  "d42fcbc4ce3d",
+  "c947dac9becb",
+  "a86c24402051"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -3184,6 +2832,15 @@
      "ceviri_nemotron": 2,
      "actions_dk": 12
     }
+   },
+   "45890748066-e1e625": {
+    "2026-11-26": {
+     "actions_dk": 4,
+     "onay": 1,
+     "yayin_tr": 1,
+     "yayin_en": 1,
+     "yayin_de": 1
+    }
    }
   },
   "gunluk": {
@@ -3301,7 +2958,7 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-26": {
-    "actions_dk": 50,
+    "actions_dk": 54,
     "uretilen": 15,
     "render_sn": 1983.9,
     "render_n": 15,
@@ -3315,7 +2972,11 @@
     "prov:gemini_1:hata": 1,
     "prov:gemini_2:ok": 1,
     "prov:gemini_2:yedek": 1,
-    "llm_yedek": 1
+    "llm_yedek": 1,
+    "onay": 1,
+    "yayin_tr": 1,
+    "yayin_en": 1,
+    "yayin_de": 1
    }
   }
  }
