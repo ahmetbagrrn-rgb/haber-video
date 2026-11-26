@@ -367,66 +367,630 @@
    "2026-11-27T18:00:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "d46c8535a93d": {
+   "results": [
+    {
+     "title": "Kuresel Guclerin Yapay Zeka ve Savas Rekabeti",
+     "description": "Kuresel guclerin yapay zeka teknolojilerindeki rekabeti ve jeopolitik gerilimler derinlesiyor.\n\n0:00 Teknoloji ve Guvenlik\n0:48 Jeopolitik Krizler\n1:13 Analiz ve Gelecek\n\n#yapayzeka #jeopolitik #siberguvenlik #dunyagundemi",
+     "tags": [
+      "yapay zeka",
+      "jeopolitik",
+      "siber saldiri",
+      "kuresel guc",
+      "teknoloji savasi",
+      "abd",
+      "cin",
+      "iran",
+      "rusya",
+      "ukrayna",
+      "avrupa birligi"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-tr/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-tr/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-tr/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#yapayzeka",
+      "#jeopolitik",
+      "#siberguvenlik",
+      "#dunyagundemi"
+     ],
+     "lang": "tr",
+     "topic": "geopolitical tensions and artificial intelligence conflict risks",
+     "tts": "edge",
+     "duration": 100.18,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Kuresel teknoloji devleri ve siyasi aktorler arasinda yapay zeka guvenligi konusunda derin gorunmez ayrliklar yasanmaktadir. Yapay zeka veri isleme gucunun buyuk kismini elinde bulunduran gucler yeni duzenlemeler uzerine calismaktadir.",
+       "headline": "Yapay Zeka Yarisi",
+       "accent": "yellow",
+       "search": "artificial intelligence technology",
+       "style": "headline",
+       "countries": [
+        "US",
+        "CN"
+       ],
+       "country_names": [
+        "Amerika Birlesik Devletleri",
+        "Cin"
+       ],
+       "chapter": "Teknoloji ve Guvenlik"
+      },
+      {
+       "text": "Yapay zeka sistemlerini kullanan korsanlar uluslararasi olcekte buyuk kurumlari ve finans merkezlerini hedef alan saldirilar gerceklestirdi. Reuters haber ajansına dayandırılan bilgilere göre Arizona eyalet yetkilileri, kontrol disindan cikan sistemlerin guvenlik risklerini artirdigini belirtiyor.",
+       "headline": "Siber Saldirilar",
+       "accent": "red",
+       "search": "cyber attack digital security",
+       "style": "headline",
+       "countries": [
+        "US"
+       ],
+       "country_names": [
+        "Amerika Birlesik Devletleri"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Devletler arasi yapay zeka altyapisi kurma cabalari hiz kesmeden devam ederken enerji tuketimi tartismalari suruyor. Uzmanlar veri merkezlerinin enerji ihtiyacinin kuresel olcekte kriz yarattigina dikkat cekiyor.",
+       "headline": "Veri Merkezleri",
+       "accent": "blue",
+       "search": "data center servers",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Bolgesel catismalar ve enerji hatlarindaki guvenlik riskleri uluslararasi iliskileri dogrudan etkilemektedir. Stratejik bolgelerdeki kritik altyapilar sik sik hedef aliniyor.",
+       "headline": "Stratejik Riskler",
+       "accent": "orange",
+       "search": "geopolitical crisis map",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Jeopolitik Krizler"
+      },
+      {
+       "text": "Devletlerin altyapilarina yonelik siber ve fiziksel mudahaleler yeni guvenlik konseptlerini zorunlu kiliyor. Uzmanlar bu durumun daha genis capli catismalara yol acabilecegi uyarisinda bulunuyor.",
+       "headline": "Guvenlik Acigi",
+       "accent": "red",
+       "search": "security threat military",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Gelecekte jeopolitik guclerin mucadelesi sadece fiziksel alanlarda degil dijital platformlarda da surecektir. Bu durum uluslararasi guvenlik dengelerini tamamen degistirebilir.",
+       "headline": "Gelecek Senaryolari",
+       "accent": "purple",
+       "search": "future technology analysis",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Analiz ve Gelecek"
+      },
+      {
+       "text": "Kuresel aktorlerin bu surecte izleyecegi stratejiler dunyanin ekonomik ve siyasi gelecegini belirleyecektir. Sizce yapay zeka teknolojileri kuresel guvenceyi tehlikeye atiyor mu?",
+       "headline": "Kuresel Denge",
+       "accent": "green",
+       "search": "global economy future",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-26T21:09:50Z",
+     "elevenlabs": {
+      "used": 22457,
+      "limit": 40000,
+      "left": 17543,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.543 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45894015462-tr"
+    },
+    {
+     "title": "The Hidden AI War Threatening Global Security",
+     "description": "Global powers are clashing over artificial intelligence infrastructure and security regulations as unprecedented cyberattacks target critical financial institutions. Discover how this technological arms race is reshaping international relations and creating massive energy crises.\n\n0:00 The New Digital Battlefield\n0:56 The Infrastructure Crisis\n1:50 Geopolitical Fallout\n2:40 The Road Ahead\n\n#ArtificialIntelligence #CyberSecurity #GlobalPower #TechWar",
+     "tags": [
+      "artificial intelligence",
+      "ai security",
+      "cyber attacks",
+      "global technology",
+      "tech war",
+      "infrastructure",
+      "energy crisis",
+      "international relations",
+      "geopolitics",
+      "data centers",
+      "state actors",
+      "future tech"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-en/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-en/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-en/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#ArtificialIntelligence",
+      "#CyberSecurity",
+      "#GlobalPower",
+      "#TechWar"
+     ],
+     "lang": "en",
+     "topic": "Global powers race for artificial intelligence security and infrastructure dominance",
+     "tts": "elevenlabs",
+     "duration": 212.75,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Are global superpowers sleepwalking into a catastrophic technological conflict? Behind closed doors, a fierce, invisible struggle is reshaping the future of artificial intelligence and national security.",
+       "headline": "The AI Arms Race",
+       "accent": "Digital War",
+       "search": "artificial intelligence war",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "The New Digital Battlefield"
+      },
+      {
+       "text": "Major technology giants and political leaders are locked in a silent battle for control over vast data processing power. This dominance will ultimately decide who writes the rules of the next global order.",
+       "headline": "Tech Giants Clash",
+       "accent": "Power Struggle",
+       "search": "tech servers data center",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "State-backed actors and sophisticated hackers are already leveraging these advanced systems. International financial centers and major institutions have become primary targets for unprecedented digital incursions.",
+       "headline": "Targeting Finance",
+       "accent": "Cyber Attacks",
+       "search": "cyber attack matrix code",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "According to Reuters reports citing regional officials in Arizona, the rapid proliferation of autonomous systems introduces severe, uncontrollable security risks. Regulators are struggling to keep pace with technology that evolves faster than policy.",
+       "headline": "Regulatory Blindspots",
+       "accent": "Security Risks",
+       "search": "digital security server room",
+       "style": "headline",
+       "countries": [
+        "US"
+       ],
+       "country_names": [
+        "United States"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Building massive artificial intelligence infrastructure requires unprecedented amounts of electricity. Analysts warn that the surging power demands of hyper-scale data centers are triggering a quiet global energy crisis.",
+       "headline": "Power Hunger",
+       "accent": "Energy Crisis",
+       "search": "power grid electricity",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "The Infrastructure Crisis"
+      },
+      {
+       "text": "Power grids are being pushed to their absolute limits just to keep machine learning models training. This insatiable energy consumption is forcing nations to rethink their national power distribution strategies.",
+       "headline": "Grid Under Pressure",
+       "accent": "Power Demands",
+       "search": "electric power plant",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "The intersection of artificial intelligence and critical infrastructure has created new vulnerabilities. Adversaries no longer need traditional weapons to destabilize rival economies; they simply need to exploit digital pipelines.",
+       "headline": "Critical Vulnerability",
+       "accent": "System Flaws",
+       "search": "digital infrastructure abstract",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Experts emphasize that traditional defense concepts are no longer adequate against algorithmic warfare. Governments are scrambling to develop new doctrines that combine physical defense with cyber resilience.",
+       "headline": "New Defense Doctrines",
+       "accent": "Strategic Shift",
+       "search": "military cyber command",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Regional conflicts are increasingly tied to technological supremacy and critical supply chains. Strategic infrastructure assets are frequently targeted to gain leverage in broader geopolitical disputes.",
+       "headline": "Geopolitical Tensions",
+       "accent": "Strategic Assets",
+       "search": "geopolitical map analytics",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Geopolitical Fallout"
+      },
+      {
+       "text": "As state actors weaponize machine learning, international relations are entering a volatile new phase. Trust between major powers is evaporating, replaced by a zero-sum technological paranoia.",
+       "headline": "Diplomatic Frost",
+       "accent": "Zero-Sum Game",
+       "search": "diplomacy meeting globe",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "The race for algorithmic dominance risks triggering wider physical and economic conflicts. When automated systems make split-second decisions, the margin for human diplomatic error shrinks to zero.",
+       "headline": "Automated Escalation",
+       "accent": "High Risk",
+       "search": "digital network connection",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Global supply chains for semiconductors and specialized hardware have become the new chokepoints of power. Controlling the silicon pipeline means controlling the future of global governance.",
+       "headline": "Silicon Chokepoints",
+       "accent": "Hardware Race",
+       "search": "microchip manufacturing factory",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Future geopolitical struggles will be fought primarily in the digital and cognitive domains rather than traditional battlefields. This paradigm shift will permanently alter the global balance of power.",
+       "headline": "Future Battlefields",
+       "accent": "Digital Domain",
+       "search": "futuristic digital war room",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "The Road Ahead"
+      },
+      {
+       "text": "The strategic decisions made by world leaders today will dictate the economic and political reality of the coming decades. Miscalculating the risks of unregulated artificial intelligence could prove irreversible.",
+       "headline": "Decisive Moment",
+       "accent": "Future Reality",
+       "search": "future city digital overlay",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Ultimately, the unchecked expansion of artificial intelligence in security and defense poses a fundamental question about human agency. Will we control these systems, or will they quietly begin to control us?",
+       "headline": "Ultimate Question",
+       "accent": "Human Agency",
+       "search": "artificial intelligence brain",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Do you believe artificial intelligence technologies pose an irreversible threat to global stability, or can international cooperation tame the tech arms race? Let us know your thoughts in the comments below.",
+       "headline": "Join The Discussion",
+       "accent": "Your Opinion",
+       "search": "comments question mark",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-26T21:17:15Z",
+     "elevenlabs": {
+      "used": 23796,
+      "limit": 40000,
+      "left": 16204,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 16.204 / 40.000 karakter kaldı (bu video 3.349 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45894015462-en"
+    },
+    {
+     "title": "Künstliche Intelligenz: Die unsichtbare globale Sicherheitskrise",
+     "description": "Künstliche Intelligenz verändert die globale Sicherheitsarchitektur rasant. Erfahren Sie, wie unkontrollierte Systeme und Energieengpässe neue geopolitische Konflikte auslösen.\n\n0:00 Die neue Frontlinie\n0:44 Energie und Infrastruktur\n1:24 Geopolitische Dynamiken\n2:03 Zukunftsszenarien\n\n#KünstlicheIntelligenz #Geopolitik #Sicherheit #Technologie",
+     "tags": [
+      "KI Sicherheit",
+      "Globale Risiken",
+      "Künstliche Intelligenz",
+      "Geopolitik",
+      "Cyber Warfare",
+      "Rechenzentren",
+      "Energiekrise",
+      "Technologie",
+      "Weltpolitik",
+      "Infrastruktur"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-de/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-de/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-de/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#KünstlicheIntelligenz",
+      "#Geopolitik",
+      "#Sicherheit",
+      "#Technologie"
+     ],
+     "lang": "de",
+     "topic": "Global AI Security Risks and Infrastructure",
+     "tts": "edge",
+     "duration": 165.1,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45894015462-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Künstliche Intelligenz treibt die globale Sicherheitsarchitektur an ihre Grenzen. Regierungen weltweit stehen vor der enormen Herausforderung, die Kontrolle über autonome Systeme zu behalten.",
+       "headline": "KI-Revolution",
+       "accent": "Sicherheit",
+       "search": "artificial intelligence security",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Die neue Frontlinie"
+      },
+      {
+       "text": "Technologiegiganten und politische Akteure streiten verbissen um die Regulierung digitaler Infrastrukturen. Dabei offenbaren sich tiefe Gräben zwischen den führenden Wirtschaftsnationen.",
+       "headline": "Globale Macht",
+       "accent": "Regulierung",
+       "search": "global tech regulation",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Ermittler in Arizona warnen vor den unkalkulierbaren Risiken autonom agierender Algorithmen. Laut Reuters-Berichten geraten hochentwickelte Systeme zunehmend außer Kontrolle.",
+       "headline": "Kontrollverlust",
+       "accent": "Arizona",
+       "search": "server room ai",
+       "style": "headline",
+       "countries": [
+        "US"
+       ],
+       "country_names": [
+        "USA"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Internationale Hackergruppen nutzen diese Schwachstellen gezielt für Angriffe auf Finanzzentren. Große Institutionen stehen im Fokus hochkomplexer Schadsoftware-Kampagnen.",
+       "headline": "Cyberangriffe",
+       "accent": "Finanzzentren",
+       "search": "cyber attack hackers",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Der rasante Ausbau künstlicher Intelligenz verschlingt gigantische Mengen elektrischer Energie. Experten schlagen Alarm, da die Rechenzentren enorme Lasten erzeugen.",
+       "headline": "Energiebedarf",
+       "accent": "Rechenzentren",
+       "search": "data center power plant",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Energie und Infrastruktur"
+      },
+      {
+       "text": "Der unstillbare Stromhunger der Serverfarmen führt in vielen Regionen zu akuten Engpässen. Kritische Infrastrukturen geraten dadurch massiv unter Druck.",
+       "headline": "Stromkrise",
+       "accent": "Infrastruktur",
+       "search": "power grid crisis",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Staatliche Akteure investieren massiv in den Schutz ihrer digitalen und physischen Netze. Die steigende Bedrohungslage erzwingt völlig neue Sicherheitskonzepte.",
+       "headline": "Abwehrstrategie",
+       "accent": "Netzwerke",
+       "search": "cyber defense command",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Experten betonen, dass diese veränderten Rahmenbedingungen die internationale Stabilität gefährden. Die Grenzen zwischen ziviler und militärischer Nutzung verschwimmen zusehends.",
+       "headline": "Instabilität",
+       "accent": "Bedrohung",
+       "search": "global risk map",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Strategische Regionen und deren Energieversorgung sind das Hauptziel moderner Konflikte. Hybride Angriffe zielen darauf ab, ganze Volkswirtschaften lahmzulegen.",
+       "headline": "Geopolitik",
+       "accent": "Energie",
+       "search": "critical infrastructure map",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Geopolitische Dynamiken"
+      },
+      {
+       "text": "Regierungen weltweit rüsten im Cyberraum auf, um im technologischen Wettstreit nicht ins Hintertreffen zu geraten. Dieser unsichtbare Krieg formt die Weltordnung neu.",
+       "headline": "Wettstreit",
+       "accent": "Cyberraum",
+       "search": "digital warfare screen",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Die Verflechtung von Künstlicher Intelligenz und staatlicher Macht schafft unvorhersehbare Risiken. Fehler in den Algorithmen können globale Krisen auslösen.",
+       "headline": "Risikofaktor",
+       "accent": "Algorithmen",
+       "search": "binary code error",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Diplomaten ringen international um verbindliche Standards für den Einsatz militärischer KI-Systeme. Bisher fehlen jedoch durchgreifende Abkommen.",
+       "headline": "Diplomatie",
+       "accent": "Standards",
+       "search": "united nations meeting",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Analysten prognostizieren, dass künftige Konflikte überwiegend auf digitalen Plattformen ausgetragen werden. Physische Schlachten weichen datenbasierten Operationen.",
+       "headline": "Zukunft",
+       "accent": "Digital",
+       "search": "future technology war",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": "Zukunftsszenarien"
+      },
+      {
+       "text": "Die globale Sicherheitsarchitektur steht vor einer fundamentalen Transformation. Wer die Kontrolle über die Datenströme besitzt, dominiert das kommende Jahrhundert.",
+       "headline": "Transformation",
+       "accent": "Macht",
+       "search": "global network nodes",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Welche Strategien werden die großen Mächte in diesem digitalen Wettrüsten letztlich durchsetzen? Die Weichen für die politische Zukunft werden jetzt gestellt.",
+       "headline": "Ausblick",
+       "accent": "Strategie",
+       "search": "chess figures strategy",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Gefährdet die unkontrollierte Entwicklung der Künstlichen Intelligenz den globalen Frieden nachhaltig? Schreiben Sie Ihre Meinung gerne in die Kommentare.",
+       "headline": "Diskussion",
+       "accent": "Ihre Meinung",
+       "search": "question mark digital",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-26T21:26:31Z",
+     "elevenlabs": {
+      "used": 23796,
+      "limit": 40000,
+      "left": 16204,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 16.204 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45894015462-de"
+    }
+   ],
+   "ts": "2026-11-26T21:21:37"
+  }
+ },
  "_removed": [
-  "be8762e28854",
-  "3cc9d1e06e50",
-  "443091847971",
-  "446184028241",
-  "9849bc2ef437",
-  "b438246d60ee",
-  "017d2e76c451",
-  "445296633124",
-  "445944378441",
-  "1ed2aefedb23",
-  "873320f3cd81",
-  "1f8d57fecf3b",
-  "66eba903a865",
-  "1edbeb303dcc",
-  "445761614490",
-  "6f78216803dc",
-  "9fa68b731dc8",
-  "ddbd76050660",
-  "63bfb40d47b6",
-  "d42fcbc4ce3d",
-  "86277101f5be",
-  "130b7970530f",
-  "b34b7bca5216",
-  "2f1a20151385",
-  "442639882090",
-  "27b1f9c04076",
-  "0d9dbcf465cd",
-  "e545b5536757",
-  "d7e9c169bc14",
-  "20dcc23cea11",
-  "a5e09c77f7f8",
-  "9d8c10911957",
-  "d05d46e84530",
   "444854651743",
-  "ea76cda66aa7",
-  "41416ec5f7f6",
+  "57b4fdc6596f",
+  "445944378441",
+  "443091847971",
+  "86277101f5be",
+  "0d9dbcf465cd",
+  "446184028241",
   "abe41c1aaf94",
+  "bc7037909ba6",
   "af6ed91f3a79",
-  "443631404172",
-  "7eb47a5db7cd",
-  "c947dac9becb",
-  "f02172b50f8c",
+  "1f8d57fecf3b",
+  "9fa68b731dc8",
+  "be8762e28854",
+  "9849bc2ef437",
+  "66eba903a865",
+  "a5e09c77f7f8",
+  "ea76cda66aa7",
+  "26c2e83ebba1",
+  "20dcc23cea11",
+  "0c7c07a879a6",
   "54f34c42d936",
+  "a86c24402051",
+  "446184028240",
+  "c0c492475217",
+  "b34b7bca5216",
+  "ddbd76050660",
+  "87a011d7d646",
+  "445296633124",
+  "d42fcbc4ce3d",
+  "27b1f9c04076",
+  "873320f3cd81",
   "ccd67624d8c3",
   "6ad3bacfd1c7",
-  "a86c24402051",
-  "bc7037909ba6",
-  "446184028240",
-  "74775df4be80",
-  "445944378440",
-  "57b4fdc6596f",
-  "c0c492475217",
-  "26c2e83ebba1",
-  "87a011d7d646",
-  "0c7c07a879a6",
+  "3cc9d1e06e50",
   "32fa0d1d693a",
+  "017d2e76c451",
+  "1ed2aefedb23",
+  "442639882090",
+  "c947dac9becb",
+  "74775df4be80",
+  "1edbeb303dcc",
+  "41416ec5f7f6",
+  "445944378440",
+  "6f78216803dc",
+  "f02172b50f8c",
+  "d7e9c169bc14",
+  "e545b5536757",
+  "b438246d60ee",
   "3f6ae6499c1b",
-  "b349a255e16e"
+  "445761614490",
+  "b349a255e16e",
+  "9d8c10911957",
+  "443631404172",
+  "130b7970530f",
+  "7eb47a5db7cd",
+  "d05d46e84530",
+  "2f1a20151385",
+  "63bfb40d47b6"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1303,6 +1867,24 @@
      "yayin_en": 5,
      "yayin_de": 5
     }
+   },
+   "45894015462-44cb6f": {
+    "2026-11-26": {
+     "uretilen": 3,
+     "render_sn": 1783.0,
+     "render_n": 3,
+     "prov:gemini:ok": 3,
+     "prov:gemini_1:ok": 2,
+     "prov:gemini_1:hata": 1,
+     "prov:gemini_2:hata": 1,
+     "prov:openrouter_nemotron:ok": 1,
+     "prov:openrouter_nemotron:yedek": 1,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "llm_yedek": 1,
+     "actions_dk": 30
+    }
    }
   },
   "gunluk": {
@@ -1420,25 +2002,27 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-26": {
-    "actions_dk": 57,
-    "uretilen": 15,
-    "render_sn": 1983.9,
-    "render_n": 15,
-    "prov:gemini:ok": 5,
-    "prov:gemini_1:ok": 5,
-    "prov:openrouter_nemotron:ok": 10,
-    "ses:edge": 10,
-    "ses:elevenlabs": 5,
-    "llm_cagri": 16,
+    "actions_dk": 87,
+    "uretilen": 18,
+    "render_sn": 3766.9,
+    "render_n": 18,
+    "prov:gemini:ok": 8,
+    "prov:gemini_1:ok": 7,
+    "prov:openrouter_nemotron:ok": 11,
+    "ses:edge": 12,
+    "ses:elevenlabs": 6,
+    "llm_cagri": 19,
     "ceviri_nemotron": 10,
-    "prov:gemini_1:hata": 1,
+    "prov:gemini_1:hata": 2,
     "prov:gemini_2:ok": 1,
     "prov:gemini_2:yedek": 1,
-    "llm_yedek": 1,
+    "llm_yedek": 2,
     "onay": 5,
     "yayin_tr": 5,
     "yayin_en": 5,
-    "yayin_de": 5
+    "yayin_de": 5,
+    "prov:gemini_2:hata": 1,
+    "prov:openrouter_nemotron:yedek": 1
    }
   }
  }
