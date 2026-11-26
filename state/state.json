@@ -27,7 +27,8 @@
   "yt:_wQku0eU7jQ",
   "news:https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
   "trend:US:tehran",
-  "yt:mwIe-luij-0"
+  "yt:mwIe-luij-0",
+  "news:https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss"
  ],
  "topics": [
   {
@@ -239,12 +240,17 @@
    "topic": "Iran files 290 billion lawsuit against US",
    "ts": "2026-11-26T15:40:22",
    "summary": "İran'dan ABD'ye 290 Milyar Dolarlık Tazminat Davası. İran mahkemesi savaşta yapay zeka kullanan Amerika'ya 290 milyar dolar tazminat davası açtı. İddialara göre Tahran yönetimi Amerikan ordusunun çatışmalarda gizli yapay zeka modellerini devreye soktuğunu belgeledi. Washington'ın askeri operasyonlarda yapay zeka teknolojilerini aktif olarak kullandığı iddia ediliyor. Bu hukuki hamle iki ülke arasındaki jeopolitik ve teknolojik cepheleşmeyi tırmandıran yeni bir eşik. Bölgesel gerilimin tırmanması riskler barındırıyor. Yapay zeka temelli bu hukuk savaşı küresel dengeleri altüst etmeye hazırlanıyor."
+  },
+  {
+   "topic": "German boat dealer supplies Channel smuggling gangs",
+   "ts": "2026-11-26T17:55:23",
+   "summary": "Alman bayiden Manş'ta göçmen kaçakçılığı: Tekne skandalı. BBC'ye göre, Manş Denizi'ndeki geçişlerin üçte birine yakınında Alman bir bayinin botları veya motorları kullanılmış olabilir. Alman vatandaşı bir tüccarın İngiltere'ye yasadışı geçiş çetelerine motor sattığı belirlendi. BBC'nin haberine göre, 2026'nın ilk aylarındaki deniz geçişlerinin arkasında bu şüphelinin ekipmanları bulunduğu iddia ediliyor. Bu durum, Avrupa'daki tedarik zinciri denetimlerinin ne kadar yetersiz kaldığını açıkça gösteriyor. Türkiye gibi düzensiz göçle mücadele eden ülkeler için bu sevkiyat zincirlerinin deşifresi hayati önem taşıyor. Avrupa'nın kalbinden işletilen bu ticaret ağları sınırları aşmaya devam ediyor."
   }
  ],
  "daily": {
   "2026-11-24": 4,
   "2026-11-25": 4,
-  "2026-11-26": 4
+  "2026-11-26": 5
  },
  "scheduled": {
   "en": [
@@ -1869,62 +1875,448 @@
     }
    ],
    "ts": "2026-11-26T15:40:22"
+  },
+  "017d2e76c451": {
+   "results": [
+    {
+     "title": "Alman bayiden Manş'ta göçmen kaçakçılığı: Tekne skandalı",
+     "description": "Alman bir teknecinin Manş Denizi'ndeki kaçakçılık çetelerine bot ve motor sağladığı ortaya çıktı. Sizce bu durum Avrupa'daki sınır güvenliğini nasıl etkiler?\n\nKaynak: bbc.co.uk\n\n#ManşDenizi #GöçmenKaçakçılığı #Almanya #SınırGüvenliği",
+     "tags": [
+      "Manş Denizi göçmenler",
+      "Alman tekne satıcısı",
+      "İngiltere kaçakçılık",
+      "Manş geçişleri",
+      "Avrupa sınır güvenliği",
+      "düzensiz göç",
+      "kaçakçı botları",
+      "uluslararası suç",
+      "Almanya haberleri",
+      "göç krizleri"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#ManşDenizi",
+      "#GöçmenKaçakçılığı",
+      "#Almanya",
+      "#SınırGüvenliği"
+     ],
+     "lang": "tr",
+     "topic": "German boat dealer supplies Channel smuggling gangs",
+     "tts": "edge",
+     "duration": 46.46,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "BBC'ye göre, Manş Denizi'ndeki geçişlerin üçte birine yakınında Alman bir bayinin botları veya motorları kullanılmış olabilir.",
+       "headline": "3'te 1 Oran",
+       "accent": "kaçakçılık",
+       "search": "migrant boat sea",
+       "style": "headline",
+       "countries": [
+        "DEU",
+        "GBR",
+        "FRA"
+       ],
+       "country_names": [
+        "Almanya",
+        "İngiltere",
+        "Fransa"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Alman vatandaşı bir tüccarın İngiltere'ye yasadışı geçiş çetelerine motor sattığı belirlendi.",
+       "headline": "Alman Bayi",
+       "accent": "şüpheli",
+       "search": "inflatable boat",
+       "style": "subtitle",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "BBC'nin haberine göre, 2026'nın ilk aylarındaki deniz geçişlerinin arkasında bu şüphelinin ekipmanları bulunduğu iddia ediliyor.",
+       "headline": "Yeni Kanıtlar",
+       "accent": "operasyon",
+       "search": "police investigation",
+       "style": "headline",
+       "countries": [
+        "GBR",
+        "DEU"
+       ],
+       "country_names": [
+        "İngiltere",
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu durum, Avrupa'daki tedarik zinciri denetimlerinin ne kadar yetersiz kaldığını açıkça gösteriyor.",
+       "headline": "Zafiyet",
+       "accent": "denetim",
+       "search": "port security",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Türkiye gibi düzensiz göçle mücadele eden ülkeler için bu sevkiyat zincirlerinin deşifresi hayati önem taşıyor.",
+       "headline": "Etki Alanı",
+       "accent": "güvenlik",
+       "search": "border control",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Avrupa'nın kalbinden işletilen bu ticaret ağları sınırları aşmaya devam ediyor.",
+       "headline": "Derin Bağ",
+       "accent": "şebeke",
+       "search": "cargo port aerial",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-26T17:55:48Z",
+     "elevenlabs": {
+      "used": 22262,
+      "limit": 40000,
+      "left": 17738,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.738 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-45870078266-tr"
+    },
+    {
+     "title": "German Dealer Linked to Channel Migrant Smuggling: Boat Scandal",
+     "description": "A German boat dealer was found supplying boats and engines to smuggling gangs in the English Channel. How does this affect border security in Europe?\n\nSource: bbc.co.uk\n\n#EnglishChannel #MigrantSmuggling #Germany #BorderSecurity",
+     "tags": [
+      "English Channel migrants",
+      "German boat dealer",
+      "UK smuggling",
+      "Channel crossings",
+      "European border security",
+      "irregular migration",
+      "smuggler boats",
+      "international crime",
+      "Germany news",
+      "migration crises"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#EnglishChannel",
+      "#MigrantSmuggling",
+      "#Germany",
+      "#BorderSecurity"
+     ],
+     "lang": "en",
+     "topic": "German boat dealer supplies Channel smuggling gangs",
+     "tts": "elevenlabs",
+     "duration": 33.55,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "BBC reports that a German dealer’s boats or engines may have been used in nearly one‑third of Channel crossings.",
+       "headline": "One‑Third Ratio",
+       "accent": "smuggling",
+       "search": "migrant boat sea",
+       "style": "headline",
+       "countries": [
+        "DEU",
+        "GBR",
+        "FRA"
+       ],
+       "country_names": [
+        "Almanya",
+        "İngiltere",
+        "Fransa"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "A German merchant was found to have sold engines to smuggling gangs heading for Britain.",
+       "headline": "German Dealer",
+       "accent": "suspect",
+       "search": "inflatable boat",
+       "style": "subtitle",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "BBC says the suspect’s equipment powered sea crossings in early 2026.",
+       "headline": "New Evidence",
+       "accent": "operation",
+       "search": "police investigation",
+       "style": "headline",
+       "countries": [
+        "GBR",
+        "DEU"
+       ],
+       "country_names": [
+        "İngiltere",
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "This shows how weak supply‑chain controls in Europe remain.",
+       "headline": "Vulnerability",
+       "accent": "control",
+       "search": "port security",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Exposing these supply chains is vital for countries like Turkey fighting irregular migration.",
+       "headline": "Impact Zone",
+       "accent": "security",
+       "search": "border control",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Trade networks run from Europe’s heart continue to breach borders.",
+       "headline": "Deep Network",
+       "accent": "network",
+       "search": "cargo port aerial",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-26T17:57:57Z",
+     "elevenlabs": {
+      "used": 22457,
+      "limit": 40000,
+      "left": 17543,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.543 / 40.000 karakter kaldı (bu video 487 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45870078266-en"
+    },
+    {
+     "title": "Deutscher Händler im Ärmelkanal: Migranten-Schmuggel-Skandal",
+     "description": "Ein deutscher Bootsbauer soll Schmuggelbanden im Ärmelkanal Boote und Motoren geliefert haben. Wie wirkt sich das auf die Grenzsicherheit in Europa aus?\n\nQuelle: bbc.co.uk\n\n#Ärmelkanal #MigrantenSchmuggel #Deutschland #Grenzsicherheit",
+     "tags": [
+      "Ärmelkanal Migranten",
+      "Deutscher Bootsverkäufer",
+      "Großbritannien Schmuggel",
+      "Ärmelkanal Überfahrten",
+      "Europa Grenzsicherheit",
+      "irreguläre Migration",
+      "Schmuggelboote",
+      "internationale Kriminalität",
+      "Deutschland Nachrichten",
+      "Migrationskrisen"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Ärmelkanal",
+      "#MigrantenSchmuggel",
+      "#Deutschland",
+      "#Grenzsicherheit"
+     ],
+     "lang": "de",
+     "topic": "German boat dealer supplies Channel smuggling gangs",
+     "tts": "edge",
+     "duration": 38.25,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45870078266-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Laut BBC könnten bei einem Drittel der Kanalüberfahrten Boote oder Motoren eines deutschen Händlers genutzt worden sein.",
+       "headline": "Ein-Drittel-Quote",
+       "accent": "Schmuggel",
+       "search": "migrant boat sea",
+       "style": "headline",
+       "countries": [
+        "DEU",
+        "GBR",
+        "FRA"
+       ],
+       "country_names": [
+        "Almanya",
+        "İngiltere",
+        "Fransa"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ein deutscher Händler soll Schmuggelbanden in Großbritannien Motoren verkauft haben.",
+       "headline": "Deutscher Händler",
+       "accent": "Verdächtiger",
+       "search": "inflatable boat",
+       "style": "subtitle",
+       "countries": [
+        "DEU"
+       ],
+       "country_names": [
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "BBC berichtet, dass die Ausrüstung des Verdächtigen hinter den Überfahrten der Monate 2026 stecke.",
+       "headline": "Neue Beweise",
+       "accent": "Operation",
+       "search": "police investigation",
+       "style": "headline",
+       "countries": [
+        "GBR",
+        "DEU"
+       ],
+       "country_names": [
+        "İngiltere",
+        "Almanya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Das zeigt, wie lückenhaft die Lieferkettenkontrollen in Europa sind.",
+       "headline": "Schwachstelle",
+       "accent": "Kontrolle",
+       "search": "port security",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Für Länder wie die Türkei, die irreguläre Migration bekämpfen, ist die Aufdeckung dieser Lieferketten entscheidend.",
+       "headline": "Wirkungsbereich",
+       "accent": "Sicherheit",
+       "search": "border control",
+       "style": "headline",
+       "countries": [
+        "TUR"
+       ],
+       "country_names": [
+        "Türkiye"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Diese von Europas Kern aus betriebenen Handelsnetze überwinden weiterhin Grenzen.",
+       "headline": "Tiefe Verbindung",
+       "accent": "Netzwerk",
+       "search": "cargo port aerial",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+     "publish_at": "2026-11-26T18:00:20Z",
+     "elevenlabs": {
+      "used": 22457,
+      "limit": 40000,
+      "left": 17543,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 17.543 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-45870078266-de"
+    }
+   ],
+   "ts": "2026-11-26T17:55:23"
   }
  },
  "_removed": [
-  "2f1a20151385",
-  "41416ec5f7f6",
-  "3cc9d1e06e50",
-  "b438246d60ee",
-  "b34b7bca5216",
-  "6ad3bacfd1c7",
-  "63bfb40d47b6",
-  "3f6ae6499c1b",
-  "f02172b50f8c",
-  "32fa0d1d693a",
-  "0d9dbcf465cd",
-  "443631404172",
-  "ccd67624d8c3",
-  "d42fcbc4ce3d",
-  "0c7c07a879a6",
-  "130b7970530f",
-  "54f34c42d936",
-  "445761614490",
-  "445944378440",
-  "9849bc2ef437",
-  "445944378441",
-  "e545b5536757",
-  "87a011d7d646",
-  "7eb47a5db7cd",
-  "c947dac9becb",
-  "1edbeb303dcc",
-  "a86c24402051",
-  "86277101f5be",
-  "445296633124",
-  "d7e9c169bc14",
-  "ddbd76050660",
-  "66eba903a865",
-  "26c2e83ebba1",
-  "57b4fdc6596f",
-  "be8762e28854",
-  "442639882090",
-  "a5e09c77f7f8",
-  "446184028240",
-  "443091847971",
-  "9d8c10911957",
-  "abe41c1aaf94",
-  "20dcc23cea11",
-  "9fa68b731dc8",
-  "446184028241",
   "74775df4be80",
-  "6f78216803dc",
-  "27b1f9c04076",
+  "9d8c10911957",
+  "445761614490",
+  "ddbd76050660",
+  "0c7c07a879a6",
+  "c947dac9becb",
+  "445296633124",
+  "6ad3bacfd1c7",
+  "26c2e83ebba1",
+  "7eb47a5db7cd",
+  "445944378441",
+  "bc7037909ba6",
+  "446184028240",
+  "3f6ae6499c1b",
+  "3cc9d1e06e50",
+  "54f34c42d936",
+  "b34b7bca5216",
+  "ccd67624d8c3",
+  "be8762e28854",
+  "a86c24402051",
   "1f8d57fecf3b",
-  "873320f3cd81",
-  "af6ed91f3a79",
-  "444854651743",
+  "443091847971",
+  "63bfb40d47b6",
+  "abe41c1aaf94",
+  "f02172b50f8c",
   "b349a255e16e",
-  "bc7037909ba6"
+  "87a011d7d646",
+  "a5e09c77f7f8",
+  "86277101f5be",
+  "27b1f9c04076",
+  "130b7970530f",
+  "0d9dbcf465cd",
+  "66eba903a865",
+  "e545b5536757",
+  "2f1a20151385",
+  "9849bc2ef437",
+  "d42fcbc4ce3d",
+  "444854651743",
+  "d7e9c169bc14",
+  "443631404172",
+  "873320f3cd81",
+  "442639882090",
+  "b438246d60ee",
+  "445944378440",
+  "41416ec5f7f6",
+  "20dcc23cea11",
+  "af6ed91f3a79",
+  "57b4fdc6596f",
+  "446184028241",
+  "1edbeb303dcc",
+  "6f78216803dc",
+  "32fa0d1d693a",
+  "9fa68b731dc8"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -2777,6 +3169,21 @@
      "ceviri_nemotron": 2,
      "actions_dk": 9
     }
+   },
+   "45870078266-e1a49a": {
+    "2026-11-26": {
+     "uretilen": 3,
+     "render_sn": 565.0,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:edge": 2,
+     "ses:elevenlabs": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 12
+    }
    }
   },
   "gunluk": {
@@ -2894,17 +3301,17 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-26": {
-    "actions_dk": 38,
-    "uretilen": 12,
-    "render_sn": 1418.9,
-    "render_n": 12,
-    "prov:gemini:ok": 4,
-    "prov:gemini_1:ok": 4,
-    "prov:openrouter_nemotron:ok": 8,
-    "ses:edge": 8,
-    "ses:elevenlabs": 4,
-    "llm_cagri": 13,
-    "ceviri_nemotron": 8,
+    "actions_dk": 50,
+    "uretilen": 15,
+    "render_sn": 1983.9,
+    "render_n": 15,
+    "prov:gemini:ok": 5,
+    "prov:gemini_1:ok": 5,
+    "prov:openrouter_nemotron:ok": 10,
+    "ses:edge": 10,
+    "ses:elevenlabs": 5,
+    "llm_cagri": 16,
+    "ceviri_nemotron": 10,
     "prov:gemini_1:hata": 1,
     "prov:gemini_2:ok": 1,
     "prov:gemini_2:yedek": 1,
