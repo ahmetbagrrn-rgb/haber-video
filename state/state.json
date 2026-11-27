@@ -367,67 +367,1021 @@
    "2026-11-27T18:00:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "29a1c4645e6f": {
+   "results": [
+    {
+     "title": "Ukrayna'dan Şok Operasyon: Rus Savaş Gemisi Bingazi'de Batırıldı!",
+     "description": "Ukrayna ordusu, Karadeniz sınırlarını aşarak Libya'nın Bingazi Limanı'nda konuşlanan bir Rus savaş gemisini düzenlediği İHA operasyonuyla batırdı. Bu kritik hamle, Rusya'nın Afrika ve Akdeniz'deki lojistik hatlarına ağır bir darbe indirirken küresel deniz güvenliğini yeniden tartışmaya açtı. Operasyonun arka planı ve bölgesel etkileri analizimizde.\n\n0:00 Akdeniz'de Beklenmedik Şok\n0:42 Bingazi Baskınının Detayları\n1:34 Afrika ve Akdeniz Lojistik Hattı\n2:25 Küresel Deniz Hatlarında Gerilim\n3:04 Bundan Sonra Ne Olabilir?\n\n#Ukrayna #Rusya #Bingazi #Jeopolitik #Savaş",
+     "tags": [
+      "Ukrayna Rusya savaşı",
+      "Bingazi limanı",
+      "Rus savaş gemisi batırıldı",
+      "Ukrayna İHA operasyonu",
+      "Zelenski açıklaması",
+      "Akdeniz jeopolitiği",
+      "Rusya Afrika lojistik",
+      "İHA saldırısı",
+      "askeri analiz",
+      "deniz harbi",
+      "asimetrik savaş",
+      "küresel güvenlik"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-tr/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-tr/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-tr/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#Ukrayna",
+      "#Rusya",
+      "#Bingazi",
+      "#Jeopolitik",
+      "#Savaş"
+     ],
+     "lang": "tr",
+     "topic": "Ukrainian Drones Sink Russian Warship in Benghazi",
+     "tts": "elevenlabs",
+     "duration": 237.91,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Rusya-Ukrayna çatışması Karadeniz sınırlarını aşarak Kuzey Afrika kıyılarına kadar uzandı. Ukrayna güçleri, Libya'nın Bingazi Limanı'nda konuşlu bir Rus savaş gemisini stratejik bir darbeyle suların altına gömdü.",
+       "headline": "Akdeniz'de Sıcak Gelişme",
+       "accent": "Rus Savaş Gemisi Batırıldı",
+       "search": "military warship explosion sea",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": "Akdeniz'de Beklenmedik Şok"
+      },
+      {
+       "text": "Saldırı, Karadeniz'in binlerce kilometre ötesinde gerçekleştiği için askeri uzmanlar tarafından büyük bir şaşkınlıkla karşılandı. Ukrayna'nın küresel ölçekteki operasyon kapasitesi uluslararası gündemin ilk sırasına yerleşti.",
+       "headline": "Sınırları Aşan Operasyon",
+       "accent": "Uzun Menzilli Stratejik Darbe",
+       "search": "military drone flight sea",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrayna Devlet Başkanı Zelenski, bu sıra dışı askeri harekâtın detaylarını kamuoyuyla paylaşarak operasyonun başarısını teyit etti. Kullanılan yöntem ve hedefin konumu küresel askeri dengeleri sarsacak nitelikte.",
+       "headline": "Zelenski Operasyonu Teyit Etti",
+       "accent": "Resmi Açıklama Geldi",
+       "search": "volodymyr zelenskyy speaking press",
+       "style": "headline",
+       "countries": [
+        "UA"
+       ],
+       "country_names": [
+        "Ukrayna"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrayna Devlet Başkanı Zelenski'nin açıklamasına göre Ukrayna ordusu operasyonda toplam yedi adet insansız hava aracı kullandı. Hedef alınan Rus savaş gemisi, aldığı ağır hasarların ardından kısa sürede battı.",
+       "headline": "7 Kamikaze İHA Kullanıldı",
+       "accent": "Nokta Atışı İle İmha",
+       "search": "drone attack military ship",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": "Bingazi Baskınının Detayları"
+      },
+      {
+       "text": "Libya'nın doğusunda yer alan Bingazi Limanı, Rusya'nın bölgedeki askeri varlığı açısından kritik bir üs konumundaydı. Geminin batırılması, limandaki güvenlik zafiyetini net bir şekilde ortaya koydu.",
+       "headline": "Kritik Üste Güvenlik Zafiyeti",
+       "accent": "Bingazi Limanı Hedef Oldu",
+       "search": "benghazi port libya ships",
+       "style": "headline",
+       "countries": [
+        "LY",
+        "RU"
+       ],
+       "country_names": [
+        "Libya",
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Hava savunma sistemlerinin ve erken ihbar mekanizmalarının bu derece uzak bir noktada yetersiz kalması dikkat çekti. İHA'ların tespiti ve engellenmesi konusunda ciddi sorunlar yaşandığı görüldü.",
+       "headline": "Hava Savunma Yetersiz Kaldı",
+       "accent": "Erken İhbar Sistemi Çöktü",
+       "search": "radar system military defense",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Operasyon, sadece bir geminin imha edilmesiyle sınırlı kalmayıp Rus ordusunun komuta kontrol ağında da büyük dalgalanmalara yol açtı. Moskova'nın Akdeniz'deki deniz hakimiyeti iddiası sarsıldı.",
+       "headline": "Komuta Ağında Büyük Dalgalanma",
+       "accent": "Deniz Hakimiyeti Sarsıldı",
+       "search": "navy command center officers",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Bingazi Limanı, Moskova'nın Afrika ve Akdeniz'deki askeri varlığını besleyen en önemli ikmal noktalarından biriydi. Bu darbe, Rusya'nın kıtadaki askeri finansman ve lojistik hatlarını doğrudan hedef aldı.",
+       "headline": "Lojistik Hattına Ağır Darbe",
+       "accent": "İkmal Yolları Kesildi",
+       "search": "cargo ship ocean port",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Rusya",
+        "Libya"
+       ],
+       "chapter": "Afrika ve Akdeniz Lojistik Hattı"
+      },
+      {
+       "text": "Ukrayna stratejistleri, Rusya'nın savaş finansmanını ve cephe gerisindeki lojistik gücünü zayıflatmak için küresel rotaları hedef alıyor. Bu hamle, savaşın coğrafi sınırlarını tamamen ortadan kaldırıyor.",
+       "headline": "Küresel Strateji Değişimi",
+       "accent": "Savaşın Sınırları Genişliyor",
+       "search": "world map military strategy",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Afrika'daki Rus varlığının ikmal hatları bu saldırıyla birlikte ciddi bir kırılma yaşayabilir. Rusya'nın Akdeniz üzerindeki nakliye operasyonları büyük bir risk altına girdi.",
+       "headline": "Afrika Operasyonları Tehlikede",
+       "accent": "İkmal Hatları Kırılıyor",
+       "search": "africa map military deployment",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Moskova'nın Libya ve Suriye hattındaki askeri sevkiyatları artık güvenli deniz limanlarından mahrum kalma riskiyle karşı karşıya. İkmal rotalarının yeniden planlanması zorunlu hale geldi.",
+       "headline": "Sevkiyat Rotaları Değişiyor",
+       "accent": "Güvenli Liman Kalmadı",
+       "search": "mediterranean sea satellite view",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "LY",
+        "SY"
+       ],
+       "country_names": [
+        "Rusya",
+        "Libya",
+        "Suriye"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Bingazi'deki baskından kısa bir süre önce Baltık Denizi'ndeki Finlandiya Körfezi'nde de bir Rus kargo gemisi hedef alınmıştı. Denizlerdeki bu eş zamanlı gerilim küresel bir boyuta ulaşıyor.",
+       "headline": "Baltık'tan Akdeniz'e Gerilim",
+       "accent": "Eş Zamanlı Deniz Saldırıları",
+       "search": "baltic sea cargo ship cold",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "FI"
+       ],
+       "country_names": [
+        "Rusya",
+        "Finlandiya"
+       ],
+       "chapter": "Küresel Deniz Hatlarında Gerilim"
+      },
+      {
+       "text": "Dünyanın farklı deniz alanlarında Rus ticaret ve savaş gemilerine yönelik saldırıların artması, uluslararası seyrüsefer güvenliğini tehlikeye sokuyor. Ticari deniz taşımacılığı da bu durumdan etkileniyor.",
+       "headline": "Seyrüsefer Güvenliği Alarmda",
+       "accent": "Ticari Rotalar Tehdit Altında",
+       "search": "container ship stormy sea",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrayna'nın asimetrik harp taktikleri, dev deniz filolarına sahip ülkeler için yeni bir tehdit algısı oluşturdu. Ucuz İHA'lar, milyon dolarlık savaş gemilerini etkisiz hale getirebiliyor.",
+       "headline": "Asimetrik Savaşın Yeni Boyutu",
+       "accent": "İHA'lar Dengeleri Değiştiriyor",
+       "search": "military drone technology ocean",
+       "style": "headline",
+       "countries": [
+        "UA"
+       ],
+       "country_names": [
+        "Ukrayna"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Önümüzdeki dönemde Ukrayna'nın Karadeniz dışındaki Rus hedeflerine yönelik asimetrik saldırılarını artırması muhtemel görünüyor. Rusya ise uzak limanlardaki güvenlik tedbirlerini radikal şekilde sıkılaştıracaktır.",
+       "headline": "Saldırılar Yayılabilir",
+       "accent": "Uzak Limanlarda Alarm",
+       "search": "military base security patrol",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": "Bundan Sonra Ne Olabilir?"
+      },
+      {
+       "text": "Moskova'nın Akdeniz ve Afrika'daki askeri varlığını korumak için yeni hava savunma sistemleri konuşlandırması bekleniyor. Ancak bu durum, Rusya'nın ana cephedeki kaynaklarını bölmesine neden olabilir.",
+       "headline": "Kaynaklar Bölünebilir",
+       "accent": "Yeni Savunma Sistemleri Sevk Edilecek",
+       "search": "air defense missile system",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Rusya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Asimetrik savaşın küresel deniz hatlarına yayılması, uluslararası deniz ticaretinde sigorta ve güvenlik maliyetlerini tırmandırabilir. Çatışmanın coğrafi olarak genişlemesi küresel riskleri katlayacaktır.",
+       "headline": "Küresel Riskler Katlanıyor",
+       "accent": "Deniz Ticaretinde Maliyet Artışı",
+       "search": "global economy trade logistics",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Sizce Ukrayna'nın Afrika ve Akdeniz'deki Rus hedeflerini vurması savaşın genel seyrini nasıl etkiler? Düşüncelerinizi ve analizlerinizi yorumlar kısmında bizimle paylaşmayı unutmayın.",
+       "headline": "Siz Ne Düşünüyorsunuz?",
+       "accent": "Yorumlarda Fikrinizi Belirtin",
+       "search": "world news analysis studio",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukrayna",
+        "Rusya"
+       ],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-27T07:29:46Z",
+     "elevenlabs": {
+      "used": 25436,
+      "limit": 40000,
+      "left": 14564,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 14.564 / 40.000 karakter kaldı (bu video 3.591 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45957458448-tr"
+    },
+    {
+     "title": "Ukraine Strikes Far From Home: Russian Warship Sunk in Libya",
+     "description": "Ukraine has expanded its military footprint far beyond the Black Sea by sinking a Russian warship in Benghazi, Libya. Using long-range drone tactics, Kyiv is directly targeting Moscow's critical logistics networks across North Africa. This unprecedented strike could fundamentally alter global maritime security and Russian supply lines.\n\n0:00 A Shocking Strike in North Africa\n0:46 The Benghazi Drone Raid\n1:29 Targeting Moscow's African Lifeline\n2:15 What Happens Next?\n\n#UkraineWar #Geopolitics #Libya #MilitaryAnalysis #NavalWarfare",
+     "tags": [
+      "Ukraine war",
+      "Russia Navy",
+      "Benghazi strike",
+      "drone warfare",
+      "Mediterranean security",
+      "Russian logistics",
+      "Zelenskyy",
+      "naval conflict",
+      "African defense",
+      "asymmetric warfare",
+      "global security",
+      "Black Sea conflict",
+      "military strategy"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-en/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-en/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-en/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#UkraineWar",
+      "#Geopolitics",
+      "#Libya",
+      "#MilitaryAnalysis",
+      "#NavalWarfare"
+     ],
+     "lang": "en",
+     "topic": "Ukraine Sinks Russian Warship in Benghazi Port Libya",
+     "tts": "elevenlabs",
+     "duration": 186.51,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Ukraine just expanded the conflict thousands of miles from the Black Sea front lines. A sudden drone operation in North Africa has fundamentally reshaped the war's global footprint.",
+       "headline": "War Expands Beyond Europe",
+       "accent": "Ukraine Strikes in Libya",
+       "search": "warship ocean explosion",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "LY"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Libya"
+       ],
+       "chapter": "A Shocking Strike in North Africa"
+      },
+      {
+       "text": "Ukrainian forces conducted a strategic strike against a Russian warship anchored in Benghazi, Libya. The audacious raid marks a dramatic expansion far beyond traditional battlefields.",
+       "headline": "Russian Ship Sunk in Benghazi",
+       "accent": "Targeting Benghazi Port",
+       "search": "military port ships",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russia",
+        "Libya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrainian President Volodymyr Zelenskyy confirmed that the warship sustained critical damage and quickly sank. The attack highlights Kyiv's rapidly expanding long-range attack capabilities.",
+       "headline": "Operation Confirmed by Kyiv",
+       "accent": "Zelenskyy Details Strike",
+       "search": "sinking naval vessel",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Defense analysts expressed surprise at how deep into North Africa Ukrainian forces could reach. Moscow's local defensive posture completely failed to detect or intercept the strike.",
+       "headline": "Global Reach Shockwave",
+       "accent": "Analysts Caught Off Guard",
+       "search": "military radar room",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrainian forces reportedly deployed seven unmanned aerial vehicles during the targeted assault. These low-cost drones successfully breached remote maritime defense networks.",
+       "headline": "Seven Drones Deployed",
+       "accent": "Low-Cost Asymmetric Attack",
+       "search": "military drone flight",
+       "style": "headline",
+       "countries": [
+        "UA"
+       ],
+       "country_names": [
+        "Ukraine"
+       ],
+       "chapter": "The Benghazi Drone Raid"
+      },
+      {
+       "text": "The eastern port of Benghazi has served as a key operational hub for Russian forces. The sudden loss exposes critical security gaps at Moscow's overseas facilities.",
+       "headline": "Libyan Base Exposed",
+       "accent": "Strategic Hub Compromised",
+       "search": "benghazi port aerial",
+       "style": "headline",
+       "countries": [
+        "LY",
+        "RU"
+       ],
+       "country_names": [
+        "Libya",
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Radar and air defense systems failed to protect the warship while docked in Libya. This failure underlines serious vulnerabilities within Russia's distant defense umbrella.",
+       "headline": "Defense Systems Fail",
+       "accent": "Surveillance Breakdown",
+       "search": "radar screen monitoring",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Beyond destroying a naval vessel, the strike disrupted regional command structures. Moscow's claim to maritime dominance in the Mediterranean faces severe operational doubts.",
+       "headline": "Command Network Disrupted",
+       "accent": "Naval Authority Shaken",
+       "search": "naval command center",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Benghazi serves as a vital logistics node supplying Russian operations across Africa and Syria. Sinking vessels here directly threatens Moscow's regional power projection.",
+       "headline": "African Supply Lines Threatened",
+       "accent": "Crucial Logistics Hub",
+       "search": "cargo ship harbor",
+       "style": "headline",
+       "countries": [
+        "LY",
+        "RU",
+        "SY"
+       ],
+       "country_names": [
+        "Libya",
+        "Russia",
+        "Syria"
+       ],
+       "chapter": "Targeting Moscow's African Lifeline"
+      },
+      {
+       "text": "Kyiv is deliberately striking the remote financial and supply routes supporting Russia's war effort. By expanding the target zone, Ukraine forces Moscow to defend assets worldwide.",
+       "headline": "Asymmetric Global Strategy",
+       "accent": "Targeting War Funding",
+       "search": "world map logistics",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Maritime supply lines connecting Syria and North Africa now face unprecedented security risks. Russian naval operations along these routes will require complete operational reassessments.",
+       "headline": "Maritime Routes at Risk",
+       "accent": "Supply Chains Disrupted",
+       "search": "mediterranean sea map",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "SY",
+        "LY"
+       ],
+       "country_names": [
+        "Russia",
+        "Syria",
+        "Libya"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "With recent maritime tension also reported in the Gulf of Finland, conflict is spreading across international waters. Commercial shipping lines are facing mounting collateral danger.",
+       "headline": "Global Maritime Tension",
+       "accent": "Escalation in Multiple Seas",
+       "search": "container vessel ocean",
+       "style": "headline",
+       "countries": [
+        "FI",
+        "RU"
+       ],
+       "country_names": [
+        "Finland",
+        "Russia"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Moving forward, Ukraine will likely intensify long-range asymmetric attacks against Russian targets abroad. Striking remote outposts forces Moscow to divide its resources across multiple theaters.",
+       "headline": "Future Asymmetric Attacks",
+       "accent": "Expanding the Front",
+       "search": "military strategy room",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russia"
+       ],
+       "chapter": "What Happens Next?"
+      },
+      {
+       "text": "Moscow may be forced to deploy additional air defense batteries to overseas ports. However, shifting equipment abroad risks weakening defensive positions along the Ukrainian front lines.",
+       "headline": "Diverting Frontline Assets",
+       "accent": "Moscow's Dilemma",
+       "search": "air defense missile",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "UA"
+       ],
+       "country_names": [
+        "Russia",
+        "Ukraine"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Escalating threats to commercial and naval vessels could significantly increase marine insurance rates worldwide. Expanding military actions into global trade corridors present major economic risks.",
+       "headline": "Global Economic Fallout",
+       "accent": "Rising Shipping Costs",
+       "search": "commercial shipping port",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "This operation demonstrates that geographic distance no longer offers safety in modern conflict. How do you think Ukraine's strikes in North Africa will impact the war's outcome? Share your thoughts below.",
+       "headline": "The New Naval Reality",
+       "accent": "What Do You Think?",
+       "search": "ocean horizon sunset",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russia"
+       ],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-27T07:35:29Z",
+     "elevenlabs": {
+      "used": 26605,
+      "limit": 40000,
+      "left": 13395,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 13.395 / 40.000 karakter kaldı (bu video 2.923 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45957458448-en"
+    },
+    {
+     "title": "Ukraine schlägt im Mittelmeer zu: Russisches Kriegsschiff versenkt",
+     "description": "Ein ukrainischer Drohnenangriff hat ein russisches Kriegsschiff im libyschen Hafen Bengasi versenkt. Dieser Vorfall zeigt die weltweite Ausweitung des Konflikts und bedroht Russlands Nachschubrouten in Afrika. Wir analysieren die strategischen Folgen für die globale Sicherheit.\n\n0:00 Angriff im Mittelmeer\n0:42 Knotenpunkt Bengasi\n1:23 Asymmetrische Seekriegführung\n2:13 Was kommt als Nächstes?\n\n#UkraineKrieg #Mittelmeer #Geopolitik #MilitärAnalyse",
+     "tags": [
+      "Ukraine",
+      "Russland",
+      "Militär",
+      "Drohnenangriff",
+      "Bengasi",
+      "Libyen",
+      "Kriegsschiff",
+      "Mittelmeer",
+      "Geopolitik",
+      "Sicherheitspolitik",
+      "Nachschublinien",
+      "Asymmetrische Kriegführung"
+     ],
+     "long": true,
+     "thumbs": [
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-de/thumb_a.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-de/thumb_b.jpg",
+      "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-de/thumb_c.jpg"
+     ],
+     "hashtags": [
+      "#UkraineKrieg",
+      "#Mittelmeer",
+      "#Geopolitik",
+      "#MilitärAnalyse"
+     ],
+     "lang": "de",
+     "topic": "Ukrainian drone strike sinks Russian warship in Benghazi Libya",
+     "tts": "edge",
+     "duration": 183.48,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/long-45957458448-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Der Krieg zwischen der Ukraine und Russland hat das Schwarze Meer verlassen. Ein beispielloser Angriff tausende Kilometer entfernt verändert die globale Sicherheitslage grundlegend.",
+       "headline": "Konflikt weitet sich aus",
+       "accent": "Mittelmeer",
+       "search": "military map mediterranean",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland",
+        "Libyen"
+       ],
+       "chapter": "Angriff im Mittelmeer"
+      },
+      {
+       "text": "Im libyschen Hafen Bengasi wurde ein russisches Kriegsschiff durch gezielte ukrainische Schläge versenkt. Die Operation markiert eine neue Phase der militärischen Auseinandersetzung.",
+       "headline": "Schlag im Hafen von Bengasi",
+       "accent": "Kriegsschiff versenkt",
+       "search": "warship in harbor",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland",
+        "Libyen"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Berichten zufolge kamen bei dem Präzisionsschlag insgesamt sieben unbemannte Luftfahrzeuge zum Einsatz. Das betroffene Schiff erlitt schwere Schäden und sank innerhalb kurzer Zeit.",
+       "headline": "Einsatz von Kamikaze-Drohnen",
+       "accent": "Sieben Drohnen",
+       "search": "military drone flight",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Ukrainische Offizielle bestätigten den Erfolg dieser weit entfernten Operation. Für internationale Militärexperten kam der Angriff völlig überraschend.",
+       "headline": "Überraschung für Experten",
+       "accent": "Globale Reichweite",
+       "search": "military headquarters briefing",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Der Hafen von Bengasi gilt als zentraler Knotenpunkt für Russlands militärische Präsenz in Nordafrika. Von hier aus wurden wichtige Versorgungswege kontrolliert.",
+       "headline": "Strategischer Stützpunkt",
+       "accent": "Logistikzentrum Afrika",
+       "search": "port container terminal",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Russland",
+        "Libyen"
+       ],
+       "chapter": "Knotenpunkt Bengasi"
+      },
+      {
+       "text": "Die Zerstörung des Schiffes legt erhebliche Sicherheitslücken in der russischen Luftverteidigung offen. Frühwarnsysteme versagten in dieser exponierten Position vollständig.",
+       "headline": "Lücken in der Abwehr",
+       "accent": "Systemversagen",
+       "search": "radar antenna military",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Russland",
+        "Libyen"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Der Vorfall beeinträchtigt die logistische Versorgung russischer Einheiten in Afrika und Syrien erheblich. Alternative Routen müssen nun unter hohem Aufwand gesucht werden.",
+       "headline": "Gefährdete Nachschublinien",
+       "accent": "Logistik gestört",
+       "search": "cargo ship ocean",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "LY",
+        "SY"
+       ],
+       "country_names": [
+        "Russland",
+        "Libyen",
+        "Syrien"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Die Ukraine verfolgt offenbar das Ziel, die finanzielle und militärische Infrastruktur Moskaus weltweit zu schwächen. Der Konflikt verliert dadurch seine regionalen Grenzen.",
+       "headline": "Ziele außerhalb Europas",
+       "accent": "Weltweiter Druck",
+       "search": "world map geopolitics",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Bereits vor dem Zwischenfall in Bengasi gab es Berichte über Angriffe im Finnischen Meerbusen. Die Spannungen auf den internationalen Seewegen nehmen rapide zu.",
+       "headline": "Spannungen auf See",
+       "accent": "Baltikum bis Mittelmeer",
+       "search": "navy ship sea",
+       "style": "headline",
+       "countries": [
+        "RU",
+        "FI"
+       ],
+       "country_names": [
+        "Russland",
+        "Finnland"
+       ],
+       "chapter": "Asymmetrische Seekriegführung"
+      },
+      {
+       "text": "Der Einsatz kostengünstiger Drohnen stellt traditionelle Seemächte vor völlig neue Herausforderungen. Millionenschwere Kriegsschiffe werden durch günstige Systeme verwundbar.",
+       "headline": "Neue Bedrohungslage",
+       "accent": "Asymmetrische Taktik",
+       "search": "drone military technology",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Die Zunahme solcher Angriffe bedroht zunehmend die Sicherheit der zivilen Handelsschifffahrt. Versicherungs- und Sicherheitskosten für Frachtschiffe könnten dadurch drastisch steigen.",
+       "headline": "Folgen für den Handel",
+       "accent": "Höhere Kosten",
+       "search": "container ship sea",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Kiews asymmetrische Taktiken zwingen die russische Armee zu einer Umverteilung ihrer Ressourcen. Der Schutz ferner Stützpunkte erfordert nun zusätzliche Luftabwehrsysteme.",
+       "headline": "Gebundene Ressourcen",
+       "accent": "Truppenverlagerung",
+       "search": "air defense missile",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Diese Schwächung der Etappenstützpunkte könnte sich langfristig auch auf die Kampfkraft an der Hauptfront in der Ukraine auswirken.",
+       "headline": "Auswirkungen auf die Front",
+       "accent": "Strategischer Effekt",
+       "search": "battlefield explosion distance",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Experten rechnen damit, dass die Ukraine ihre weltweiten Angriffe auf russische Zielobjekte weiter intensivieren wird. Die Kriegshandlungen verlagern sich zunehmend auf globale Schifffahrtsrouten.",
+       "headline": "Verlagerung des Konflikts",
+       "accent": "Globale Angriffe",
+       "search": "global trade routes map",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland"
+       ],
+       "chapter": "Was kommt als Nächstes?"
+      },
+      {
+       "text": "Russland wird seine Sicherheitsvorkehrungen in ausländischen Häfen drastisch verschärfen müssen. Dies erfordert eine stärkere Truppenpräsenz abseits des Kernkampfgebiets.",
+       "headline": "Reaktion aus Moskau",
+       "accent": "Verschärfte Sicherheit",
+       "search": "kremlin moscow security",
+       "style": "headline",
+       "countries": [
+        "RU"
+       ],
+       "country_names": [
+        "Russland"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Die Ausweitung der Operationen erhöht das Risiko internationaler Zwischenfälle auf hoher See. Weltweite Versorgungsketten könnten dadurch dauerhaft beeinträchtigt werden.",
+       "headline": "Risiken für Seewege",
+       "accent": "Versorgungsketten",
+       "search": "maritime security vessel",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      },
+      {
+       "text": "Der Angriff auf Bengasi demonstriert, wie moderne Technologie das strategische Gleichgewicht der Kräfte nachhaltig verschieben kann.",
+       "headline": "Wandel der Kriegführung",
+       "accent": "Technologischer Wandel",
+       "search": "modern military control center",
+       "style": "headline",
+       "countries": [
+        "UA",
+        "RU",
+        "LY"
+       ],
+       "country_names": [
+        "Ukraine",
+        "Russland",
+        "Libyen"
+       ],
+       "chapter": ""
+      },
+      {
+       "text": "Wie beurteilen Sie die Ausweitung der ukrainischen Operationen auf das Mittelmeer? Teilen Sie Ihre Einschätzung in den Kommentaren.",
+       "headline": "Ihre Meinung zählt",
+       "accent": "Diskussion in Kommentaren",
+       "search": "comments communication digital",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": ""
+      }
+     ],
+     "chat_id": null,
+     "source": "",
+     "publish_at": "2026-11-27T07:40:49Z",
+     "elevenlabs": {
+      "used": 26605,
+      "limit": 40000,
+      "left": 13395,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 13.395 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "long-45957458448-de"
+    }
+   ],
+   "ts": "2026-11-27T07:35:54"
+  }
+ },
  "_removed": [
-  "6ad3bacfd1c7",
-  "b438246d60ee",
+  "54f34c42d936",
+  "ddbd76050660",
+  "9fa68b731dc8",
+  "d7e9c169bc14",
   "445761614490",
-  "445944378440",
-  "66eba903a865",
-  "d42fcbc4ce3d",
-  "446184028241",
-  "ccd67624d8c3",
-  "d05d46e84530",
-  "be8762e28854",
-  "7eb47a5db7cd",
-  "3f6ae6499c1b",
-  "26c2e83ebba1",
-  "3cc9d1e06e50",
-  "57b4fdc6596f",
-  "a86c24402051",
-  "af6ed91f3a79",
-  "6f78216803dc",
-  "0d9dbcf465cd",
-  "20dcc23cea11",
-  "c0c492475217",
-  "1edbeb303dcc",
-  "442639882090",
-  "2f1a20151385",
-  "443091847971",
+  "445944378441",
+  "c947dac9becb",
   "444854651743",
+  "445296633124",
+  "d42fcbc4ce3d",
+  "e545b5536757",
+  "74775df4be80",
+  "6f78216803dc",
+  "443091847971",
+  "7eb47a5db7cd",
+  "abe41c1aaf94",
+  "f02172b50f8c",
+  "446184028241",
+  "d46c8535a93d",
+  "c0c492475217",
+  "ccd67624d8c3",
+  "41416ec5f7f6",
+  "b34b7bca5216",
+  "86277101f5be",
+  "ea76cda66aa7",
+  "27b1f9c04076",
+  "130b7970530f",
+  "66eba903a865",
+  "57b4fdc6596f",
+  "873320f3cd81",
+  "26c2e83ebba1",
+  "b438246d60ee",
+  "1f8d57fecf3b",
+  "3f6ae6499c1b",
+  "017d2e76c451",
+  "bc7037909ba6",
+  "20dcc23cea11",
+  "6ad3bacfd1c7",
+  "32fa0d1d693a",
+  "a86c24402051",
+  "b349a255e16e",
+  "1edbeb303dcc",
+  "9d8c10911957",
+  "446184028240",
+  "443631404172",
+  "af6ed91f3a79",
+  "d05d46e84530",
+  "a5e09c77f7f8",
+  "87a011d7d646",
+  "442639882090",
+  "63bfb40d47b6",
+  "be8762e28854",
   "9849bc2ef437",
   "1ed2aefedb23",
-  "74775df4be80",
-  "d46c8535a93d",
-  "63bfb40d47b6",
-  "130b7970530f",
-  "32fa0d1d693a",
-  "b34b7bca5216",
-  "27b1f9c04076",
-  "abe41c1aaf94",
-  "ddbd76050660",
-  "87a011d7d646",
-  "017d2e76c451",
-  "ea76cda66aa7",
-  "446184028240",
-  "9fa68b731dc8",
   "0c7c07a879a6",
-  "9d8c10911957",
-  "f02172b50f8c",
-  "e545b5536757",
-  "443631404172",
-  "b349a255e16e",
-  "445296633124",
-  "54f34c42d936",
-  "bc7037909ba6",
-  "873320f3cd81",
-  "86277101f5be",
-  "41416ec5f7f6",
-  "d7e9c169bc14",
-  "a5e09c77f7f8",
-  "c947dac9becb",
-  "445944378441",
-  "1f8d57fecf3b"
+  "0d9dbcf465cd",
+  "2f1a20151385",
+  "3cc9d1e06e50",
+  "445944378440"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1328,6 +2282,19 @@
      "actions_dk": 5,
      "red": 1
     }
+   },
+   "45957458448-8db651": {
+    "2026-11-27": {
+     "uretilen": 3,
+     "render_sn": 1028.3,
+     "render_n": 3,
+     "prov:gemini:ok": 3,
+     "prov:gemini_1:ok": 3,
+     "ses:elevenlabs": 2,
+     "ses:edge": 1,
+     "llm_cagri": 3,
+     "actions_dk": 18
+    }
    }
   },
   "gunluk": {
@@ -1468,8 +2435,16 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-27": {
-    "actions_dk": 5,
-    "red": 1
+    "actions_dk": 23,
+    "red": 1,
+    "uretilen": 3,
+    "render_sn": 1028.3,
+    "render_n": 3,
+    "prov:gemini:ok": 3,
+    "prov:gemini_1:ok": 3,
+    "ses:elevenlabs": 2,
+    "ses:edge": 1,
+    "llm_cagri": 3
    }
   }
  }
