@@ -10,7 +10,6 @@
     "en",
     "de"
   ],
-  "instagram_lang": "tr",
   "max_auto_per_day": 5,
   "max_video_age_days": 4,
   "news_feeds": [
@@ -84,5 +83,9 @@
   },
   "elevenlabs_reserve": {
     "en": 8000
-  }
+  },
+  "instagram_langs": [
+    "tr",
+    "en"
+  ]
 }
