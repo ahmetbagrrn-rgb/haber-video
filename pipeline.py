@@ -180,6 +180,12 @@ def topic_overlap(a, b, common=frozenset()):
     return len(inter) / min(len(a), len(b)) >= 0.5 or any(w.isdigit() for w in distinct)
 
 
+def ig_lang_list():
+    """Instagram/Facebook'a giden diller. Yeni ayar: instagram_langs (liste); eski tek dil ayarı da desteklenir."""
+    v = CONFIG.get("instagram_langs") or CONFIG.get("instagram_lang") or "tr"
+    return [v] if isinstance(v, str) else list(v)
+
+
 def similar_topic(topic, st, days=7):
     """Son günlerde çok benzer bir konu işlendi mi? (aynı haberi tekrar tekrar yayınlamak erişimi düşürür)"""
     w = words(topic)
@@ -662,7 +668,7 @@ def is_transient(e):
 def produce_topic(cand, st, header):
     """Bir konudan tüm dillerde video üretir, onaya/yayına gönderir."""
     langs = CONFIG.get("auto_langs", ["tr", "en", "de"])
-    ig_lang = CONFIG.get("instagram_lang", "tr")
+    ig_langs = ig_lang_list()
     base = {"mode": "rewrite", "source": cand.get("url") or cand.get("link") or ""}
     if cand["id"].startswith("yt:") and not cand.get("text"):
         base["youtube_url"] = cand["url"]
@@ -686,7 +692,7 @@ def produce_topic(cand, st, header):
         if i > 0 and results:
             first = results[0]
             pl = lang_payload(first, lang, {"source": base["source"]})
-        res = make_video(pl, tag, instagram=(lang == ig_lang))
+        res = make_video(pl, tag, instagram=(lang in ig_langs))
         if res.get("skip"):
             break
         if i == 0 and similar_topic(res.get("topic", ""), st):
@@ -1100,7 +1106,7 @@ def process_updates(st, ups):
                     if results:
                         payload = lang_payload(results[0], lang, {"chat_id": chat})
                 tag = f"tg-{RUN_ID}-{n}-{lang or 'x'}"
-                res = make_video(payload, tag, instagram=(not multi or lang == CONFIG.get("instagram_lang", "tr")))
+                res = make_video(payload, tag, instagram=(not multi or lang in ig_lang_list()))
                 results.append(res)
             remember_topic(st, results[0].get("topic") or results[0]["title"])
             queue_or_publish(results, st, "📝 Telegram'dan gönderdiğin haber")
@@ -1164,7 +1170,7 @@ def cmd_requeue():
             d.mkdir(exist_ok=True)
             subprocess.run(["gh", "release", "download", tag, "-p", "result.json", "-D", str(d), "--clobber"], check=True)
             r = json.loads((d / "result.json").read_text(encoding="utf-8"))
-            r["instagram"] = lang == CONFIG.get("instagram_lang", "tr")
+            r["instagram"] = lang in ig_lang_list()
             r["tag"] = tag
             results.append(r)
         if results:
