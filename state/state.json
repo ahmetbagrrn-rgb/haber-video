@@ -261,6 +261,10 @@
    "topic": "UK recalls 100k veterans for reserve force",
    "ts": "2026-11-27T13:16:25",
    "summary": "İngiltere 100 Bin Eski Askeri Göreve Çağırıyor. İngiltere Savunma Bakanlığı yüz bin eski askere mektup göndererek göreve hazır olmalarını istedi. Gönderilen talimatla eski askerlerin NATO tatbikatlarına ve gönüllü eğitim süreçlerine katılması talep ediliyor. İngiliz hükümeti bu adımla silahlı kuvvetlerin ihtiyat gücünü kısa sürede takviye etmeyi hedefliyor. Kararın arkasında küresel ölçekte tırmanan güvenlik riskleri ve derinleşen jeopolitik güç mücadeleleri yatıyor. Avrupa'daki bu askeri hareketlilik bölgesel güvenlik dengelerini ilgilendiriyor. Artan güvenlik risklerine karşı adımlar atılırken ilk çağrı mektupları adrese teslim edildi."
+  },
+  {
+   "topic": "Estonia closing all border crossings with Russia",
+   "ts": "2026-11-27T18:33:28"
   }
  ],
  "daily": {
@@ -775,71 +779,436 @@
     }
    ],
    "ts": "2026-11-27T13:16:25"
+  },
+  "49cf8aca6f88": {
+   "results": [
+    {
+     "title": "Estonya Rusya Sınırındaki Tüm Geçiş Noktalarını Kapatıyor",
+     "description": "Estonya, Rus istihbaratının saldırı girişimleri nedeniyle aralık ayından itibaren Rusya sınırındaki tüm geçiş noktalarını kapatma kararı aldı.\nSizce bu karar iki ülke arasındaki gerilimi savaşa sürükler mi?\n\n#Estonya #Rusya #SınırKapısı #AvrupaHaberleri",
+     "tags": [
+      "Estonya",
+      "Rusya",
+      "Margus Tsahkna",
+      "sınır kapısı",
+      "Tallinn",
+      "İHA fabrikası",
+      "Avrupa haberleri",
+      "Baltık güvenliği",
+      "dünya gündemi"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Estonya",
+      "#Rusya",
+      "#SınırKapısı",
+      "#AvrupaHaberleri"
+     ],
+     "lang": "tr",
+     "topic": "Estonia closing all border crossings with Russia",
+     "tts": "elevenlabs",
+     "duration": 37.35,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Estonya 1 Aralık'tan itibaren Rusya sınırındaki tüm geçiş noktalarını tamamen kapatıyor.",
+       "headline": "Sınırlar Kapandı",
+       "accent": "Estonya",
+       "search": "border checkpoint closed",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Kararı Estonya Dışişleri Bakanı Margus Tsahkna resmi olarak açıkladı.",
+       "headline": "Resmi Açıklama",
+       "accent": "Bakan",
+       "search": "politician speaking press conference",
+       "style": "subtitle",
+       "countries": [
+        "EST"
+       ],
+       "country_names": [
+        "Estonya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Estonya makamlarına göre, Tallinn yakınlarındaki bir İHA fabrikasına düzenlenen kundaklama girişiminin arkasında Rus askeri istihbaratı var.",
+       "headline": "İHA Fabrikası",
+       "accent": "Sabotaj",
+       "search": "drone factory assembly",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Bu adım Baltık bölgesinde güvenlik krizini tırmandıran en sert önlemlerden biri olarak dikkat çekiyor.",
+       "headline": "Güvenlik Krizi",
+       "accent": "Gerilim",
+       "search": "military border patrol",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Bölgedeki seyahat ve lojistik hatları bu krizden etkilenebilir.",
+       "headline": "Etki Alanı",
+       "accent": "Lojistik",
+       "search": "cargo trucks highway",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Sence Moskova yönetimi bu sınırlama hamlesine nasıl bir misilleme yapacak?",
+       "headline": "Soru",
+       "accent": "Tahmin",
+       "search": "thinking person close up",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": 1547879966,
+     "source": "",
+     "publish_at": "2026-11-27T18:36:14Z",
+     "elevenlabs": {
+      "used": 28254,
+      "limit": 40000,
+      "left": 11746,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 11.746 / 40.000 karakter kaldı (bu video 536 karakter)",
+     "test": false,
+     "instagram": true,
+     "tag": "tg-46049869360-0-tr"
+    },
+    {
+     "title": "Estonia Closes All Border Crossings With Russia",
+     "description": "Estonia decided to close all border crossings with Russia from December onward due to Russian intelligence attack attempts. Do you think this decision will push tensions between the two countries into war?\n\n#Estonia #Russia #BorderClosure #EuropeNews",
+     "tags": [
+      "Estonia",
+      "Russia",
+      "Margus Tsahkna",
+      "border crossing",
+      "Tallinn",
+      "drone factory",
+      "Europe news",
+      "Baltic security",
+      "world agenda"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Estonia",
+      "#Russia",
+      "#BorderClosure",
+      "#EuropeNews"
+     ],
+     "lang": "en",
+     "topic": "Estonia closing all border crossings with Russia",
+     "tts": "elevenlabs",
+     "duration": 28.25,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Estonia will fully close all border crossings with Russia starting December 1.",
+       "headline": "Borders Closed",
+       "accent": "Estonia",
+       "search": "border checkpoint closed",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Foreign Minister Margus Tsahkna announced the decision officially.",
+       "headline": "Official Announcement",
+       "accent": "Minister",
+       "search": "politician speaking press conference",
+       "style": "subtitle",
+       "countries": [
+        "EST"
+       ],
+       "country_names": [
+        "Estonya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Estonian authorities blame Russian military intelligence for a drone‑factory sabotage attempt near Tallinn.",
+       "headline": "Drone Factory",
+       "accent": "Sabotage",
+       "search": "drone factory assembly",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The move is one of the harshest measures escalating the Baltic security crisis.",
+       "headline": "Security Crisis",
+       "accent": "Tension",
+       "search": "military border patrol",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Travel and logistics routes in the region may be disrupted.",
+       "headline": "Impact Zone",
+       "accent": "Logistics",
+       "search": "cargo trucks highway",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "How will Moscow respond to this border closure?",
+       "headline": "Question",
+       "accent": "Prediction",
+       "search": "thinking person close up",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": 1547879966,
+     "source": "",
+     "publish_at": "2026-11-27T18:37:12Z",
+     "elevenlabs": {
+      "used": 28429,
+      "limit": 40000,
+      "left": 11571,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 11.571 / 40.000 karakter kaldı (bu video 436 karakter)",
+     "test": false,
+     "instagram": true,
+     "tag": "tg-46049869360-0-en"
+    },
+    {
+     "title": "Estland schließt alle Grenzübergänge zu Russland",
+     "description": "Estland hat beschlossen, ab Dezember alle Grenzübergänge zu Russland zu schließen, wegen versuchter Angriffe des russischen Geheimdienstes. Glauben Sie, dass diese Entscheidung die Spannungen zwischen den beiden Ländern in einen Krieg führt?\n\n#Estland #Russland #Grenzübergang #EuropaNachrichten",
+     "tags": [
+      "Estland",
+      "Russland",
+      "Margus Tsahkna",
+      "Grenzübergang",
+      "Tallinn",
+      "Drohnenfabrik",
+      "Europa-Nachrichten",
+      "Baltikum-Sicherheit",
+      "Weltgeschehen"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Estland",
+      "#Russland",
+      "#Grenzübergang",
+      "#EuropaNachrichten"
+     ],
+     "lang": "de",
+     "topic": "Estonia closing all border crossings with Russia",
+     "tts": "edge",
+     "duration": 32.06,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/tg-46049869360-0-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Estland schließt ab 1. Dezember alle Grenzübergänge zu Russland.",
+       "headline": "Grenzen geschlossen",
+       "accent": "Estland",
+       "search": "border checkpoint closed",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Außenminister Margus Tsahkna verkündet die Entscheidung offiziell.",
+       "headline": "Offizielle Erklärung",
+       "accent": "Minister",
+       "search": "politician speaking press conference",
+       "style": "subtitle",
+       "countries": [
+        "EST"
+       ],
+       "country_names": [
+        "Estonya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Nach estnischen Angaben steckt der russische Militärgeheimdienst hinter einem Drohnenfabrik-Sabotageversuch bei Tallinn.",
+       "headline": "Drohnenfabrik",
+       "accent": "Sabotage",
+       "search": "drone factory assembly",
+       "style": "headline",
+       "countries": [
+        "EST",
+        "RUS"
+       ],
+       "country_names": [
+        "Estonya",
+        "Rusya"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Der Schritt gilt als eine der härtesten Maßnahmen, die die Sicherheitskrise im Baltikum verschärft.",
+       "headline": "Sicherheitskrise",
+       "accent": "Spannung",
+       "search": "military border patrol",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Reise- und Logistikrouten in der Region könnten betroffen sein.",
+       "headline": "Auswirkungen",
+       "accent": "Logistik",
+       "search": "cargo trucks highway",
+       "style": "headline",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      },
+      {
+       "text": "Wie wird Moskau auf diese Grenzschließung reagieren?",
+       "headline": "Frage",
+       "accent": "Prognose",
+       "search": "thinking person close up",
+       "style": "subtitle",
+       "countries": [],
+       "country_names": [],
+       "chapter": null
+      }
+     ],
+     "chat_id": 1547879966,
+     "source": "",
+     "publish_at": "2026-11-27T18:38:25Z",
+     "elevenlabs": {
+      "used": 28429,
+      "limit": 40000,
+      "left": 11571,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 11.571 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "tg-46049869360-0-de"
+    }
+   ],
+   "ts": "2026-11-27T18:33:28"
   }
  },
  "_removed": [
-  "63bfb40d47b6",
-  "b349a255e16e",
-  "54f34c42d936",
-  "873320f3cd81",
-  "6f78216803dc",
-  "74775df4be80",
-  "443091847971",
-  "be8762e28854",
-  "f02172b50f8c",
-  "86277101f5be",
-  "af6ed91f3a79",
-  "abe41c1aaf94",
-  "b34b7bca5216",
-  "1ed2aefedb23",
-  "32fa0d1d693a",
-  "444854651743",
-  "445944378440",
-  "d05d46e84530",
-  "54c4daadd3d1",
-  "9fa68b731dc8",
-  "ea76cda66aa7",
-  "c0c492475217",
-  "d7e9c169bc14",
-  "66eba903a865",
-  "ddbd76050660",
-  "9849bc2ef437",
-  "442639882090",
-  "41416ec5f7f6",
-  "446184028240",
-  "d46c8535a93d",
   "445761614490",
-  "2f1a20151385",
+  "446184028241",
   "3f6ae6499c1b",
-  "bc7037909ba6",
-  "b438246d60ee",
+  "a5e09c77f7f8",
+  "41416ec5f7f6",
+  "ddbd76050660",
   "0d9dbcf465cd",
-  "a86c24402051",
-  "26c2e83ebba1",
-  "1edbeb303dcc",
+  "c0c492475217",
+  "6ad3bacfd1c7",
+  "2f1a20151385",
+  "9d8c10911957",
+  "445944378441",
+  "87a011d7d646",
+  "445296633124",
+  "af6ed91f3a79",
+  "d7e9c169bc14",
   "e545b5536757",
   "ccd67624d8c3",
-  "57b4fdc6596f",
-  "6ad3bacfd1c7",
-  "1f8d57fecf3b",
-  "445944378441",
-  "130b7970530f",
+  "74775df4be80",
+  "20dcc23cea11",
+  "446184028240",
+  "d05d46e84530",
+  "32fa0d1d693a",
+  "bc7037909ba6",
+  "b34b7bca5216",
+  "0c7c07a879a6",
+  "3cc9d1e06e50",
+  "ea76cda66aa7",
   "27b1f9c04076",
-  "d42fcbc4ce3d",
+  "d46c8535a93d",
+  "1ed2aefedb23",
+  "6f78216803dc",
+  "017d2e76c451",
+  "130b7970530f",
+  "1edbeb303dcc",
+  "443091847971",
+  "be8762e28854",
+  "443631404172",
+  "a86c24402051",
+  "442639882090",
   "7eb47a5db7cd",
+  "1f8d57fecf3b",
+  "abe41c1aaf94",
+  "9849bc2ef437",
+  "54c4daadd3d1",
+  "63bfb40d47b6",
   "c947dac9becb",
   "29a1c4645e6f",
-  "9d8c10911957",
-  "445296633124",
-  "87a011d7d646",
-  "446184028241",
+  "444854651743",
+  "26c2e83ebba1",
+  "f02172b50f8c",
+  "54f34c42d936",
+  "b438246d60ee",
   "c3254364688d",
-  "a5e09c77f7f8",
-  "0c7c07a879a6",
-  "443631404172",
-  "3cc9d1e06e50",
-  "20dcc23cea11",
-  "017d2e76c451"
+  "b349a255e16e",
+  "873320f3cd81",
+  "d42fcbc4ce3d",
+  "66eba903a865",
+  "86277101f5be",
+  "445944378440",
+  "9fa68b731dc8",
+  "57b4fdc6596f"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1855,6 +2224,21 @@
     "2026-11-27": {
      "actions_dk": 1
     }
+   },
+   "46049869360-0e0cca": {
+    "2026-11-27": {
+     "actions_dk": 4,
+     "uretilen": 3,
+     "render_sn": 162.4,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:elevenlabs": 2,
+     "ses:edge": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2
+    }
    }
   },
   "gunluk": {
@@ -1995,25 +2379,25 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-27": {
-    "actions_dk": 147,
+    "actions_dk": 151,
     "red": 1,
-    "uretilen": 12,
-    "render_sn": 1893.1,
-    "render_n": 12,
-    "prov:gemini:ok": 6,
-    "prov:gemini_1:ok": 6,
-    "ses:elevenlabs": 8,
-    "ses:edge": 4,
-    "llm_cagri": 12,
+    "uretilen": 15,
+    "render_sn": 2055.5,
+    "render_n": 15,
+    "prov:gemini:ok": 7,
+    "prov:gemini_1:ok": 7,
+    "ses:elevenlabs": 10,
+    "ses:edge": 5,
+    "llm_cagri": 15,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
     "yayin_de": 1,
-    "prov:openrouter_nemotron:ok": 5,
+    "prov:openrouter_nemotron:ok": 7,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:ok": 1,
     "prov:make_metin:yedek": 1,
-    "ceviri_nemotron": 6,
+    "ceviri_nemotron": 8,
     "llm_yedek": 1
    }
   }
