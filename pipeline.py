@@ -1199,10 +1199,12 @@ def merge_states(local, remote):
         for lang, xs in src.items():
             sch[lang] = sorted(set(sch.get(lang, [])) | set(xs))[-60:]
     m["scheduled"] = sch
-    removed = set(local.get("_removed", [])) | set(remote.get("_removed", []))
+    seen_r = set()
+    removed = [x for x in remote.get("_removed", []) + local.get("_removed", [])
+               if not (x in seen_r or seen_r.add(x))]
     pend = {**remote.get("pending", {}), **local.get("pending", {})}
-    m["pending"] = {k: v for k, v in pend.items() if k not in removed}
-    m["_removed"] = list(removed)[-100:]
+    m["pending"] = {k: v for k, v in pend.items() if k not in seen_r}
+    m["_removed"] = removed[-300:]  # sıralı tut: en eski kayıtlar düşer, yeni iptaller kaybolmaz
     m["reminded"] = max(local.get("reminded") or "", remote.get("reminded") or "")
     ys = {}
     for src in (remote.get("yt_stories", {}), local.get("yt_stories", {})):
