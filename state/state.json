@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897499,
+ "tg_offset": 691897500,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -380,465 +380,70 @@
    "2026-11-28T06:30:00Z"
   ]
  },
- "pending": {
-  "54c4daadd3d1": {
-   "results": [
-    {
-     "title": "Irak Ordusu Tüm Sınırların Kontrolünü Devraldı",
-     "description": "Irak ordusu, mahkeme kararıyla tüm sınır kapılarını IKBY ve milis gruplardan devralarak kontrolü sağladı.\nBağdat'ın bu adımı bölgedeki ticaret ve güvenlik dengelerini nasıl etkiler?\n\n#Irak #OrtaDoğu #Jeopolitik #SınırKapısı",
-     "tags": [
-      "Irak",
-      "Irak ordusu",
-      "IKBY",
-      "Ketaib Hizbullah",
-      "Bağdat",
-      "sınır kapıları",
-      "Irak haberleri",
-      "Orta Doğu",
-      "jeopolitik"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Irak",
-      "#OrtaDoğu",
-      "#Jeopolitik",
-      "#SınırKapısı"
-     ],
-     "lang": "tr",
-     "topic": "Iraq central government takes full border control",
-     "tts": "elevenlabs",
-     "duration": 44.13,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Irak Federal Yüksek Mahkemesinin kararına göre tüm ülke sınırlarının kontrolü merkezi orduya devredildi.",
-       "headline": "Sınır Kontrolü",
-       "accent": "Devredildi",
-       "search": "iraq military",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Alınan mahkeme kararıyla Irak Kürt Bölgesel Yönetimi sınır kapılarındaki denetim hakkını kaybetti.",
-       "headline": "IKBY Yetkileri",
-       "accent": "Sonlandı",
-       "search": "border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Aktarılan bilgilere göre Irak ordusu Ketaib Hizbullah grubunun elinde bulunan stratejik sınır bölgelerine de girmeye başladı.",
-       "headline": "Stratejik Noktalar",
-       "accent": "Alındı",
-       "search": "soldiers marching",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Belirtilene göre bu hamle Bağdat yönetiminin ülke genelindeki merkezi otoritesini yeniden kurma stratejisini gösteriyor.",
-       "headline": "Merkezi Otorite",
-       "accent": "Güçleniyor",
-       "search": "baghdad aerial",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sınır kontrolünün tek elde toplanması Türkiye ile olan kara ticaretinde yeni bir dönem başlatabilir.",
-       "headline": "Ticaret Hattı",
-       "accent": "Değişiyor",
-       "search": "cargo truck",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bölgedeki dengeleri değiştirebilecek bu kararın yeni güvenlik krizlerini beraberinde getirebileceği ifade ediliyor.",
-       "headline": "Yeni Dönem",
-       "accent": "Başladı",
-       "search": "middle east map",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
-     "publish_at": "2026-11-27T10:36:49Z",
-     "elevenlabs": {
-      "used": 27379,
-      "limit": 40000,
-      "left": 12621,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 12.621 / 40.000 karakter kaldı (bu video 662 karakter)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-45982335286-tr"
-    },
-    {
-     "title": "Iraqi Army Takes Control of All Borders",
-     "description": "The Iraqi army, by court order, assumed control of all border crossings from the KRG and militia groups. How will Baghdad’s move affect regional trade and security balances?\n\n#Iraq #MiddleEast #Geopolitics #BorderCrossing",
-     "tags": [
-      "Iraq",
-      "Iraqi Army",
-      "KRG",
-      "Kataib Hezbollah",
-      "Baghdad",
-      "border crossings",
-      "Iraq news",
-      "Middle East",
-      "geopolitics"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iraq",
-      "#MiddleEast",
-      "#Geopolitics",
-      "#BorderCrossing"
-     ],
-     "lang": "en",
-     "topic": "Iraq central government takes full border control",
-     "tts": "elevenlabs",
-     "duration": 36.01,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Per a Federal Supreme Court ruling, control of all national borders was transferred to the central army.",
-       "headline": "Border Control",
-       "accent": "Transferred",
-       "search": "iraq military",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "The court decision stripped the Kurdistan Regional Government of its border‑gate inspection authority.",
-       "headline": "KRG Powers",
-       "accent": "Ended",
-       "search": "border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Reports say the Iraqi army began entering strategic border areas held by Kataib Hezbollah.",
-       "headline": "Strategic Points",
-       "accent": "Taken",
-       "search": "soldiers marching",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Observers say the move shows Baghdad’s strategy to re‑establish central authority nationwide.",
-       "headline": "Central Authority",
-       "accent": "Strengthening",
-       "search": "baghdad aerial",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Consolidating border control under one command could open a new phase in land trade with Turkey.",
-       "headline": "Trade Route",
-       "accent": "Changing",
-       "search": "cargo truck",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Analysts warn the decision may shift regional balances and spark new security crises.",
-       "headline": "New Era",
-       "accent": "Begun",
-       "search": "middle east map",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
-     "publish_at": "2026-11-27T10:38:27Z",
-     "elevenlabs": {
-      "used": 27607,
-      "limit": 40000,
-      "left": 12393,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 12.393 / 40.000 karakter kaldı (bu video 570 karakter)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45982335286-en"
-    },
-    {
-     "title": "Irakische Armee übernimmt Kontrolle aller Grenzen",
-     "description": "Nach Gerichtsentscheid übernimmt die irakische Armee alle Grenzübergänge von der Autonomen Region Kurdistan und Milizen. Wie wirkt sich Bagdads Schritt auf Handel und Sicherheit in der Region aus?\n\n#Irak #Nahost #Geopolitik #Grenzübergang",
-     "tags": [
-      "Irak",
-      "Irakische Armee",
-      "Autonome Region Kurdistan",
-      "Kataib Hisbollah",
-      "Bagdad",
-      "Grenzübergänge",
-      "Irak Nachrichten",
-      "Nahost",
-      "Geopolitik"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Irak",
-      "#Nahost",
-      "#Geopolitik",
-      "#Grenzübergang"
-     ],
-     "lang": "de",
-     "topic": "Iraq central government takes full border control",
-     "tts": "edge",
-     "duration": 31.87,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-45982335286-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Das Bundesoberste Gericht überträgt die Kontrolle aller Grenzen an die Zentralarmee.",
-       "headline": "Grenzkontrolle",
-       "accent": "Übertragen",
-       "search": "iraq military",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Das Urteil entzieht der Autonomen Region Kurdistan das Grenzrecht.",
-       "headline": "Autonome Region Kurdistan",
-       "accent": "Entzogen",
-       "search": "border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Die Armee rückt in ehemals von Kataib Hisbollah gehaltene Grenzgebiete vor.",
-       "headline": "Strategische Punkte",
-       "accent": "Eingenommen",
-       "search": "soldiers marching",
-       "style": "headline",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Beobachter sehen den Schritt als Versuch Bagdads, die Zentralgewalt wiederherzustellen.",
-       "headline": "Zentrale Autorität",
-       "accent": "Gestärkt",
-       "search": "baghdad aerial",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Einheitliche Grenzkontrolle könnte den Landhandel mit der Türkei neu ordnen.",
-       "headline": "Handelsroute",
-       "accent": "Verändert",
-       "search": "cargo truck",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Experten warnen vor neuen Sicherheitskrisen durch die Entscheidung.",
-       "headline": "Neue Ära",
-       "accent": "Begonnen",
-       "search": "middle east map",
-       "style": "subtitle",
-       "countries": [
-        "IRQ"
-       ],
-       "country_names": [
-        "Irak"
-       ],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
-     "publish_at": "2026-11-27T10:40:05Z",
-     "elevenlabs": {
-      "used": 27607,
-      "limit": 40000,
-      "left": 12393,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 12.393 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-45982335286-de"
-    }
-   ],
-   "ts": "2026-11-27T10:35:09"
-  }
- },
+ "pending": {},
  "_removed": [
-  "9d8c10911957",
-  "b349a255e16e",
-  "443091847971",
-  "66eba903a865",
-  "c3254364688d",
-  "130b7970530f",
-  "f02172b50f8c",
-  "26c2e83ebba1",
-  "7eb47a5db7cd",
-  "29a1c4645e6f",
-  "af6ed91f3a79",
-  "446184028241",
-  "87a011d7d646",
   "d05d46e84530",
-  "1ed2aefedb23",
-  "443631404172",
-  "446184028240",
-  "c947dac9becb",
-  "a5e09c77f7f8",
   "b34b7bca5216",
-  "d7e9c169bc14",
-  "0d9dbcf465cd",
-  "9fa68b731dc8",
-  "ddbd76050660",
-  "6f78216803dc",
-  "1edbeb303dcc",
-  "445944378440",
-  "2f1a20151385",
-  "b438246d60ee",
-  "32fa0d1d693a",
-  "6ad3bacfd1c7",
-  "e545b5536757",
-  "d46c8535a93d",
-  "3cc9d1e06e50",
-  "445944378441",
-  "bc7037909ba6",
-  "be8762e28854",
-  "ccd67624d8c3",
+  "873320f3cd81",
+  "7eb47a5db7cd",
+  "ea76cda66aa7",
   "c0c492475217",
-  "9849bc2ef437",
-  "74775df4be80",
-  "57b4fdc6596f",
-  "a86c24402051",
-  "1f8d57fecf3b",
-  "3f6ae6499c1b",
-  "d42fcbc4ce3d",
-  "41416ec5f7f6",
-  "86277101f5be",
-  "444854651743",
-  "445761614490",
+  "d7e9c169bc14",
   "0c7c07a879a6",
-  "54f34c42d936",
+  "29a1c4645e6f",
+  "d42fcbc4ce3d",
+  "2f1a20151385",
   "63bfb40d47b6",
+  "6f78216803dc",
+  "444854651743",
+  "9849bc2ef437",
+  "86277101f5be",
+  "be8762e28854",
+  "20dcc23cea11",
+  "54c4daadd3d1",
+  "a86c24402051",
+  "e545b5536757",
+  "9fa68b731dc8",
+  "9d8c10911957",
+  "1edbeb303dcc",
+  "26c2e83ebba1",
+  "41416ec5f7f6",
+  "1ed2aefedb23",
+  "3cc9d1e06e50",
+  "57b4fdc6596f",
+  "0d9dbcf465cd",
+  "af6ed91f3a79",
+  "32fa0d1d693a",
+  "bc7037909ba6",
+  "74775df4be80",
+  "c947dac9becb",
+  "445296633124",
+  "443631404172",
+  "445944378440",
+  "f02172b50f8c",
+  "446184028240",
+  "c3254364688d",
+  "3f6ae6499c1b",
+  "87a011d7d646",
+  "130b7970530f",
+  "abe41c1aaf94",
+  "ccd67624d8c3",
+  "27b1f9c04076",
   "017d2e76c451",
   "442639882090",
-  "445296633124",
-  "873320f3cd81",
-  "27b1f9c04076",
-  "20dcc23cea11",
-  "ea76cda66aa7",
-  "abe41c1aaf94"
+  "a5e09c77f7f8",
+  "b349a255e16e",
+  "1f8d57fecf3b",
+  "d46c8535a93d",
+  "443091847971",
+  "ddbd76050660",
+  "b438246d60ee",
+  "54f34c42d936",
+  "446184028241",
+  "445944378441",
+  "66eba903a865",
+  "445761614490",
+  "6ad3bacfd1c7"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -1818,6 +1423,11 @@
      "ceviri_nemotron": 2,
      "actions_dk": 7
     }
+   },
+   "45977310240-e360c1": {
+    "2026-11-27": {
+     "actions_dk": 49
+    }
    }
   },
   "gunluk": {
@@ -1958,7 +1568,7 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-27": {
-    "actions_dk": 89,
+    "actions_dk": 138,
     "red": 1,
     "uretilen": 9,
     "render_sn": 1670.0,
