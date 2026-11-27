@@ -114,15 +114,16 @@ Kurallar:
 - 2-3. sahne: ne oldu, kim yaptı, ne zaman, nerede; somut ayrıntı ve rakamlarla.
 - 4. sahne: neden önemli; arkasındaki neden ya da büyük resim (analiz). Her videoda farklı bir geçiş cümlesi kullan; kalıp ifade TEKRARLAMA.
 - 5. sahne: izleyiciye etkisi: "{AUDIENCE}" izleyicisini nasıl etkiler (fiyatlar, enerji, güvenlik, seyahat, işler vb.). Kaynakta dayanak yoksa genel ama doğru bir etki yaz, sayı uydurma.
-- Son sahne: kısa, merak bırakan YENİ bir cümle (ilk sahneyi tekrar ETME); anlamca ilk sahneye bağlansın ki video döngüye girince akış kopmasın.
+- Son sahne: izleyiciye doğrudan sorulan, cevaplaması kolay kısa bir soru (evet/hayır ya da tahmin; ör. "Sence İran geri adım atar mı?"). İlk sahneyi tekrar ETME; anlamca ilk sahneye bağlansın ki video döngüye girince akış kopmasın. Bu soru yorum yaptırmak içindir.
 - Her sahnenin "text" alanı tek cümle, 8-16 kelime. Kısa, aktif, günlük dil; uzun yan cümle yok.
+- TOPLAM UZUNLUK: tüm sahnelerin "text" alanları toplamı en fazla 80 kelime (Türkçe ve Almanca için en fazla 70 kelime). Hedef seslendirme 30-40 saniye; fazlasını kes.
 - "headline": sahnenin özü, 1-3 kısa kelime (rakam varsa rakamı kullan).
 - "accent": başlığa eşlik eden tek kelime (italik gösterilecek), headline'daki kelimeleri tekrar etme.
 - "search": Pixabay'de stok VİDEO aramak için 1-3 kelimelik İNGİLİZCE terim. Somut, görsel, aranabilir olsun (ör. "city night", "police car", "stock market screen"). Kişi adı veya marka yazma.
 - "style": tek sıradaki sahneler (1,3,5) "headline", çift sıradakiler "subtitle".
 - "countries": sahnede adı geçen ülkelerin ISO-3166 alpha-3 kodları (ör. ["TUR","IRN"]); yoksa [].
 - "country_names": aynı ülkelerin çıktı dilindeki kısa adları (ör. ["Türkiye","İran"]).
-- "title": YouTube başlığı, en fazla 65 karakter. İlk 40 karakterde aranan anahtar kelime (ülke/kişi/kurum adı) olsun. Kalıp: İsim + olgu/rakam + sonuç ya da gerçek bir soru. "Küresel kriz", "dünya değişiyor" gibi genel başlık YASAK. Yanıltıcı olmasın.
+- "title": YouTube başlığı, en fazla 65 karakter. İlk 40 karakterde aranan anahtar kelime (ülke/kişi/kurum adı) olsun. Kalıp: İsim + güçlü eylem fiili + rakam/sonuç (ör. "Ukrayna Bingazi'de Rus Savaş Gemisini Batırdı", "Iran Threatens to Break US Blockade in Hormuz"). Fiilsiz isim tamlaması başlık YASAK (ör. "Rusya'dan Savunma Bütçesi" yanlış; "Rusya Savunmaya Rekor 13 Trilyon Ruble Ayırdı" doğru). "Küresel kriz", "dünya değişiyor" gibi genel başlık YASAK. Yanıltıcı olmasın.
 - "description": 2 satır: 1. satır başlıktaki anahtar kelimeyle başlayan tek cümlelik özet; 2. satır izleyiciye yorum yaptıracak tek bir soru.
 - "tags": 8-12 SEO anahtar kelimesi (çıktı dilinde, insanların gerçekten arayacağı ifadeler; özel isimleri içersin).
 - "hashtags": 3-5 adet, # ile; biri konuya özel olsun.
@@ -449,6 +450,8 @@ RULES:
 - Stay faithful to the user's sentences: same facts, same order, same number of scenes. Do NOT add any information,
   number, name, title, date or quote that is not in the source. Keep "[DOĞRULANACAK]" markers as "[TO VERIFY]".
 - Natural, native wording for the target audience (not word-for-word).
+- Title: keep a strong action verb and the concrete result/number (e.g. "Ukraine Sinks Russian Warship in Benghazi"); never a verbless noun phrase.
+- The last scene is a short question to the viewer: keep it a question.
 - German: always address the viewer formally with "Sie" (never du/dich/dir/dein).
 - Word limit for ALL scene "text" fields together: {limit} words. If needed, shorten slightly without changing facts.
 - Return ONLY valid JSON: {{"lang":"{lang}","title":"...","description":"...","hashtags":["#..."],"tags":["..."],

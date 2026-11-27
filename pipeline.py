@@ -145,24 +145,55 @@ def today():
     return dt.datetime.utcnow().strftime("%Y-%m-%d")
 
 
+STOP = set("""the and for with over amid into against from after about this that than are was were has have will its new
+amidst says said ile için olarak gibi daha den dan nin nın bir ve veya ama das die der und mit von für den dem eine einer auf""".split())
+
+
 def words(s):
-    return {w for w in re.findall(r"[a-zçğıöşü0-9]+", (s or "").lower()) if len(w) > 2}
+    """Konu kelimeleri: küçük harf, durak kelimeler atılmış, ilk 5 harfe kısaltılmış (tanker/tankers aynı sayılır)."""
+    out = set()
+    for w in re.findall(r"[a-zçğıöşüäß0-9]+", (s or "").lower()):
+        if w in STOP or (len(w) < 3 and not w.isdigit()):
+            continue
+        out.add(w if w.isdigit() else w[:5])
+    return out
+
+
+def common_words(st):
+    """Son konularda çok sık geçen kelimeler (Ukrayna, Rusya, İran, saldırı...) tek başına aynılık kanıtı sayılmaz."""
+    from collections import Counter
+    c = Counter(w for t in st["topics"][-120:] for w in words(t["topic"]))
+    n = max(1, len(st["topics"][-120:]))
+    return {w for w, k in c.items() if k / n >= 0.06}
+
+
+def topic_overlap(a, b, common=frozenset()):
+    """Aynı haber mi? Sık kelimeler dışında en az 2 ortak ayırt edici kelime ve yüksek ortaklık ya da ortak rakam."""
+    if not a or not b:
+        return False
+    inter = a & b
+    if len(inter) >= 3 and any(w.isdigit() and len(w) >= 2 for w in inter):  # aynı rakam (14 tanker, 290 milyar)
+        return True
+    distinct = inter - common
+    if len(distinct) < 2:
+        return False
+    return len(inter) / min(len(a), len(b)) >= 0.5 or any(w.isdigit() for w in distinct)
 
 
 def similar_topic(topic, st, days=7):
-    """Son günlerde çok benzer bir konu işlendi mi?"""
+    """Son günlerde çok benzer bir konu işlendi mi? (aynı haberi tekrar tekrar yayınlamak erişimi düşürür)"""
     w = words(topic)
     if not w:
         return False
     limit = dt.datetime.utcnow() - dt.timedelta(days=days)
+    common = common_words(st)
     for t in st["topics"]:
         try:
             if dt.datetime.fromisoformat(t["ts"]) < limit:
                 continue
         except Exception:  # noqa
             pass
-        o = words(t["topic"])
-        if o and len(w & o) / len(w | o) >= 0.45:
+        if topic_overlap(w, words(t["topic"]), common):
             log("Benzer konu zaten işlenmiş:", t["topic"])
             return True
     return False
