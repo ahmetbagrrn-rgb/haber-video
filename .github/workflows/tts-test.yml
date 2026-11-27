@@ -1,0 +1,22 @@
+name: Ses karşılaştırma testi
+on:
+  repository_dispatch:
+    types: [tts_test]
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q edge-tts
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python tts_test.py
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete tts-test -y --cleanup-tag || true
+          gh release create tts-test tts_out/*.mp3 -t "Ses testi" -n "Türkçe ses karşılaştırma"
