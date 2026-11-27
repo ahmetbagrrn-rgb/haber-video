@@ -74,8 +74,15 @@
   "stories_per_video": 3,
   "min_story_score": 5,
   "elevenlabs_langs": [
+    "tr",
     "en"
   ],
   "daily_lang_limit": {},
-  "fallback_after_days": 7
+  "fallback_after_days": 7,
+  "elevenlabs_voices": {
+    "tr": "dgeCtiGkvIwzoR09qzjl"
+  },
+  "elevenlabs_reserve": {
+    "en": 8000
+  }
 }

@@ -649,7 +649,7 @@ def words_from_alignment(al):
 
 def tts_elevenlabs(text, mp3, prev_text, next_text):
     key = os.environ["ELEVENLABS_API_KEY"]
-    voice = os.environ.get("ELEVENLABS_VOICE_ID") or "21m00Tcm4TlvDq8ikWAM"
+    voice = (CONFIG.get("elevenlabs_voices") or {}).get(LANG) or os.environ.get("ELEVENLABS_VOICE_ID") or "21m00Tcm4TlvDq8ikWAM"
     model = os.environ.get("ELEVENLABS_MODEL") or "eleven_multilingual_v2"
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice}/with-timestamps?output_format=mp3_44100_128"
     body = {"text": text, "model_id": model}
@@ -739,6 +739,7 @@ def choose_provider(scenes):
         return "edge"
     q = elevenlabs_quota()
     need = sum(len(sc["text"]) for sc in scenes) + 200
+    need += (CONFIG.get("elevenlabs_reserve") or {}).get(LANG, 0)  # öncelikli dillere kredi ayır
     if q and q["left"] < need:
         log(f"ElevenLabs kotası yetersiz ({q['left']} karakter): ücretsiz sese geçiliyor")
         count("ses_kota_yedek")
