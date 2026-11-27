@@ -1274,8 +1274,21 @@ def cmd_commit_state():
     raise SystemExit("Durum kaydedilemedi")
 
 
+def cmd_inject():
+    """Elle/test haber: NEWS_TEXT ortam değişkenindeki metni, sahibin Telegram'dan /ucdil ile göndermiş gibi işler
+    (aynı üretim, aynı Telegram onayı; onaysız hiçbir şey yayınlanmaz)."""
+    text = (os.environ.get("NEWS_TEXT") or "").strip()
+    st = load_state()
+    if not text or not st.get("owner_chat"):
+        sys.exit("NEWS_TEXT ya da owner_chat yok")
+    off = st.get("tg_offset") or 1
+    process_updates(st, [{"update_id": off - 1, "message": {"chat": {"id": st["owner_chat"]}, "text": "/ucdil " + text}}])
+    st["tg_offset"] = off
+    save_state(st)
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     {"auto": cmd_auto, "tg-check": cmd_tg_check, "telegram": cmd_telegram, "listen": cmd_listen, "republish": cmd_republish, "requeue": cmd_requeue,
-     "commit-state": cmd_commit_state}.get(cmd, lambda: sys.exit(
+     "commit-state": cmd_commit_state, "inject": cmd_inject}.get(cmd, lambda: sys.exit(
         "Kullanım: pipeline.py auto | tg-check | telegram"))()
