@@ -28,7 +28,8 @@
   "news:https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
   "trend:US:tehran",
   "yt:mwIe-luij-0",
-  "news:https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss"
+  "news:https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+  "yt:gDigPbCNzMA"
  ],
  "topics": [
   {
@@ -255,12 +256,17 @@
    "topic": "Iraq central government takes full border control",
    "ts": "2026-11-27T10:35:09",
    "summary": "Irak Ordusu Tüm Sınırların Kontrolünü Devraldı. Irak Federal Yüksek Mahkemesinin kararına göre tüm ülke sınırlarının kontrolü merkezi orduya devredildi. Alınan mahkeme kararıyla Irak Kürt Bölgesel Yönetimi sınır kapılarındaki denetim hakkını kaybetti. Aktarılan bilgilere göre Irak ordusu Ketaib Hizbullah grubunun elinde bulunan stratejik sınır bölgelerine de girmeye başladı. Belirtilene göre bu hamle Bağdat yönetiminin ülke genelindeki merkezi otoritesini yeniden kurma stratejisini gösteriyor. Sınır kontrolünün tek elde toplanması Türkiye ile olan kara ticaretinde yeni bir dönem başlatabilir. Bölgedeki dengeleri değiştirebilecek bu kararın yeni güvenlik krizlerini beraberinde getirebileceği ifade ediliyor."
+  },
+  {
+   "topic": "UK recalls 100k veterans for reserve force",
+   "ts": "2026-11-27T13:16:25",
+   "summary": "İngiltere 100 Bin Eski Askeri Göreve Çağırıyor. İngiltere Savunma Bakanlığı yüz bin eski askere mektup göndererek göreve hazır olmalarını istedi. Gönderilen talimatla eski askerlerin NATO tatbikatlarına ve gönüllü eğitim süreçlerine katılması talep ediliyor. İngiliz hükümeti bu adımla silahlı kuvvetlerin ihtiyat gücünü kısa sürede takviye etmeyi hedefliyor. Kararın arkasında küresel ölçekte tırmanan güvenlik riskleri ve derinleşen jeopolitik güç mücadeleleri yatıyor. Avrupa'daki bu askeri hareketlilik bölgesel güvenlik dengelerini ilgilendiriyor. Artan güvenlik risklerine karşı adımlar atılırken ilk çağrı mektupları adrese teslim edildi."
   }
  ],
  "daily": {
   "2026-11-25": 4,
   "2026-11-26": 5,
-  "2026-11-27": 2
+  "2026-11-27": 3
  },
  "scheduled": {
   "en": [
@@ -380,70 +386,460 @@
    "2026-11-28T06:30:00Z"
   ]
  },
- "pending": {},
+ "pending": {
+  "489d6305e204": {
+   "results": [
+    {
+     "title": "İngiltere 100 Bin Eski Askeri Göreve Çağırıyor",
+     "description": "İngiltere Savunma Bakanlığı ihtiyat gücünü artırmak amacıyla 100 bin eski askere hazır olma mektubu gönderdi.\nSizce Avrupa ülkeleri büyük bir savaşa mı hazırlanıyor?\n\n#İngiltere #NATO #Seferberlik #Savunma",
+     "tags": [
+      "İngiltere ordusu",
+      "İngiltere savunma bakanlığı",
+      "100 bin asker",
+      "NATO tatbikatı",
+      "askeri seferberlik",
+      "ihtiyat gücü",
+      "jeopolitik kriz",
+      "küresel güvenlik",
+      "savunma haberleri"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#İngiltere",
+      "#NATO",
+      "#Seferberlik",
+      "#Savunma"
+     ],
+     "lang": "tr",
+     "topic": "UK recalls 100k veterans for reserve force",
+     "tts": "elevenlabs",
+     "duration": 41.44,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-tr/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-tr/thumb.jpg",
+     "scenes": [
+      {
+       "text": "İngiltere Savunma Bakanlığı yüz bin eski askere mektup göndererek göreve hazır olmalarını istedi.",
+       "headline": "100 Bin Asker",
+       "accent": "Mektup",
+       "search": "british military soldiers",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Gönderilen talimatla eski askerlerin NATO tatbikatlarına ve gönüllü eğitim süreçlerine katılması talep ediliyor.",
+       "headline": "NATO Tatbikatı",
+       "accent": "Eğitim",
+       "search": "military exercise nato",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "İngiliz hükümeti bu adımla silahlı kuvvetlerin ihtiyat gücünü kısa sürede takviye etmeyi hedefliyor.",
+       "headline": "İhtiyat Gücü",
+       "accent": "Takviye",
+       "search": "military army march",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Kararın arkasında küresel ölçekte tırmanan güvenlik riskleri ve derinleşen jeopolitik güç mücadeleleri yatıyor.",
+       "headline": "Küresel Risk",
+       "accent": "Tehdit",
+       "search": "geopolitics world map",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Avrupa'daki bu askeri hareketlilik bölgesel güvenlik dengelerini ilgilendiriyor.",
+       "headline": "Bölgesel Etki",
+       "accent": "Güvenlik",
+       "search": "europe defense radar",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Artan güvenlik risklerine karşı adımlar atılırken ilk çağrı mektupları adrese teslim edildi.",
+       "headline": "Savaşa Hazırlık",
+       "accent": "Seferberlik",
+       "search": "military mail letter",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-27T13:17:11Z",
+     "elevenlabs": {
+      "used": 27844,
+      "limit": 40000,
+      "left": 12156,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 12.156 / 40.000 karakter kaldı (bu video 592 karakter)",
+     "test": false,
+     "instagram": true,
+     "tag": "auto-46004751536-tr"
+    },
+    {
+     "title": "UK Calls Up 100,000 Former Soldiers",
+     "description": "The UK Ministry of Defence sent readiness letters to 100,000 former soldiers to increase the reserve force. Do you think European countries are preparing for a major war?\n\n#UK #NATO #Mobilization #Defence",
+     "tags": [
+      "British Army",
+      "UK Ministry of Defence",
+      "100,000 troops",
+      "NATO exercise",
+      "military mobilization",
+      "reserve force",
+      "geopolitical crisis",
+      "global security",
+      "defence news"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#UK",
+      "#NATO",
+      "#Mobilization",
+      "#Defence"
+     ],
+     "lang": "en",
+     "topic": "UK recalls 100k veterans for reserve force",
+     "tts": "elevenlabs",
+     "duration": 33.04,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-en/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-en/thumb.jpg",
+     "scenes": [
+      {
+       "text": "The UK Ministry of Defence sent letters to 100,000 veterans ordering them to be ready for duty.",
+       "headline": "100,000 Troops",
+       "accent": "Letter",
+       "search": "british military soldiers",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The directive calls for veterans to join NATO exercises and voluntary training programs.",
+       "headline": "NATO Exercise",
+       "accent": "Training",
+       "search": "military exercise nato",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "The government aims to rapidly bolster the armed forces' reserve strength.",
+       "headline": "Reserve Force",
+       "accent": "Reinforcement",
+       "search": "military army march",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Behind the move lie rising global security risks and deepening geopolitical power struggles.",
+       "headline": "Global Risk",
+       "accent": "Threat",
+       "search": "geopolitics world map",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Such military activity in Europe affects regional security balances.",
+       "headline": "Regional Impact",
+       "accent": "Security",
+       "search": "europe defense radar",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "As security risks grow, the first call-up letters have been delivered.",
+       "headline": "War Readiness",
+       "accent": "Mobilization",
+       "search": "military mail letter",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-27T13:19:22Z",
+     "elevenlabs": {
+      "used": 28039,
+      "limit": 40000,
+      "left": 11961,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 11.961 / 40.000 karakter kaldı (bu video 487 karakter)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-46004751536-en"
+    },
+    {
+     "title": "Großbritannien ruft 100.000 ehemalige Soldaten zum Dienst",
+     "description": "Das britische Verteidigungsministerium hat 100.000 ehemaligen Soldaten Aufforderungsschreiben geschickt, um die Reserve zu stärken. Glauben Sie, dass europäische Länder sich auf einen großen Krieg vorbereiten?\n\n#Großbritannien #NATO #Mobilisierung #Verteidigung",
+     "tags": [
+      "Britische Armee",
+      "Britisches Verteidigungsministerium",
+      "100.000 Soldaten",
+      "NATO‑Übung",
+      "Militärische Mobilisierung",
+      "Reservekräfte",
+      "Geopolitische Krise",
+      "Globale Sicherheit",
+      "Verteidigungsnachrichten"
+     ],
+     "long": false,
+     "thumbs": [],
+     "hashtags": [
+      "#Großbritannien",
+      "#NATO",
+      "#Mobilisierung",
+      "#Verteidigung"
+     ],
+     "lang": "de",
+     "topic": "UK recalls 100k veterans for reserve force",
+     "tts": "edge",
+     "duration": 31.22,
+     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-de/video.mp4",
+     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46004751536-de/thumb.jpg",
+     "scenes": [
+      {
+       "text": "Das britische Verteidigungsministerium schickt 100.000 ehemaligen Soldaten Aufforderungsschreiben.",
+       "headline": "100.000 Soldaten",
+       "accent": "Schreiben",
+       "search": "british military soldiers",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ehemalige sollen an NATO‑Übungen und freiwilligen Trainings teilnehmen.",
+       "headline": "NATO‑Übung",
+       "accent": "Training",
+       "search": "military exercise nato",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Ziel ist die rasche Stärkung der Reservestreitkräfte.",
+       "headline": "Reservekräfte",
+       "accent": "Stärkung",
+       "search": "military army march",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Hintergrund sind steigende globale Sicherheitsrisiken und geopolitische Machtkämpfe.",
+       "headline": "Globales Risiko",
+       "accent": "Bedrohung",
+       "search": "geopolitics world map",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Die militärische Aktivität in Europa betrifft die regionale Sicherheitsbalance.",
+       "headline": "Regionale Wirkung",
+       "accent": "Sicherheit",
+       "search": "europe defense radar",
+       "style": "headline",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      },
+      {
+       "text": "Erste Einberufungsschreiben wurden bereits zugestellt.",
+       "headline": "Kriegsvorbereitung",
+       "accent": "Mobilisierung",
+       "search": "military mail letter",
+       "style": "subtitle",
+       "countries": [
+        "GBR"
+       ],
+       "country_names": [
+        "İngiltere"
+       ],
+       "chapter": null
+      }
+     ],
+     "chat_id": null,
+     "source": "https://www.youtube.com/watch?v=gDigPbCNzMA",
+     "publish_at": "2026-11-27T13:21:21Z",
+     "elevenlabs": {
+      "used": 28039,
+      "limit": 40000,
+      "left": 11961,
+      "reset_unix": 1797163511
+     },
+     "quota_text": "ElevenLabs: 11.961 / 40.000 karakter kaldı (bu video ücretsiz ses)",
+     "test": false,
+     "instagram": false,
+     "tag": "auto-46004751536-de"
+    }
+   ],
+   "ts": "2026-11-27T13:16:25"
+  }
+ },
  "_removed": [
-  "443091847971",
-  "6ad3bacfd1c7",
-  "ea76cda66aa7",
-  "442639882090",
-  "b438246d60ee",
-  "c947dac9becb",
-  "e545b5536757",
-  "f02172b50f8c",
-  "1edbeb303dcc",
-  "2f1a20151385",
-  "444854651743",
-  "9849bc2ef437",
-  "446184028241",
   "66eba903a865",
-  "a5e09c77f7f8",
-  "c0c492475217",
-  "1ed2aefedb23",
-  "74775df4be80",
-  "bc7037909ba6",
-  "a86c24402051",
-  "29a1c4645e6f",
-  "446184028240",
-  "445944378440",
-  "3f6ae6499c1b",
-  "57b4fdc6596f",
-  "b34b7bca5216",
-  "445296633124",
-  "32fa0d1d693a",
-  "0d9dbcf465cd",
-  "27b1f9c04076",
-  "445761614490",
-  "41416ec5f7f6",
-  "c3254364688d",
-  "445944378441",
-  "d7e9c169bc14",
-  "ccd67624d8c3",
-  "87a011d7d646",
-  "20dcc23cea11",
-  "af6ed91f3a79",
-  "130b7970530f",
-  "3cc9d1e06e50",
-  "d05d46e84530",
   "54f34c42d936",
-  "abe41c1aaf94",
-  "873320f3cd81",
-  "0c7c07a879a6",
-  "1f8d57fecf3b",
-  "d42fcbc4ce3d",
-  "be8762e28854",
-  "9fa68b731dc8",
+  "ccd67624d8c3",
+  "443091847971",
+  "20dcc23cea11",
+  "b438246d60ee",
+  "29a1c4645e6f",
   "d46c8535a93d",
-  "9d8c10911957",
+  "c3254364688d",
+  "444854651743",
+  "0c7c07a879a6",
+  "a5e09c77f7f8",
+  "ea76cda66aa7",
+  "6ad3bacfd1c7",
+  "446184028241",
+  "6f78216803dc",
   "017d2e76c451",
-  "26c2e83ebba1",
-  "63bfb40d47b6",
-  "86277101f5be",
-  "b349a255e16e",
-  "ddbd76050660",
+  "af6ed91f3a79",
   "54c4daadd3d1",
-  "7eb47a5db7cd",
+  "f02172b50f8c",
+  "9849bc2ef437",
+  "86277101f5be",
+  "0d9dbcf465cd",
+  "74775df4be80",
+  "c0c492475217",
+  "ddbd76050660",
+  "87a011d7d646",
+  "abe41c1aaf94",
+  "d42fcbc4ce3d",
+  "446184028240",
   "443631404172",
-  "6f78216803dc"
+  "130b7970530f",
+  "9d8c10911957",
+  "a86c24402051",
+  "bc7037909ba6",
+  "c947dac9becb",
+  "32fa0d1d693a",
+  "e545b5536757",
+  "7eb47a5db7cd",
+  "445296633124",
+  "63bfb40d47b6",
+  "b34b7bca5216",
+  "26c2e83ebba1",
+  "445944378441",
+  "9fa68b731dc8",
+  "445944378440",
+  "3cc9d1e06e50",
+  "3f6ae6499c1b",
+  "2f1a20151385",
+  "57b4fdc6596f",
+  "d05d46e84530",
+  "1edbeb303dcc",
+  "be8762e28854",
+  "b349a255e16e",
+  "442639882090",
+  "d7e9c169bc14",
+  "41416ec5f7f6",
+  "445761614490",
+  "873320f3cd81",
+  "1ed2aefedb23",
+  "1f8d57fecf3b",
+  "27b1f9c04076"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -752,7 +1148,8 @@
    ],
    "used": [
     0,
-    1
+    1,
+    2
    ]
   }
  },
@@ -1428,6 +1825,21 @@
     "2026-11-27": {
      "actions_dk": 49
     }
+   },
+   "46004751536-7b7178": {
+    "2026-11-27": {
+     "uretilen": 3,
+     "render_sn": 223.1,
+     "render_n": 3,
+     "prov:gemini:ok": 1,
+     "prov:gemini_1:ok": 1,
+     "prov:openrouter_nemotron:ok": 2,
+     "ses:elevenlabs": 2,
+     "ses:edge": 1,
+     "llm_cagri": 3,
+     "ceviri_nemotron": 2,
+     "actions_dk": 6
+    }
    }
   },
   "gunluk": {
@@ -1568,25 +1980,25 @@
     "prov:openrouter_nemotron:yedek": 1
    },
    "2026-11-27": {
-    "actions_dk": 138,
+    "actions_dk": 144,
     "red": 1,
-    "uretilen": 9,
-    "render_sn": 1670.0,
-    "render_n": 9,
-    "prov:gemini:ok": 5,
-    "prov:gemini_1:ok": 5,
-    "ses:elevenlabs": 6,
-    "ses:edge": 3,
-    "llm_cagri": 9,
+    "uretilen": 12,
+    "render_sn": 1893.1,
+    "render_n": 12,
+    "prov:gemini:ok": 6,
+    "prov:gemini_1:ok": 6,
+    "ses:elevenlabs": 8,
+    "ses:edge": 4,
+    "llm_cagri": 12,
     "onay": 1,
     "yayin_tr": 1,
     "yayin_en": 1,
     "yayin_de": 1,
-    "prov:openrouter_nemotron:ok": 3,
+    "prov:openrouter_nemotron:ok": 5,
     "prov:openrouter_nemotron:hata": 1,
     "prov:make_metin:ok": 1,
     "prov:make_metin:yedek": 1,
-    "ceviri_nemotron": 4,
+    "ceviri_nemotron": 6,
     "llm_yedek": 1
    }
   }
