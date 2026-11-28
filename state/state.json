@@ -1164,62 +1164,6 @@
  },
  "metrics": {
   "runs": {
-   "44893451333-5e937e": {
-    "2026-11-21": {
-     "actions_dk": 1
-    }
-   },
-   "44905894493-2af777": {
-    "2026-11-21": {
-     "uretilen": 3,
-     "render_sn": 865.0,
-     "render_n": 3,
-     "prov:gemini_1:ok": 4,
-     "prov:gemini:ok": 3,
-     "prov:openrouter_nemotron:hata": 2,
-     "prov:make_metin:hata": 2,
-     "ses:edge": 2,
-     "ses:elevenlabs": 1,
-     "llm_cagri": 6,
-     "llm_tamamen_basarisiz": 2,
-     "ceviri_yedek": 2,
-     "actions_dk": 18
-    }
-   },
-   "44906218216-4d360c": {
-    "2026-11-21": {
-     "actions_dk": 8
-    }
-   },
-   "44918322735-b5c5d9": {
-    "2026-11-21": {
-     "actions_dk": 1
-    }
-   },
-   "44930236469-60a08d": {
-    "2026-11-21": {
-     "uretilen": 3,
-     "render_sn": 287.6,
-     "render_n": 3,
-     "prov:gemini:ok": 1,
-     "prov:gemini_1:ok": 1,
-     "prov:openrouter_nemotron:ok": 2,
-     "ses:edge": 2,
-     "ses:elevenlabs": 1,
-     "llm_cagri": 3,
-     "ceviri_nemotron": 2,
-     "actions_dk": 7
-    }
-   },
-   "44933591485-f3e943": {
-    "2026-11-21": {
-     "actions_dk": 33,
-     "onay": 1,
-     "yayin_tr": 1,
-     "yayin_en": 1,
-     "yayin_de": 1
-    }
-   },
    "45000929818-63e7c1": {
     "2026-11-22": {
      "actions_dk": 6,
@@ -1883,27 +1827,6 @@
    }
   },
   "gunluk": {
-   "2026-11-21": {
-    "actions_dk": 68,
-    "uretilen": 6,
-    "render_sn": 1152.6,
-    "render_n": 6,
-    "prov:gemini_1:ok": 5,
-    "prov:gemini:ok": 4,
-    "prov:openrouter_nemotron:hata": 2,
-    "prov:make_metin:hata": 2,
-    "ses:edge": 4,
-    "ses:elevenlabs": 2,
-    "llm_cagri": 9,
-    "llm_tamamen_basarisiz": 2,
-    "ceviri_yedek": 2,
-    "prov:openrouter_nemotron:ok": 2,
-    "ceviri_nemotron": 2,
-    "onay": 1,
-    "yayin_tr": 1,
-    "yayin_en": 1,
-    "yayin_de": 1
-   },
    "2026-11-22": {
     "actions_dk": 269,
     "uretilen": 18,
