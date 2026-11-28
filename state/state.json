@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897503,
+ "tg_offset": 691897505,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -317,7 +317,8 @@
    "2026-11-27T17:00:00Z",
    "2026-11-27T20:00:00Z",
    "2026-11-27T23:00:00Z",
-   "2026-11-28T17:00:00Z"
+   "2026-11-28T17:00:00Z",
+   "2026-11-28T20:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -366,7 +367,8 @@
    "2026-11-28T11:00:00Z",
    "2026-11-28T14:00:00Z",
    "2026-11-28T17:00:00Z",
-   "2026-11-28T19:30:00Z"
+   "2026-11-28T19:30:00Z",
+   "2026-11-29T07:00:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -400,7 +402,8 @@
    "2026-11-27T15:30:00Z",
    "2026-11-27T18:00:00Z",
    "2026-11-28T06:30:00Z",
-   "2026-11-28T15:30:00Z"
+   "2026-11-28T15:30:00Z",
+   "2026-11-28T18:00:00Z"
   ]
  },
  "pending": {
@@ -792,398 +795,6 @@
     }
    ],
    "ts": "2026-11-27T13:16:25"
-  },
-  "815b07191f59": {
-   "results": [
-    {
-     "title": "Irak Türkiye Petrol Boru Hattını 14 Yıl Sonra Yeniden Açmak İçin Çalışıyor",
-     "description": "Irak-Türkiye Petrol Boru Hattı 14 yıl aradan sonra yeniden faaliyete geçirilmek üzere çalışmalara konu oluyor.\nSence bu hamle bölgedeki petrol fiyatlarını düşürür mü?\n\n#Irak #Türkiye #PetrolBoruHattı #EnerjiHaberleri",
-     "tags": [
-      "Irak",
-      "Türkiye",
-      "petrol boru hattı",
-      "enerji",
-      "Bağdat",
-      "sınır güvenliği",
-      "Ortadoğu",
-      "akaryakıt fiyatları",
-      "ABD",
-      "jeopolitik"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Irak",
-      "#Türkiye",
-      "#PetrolBoruHattı",
-      "#EnerjiHaberleri"
-     ],
-     "lang": "tr",
-     "topic": "Iraq Restarts Turkey Oil Pipeline After 14 Years",
-     "tts": "elevenlabs",
-     "duration": 40.98,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Irak, 14 yıldır kapalı olan Türkiye petrol boru hattını yeniden faaliyete geçirmek için çalışmalara başladı.",
-       "headline": "14 YIL SONRA",
-       "accent": "PETROL",
-       "search": "oil pipeline refinery",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bağdat yönetimi, Suriye ve İran sınır kapılarına merkezi orduyu konuşlandırma kararı aldı.",
-       "headline": "SINIR DÜZENİ",
-       "accent": "KONTROL",
-       "search": "military border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ",
-        "SYR",
-        "IRN"
-       ],
-       "country_names": [
-        "Irak",
-        "Suriye",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "ABD desteğiyle alınan kararla, tek silahlı otoritenin Irak Silahlı Kuvvetleri olması amaçlanıyor.",
-       "headline": "TEK OTORİTE",
-       "accent": "STABİLİTE",
-       "search": "soldiers marching army",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "USA"
-       ],
-       "country_names": [
-        "Irak",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bölgesel istikrarın sağlanması, Ortadoğu'daki enerji sevkiyatının güvenliğini ve ticaret hacmini artıracak.",
-       "headline": "ENERJİ AKIŞI",
-       "accent": "GÜVENLİK",
-       "search": "oil tanker sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Türkiye için bu hamle, petrol arz güvenliğini pekiştirerek enerji maliyetlerini olumlu etkileyebilir.",
-       "headline": "TÜRKİYE ETKİSİ",
-       "accent": "EKONOMİ",
-       "search": "gas station fuel",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sence bu boru hattı bölgedeki petrol fiyatlarını düşürür mü?",
-       "headline": "SENİN FİKRİN",
-       "accent": "YORUM",
-       "search": "thinking person globe",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T10:24:32Z",
-     "elevenlabs": {
-      "used": 28804,
-      "limit": 40000,
-      "left": 11196,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 11.196 / 40.000 karakter kaldı (bu video 563 karakter)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-46134455129-tr"
-    },
-    {
-     "title": "Iraq Works to Reopen Turkey Oil Pipeline After 14 Years",
-     "description": "The Iraq‑Turkey oil pipeline is being prepared for restart after 14 years. Do you think this move will lower regional oil prices?\n\n#Iraq #Turkey #OilPipeline #EnergyNews",
-     "tags": [
-      "Iraq",
-      "Turkey",
-      "oil pipeline",
-      "energy",
-      "Baghdad",
-      "border security",
-      "Middle East",
-      "fuel prices",
-      "US",
-      "geopolitics"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iraq",
-      "#Turkey",
-      "#OilPipeline",
-      "#EnergyNews"
-     ],
-     "lang": "en",
-     "topic": "Iraq Restarts Turkey Oil Pipeline After 14 Years",
-     "tts": "elevenlabs",
-     "duration": 30.71,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Iraq begins work to restart the Turkey oil pipeline closed for 14 years.",
-       "headline": "AFTER 14 YEARS",
-       "accent": "OIL",
-       "search": "oil pipeline refinery",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Baghdad decides to deploy central army to Syrian and Iranian border crossings.",
-       "headline": "BORDER ORDER",
-       "accent": "CONTROL",
-       "search": "military border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ",
-        "SYR",
-        "IRN"
-       ],
-       "country_names": [
-        "Irak",
-        "Suriye",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "US‑backed decision aims to make Iraqi Armed Forces the sole armed authority.",
-       "headline": "SINGLE AUTHORITY",
-       "accent": "STABILITY",
-       "search": "soldiers marching army",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "USA"
-       ],
-       "country_names": [
-        "Irak",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Regional stability will secure Middle East energy shipments and boost trade volume.",
-       "headline": "ENERGY FLOW",
-       "accent": "SECURITY",
-       "search": "oil tanker sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "For Turkey, the move could strengthen oil supply security and cut energy costs.",
-       "headline": "TURKEY IMPACT",
-       "accent": "ECONOMY",
-       "search": "gas station fuel",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Will this pipeline lower regional oil prices?",
-       "headline": "YOUR VIEW",
-       "accent": "COMMENT",
-       "search": "thinking person globe",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T10:25:58Z",
-     "elevenlabs": {
-      "used": 29202,
-      "limit": 40000,
-      "left": 10798,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 10.798 / 40.000 karakter kaldı (bu video 433 karakter)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-46134455129-en"
-    },
-    {
-     "title": "Irak plant Wiedereröffnung der Türkei-Pipeline nach 14 Jahren",
-     "description": "Die Irak-Türkei-Ölpipeline wird nach 14 Jahren wieder in Betrieb genommen. Glauben Sie, dass dieser Schritt die Ölpreise in der Region senkt?\n\n#Irak #Türkei #Ölpipeline #Energienachrichten",
-     "tags": [
-      "Irak",
-      "Türkei",
-      "Ölpipeline",
-      "Energie",
-      "Bagdad",
-      "Grenzsicherheit",
-      "Naher Osten",
-      "Kraftstoffpreise",
-      "USA",
-      "Geopolitik"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Irak",
-      "#Türkei",
-      "#Ölpipeline",
-      "#Energienachrichten"
-     ],
-     "lang": "de",
-     "topic": "Iraq Restarts Turkey Oil Pipeline After 14 Years",
-     "tts": "edge",
-     "duration": 35.49,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46134455129-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Irak beginnt Arbeiten zur Wiederinbetriebnahme der seit 14 Jahren geschlossenen Pipeline nach Türkei.",
-       "headline": "NACH 14 JAHREN",
-       "accent": "ÖL",
-       "search": "oil pipeline refinery",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "TUR"
-       ],
-       "country_names": [
-        "Irak",
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Bagdad beschließt, zentrale Armee an syrische und iranische Grenzübergänge zu verlegen.",
-       "headline": "GRENZORDNUNG",
-       "accent": "KONTROLLE",
-       "search": "military border checkpoint",
-       "style": "subtitle",
-       "countries": [
-        "IRQ",
-        "SYR",
-        "IRN"
-       ],
-       "country_names": [
-        "Irak",
-        "Suriye",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Mit US-Unterstützung soll die irakische Armee die einzige bewaffnete Autorität werden.",
-       "headline": "EINZIGE AUTORITÄT",
-       "accent": "STABILITÄT",
-       "search": "soldiers marching army",
-       "style": "headline",
-       "countries": [
-        "IRQ",
-        "USA"
-       ],
-       "country_names": [
-        "Irak",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Regionale Stabilität sichert Energieversorgung und steigert Handelsvolumen im Nahen Osten.",
-       "headline": "ENERGIEFLUSS",
-       "accent": "SICHERHEIT",
-       "search": "oil tanker sea",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Für Türkei stärkt die Pipeline die Ölversorgungssicherheit und kann Energiekosten senken.",
-       "headline": "AUSWIRKUNG AUF TÜRKEI",
-       "accent": "WIRTSCHAFT",
-       "search": "gas station fuel",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Glauben Sie, dass die Pipeline die regionalen Ölpreise senkt?",
-       "headline": "IHRE MEINUNG",
-       "accent": "KOMMENTAR",
-       "search": "thinking person globe",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T10:27:23Z",
-     "elevenlabs": {
-      "used": 29202,
-      "limit": 40000,
-      "left": 10798,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 10.798 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-46134455129-de"
-    }
-   ],
-   "ts": "2026-11-28T10:22:27"
   }
  },
  "_removed": [
@@ -1250,7 +861,8 @@
   "443631404172",
   "1f8d57fecf3b",
   "54c4daadd3d1",
-  "882ca0251e27"
+  "882ca0251e27",
+  "815b07191f59"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -2286,11 +1898,11 @@
    },
    "46141670977-684c3b": {
     "2026-11-28": {
-     "actions_dk": 28,
-     "onay": 1,
-     "yayin_tr": 1,
-     "yayin_en": 1,
-     "yayin_de": 1
+     "actions_dk": 29,
+     "onay": 2,
+     "yayin_tr": 2,
+     "yayin_en": 2,
+     "yayin_de": 2
     }
    }
   },
@@ -2433,7 +2045,7 @@
     "llm_yedek": 1
    },
    "2026-11-28": {
-    "actions_dk": 39,
+    "actions_dk": 40,
     "uretilen": 6,
     "render_sn": 402.6,
     "render_n": 6,
@@ -2444,10 +2056,10 @@
     "ses:edge": 2,
     "llm_cagri": 6,
     "ceviri_nemotron": 4,
-    "onay": 1,
-    "yayin_tr": 1,
-    "yayin_en": 1,
-    "yayin_de": 1
+    "onay": 2,
+    "yayin_tr": 2,
+    "yayin_en": 2,
+    "yayin_de": 2
    }
   }
  }
