@@ -1,5 +1,5 @@
 {
- "tg_offset": 691897502,
+ "tg_offset": 691897503,
  "owner_chat": 1547879966,
  "processed": [
   "yt:si67TZv2Xxg",
@@ -316,7 +316,8 @@
    "2026-11-27T13:00:00Z",
    "2026-11-27T17:00:00Z",
    "2026-11-27T20:00:00Z",
-   "2026-11-27T23:00:00Z"
+   "2026-11-27T23:00:00Z",
+   "2026-11-28T17:00:00Z"
   ],
   "de": [
    "2026-11-19T18:30:00Z",
@@ -364,7 +365,8 @@
    "2026-11-28T07:00:00Z",
    "2026-11-28T11:00:00Z",
    "2026-11-28T14:00:00Z",
-   "2026-11-28T17:00:00Z"
+   "2026-11-28T17:00:00Z",
+   "2026-11-28T19:30:00Z"
   ],
   "tr": [
    "2026-11-20T06:30:00Z",
@@ -397,7 +399,8 @@
    "2026-11-27T12:30:00Z",
    "2026-11-27T15:30:00Z",
    "2026-11-27T18:00:00Z",
-   "2026-11-28T06:30:00Z"
+   "2026-11-28T06:30:00Z",
+   "2026-11-28T15:30:00Z"
   ]
  },
  "pending": {
@@ -789,395 +792,6 @@
     }
    ],
    "ts": "2026-11-27T13:16:25"
-  },
-  "882ca0251e27": {
-   "results": [
-    {
-     "title": "İran ABD Teknoloji Devlerini Siber Saldırıyla Tehdit Etti",
-     "description": "İran Devrim Muhafızları ABD teknoloji devlerini siber misillemeyle açıkça tehdit etti.\nSizce yapay zeka şirketleri savaşların doğrudan tarafı haline mi geliyor?\n\n#İran #YapayZeka #SiberSavaş #Teknoloji",
-     "tags": [
-      "İran",
-      "Devrim Muhafızları",
-      "ABD",
-      "Microsoft",
-      "Amazon",
-      "SpaceX",
-      "Yapay Zeka",
-      "Siber Saldırı",
-      "Siber Savaş",
-      "Jeopolitik",
-      "Orta Doğu"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#İran",
-      "#YapayZeka",
-      "#SiberSavaş",
-      "#Teknoloji"
-     ],
-     "lang": "tr",
-     "topic": "Iran IRGC threatens US tech giants with AI cyber attacks",
-     "tts": "elevenlabs",
-     "duration": 37.12,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-tr/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-tr/thumb.jpg",
-     "scenes": [
-      {
-       "text": "İran Devrim Muhafızları ABD'li teknoloji devlerini hedef alan simülasyon videosu yayımladı.",
-       "headline": "İRAN'DAN SİMÜLASYON",
-       "accent": "TEHDİDİ",
-       "search": "cyber warfare military",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Tahran yönetimi Microsoft Amazon ve SpaceX şirketlerini askeri operasyonlara destek vermekle suçluyor.",
-       "headline": "DEV ŞİRKETLER",
-       "accent": "HEDEFTE",
-       "search": "data center servers",
-       "style": "subtitle",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "ABD ordusunun yapay zekayla 96 saatte 2 bin mühimmat fırlattığı iddia ediliyor.",
-       "headline": "2 BİN HEDEF",
-       "accent": "RAKAMI",
-       "search": "missile launch military",
-       "style": "headline",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Uzmanlara göre bu durum, küresel çatışmaların artık dijital altyapılara kaydığını gösteriyor.",
-       "headline": "DİJİTAL SAVAŞ",
-       "accent": "DÖNEMİ",
-       "search": "hacker computer screen",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Küresel bulut sistemlerine olası siber misillemeler Türkiye'deki dijital hizmetleri ve erişimi aksatabilir.",
-       "headline": "KÜRESEL ETKİ",
-       "accent": "RİSKİ",
-       "search": "global network internet",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sizce teknoloji devleri orduların savaş araçlarına dönüşmeli mi?",
-       "headline": "SİZCE NE OLACAK",
-       "accent": "SAVAŞ",
-       "search": "artificial intelligence brain",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T08:15:51Z",
-     "elevenlabs": {
-      "used": 28644,
-      "limit": 40000,
-      "left": 11356,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 11.356 / 40.000 karakter kaldı (bu video 536 karakter)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-46124384862-tr"
-    },
-    {
-     "title": "Iran Threatens US Tech Giants in Cyber Strike",
-     "description": "Iran's Revolutionary Guard openly threatens US tech giants with a cyber missile. Do you think AI companies are becoming direct parties to wars?\n\n#Iran #AI #CyberWar #Technology",
-     "tags": [
-      "Iran",
-      "Revolutionary Guard",
-      "US",
-      "Microsoft",
-      "Amazon",
-      "SpaceX",
-      "Artificial Intelligence",
-      "Cyber Attack",
-      "Cyber War",
-      "Geopolitics",
-      "Middle East"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iran",
-      "#AI",
-      "#CyberWar",
-      "#Technology"
-     ],
-     "lang": "en",
-     "topic": "Iran IRGC threatens US tech giants with AI cyber attacks",
-     "tts": "elevenlabs",
-     "duration": 30.48,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-en/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-en/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Iran’s Revolutionary Guard releases simulation video targeting US tech giants.",
-       "headline": "IRAN'S SIMULATION",
-       "accent": "THREAT",
-       "search": "cyber warfare military",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Tehran accuses Microsoft, Amazon and SpaceX of supporting military operations.",
-       "headline": "GIANT COMPANIES TARGETED",
-       "accent": "TARGETED",
-       "search": "data center servers",
-       "style": "subtitle",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "US military allegedly fired 2,000 munitions in 96 hours using AI.",
-       "headline": "2,000 TARGETS",
-       "accent": "FIGURE",
-       "search": "missile launch military",
-       "style": "headline",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Experts say conflicts are shifting to digital infrastructure.",
-       "headline": "DIGITAL WAR ERA",
-       "accent": "ERA",
-       "search": "hacker computer screen",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Potential cyber strikes on global cloud could disrupt digital services in Turkey.",
-       "headline": "GLOBAL IMPACT RISK",
-       "accent": "RISK",
-       "search": "global network internet",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Should tech giants become weapons of war?",
-       "headline": "WHAT WILL HAPPEN",
-       "accent": "WAR",
-       "search": "artificial intelligence brain",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T08:17:02Z",
-     "elevenlabs": {
-      "used": 28804,
-      "limit": 40000,
-      "left": 11196,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 11.196 / 40.000 karakter kaldı (bu video 404 karakter)",
-     "test": false,
-     "instagram": true,
-     "tag": "auto-46124384862-en"
-    },
-    {
-     "title": "Iran droht US-Technologieriesen mit Cyberangriff",
-     "description": "Irans Revolutionsgarden drohen US-Technologieriesen offen mit Cyberangriffen. Werden KI-Unternehmen zu direkten Kriegsparteien?\n\n#Iran #KI #Cyberkrieg #Technologie",
-     "tags": [
-      "Iran",
-      "Revolutionsgarden",
-      "USA",
-      "Microsoft",
-      "Amazon",
-      "SpaceX",
-      "KI",
-      "Cyberangriff",
-      "Cyberkrieg",
-      "Geopolitik",
-      "Naher Osten"
-     ],
-     "long": false,
-     "thumbs": [],
-     "hashtags": [
-      "#Iran",
-      "#KI",
-      "#Cyberkrieg",
-      "#Technologie"
-     ],
-     "lang": "de",
-     "topic": "Iran IRGC threatens US tech giants with AI cyber attacks",
-     "tts": "edge",
-     "duration": 37.56,
-     "video_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-de/video.mp4",
-     "thumb_url": "https://github.com/ahmetbagrrn-rgb/haber-video/releases/download/auto-46124384862-de/thumb.jpg",
-     "scenes": [
-      {
-       "text": "Irans Revolutionsgarden veröffentlichen Simulationsvideo, das US-Technologieriesen ins Visier nimmt.",
-       "headline": "IRAN-SIMULATION",
-       "accent": "BEDROHUNG",
-       "search": "cyber warfare military",
-       "style": "headline",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Teheran beschuldigt Microsoft, Amazon und SpaceX, militärische Operationen zu unterstützen.",
-       "headline": "GROSSUNTERNEHMEN",
-       "accent": "IM VISIER",
-       "search": "data center servers",
-       "style": "subtitle",
-       "countries": [
-        "IRN",
-        "USA"
-       ],
-       "country_names": [
-        "İran",
-        "Amerika Birleşik Devletleri"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "US-Armee soll mit KI in 96 Stunden 2000 Ziele angegriffen haben.",
-       "headline": "2000 ZIELE",
-       "accent": "ZAHLEN",
-       "search": "missile launch military",
-       "style": "headline",
-       "countries": [
-        "USA",
-        "IRN"
-       ],
-       "country_names": [
-        "Amerika Birleşik Devletleri",
-        "İran"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Experten sehen darin den Übergang globaler Konflikte auf digitale Infrastrukturen.",
-       "headline": "DIGITALER KRIEG",
-       "accent": "ÄRA",
-       "search": "hacker computer screen",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      },
-      {
-       "text": "Mögliche Cyberangriffe auf globale Cloud-Systeme könnten digitale Dienste in der Türkei beeinträchtigen.",
-       "headline": "GLOBALE AUSWIRKUNG",
-       "accent": "RISIKO",
-       "search": "global network internet",
-       "style": "headline",
-       "countries": [
-        "TUR"
-       ],
-       "country_names": [
-        "Türkiye"
-       ],
-       "chapter": null
-      },
-      {
-       "text": "Sollen Technologiekonzerne zu Kriegswaffen der Armeen werden?",
-       "headline": "IHRE MEINUNG",
-       "accent": "KRIEG",
-       "search": "artificial intelligence brain",
-       "style": "subtitle",
-       "countries": [],
-       "country_names": [],
-       "chapter": null
-      }
-     ],
-     "chat_id": null,
-     "source": "https://www.youtube.com/watch?v=cllKkPs4_-w",
-     "publish_at": "2026-11-28T08:18:37Z",
-     "elevenlabs": {
-      "used": 28804,
-      "limit": 40000,
-      "left": 11196,
-      "reset_unix": 1797163511
-     },
-     "quota_text": "ElevenLabs: 11.196 / 40.000 karakter kaldı (bu video ücretsiz ses)",
-     "test": false,
-     "instagram": false,
-     "tag": "auto-46124384862-de"
-    }
-   ],
-   "ts": "2026-11-28T08:13:40"
   },
   "815b07191f59": {
    "results": [
@@ -1635,7 +1249,8 @@
   "20dcc23cea11",
   "443631404172",
   "1f8d57fecf3b",
-  "54c4daadd3d1"
+  "54c4daadd3d1",
+  "882ca0251e27"
  ],
  "reminded": "2026-11-23",
  "yt_stories": {
@@ -2668,6 +2283,15 @@
      "ceviri_nemotron": 2,
      "actions_dk": 5
     }
+   },
+   "46141670977-684c3b": {
+    "2026-11-28": {
+     "actions_dk": 28,
+     "onay": 1,
+     "yayin_tr": 1,
+     "yayin_en": 1,
+     "yayin_de": 1
+    }
    }
   },
   "gunluk": {
@@ -2809,7 +2433,7 @@
     "llm_yedek": 1
    },
    "2026-11-28": {
-    "actions_dk": 11,
+    "actions_dk": 39,
     "uretilen": 6,
     "render_sn": 402.6,
     "render_n": 6,
@@ -2819,7 +2443,11 @@
     "ses:elevenlabs": 4,
     "ses:edge": 2,
     "llm_cagri": 6,
-    "ceviri_nemotron": 4
+    "ceviri_nemotron": 4,
+    "onay": 1,
+    "yayin_tr": 1,
+    "yayin_en": 1,
+    "yayin_de": 1
    }
   }
  }
